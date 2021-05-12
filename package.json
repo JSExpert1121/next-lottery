@@ -1,0 +1,23 @@
+{
+  "name": "nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "dateformat": "^4.5.1",
+    "format-number": "^3.0.0",
+    "https": "^1.0.0",
+    "jquery": "^3.6.0",
+    "next": "10.2",
+    "next-auth": "^3.19.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.32.12"
+  }
+}

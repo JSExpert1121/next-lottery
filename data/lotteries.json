@@ -1,0 +1,22 @@
+{
+    "items": [
+        {
+            "id": 0,
+            "name": "BTC Jackpot",
+            "date": "1620230090484",
+            "desc": "Daily Draw 9am CET",
+            "image": "/images/megajackpot1.png",
+            "amount": "$1 Million Daily",
+            "link": "megajackpot-lottery"
+        },
+        {
+            "id": 1,
+            "name": "BTC Power Play",
+            "date": "1620245090484",
+            "desc": "Draw every 5 Minutes",
+            "image": "/images/btcpowerplay.png",
+            "amount": "$100",
+            "link": "btcpowerplay-lottery"
+        }
+    ]
+}

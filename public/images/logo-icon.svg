@@ -1,0 +1,19 @@
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cashgames" transform="translate(-24.000000, -22.000000)" fill="#0AC18E">
+            <g id="Group-5" transform="translate(24.000000, 22.000000)">
+                <g id="Group">
+                    <path d="M13.5238095,0 L19.7447619,0 C20.0435217,1.82321446e-17 20.2857143,0.241376917 20.2857143,0.539130435 L20.2857143,6.73913043 L13.5238095,6.73913043 L13.5238095,0 Z" id="Path"></path>
+                    <rect id="Rectangle" opacity="0.5" x="13.5238095" y="6.73913043" width="6.76190476" height="6.73913043"></rect>
+                    <path d="M13.5238095,13.4782609 L20.2857143,13.4782609 L20.2857143,19.4782609 C20.2857143,19.7664094 20.0435217,20 19.7447619,20 L13.5238095,20 L13.5238095,13.4782609 Z" id="Path" opacity="0.25"></path>
+                    <path d="M0.540952381,0 L6.76190476,0 L6.76190476,6.73913043 L0,6.73913043 L0,0.539130435 C-3.65875172e-17,0.241376917 0.242192631,5.46964338e-17 0.540952381,0 Z" id="Path" opacity="0.25"></path>
+                    <rect id="Rectangle" x="6.76190476" y="6.73913043" width="6.76190476" height="6.73913043"></rect>
+                    <path d="M0,13.4782609 L6.76190476,13.4782609 L6.76190476,20 L0.540952381,20 C0.242192631,20 3.65875172e-17,19.7664094 0,19.4782609 L0,13.4782609 Z" id="Path"></path>
+                    <rect id="Rectangle" opacity="0.5" x="6.76190476" y="13.4782609" width="6.76190476" height="6.52173913"></rect>
+                    <rect id="Rectangle" opacity="0.5" x="6.76190476" y="0" width="6.76190476" height="6.73913043"></rect>
+                    <rect id="Rectangle" opacity="0.5" x="0" y="6.73913043" width="6.76190476" height="6.73913043"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,40 @@
+{
+    "items": [
+        {
+            "id": "americanGroup1",
+            "name1": "American ",
+            "name2": "Group",
+            "image": "/images/product-logo-america.png",
+            "no": 999,
+            "x": 1,
+            "y": 7
+        },
+        {
+            "id": "euroGroup",
+            "name1": "Euro ",
+            "name2": "Group",
+            "image": "/images/product-logo-euro.png",
+            "no": 998,
+            "x": 1,
+            "y": 7
+        },
+        {
+            "id": "topGroup",
+            "name1": "Jackpot ",
+            "name2": "hunter",
+            "image": "/images/product-logo-tophunter.png",
+            "no": 14,
+            "x": 2,
+            "y": 7
+        },
+        {
+            "id": "americanGroup2",
+            "name1": "American ",
+            "name2": "Group",
+            "image": "/images/product-logo-america.png",
+            "no": 999,
+            "x": 1,
+            "y": 7
+        }
+    ]
+}

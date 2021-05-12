@@ -1,0 +1,616 @@
+{
+    "items": [
+        {
+            "name": "BTC Power Play",
+            "image": "/images/btc power play1.png",
+            "country": "BTC Game",
+            "date": "09/07/2021",
+            "earned": {
+                "unit": "€",
+                "amount": 5
+            }
+        },
+        {
+            "name": "MegaJackpot",
+            "image": "/images/megajackpot1.png",
+            "country": "BTC Game",
+            "date": "09/07/2021",
+            "scores": [
+                {
+                    "color": "blue",
+                    "value": 10
+                },
+                {
+                    "color": "blue",
+                    "value": 13
+                },
+                {
+                    "color": "blue",
+                    "value": 22
+                },
+                {
+                    "color": "blue",
+                    "value": 31
+                },
+                {
+                    "color": "blue",
+                    "value": 37
+                },
+                {
+                    "color": "blue",
+                    "value": 48
+                }
+            ],
+            "earned": {
+                "unit": "US$",
+                "amount": 10
+            }
+        },
+        {
+            "name": "NewYorkLotto",
+            "image": "/images/newyorklotto1.png",
+            "country": "USA",
+            "flag": "/images/flag_usa.png",
+            "date": "08/07/2021",
+            "scores": [
+                {
+                    "color": "blue",
+                    "value": 25
+                },
+                {
+                    "color": "blue",
+                    "value": 27
+                },
+                {
+                    "color": "blue",
+                    "value": 42
+                },
+                {
+                    "color": "blue",
+                    "value": 45
+                },
+                {
+                    "color": "blue",
+                    "value": 56
+                },
+                {
+                    "color": "blue",
+                    "value": 58
+                },
+                {
+                    "color": "green",
+                    "value": 58,
+                    "special": true
+                }
+            ],
+            "earned": {
+                "unit": "US$",
+                "amount": 1
+            }
+        },
+        {
+            "name": "PowerBall",
+            "image": "/images/powerball1.png",
+            "country": "USA",
+            "flag": "/images/flag_usa.png",
+            "date": "08/07/2021",
+            "scores": [
+                {
+                    "color": "blue",
+                    "value": 3
+                },
+                {
+                    "color": "blue",
+                    "value": 10
+                },
+                {
+                    "color": "blue",
+                    "value": 34
+                },
+                {
+                    "color": "blue",
+                    "value": 36
+                },
+                {
+                    "color": "blue",
+                    "value": 62
+                },
+                {
+                    "color": "green",
+                    "value": 5
+                }
+            ],
+            "earned": {
+                "unit": "US$",
+                "amount": 4
+            }
+        },
+        {
+            "name": "Lotto649",
+            "image": "/images/lotto6491.png",
+            "country": "Canada",
+            "flag": "/images/flag_canada.png",
+            "date": "08/07/2021",
+            "scores": [
+                {
+                    "color": "blue",
+                    "value": 11
+                },
+                {
+                    "color": "blue",
+                    "value": 26
+                },
+                {
+                    "color": "blue",
+                    "value": 28
+                },
+                {
+                    "color": "blue",
+                    "value": 35
+                },
+                {
+                    "color": "blue",
+                    "value": 37
+                },
+                {
+                    "color": "blue",
+                    "value": 47
+                },
+                {
+                    "color": "green",
+                    "value": 8,
+                    "special": true
+                }
+            ],
+            "earned": {
+                "unit": "CAD$",
+                "amount": 5
+            }
+        },
+        {
+            "name": "UkLotto",
+            "image": "/images/uklotto1.png",
+            "country": "Europe",
+            "flag": "/images/flag_europe.png",
+            "date": "08/07/2021",
+            "scores": [
+                {
+                    "color": "blue",
+                    "value": 5
+                },
+                {
+                    "color": "blue",
+                    "value": 18
+                },
+                {
+                    "color": "blue",
+                    "value": 22
+                },
+                {
+                    "color": "blue",
+                    "value": 31
+                },
+                {
+                    "color": "blue",
+                    "value": 50
+                },
+                {
+                    "color": "blue",
+                    "value": 59
+                },
+                {
+                    "color": "green",
+                    "value": 30,
+                    "special": true
+                }
+            ],
+            "earned": {
+                "unit": "€",
+                "amount": 8
+            }
+        },
+        {
+            "name": "BonoLoto",
+            "image": "/images/bonoloto1.png",
+            "country": "Spain",
+            "flag": "/images/flag_spain.png",
+            "date": "08/07/2021",
+            "scores": [
+                {
+                    "color": "blue",
+                    "value": 7
+                },
+                {
+                    "color": "blue",
+                    "value": 13
+                },
+                {
+                    "color": "blue",
+                    "value": 20
+                },
+                {
+                    "color": "blue",
+                    "value": 23
+                },
+                {
+                    "color": "blue",
+                    "value": 28
+                },
+                {
+                    "color": "blue",
+                    "value": 37
+                },
+                {
+                    "color": "green",
+                    "value": 18,
+                    "special": true
+                }
+            ],
+            "earned": {
+                "unit": "€",
+                "amount": 4
+            }
+        },
+        {
+            "name": "MegaMillions",
+            "image": "/images/megamillions1.png",
+            "country": "USA",
+            "flag": "/images/flag_usa.png",
+            "date": "07/07/2021",
+            "scores": [
+                {
+                    "color": "blue",
+                    "value": 16
+                },
+                {
+                    "color": "blue",
+                    "value": 20
+                },
+                {
+                    "color": "blue",
+                    "value": 25
+                },
+                {
+                    "color": "blue",
+                    "value": 30
+                },
+                {
+                    "color": "blue",
+                    "value": 43
+                },
+                {
+                    "color": "green",
+                    "value": 18
+                }
+            ],
+            "earned": {
+                "unit": "US$",
+                "amount": 2
+            }
+        },
+        {
+            "name": "EuroMillions",
+            "image": "/images/euromillions1.png",
+            "country": "Europe",
+            "flag": "/images/flag_europe.png",
+            "date": "07/07/2021",
+            "scores": [
+                {
+                    "color": "blue",
+                    "value": 12
+                },
+                {
+                    "color": "blue",
+                    "value": 16
+                },
+                {
+                    "color": "blue",
+                    "value": 23
+                },
+                {
+                    "color": "blue",
+                    "value": 33
+                },
+                {
+                    "color": "blue",
+                    "value": 41
+                },
+                {
+                    "color": "green",
+                    "value": 8
+                },
+                {
+                    "color": "green",
+                    "value": 10
+                }
+            ],
+            "earned": {
+                "unit": "€",
+                "amount": 4
+            }
+        },
+        {
+            "name": "SuperEnalotto",
+            "image": "/images/superenalotto1.png",
+            "country": "Italy",
+            "flag": "/images/flag_italy.png",
+            "date": "07/07/2021",
+            "scores": [
+                {
+                    "color": "blue",
+                    "value": 16
+                },
+                {
+                    "color": "blue",
+                    "value": 24
+                },
+                {
+                    "color": "blue",
+                    "value": 29
+                },
+                {
+                    "color": "blue",
+                    "value": 53
+                },
+                {
+                    "color": "blue",
+                    "value": 73
+                },
+                {
+                    "color": "blue",
+                    "value": 88
+                },
+                {
+                    "color": "green",
+                    "value": 62,
+                    "special": true
+                }
+            ],
+            "earned": {
+                "unit": "€",
+                "amount": 120
+            }
+        },
+        {
+            "name": "OzLotto",
+            "image": "/images/ozlotto1.png",
+            "country": "Australia",
+            "flag": "/images/flag_australia.png",
+            "date": "07/07/2021",
+            "scores": [
+                {
+                    "color": "blue",
+                    "value": 4
+                },
+                {
+                    "color": "blue",
+                    "value": 5
+                },
+                {
+                    "color": "blue",
+                    "value": 7
+                },
+                {
+                    "color": "blue",
+                    "value": 9
+                },
+                {
+                    "color": "blue",
+                    "value": 12
+                },
+                {
+                    "color": "blue",
+                    "value": 13
+                },
+                {
+                    "color": "blue",
+                    "value": 32
+                },
+                {
+                    "color": "green",
+                    "value": 19,
+                    "special": true
+                },
+                {
+                    "color": "green",
+                    "value": 35,
+                    "special": true
+                }
+            ],
+            "earned": {
+                "unit": "AUD$",
+                "amount": 17
+            }
+        },
+        {
+            "name": "ElGordo",
+            "image": "/images/elgordo1.png",
+            "country": "Spain",
+            "flag": "/images/flag_spain.png",
+            "date": "05/07/2021",
+            "scores": [
+                {
+                    "color": "blue",
+                    "value": 5
+                },
+                {
+                    "color": "blue",
+                    "value": 7
+                },
+                {
+                    "color": "blue",
+                    "value": 11
+                },
+                {
+                    "color": "blue",
+                    "value": 23
+                },
+                {
+                    "color": "blue",
+                    "value": 33
+                },
+                {
+                    "color": "green",
+                    "value": 4
+                }
+            ],
+            "earned": {
+                "unit": "€",
+                "amount": 60
+            }
+        },
+        {
+            "name": "LaPrimitiva",
+            "image": "/images/laprimitiva1.png",
+            "country": "Spain",
+            "flag": "/images/flag_spain.png",
+            "date": "04/07/2021",
+            "scores": [
+                {
+                    "color": "blue",
+                    "value": 4
+                },
+                {
+                    "color": "blue",
+                    "value": 7
+                },
+                {
+                    "color": "blue",
+                    "value": 12
+                },
+                {
+                    "color": "blue",
+                    "value": 15
+                },
+                {
+                    "color": "blue",
+                    "value": 36
+                },
+                {
+                    "color": "blue",
+                    "value": 41
+                },
+                {
+                    "color": "green",
+                    "value": 33,
+                    "special": true
+                }
+            ],
+            "earned": {
+                "unit": "€",
+                "amount": 73
+            }
+        },
+        {
+            "name": "EuroJackpot",
+            "image": "/images/eurojackpot1.png",
+            "country": "Europe",
+            "flag": "/images/flag_europe.png",
+            "date": "03/07/2021",
+            "scores": [
+                {
+                    "color": "blue",
+                    "value": 12
+                },
+                {
+                    "color": "blue",
+                    "value": 34
+                },
+                {
+                    "color": "blue",
+                    "value": 36
+                },
+                {
+                    "color": "blue",
+                    "value": 47
+                },
+                {
+                    "color": "blue",
+                    "value": 48
+                },
+                {
+                    "color": "green",
+                    "value": 5
+                },
+                {
+                    "color": "green",
+                    "value": 7
+                }
+            ],
+            "earned": {
+                "unit": "€",
+                "amount": 10
+            }
+        },
+        {
+            "name": "BTC Raffle 50",
+            "country": "Sure-Win Game",
+            "date": "31/03/2021",
+            "scores": 5493,
+            "earned": {
+                "unit": "€",
+                "amount": 50
+            }
+        },
+        {
+            "name": "BTC Raffle 2500",
+            "country": "Sure-Win Game",
+            "date": "26/03/2021",
+            "scores": 1964,
+            "earned": {
+                "unit": "€",
+                "amount": 2
+            }
+        },
+        {
+            "name": "BTC Raffle 100",
+            "country": "Sure-Win Game",
+            "date": "09/03/2021",
+            "scores": 4745,
+            "earned": {
+                "unit": "€",
+                "amount": 100
+            }
+        },
+        {
+            "name": "BTC Raffle 500",
+            "country": "Sure-Win Game",
+            "date": "03/03/2021",
+            "scores": 4929,
+            "earned": {
+                "unit": "€",
+                "amount": 500
+            }
+        },
+        {
+            "name": "BTC Raffle 1000",
+            "country": "Sure-Win Game",
+            "date": "03/03/2021",
+            "scores": 3415,
+            "earned": {
+                "unit": "€",
+                "amount": 1
+            }
+        },
+        {
+            "name": "BTC Raffle 200",
+            "country": "Sure-Win Game",
+            "date": "23/02/2021",
+            "scores": 4597,
+            "earned": {
+                "unit": "€",
+                "amount": 200
+            }
+        },
+        {
+            "name": "BTC Raffle 5000",
+            "country": "Sure-Win Game",
+            "date": "19/01/2021",
+            "scores": 2002,
+            "earned": {
+                "unit": "€",
+                "amount": 5
+            }
+        }
+    ]
+}

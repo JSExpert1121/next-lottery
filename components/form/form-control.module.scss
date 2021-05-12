@@ -1,0 +1,46 @@
+.input {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    width: 100%;
+}
+
+.input:focus {
+    outline: 1px solid dodgerblue;
+    display: block;
+}
+
+.error {
+    outline: 1px solid red;
+}
+
+.button {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #00C38A;
+    border-radius: 4px;
+    background-color: #00C38A;
+
+    &:hover {
+        background-color: #00d696;
+        transition: ease-in-out 0.3s;
+    }
+}
+
+.checklabel {
+    display: inline-block;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.check {
+    margin-right: 4px;
+    vertical-align: -5px;
+    zoom: 1.5;
+}
+
+.vmiddle {
+    vertical-align: middle;
+}

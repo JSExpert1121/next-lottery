@@ -1,0 +1,1800 @@
+{
+	"info": {
+		"_postman_id": "473421e5-2d5c-4745-9f51-04ed0657c69e",
+		"name": "lotto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "play-lottery",
+			"item": [
+				{
+					"name": "Get draws tickets by memberid",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256,\n\t\"PageNumber\": 1\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/playlottery/get-draws-tickets-by-memberid",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"playlottery",
+								"get-draws-tickets-by-memberid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insert free product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/playlottery/insert-member-free-product",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"playlottery",
+								"insert-member-free-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insert members products with draws",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256,\n\t\"LotteryType\": \"PowerBall\",\n\t\"SelectedNumbers\": \"1,5,7,8#6\",\n\t\"NumberOfDraws\": 1\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/playlottery/insert-members-products-with-draws",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"playlottery",
+								"insert-members-products-with-draws"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insert member groups",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"LotteryType\": \"PowerBall\",\n\t\"ProductId\": 1,\n\t\"Discount\": 10,\n\t\"NumberOfGroups\": 1,\n\t\"NumberOfDraws\": 1,\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/playlottery/insert-members-groups",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"playlottery",
+								"insert-members-groups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get draws",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256,\n\t\"PageNumber\": 1\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/playlottery/get-draws-by-memberid",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"playlottery",
+								"get-draws-by-memberid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get free ticket",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/playlottery/get-member-free-ticket",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"playlottery",
+								"get-member-free-ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get products by id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256,\n\t\"PageNumber\": 1\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/playlottery/get-products-by-memberid",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"playlottery",
+								"get-products-by-memberid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get btc navidad numbers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"brandid\":256,\n    \"LotteryType\": \"PowerBall\",\n    \"NumbersCount\":3,\n    \"MemberId\": 381517\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/playlottery/get-btc-navidad-numbers",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"playlottery",
+								"get-btc-navidad-numbers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get navidad numbers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lt\": 123\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/playlottery/get-navidad-numbers?",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"playlottery",
+								"get-navidad-numbers"
+							],
+							"query": [
+								{
+									"key": "lt",
+									"value": "123",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insert navidad numbers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lt\": 123,\n\t\"ProductID\": 15\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/playlottery/insert-navidad-numbers",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"playlottery",
+								"insert-navidad-numbers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "quick pick select",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"LotteryType\": \"PowerBall\",\n\t\"Shares\": 1,\n\t\"BTA\": 123,\n\t\"Sub\": \"sub\",\n\t\"Prc\": \"293\"\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/playlottery/quick-pick-select",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"playlottery",
+								"quick-pick-select"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "global-info",
+			"item": [
+				{
+					"name": "get all draws",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BrandID\": 256\r\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/globalinfo/get-all-brand-draws",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"globalinfo",
+								"get-all-brand-draws"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get lottery rules",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api1.braviotechnology.com/globalinfo/lottery-rules",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"globalinfo",
+								"lottery-rules"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all lotteries",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api1.braviotechnology.com/globalinfo/get-all-lotteries",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"globalinfo",
+								"get-all-lotteries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get lottery results",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api1.braviotechnology.com/globalinfo/get-lotteries-results",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"globalinfo",
+								"get-lotteries-results"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get lotteries last results & prizes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BrandID\": 256,\r\n    \"NumberOfResults\": 10\r\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/globalinfo/get-lotteries-last-results-prizes-brand",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"globalinfo",
+								"get-lotteries-last-results-prizes-brand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get results by date",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BrandID\": 256,\r\n    \"StartDate\": \"2020-12-21\",\r\n    \"EndDate\": \"2020-12-23\"\r\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/globalinfo/get-lotteries-results-by-date",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"globalinfo",
+								"get-lotteries-results-by-date"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get last results",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api1.braviotechnology.com/globalinfo/get-lotteries-last-results",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"globalinfo",
+								"get-lotteries-last-results"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get lotteries last results / prizes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api1.braviotechnology.com/globalinfo/get-lotteries-last-results-prizes",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"globalinfo",
+								"get-lotteries-last-results-prizes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get prices and discounts",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ProductID\": 3,\r\n    \"NumberOfDraws\": 1,\r\n    \"BrandID\": 256\r\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/globalinfo/get-prices-and-discounts",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"globalinfo",
+								"get-prices-and-discounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get group prices and discounts",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BrandID\": 256\r\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/globalinfo/get-group-prices-and-discounts",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"globalinfo",
+								"get-group-prices-and-discounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get prices by brand and product id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"ProductIds\": \"1,2,3\",\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/globalinfo/get-prices-by-brand-and-productid",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"globalinfo",
+								"get-prices-by-brand-and-productid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get results by brand",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BrandID\": 256\r\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/globalinfo/get-lotteries-results-by-brand",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"globalinfo",
+								"get-lotteries-results-by-brand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product rules",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/globalinfo/product-rules",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"globalinfo",
+								"product-rules"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "user-info",
+			"item": [
+				{
+					"name": "sign up",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\": \"Maksym\",\r\n    \"LastName\": \"Petrivskyi\",\r\n    \"Email\": \"max.petrivskyi@gmail.com\",\r\n    \"IP\": \"188.43.235.177\",\r\n    \"BrandID\": 256\r\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/signup",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\": \"max.petrivskyi@gmail.com\",\r\n    \"Password\": \"timeisgold\",\r\n    \"BrandID\": 256\r\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/login",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get balance",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MemberId\": \"381517\",\r\n    \"BrandID\": 256\r\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/get-member-money-balance",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"get-member-money-balance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get details by id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MemberId\": \"381517\",\r\n    \"BrandID\": 256\r\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/get-personal-details-by-memberid",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"get-personal-details-by-memberid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get details by email",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Email\": \"max.petrivskyi@gmail.com\",\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/get-personal-details-by-email",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"get-personal-details-by-email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update personal details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Email\": \"max.petrivskyi@gmail.com\",\n\t\"Password\": \"timeisgold\",\n\t\"FirstName\": \"Max\",\n\t\"LastName\": \"Pedropsky\",\n\t\"MemberId\": 381517,\n\t\"PhoneNumber\": \"192839322\",\n\t\"MobileNumber\": \"90292322\",\n\t\"CountryCode\": \"UA\",\n\t\"Address\": \"Street 25\",\n\t\"City\": \"Lviv\",\n\t\"State\": \"Kiev\",\n\t\"ZipCode\": \"2399\",\n\t\"BrandID\": 256,\n\t\"DateOfBirth\": \"1998-11-27\",\n\t\"IP\": \"188.43.235.177\"\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/update-personal-details",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"update-personal-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Email\": \"max.petrivskyi@gmail.com\",\n\t\"Password\": \"timeisgold128\",\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/update-password",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"update-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get transactions by id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"PageNumber\": 1,\n\t\"PageSize\": 10,\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/get-transactions-by-memberid",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"get-transactions-by-memberid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get transaction amount",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"TransactionId\": 1020,\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/get-member-transaction-amount-by-id",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"get-member-transaction-amount-by-id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get  member purchase details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"SessionId\": 112,\n\t\"ProductManagementCounter\": 1928,\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/get-member-purchase-complete-details",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"get-member-purchase-complete-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get credit card methods",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"IsDefault\": false,\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/get-credit-card-methods-by-memberid",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"get-credit-card-methods-by-memberid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add/update credit card",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"ID\": 0,\n\t\"CardType\": \"Visa\",\n\t\"CardHolderName\": \"Moscow\",\n\t\"CreditCardNumber\": \"2383092\",\n\t\"CVV\": \"2345\",\n\t\"ExpirationDate\": \"2021-05-21\",\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/add-update-credit-card",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"add-update-credit-card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete credit card",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"ID\": 0,\n\t\"IsActive\": false,\n\t\"IsDefault\": false,\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/update-credit-card",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"update-credit-card"
+							]
+						},
+						"description": "\n"
+					},
+					"response": []
+				},
+				{
+					"name": "reset password commit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Email\": \"max.petrivskyi@gmail.com\",\n\t\"OldPassword\": \"timeisgold128\",\n\t\"NewPassword\": \"timeisgold\",\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/reset-password-commit",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"reset-password-commit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify reset password link",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"EncryptedQueryString\": \"sdasl\",\n\t\"BrandID\": 256\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/userinfo/verify-reset-password-link-with-output",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"userinfo",
+								"verify-reset-password-link-with-output"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "mailservice",
+			"item": [
+				{
+					"name": "send reset password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256,\n\t\"Email\": \"http\",\n\t\"ActionLink\": \"http://localhost:3000/reset\",\n\t\"Language\": \"EN\"\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/mailservice/send-reset-password",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"mailservice",
+								"send-reset-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send welcome",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256,\n\t\"Email\": \"max.petrivskyi@gmail.com\",\n\t\"ActionLink\": \"http://localhost:3000/reset\",\n\t\"Language\": \"EN\"\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/mailservice/send-welcome",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"mailservice",
+								"send-welcome"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send withdraw",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"MemberId\": 381517,\n\t\"BrandID\": 256,\n\t\"Amount\": 0.001,\n\t\"WalletAddress\": \"594948648544564\"\n}"
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/mailservice/send-withdraw",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"mailservice",
+								"send-withdraw"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "cashier",
+			"item": [
+				{
+					"name": "prepare order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api1.braviotechnology.com/cashier/prepare-order",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"cashier",
+								"prepare-order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "processor confirm order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api1.braviotechnology.com/cashier/processor-confirm-order",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"cashier",
+								"processor-confirm-order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get member payment methods",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api1.braviotechnology.com/cashier/get-member-payment-methods",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"cashier",
+								"get-member-payment-methods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deposit funds",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api1.braviotechnology.com/cashier/deposit-funds",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"cashier",
+								"deposit-funds"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "processor confirm fire game order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api1.braviotechnology.com/cashier/processor-confirm-fire-game-order",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"cashier",
+								"processor-confirm-fire-game-order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "processor confirm deposit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api1.braviotechnology.com/cashier/process-confirm-deposit",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"cashier",
+								"process-confirm-deposit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "credit vouchers deposit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api1.braviotechnology.com/cashier/CreditVouchers-deposit",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"cashier",
+								"CreditVouchers-deposit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "processor confirm raffle game order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "LWG0699w",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api1.braviotechnology.com/cashier/processor-confirm-raffle-game-order",
+							"protocol": "https",
+							"host": [
+								"api1",
+								"braviotechnology",
+								"com"
+							],
+							"path": [
+								"cashier",
+								"processor-confirm-raffle-game-order"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,413 @@
+.view-all-lotts {
+    margin: 0px 130px 40px 0;
+    font-family: Gilroy-Regular;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    transition: .3s;
+
+    &:hover {
+        color: #13d19c;
+        transition: .3s;
+    }
+}
+    
+#owl-demo .slide {
+    border: 1px solid rgba(19, 209, 156, 0.2);
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    & .flexRow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    & img {
+        max-width: 10em;
+        margin: 20px;
+    }
+
+    & a.playNowBtn {
+        font-family: Gilroy-Bold;
+        font-size: 18px;
+        white-space: nowrap;
+        color: #FFFFFF;
+        padding: 10px;
+        background: #13D19C;
+        border-radius: 5px;
+        transition: .3s;
+        margin-right: 10px;
+        text-align: center;
+        min-width: 12rem;
+    }
+
+    & .jackpot{
+        text-align: center;
+        margin: 0 auto;
+
+        & p {
+            padding: 15px 0 25px 0;
+            font-family: Gilroy-medium;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #FFFFFF;
+            min-height: 60px;
+
+            & span {
+                color: #13D19C;
+            }
+        }
+
+        & a.playNowBtn.expiredDate {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        & a.playNowBtn.hover {
+            background: #13d19cc9;
+            transition: .3s;
+        }
+
+        & .jackpotAmount {
+            font-family: Gilroy-bold;
+            font-size: 3.5rem;
+            color: #13D19C;
+        }
+    }
+}
+    
+.countdown{
+    display: flex;
+    justify-content: center;
+    min-width: 12em;
+    padding: 20px 0;
+
+    & .itemCt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .itemBg {
+            font-family: Gilroy-Bold;
+            font-size: 28px;
+            text-align: center;
+            color: #FFFFFF;
+            text-align: center;
+            align-self: center;
+            align-items: center;
+        }
+
+        & span{
+            display: block;
+            font-family: Gilroy-medium;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+            padding: 10px;
+        }
+    }
+
+    & .itemExpired {
+        font-family: Gilroy-Bold;
+        font-size: 28px;
+        line-height: 33px;
+        color: #FFFFFF;
+        text-align: center;
+        border-radius: 4px;
+    }
+}
+
+.exclusive-lotteries {
+    font-family: Gilroy-bold;
+
+    & h1 {
+        font-size: 30px;
+        color: #fff;
+        line-height: 40px;
+    }
+
+    & .lottery-container {
+        display: flex;
+        margin: 40px 0;
+    }
+
+    & .track {
+        display: flex;
+        flex: 1;
+        border: 1px solid rgba(19, 209, 156, 0.2);
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-right: 20px;
+        padding: 40px;
+    }
+
+    & .flexRow {
+        flex: 1;
+    }
+
+    & .jackpotAmount {
+        font-size: 30px;
+        color: #13D19C;
+    }
+
+    & .jackpotDesciption {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    & .lotteryImg {
+        margin-left: 40px;
+    }
+
+    & img {
+        max-width: 12em;
+    }
+
+    & a.playNowBtn {
+        font-size: 20px;
+        color: #FFFFFF;
+        padding: 10px 40px;
+        background: #13D19C;
+        border-radius: 5px;
+        transition: .3s;
+        line-height: 50px;
+
+        &.expiredDate{
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &:hover{
+            background: #13d19cc9;
+            transition: .3s;
+        }
+    }
+
+    & .countdown {
+        display: flex;
+        min-width: 12em;
+        padding: 20px 0;
+        justify-content: left;
+
+        & .itemCt{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & .itemBg {
+                font-size: 20px;
+                text-align: center;
+                color: #FFFFFF;
+                text-align: center;
+                align-self: center;
+                align-items: center;
+            }
+
+            & span{
+                display: block;
+                font-family: Gilroy-medium;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+                padding: 10px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 990px) {
+        & .lottery-container {
+            flex-direction: column;
+        }
+        
+        & .track {
+            margin-bottom: 25px;
+            margin-right: 0;
+        }
+        
+        & .lotteryImg {
+            margin-bottom: 40px;
+        }
+        
+        & .flexRow {
+            flex: none;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        & .lottery-container {
+            flex-direction: column;
+        }
+
+        & .track {
+            flex-direction: column-reverse;
+            text-align: center;
+            margin-bottom: 25px;
+            margin-right: 0;
+            padding: 20px;
+        }
+
+        & .lotteryImg {
+            margin: 0 0 40px 0;
+        }
+
+        & .countdown {
+            justify-content: center;
+        }
+    }
+}
+
+#middle_home {
+    margin-top: 40px;
+
+	& .playgroup-result {
+        display: flex;
+        margin-bottom: 40px;
+
+        & > div > h1 {
+            font-size: 30px;
+            color: #fff;
+            line-height: 40px;
+            margin-bottom: 40px;
+        }
+
+        & > div {
+            height: 555px;
+        }
+    }
+}
+    
+    
+.lotteryresultslist-new li.block .datenum {
+    display: none;
+}
+
+.vert .simply-scroll-clip {
+    border-bottom: 0px solid rgb(219,224,238);
+}
+
+.lotteryresultslist-new li.block {
+    text-align: left;
+    background: linear-gradient(180deg, #111724 0%, #090E18 100%);
+    box-shadow: 0px 2px 4px #000000, inset 0px 0.51px 0px rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    list-style-type: none;
+    width: auto;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+
+    & .result-list-info {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .lotto-title-block{
+            display: flex;
+            align-items: center;
+
+            & img {
+                width: 50px;
+                height: auto;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    & .hadding {
+        font-family: Gilroy-Bold;
+        font-size: 24px;
+        line-height: 33px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(255, 255, 255, 0.12), 0px 4px 8px rgba(255, 255, 255, 0.18);
+        align-self: center;
+    }
+
+    & .result-join-now-link a {
+        font-family: Gilroy-bold;
+        font-size: 22px;
+        line-height: 26px;
+        color: #FFFFFF;
+        padding: 16px 30px;
+        background: #13D19C;
+        box-shadow: 0px 10px 16px rgba(19, 209, 156, 0.16), 0px 4px 6px rgba(0, 0, 0, 0.06);
+        border-radius: 10px;
+        margin-left: auto!important;
+        transition: .3s;
+
+        &:hover {
+            background: #13d19cc9;
+            transition: .3s;
+        }
+    }
+}
+
+
+.lotteryresultslist-new .simply-scroll-clip {
+    height: 380px;
+}
+    
+.lotto-results-section .more-result-link {
+    background: #13D19C;
+    box-shadow: 0px 10px 16px rgba(19, 209, 156, 0.16), 0px 4px 6px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    font-family: Gilroy-bold;
+    font-size: 22px!important;
+    line-height: 26px!important;
+    color: #FFFFFF!important;
+    padding: 16px 0px!important;
+    width: 100%!important;
+    border: 0!important;
+    text-align: center;
+    margin-top: 35px!important;
+    display: block;
+    transition: .3s;
+
+    &:hover {
+        background: #13d19cc9;
+        transition: .3s;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+	#main .exclusive-lotteries {
+		max-width: 480px;
+		margin: auto;
+
+		& .lottery-container {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+
+			& > div {
+				max-width: 520px;
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	#middle_home {
+		& .playgroup-result {
+			display: flex;
+			align-items: center;
+            flex-direction: column;
+            margin-bottom: 40px;
+	
+			& .lotto-results-section, & .home-banner-new {
+				margin-top: 40px;
+            }
+		}
+
+		& .wrap.loyalty_section_flex {
+			flex-direction: column;
+			
+			& > div {
+				max-width: 100%;
+			}
+		}
+	}
+}
