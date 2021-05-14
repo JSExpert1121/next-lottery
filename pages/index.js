@@ -131,7 +131,7 @@ export const getStaticProps = async (ctx) => {
 			}
 			return {
 				name: item.LotteryName,
-				image: `/images/${item.LotteryName.toLowerCase()}1.png`,
+				image: item.LotteryName.includes('Raffle') ? null : `/images/${item.LotteryName.toLowerCase()}1.png`,
 				country: item.CountryName,
 				date: item.LocalDrawDateTime,
 				earned: { unit: item.LotteryCurrency, amount: item.RollOver },

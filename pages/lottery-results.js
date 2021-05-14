@@ -26,8 +26,8 @@ export default function LotteryResultsPage({ results }) {
 										</tr>
 									</thead>
 									<tbody className="allresult">
-										{results && results.map(item => (
-											<React.Fragment key={item.id}>
+										{results && results.map((item, idx) => (
+											<React.Fragment key={idx}>
 												<tr>
 													<td><img src={item.flag ?? '/images/logo-icon.svg'} />&nbsp;&nbsp;{item.country}</td>
 													<td><a href={`/${item.name.toLowerCase()}-results`}>{item.name}</a></td>

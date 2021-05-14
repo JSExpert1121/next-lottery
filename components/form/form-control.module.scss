@@ -13,7 +13,14 @@
 }
 
 .error {
-    outline: 1px solid red;
+    outline: 1px solid red !important;
+}
+
+.errorspan {
+    font-size: 0.75em;
+    font-weight: 400;
+    width: 100%;
+    color: red;
 }
 
 .button {

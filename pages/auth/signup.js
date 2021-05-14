@@ -64,7 +64,7 @@ const SignupPage = () => {
 						/>
 					</section>
 					<section className={styles.actionGroup}>
-						<Button className={styles.submit} onClick={handleSubmit}>
+						<Button className='submit' onClick={handleSubmit}>
 							Sign up
 						</Button>
 					</section>

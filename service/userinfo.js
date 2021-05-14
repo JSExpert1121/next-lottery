@@ -1,17 +1,17 @@
-import { API_BASE_URL, SEC_TOKEN } from './config';
+import { API_BASE_URL, SEC_TOKEN, BRAND_ID } from './config';
 import { authPost } from './base';
 
 const BASE_URL = `${API_BASE_URL}/userinfo`;
 
 export const signUp = async (
 	firstName, lastName, email, phone,
-	mobile, affiliateID, brandID
+	mobile, affiliateID
 ) => {
 	return await authPost(
 		`${BASE_URL}/signup`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			FirstName: firstName,
 			LastName: lastName,
 			Email: email,
@@ -22,46 +22,46 @@ export const signUp = async (
 	);
 }
 
-export const login = async (email, password, brandID) => {
+export const login = async (email, password) => {
 	return await authPost(
 		`${BASE_URL}/login`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			Email: email,
 			Password: password
 		}
 	);
 }
 
-export const getMoneyBalance = async (memberID, brandID) => {
+export const getMoneyBalance = async (memberID) => {
 	return await authPost(
 		`${BASE_URL}/get-member-money-balance`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			MemberID: memberID
 		}
 	);
 }
 
-export const getPersonalDetailsByID = async (memberID, brandID) => {
+export const getPersonalDetailsByID = async (memberID) => {
 	return await authPost(
 		`${BASE_URL}/get-personal-details-by-memberid`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			MemberID: memberID
 		}
 	);
 }
 
-export const getPersonalDetailsByEmail = async (email, brandID) => {
+export const getPersonalDetailsByEmail = async (email) => {
 	return await authPost(
 		`${BASE_URL}/get-personal-details-by-email`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			Email: email
 		}
 	);
@@ -70,13 +70,13 @@ export const getPersonalDetailsByEmail = async (email, brandID) => {
 export const updatePersonalDetails = async (
 	email, password, firstName, lastName,
 	memberID, phone, mobile, countryCode,
-	address, city, state, zipCode, birthday, brandID
+	address, city, state, zipCode, birthday
 ) => {
 	return await authPost(
 		`${BASE_URL}/update-personal-details`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			MemberID: memberID,
 			Email: email,
 			Password: password,
@@ -94,12 +94,12 @@ export const updatePersonalDetails = async (
 	);
 }
 
-export const updatePassword = async (email, password, memberID, brandID) => {
+export const updatePassword = async (email, password, memberID) => {
 	return await authPost(
 		`${BASE_URL}/update-password`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			MemberID: memberID,
 			Email: email,
 			Password: password
@@ -107,12 +107,12 @@ export const updatePassword = async (email, password, memberID, brandID) => {
 	);
 }
 
-export const getTransactionsByID = async (page, pageSize, memberID, brandID) => {
+export const getTransactionsByID = async (page, pageSize, memberID) => {
 	return await authPost(
 		`${BASE_URL}/get-transactions-by-memberid`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			MemberID: memberID,
 			PageNumber: page,
 			PageSize: pageSize
@@ -120,36 +120,36 @@ export const getTransactionsByID = async (page, pageSize, memberID, brandID) => 
 	);
 }
 
-export const getTransactionAmountByID = async (transID, memberID, brandID) => {
+export const getTransactionAmountByID = async (transID, memberID) => {
 	return await authPost(
 		`${BASE_URL}/get-member-transaction-amount-by-id`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			MemberID: memberID,
 			TransactionId: transID
 		}
 	);
 }
 
-export const getPurchaseDetails = async (sessionID, pmCounter, brandID) => {
+export const getPurchaseDetails = async (sessionID, pmCounter) => {
 	return await authPost(
 		`${BASE_URL}/get-member-purchase-complete-details`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			SessionID: sessionID,
 			ProductManagementCounter: pmCounter
 		}
 	);
 }
 
-export const getCreditCardMethodByID = async (isDef, memberID, brandID) => {
+export const getCreditCardMethodByID = async (isDef, memberID) => {
 	return await authPost(
 		`${BASE_URL}/get-credit-card-methods-by-memberid`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			MemberID: memberID,
 			IsDefault: !!isDef
 		}
@@ -158,13 +158,13 @@ export const getCreditCardMethodByID = async (isDef, memberID, brandID) => {
 
 export const updateCreditCard = async (
 	payID, cardType, holderName, cardNo,
-	CVV, expireDate, memberID, brandID
+	CVV, expireDate, memberID
 ) => {
 	return await authPost(
 		`${BASE_URL}/add-update-credit-card`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			MemberID: memberID,
 			ID: payID,
 			CardType: cardType,
@@ -176,12 +176,12 @@ export const updateCreditCard = async (
 	);
 }
 
-export const deleteCreditCard = async (payID, memberID, brandID) => {
+export const deleteCreditCard = async (payID, memberID) => {
 	return await authPost(
 		`${BASE_URL}/update-credit-card`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			MemberID: memberID,
 			ID: payID,
 			IsActive: false,
@@ -195,18 +195,18 @@ export const verifyResetPwdLink = async (brandID, encryptedQuery) => {
 		`${BASE_URL}/get-member-money-balance`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			EncryptedQueryString: encryptedQuery
 		}
 	);
 }
 
-export const resetPasswordCommit = async (email, brandID, oldPwd, newPwd) => {
+export const resetPasswordCommit = async (email, oldPwd, newPwd) => {
 	return await authPost(
 		`${BASE_URL}/get-member-money-balance`,
 		SEC_TOKEN,
 		{
-			BrandID: brandID,
+			BrandID: BRAND_ID,
 			Email: email,
 			OldPassword: oldPwd,
 			NewPassword: newPwd
