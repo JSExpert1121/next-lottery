@@ -4,7 +4,7 @@ import rootReducer from './reducers';
 
 const loadState = () => {
   try {
-    const serializedState = localStorage.getItem('miniblog-state');
+    const serializedState = localStorage.getItem('lottery-bitcoin');
     if (serializedState === null) {
       return {};
     }
