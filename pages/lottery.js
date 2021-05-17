@@ -39,7 +39,7 @@ export default function LotteryPage({ lotteries }) {
 													<td>
 														<div>
 															{`${item.unit} ${formatter(item.amount)}`}
-															<Link href={`/${item.link}`} passHref>
+															<Link href={`${item.link}`}>
 																<a className="dd_play_button" style={{ float: 'right' }}>
 																	Play Now
 																	</a>
@@ -107,7 +107,7 @@ export const getStaticProps = async (ctx) => {
 			image: `/images/${draw.LotteryName.toLowerCase()}1.png`,
 			unit: draw.LotteryCurrency2,
 			amount: draw.Jackpot,
-			link: `${draw.LotteryName.toLowerCase()}-lottery`,
+			link: `/lotteries/${draw.LotteryName.replace(' ', '').toLowerCase()}`,
 			country: draw.CountryName,
 			flag: `/images/flag_${draw.CountryName.toLowerCase()}.png`
 		}));
