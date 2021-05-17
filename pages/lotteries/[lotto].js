@@ -1,12 +1,44 @@
-import React, { Fragment, useEffect } from 'react';
-import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+// import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Layout from 'components/layout';
 import { getAllDraws, getLotteryRules, getPricesAndDiscounts } from 'service/globalinfo';
 
-const LottoGame = () => {
+const LottoGame = (props) => {
 	const router = useRouter();
 	const { lotto } = router.query;
+	const { data, group } = props;
+
+	const [curTime, setCurTime] = useState({
+		days: 0, hours: 0, minutes: 0, seconds: 0, tm: 0
+	});
+
+	let jackpot = 'PENDING';
+	if (data.Jackpot < 0) {
+		jackpot = 'PENDING';
+	} else if (data.LotteryName === 'BTC Power Play') {
+		jackpot = `${data.LotteryCurrency2}${data.Jackpot}`;
+	} else {
+		jackpot = `${data.LotteryCurrency2}${data.Jackpot / 1000000}M`;
+	}
+
+	useEffect(() => {
+		const deadline = new Date(data.DrawDate).getTime();
+		const id = setInterval(() => {
+			const tm = deadline - new Date().getTime();
+			setCurTime({
+				days: parseInt(tm / (86400000)),
+				hours: parseInt((tm % 86400000) / 3600000),
+				minutes: parseInt((tm % 3600000) / 60000),
+				seconds: parseInt((tm % (1000 * 60)) / 1000),
+				tm
+			});
+		}, 1000);
+
+		return () => clearInterval(id);
+	}, []);
+
+
 	return (
 		<Layout>
 			<main id="main" className="clearfix">
@@ -35,6 +67,46 @@ const LottoGame = () => {
 								<a href="#group" className="group-ticket-button" id="group-ticket-button">Group ticket</a>
 							</div>
 						</div>
+						<div class={`beton-header ${data.LotteryName}`}>
+							<div class="beton-header-mobile-section">
+								<div class="lotto-name-container">
+									<img src={`/images/${lotto}1.png`} class="lotto-logo" />
+									<span class="lotto-name">{data.LotteryName}</span>
+								</div>
+								<div class="lotto-prize-container">
+									<h1 class='lotto-prize'>{jackpot}<br />Win BTC</h1>
+								</div>
+								<div class="lotto-timer">
+									<div class="timer-view">
+										{curTime.tm < 0 && <div class="item-expired">EXPIRED</div>}
+										{curTime.tm >= 0 && (
+											<table>
+												<tbody>
+													<tr>
+														<td><div class="timer-value timer-value-days value-days">{curTime.days}</div></td>
+														<td><div class="timer-delimiter">:</div></td>
+														<td><div class="timer-value timer-value-hours value-hours">{curTime.days}</div></td>
+														<td><div class="timer-delimiter">:</div></td>
+														<td><div class="timer-value timer-value-minutes value-minutes">{curTime.minutes}</div></td>
+														<td><div class="timer-delimiter">:</div></td>
+														<td><div class="timer-value timer-value-seconds value-seconds">{curTime.seconds}</div></td>
+													</tr>
+													<tr>
+														<td><div class="timer-unit unit-0">days</div></td><td></td>
+														<td><div class="timer-unit unit-1">hrs</div></td><td></td>
+														<td><div class="timer-unit unit-2">min</div></td><td></td>
+														<td><div class="timer-unit unit-3">sec</div></td>
+													</tr>
+												</tbody>
+											</table>
+										)}
+									</div>
+								</div>
+								<div class="lotto-action-container" id="pick-all-button">
+									<button type="button" id="magic-pickall" class="btn-magic-all"><i class="fa fa-magic"></i> <span class="btn-magic-all-text">Pick All</span></button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</main>
@@ -61,7 +133,6 @@ export async function getStaticProps(context) {
 		const draws = result[0];
 		const lottery = draws.find(item => item.LotteryName.replace(' ', '').toLowerCase() === lotto);
 
-		console.log('lottery: ', lottery);
 		const rules = result[1];
 		const rule = rules.find(item => item.LotteryTypeId == lottery.LotteryTypeId);
 		if (!rule) {

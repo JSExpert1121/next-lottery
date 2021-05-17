@@ -12800,10 +12800,11 @@ a.remodal-close.error-close {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     font-family: "Signika";
-    font-size: 45px;
+    font-size: 35px;
     color: #fff;
-    line-height: 45px;
-    font-weight: 800;
+    line-height: 35px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .lotto-prize-container h1.lotto-prize .small-m {
@@ -16464,7 +16465,8 @@ body:not(.home) #main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0;
+    justify-content: center;
+    margin: auto;
 }
 
 .lotterydetail .beton-header .lotto-timer .timer-value {
@@ -16472,7 +16474,6 @@ body:not(.home) #main {
     width: 46px;
     height: 44px;
     display: flex;
-    justify-content: center;
     align-items: center;
     font-family: "Gilroy-Bold";
     font-size: 28px;
