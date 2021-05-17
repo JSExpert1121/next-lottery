@@ -28,6 +28,11 @@ export const logout = () => dispatch => {
   dispatch(loggedOut());
 }
 
+export const signup = (firstName, lastName, email, phone, password, bchID) => async dispatch => {
+  const res = await UserService.signup(firstName, lastName, email, phone, password, bchID);
+  console.log('Sign up: ', res);
+  dispatch(loginOK(res));
+}
 
 // user information
 export const getBalance = (memberID) => async dispatch => {

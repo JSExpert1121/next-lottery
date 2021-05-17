@@ -14,7 +14,7 @@
         background-color: white;
         padding: 48px 8px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
+
         & .close {
             display: block;
             position: absolute;
@@ -22,9 +22,9 @@
             top: 24px;
             width: 16px;
             height: 16px;
-            background: url('/images/close_icon.png') no-repeat;
+            background: url("/images/close_icon.png") no-repeat;
         }
-        
+
         & .close::after {
             clear: both;
         }
@@ -33,22 +33,32 @@
             margin: 16px;
             text-align: center;
         }
-    
+
         & .inputGroup {
             padding: 16px;
-            
+
             & > div {
                 margin-bottom: 16px;
             }
+
+            & .flnameInput {
+                display: flex;
+                justify-content: space-between;
+
+                & > div {
+                    display: inline;
+                    width: 48%;
+                }
+            }
         }
-        
+
         & .actionGroup {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 0 16px;
         }
-    
+
         & .actionLinks {
             display: flex;
             justify-content: flex-end;
@@ -63,7 +73,8 @@
             text-align: justify;
         }
 
-        & a:focus, a:hover {
+        & a:focus,
+        a:hover {
             color: #00ac78 !important;
             transition: ease-in-out 0.3s;
         }
@@ -72,15 +83,15 @@
 
 .link {
     font-size: 16px;
-    color:#00C38A;
+    color: #00c38a;
 }
 
 .submit {
     text-align: center;
     padding: 8px;
-    border: 1px solid #00C38A;
+    border: 1px solid #00c38a;
     border-radius: 4px;
-    background-color: #00C38A;
+    background-color: #00c38a;
     width: 100% !important;
 
     &:hover {

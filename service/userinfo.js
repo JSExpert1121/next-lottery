@@ -3,10 +3,7 @@ import { authPost } from './base';
 
 const BASE_URL = `${API_BASE_URL}/userinfo`;
 
-export const signUp = async (
-	firstName, lastName, email, phone,
-	mobile, affiliateID
-) => {
+export const signUp = async ({ firstName, lastName, email, phone, password }) => {
 	return await authPost(
 		`${BASE_URL}/signup`,
 		SEC_TOKEN,
@@ -16,8 +13,7 @@ export const signUp = async (
 			LastName: lastName,
 			Email: email,
 			PhoneNumber: phone,
-			MobileNumber: mobile,
-			AffiliateID: affiliateID
+			Password: password
 		}
 	);
 }

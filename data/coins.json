@@ -4,17 +4,13 @@
             "id": 0,
             "title": "BCH",
             "image": "/images/bch.png",
-            "url": "",
-            "cls": "bch",
-            "value": 1074.43
+            "cls": "bch"
         },
         {
             "id": 1,
             "title": "BTC",
             "image": "/images/btc.png",
-            "url": "",
-            "cls": "btc",
-            "value": 55283.69
+            "cls": "btc"
         }
     ]
 }

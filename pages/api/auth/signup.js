@@ -7,11 +7,12 @@ export default async function handler(req, res) {
 
   try {
     // call api
-    const result = await signUp(...req.body);
+    console.log(req.body);
+    const result = await signUp(req.body);
 
     // check the api resultult
     if (typeof result === 'string') {
-      res.status(401).json({ reason: 'invalid email or password' });
+      res.status(409).json({ reason: result });
     } else {
       res.status(200).json(result);
     }

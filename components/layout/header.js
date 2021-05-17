@@ -1,9 +1,10 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useMemo, useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Link from 'next/link';
 import HeaderCoin from 'components/common/header-coin';
 import supported_coins from 'data/coins.json';
 import * as UserActions from 'store/actions/user';
+import { getCoins } from 'service/client/coin';
 
 
 // The approach used in this component shows how to built a sign in and sign out
@@ -12,6 +13,7 @@ import * as UserActions from 'store/actions/user';
 export default function Header() {
 
   const [nav, setNav] = useState(false);
+  const [coinVals, setCoinVals] = useState({ BTH: 0, BCH: 0 });
   const { coins } = supported_coins;
 
   const toggleNav = useCallback(() => setNav(!nav), [nav]);
@@ -21,6 +23,12 @@ export default function Header() {
 
   const handleLogout = useCallback(() => {
     dispatch(UserActions.logout());
+  }, []);
+
+  useEffect(() => {
+    getCoins().then(data => {
+      setCoinVals(data);
+    })
   }, []);
 
   return (
@@ -50,7 +58,7 @@ export default function Header() {
           <div className="header-bitcoin-values">
             {coins && coins.map(coin => (
               <a key={coin.id} href="/lottery" className='link'>
-                <HeaderCoin {...coin} />
+                <HeaderCoin {...coin} ratios={coinVals} />
               </a>
             ))}
             {/* <a href="https://buy.bitcoin.com" className="header-bitcoin-values-buy" target="_blank">Buy Bitcoin</a> */}
@@ -144,7 +152,7 @@ export default function Header() {
                 <a href="deposit" className="header-bitcoin-values-buy deposit-page-nav-btn">Deposit</a>
                 {coins && coins.map(coin => (
                   <Link key={coin.id} href="/lottery">
-                    <a className='link'><HeaderCoin {...coin} /></a>
+                    <a className='link'><HeaderCoin {...coin} ratios={coinVals} /></a>
                   </Link>
                 ))}
                 {/* <a href="https://buy.bitcoin.com" className="header-bitcoin-values-buy" target="_blank">Buy Bitcoin</a> */}
