@@ -1,5 +1,5 @@
 import { Agent } from 'https';
-import fetch from 'node-fetch';
+// import fetch from 'node-fetch';
 
 const httpsAgent = new Agent({ rejectUnauthorized: false });
 
@@ -8,7 +8,8 @@ export const authPost = (url, token, body = {}) => {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            Token: token
+            Token: token,
+            'Access-Control-Allow-Origin': '*'
         },
         body: JSON.stringify(body),
         agent: httpsAgent

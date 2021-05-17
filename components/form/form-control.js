@@ -16,10 +16,11 @@ export default FromInput;
 
 export const Input = (props) => {
 	const { error, ...others } = props;
+	const cls = error ? `${styles.input} ${styles.error}` : styles.input;
 	return (
 		<div>
-			<input className={styles.input} {...others} />
-			{error && <span className={styles.error}>{error}</span>}
+			<input className={cls} {...others} />
+			{error && <span className={styles.errorspan}>{error}</span>}
 		</div>
 	)
 }

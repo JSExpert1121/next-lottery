@@ -1,7 +1,11 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useMemo, useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Link from 'next/link';
 import HeaderCoin from 'components/common/header-coin';
 import supported_coins from 'data/coins.json';
+import * as UserActions from 'store/actions/user';
+import { getCoins } from 'service/client/coin';
+
 
 // The approach used in this component shows how to built a sign in and sign out
 // component that works on pages which support both client and server side
@@ -9,10 +13,23 @@ import supported_coins from 'data/coins.json';
 export default function Header() {
 
   const [nav, setNav] = useState(false);
+  const [coinVals, setCoinVals] = useState({ BTH: 0, BCH: 0 });
   const { coins } = supported_coins;
 
   const toggleNav = useCallback(() => setNav(!nav), [nav]);
   const cls = useMemo(() => nav ? 'show-nav clearfix' : 'clearfix', [nav]);
+  const user = useSelector(state => state.user);
+  const dispatch = useDispatch();
+
+  const handleLogout = useCallback(() => {
+    dispatch(UserActions.logout());
+  }, []);
+
+  useEffect(() => {
+    getCoins().then(data => {
+      setCoinVals(data);
+    })
+  }, []);
 
   return (
     <header id="header" className={cls}>
@@ -41,7 +58,7 @@ export default function Header() {
           <div className="header-bitcoin-values">
             {coins && coins.map(coin => (
               <a key={coin.id} href="/lottery" className='link'>
-                <HeaderCoin {...coin} />
+                <HeaderCoin {...coin} ratios={coinVals} />
               </a>
             ))}
             {/* <a href="https://buy.bitcoin.com" className="header-bitcoin-values-buy" target="_blank">Buy Bitcoin</a> */}
@@ -49,12 +66,46 @@ export default function Header() {
           </div>
         </div>
         <div className="right_menu">
-          <div className="login-register">
-            <a href='/auth/login' className='signin show-sign-in'><img src="/images/icon-login.png" />Log in</a>
-            <a href='/auth/signup' className='register show-sign-up'><img src="/images/icon-register.png" />Register</a>
-            {/* <button type="button" className="signin show-sign-in"><img src="/images/icon-login.png" />Log in</button> */}
-            {/* <button type="button" className="register show-sign-up"><img src="/images/icon-register.png" />Register</button> */}
-          </div>
+          {user.profile && (
+            <div className='rsm-dropdown' style={{ marginRight: 32 }}>
+              <div className='rsm-dropdown-box'>
+                <div className='rsm-avatar'>
+                  {(user.profile.FirstName && user.profile.LastName) ?
+                    `${user.profile.FirstName.charAt(0)}${user.profile.LastName.charAt(0)}`.toUpperCase() :
+                    user.profile.MemberId
+                  }
+                </div>
+                <div>
+                  <div className='rsm-account-username'>
+                    {(user.profile.FirstName && user.profile.LastName) ?
+                      `${user.profile.FirstName} ${user.profile.LastName}` :
+                      'Player ' + user.profile.MemberId
+                    }
+                  </div>
+                  <div className='rsm-account-balance'>
+                    {user.balance && (
+                      <>
+                        <span>{`Balance: € ${user.balance.AccountBalance.toFixed(2)}`}</span>
+                        <span>{`Bonus: € ${user.balance.BonusAmount.toFixed(2)}`}</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+              </div>
+              <div className="rsm-dropdown-content">
+                <a href="/users/me"><i className="fa fa-user"></i>My Account</a>
+                <a href="/users/deposit"><i className="fa fa-money"></i>Deposit</a>
+                <a href="/users/withdraw"><i className="fa fa-credit-card"></i>Withdraw</a>
+                <a onClick={handleLogout}><i className="fa fa-sign-out-alt"></i>Log out</a>
+              </div>
+            </div>
+          )}
+          {!user.profile && (
+            <div className="login-register">
+              <a href='/auth/login' className='signin show-sign-in'><img src="/images/icon-login.png" />Log in</a>
+              <a href='/auth/signup' className='register show-sign-up'><img src="/images/icon-register.png" />Register</a>
+            </div>
+          )}
         </div>
       </div>
       <div className="wrap new_header_mobile_menu">
@@ -92,28 +143,16 @@ export default function Header() {
             </li>
             <li className="">
               <a href='/auth/login' className='button'><img src="/images/icon-login.png" />Log in</a>
-              {/* <Link href='/auth/signup'>
-                <a className='register show-sign-up'><img src="/images/icon-register.png" />Register</a>
-              </Link>
-
-              <button type="button" className="signin show-sign-in">
-                <img src="/images/icon-login.png" />
-                Log in
-              </button>*/}
             </li>
             <li>
               <a href='/auth/signup' className='button'><img src="/images/icon-register.png" />Register</a>
-              {/* <button type="button" className="register show-sign-up">
-                <img src="/images/icon-register.png" />
-                Register
-              </button> */}
             </li>
             <li className="header_mobile_menu_bitcoin_values_part">
               <div className="header-bitcoin-values">
                 <a href="deposit" className="header-bitcoin-values-buy deposit-page-nav-btn">Deposit</a>
                 {coins && coins.map(coin => (
                   <Link key={coin.id} href="/lottery">
-                    <a className='link'><HeaderCoin {...coin} /></a>
+                    <a className='link'><HeaderCoin {...coin} ratios={coinVals} /></a>
                   </Link>
                 ))}
                 {/* <a href="https://buy.bitcoin.com" className="header-bitcoin-values-buy" target="_blank">Buy Bitcoin</a> */}
@@ -122,6 +161,6 @@ export default function Header() {
           </ul>
         </div>
       </div>
-    </header>
+    </header >
   )
 }

@@ -11,7 +11,7 @@
     position: relative;
     font-size: 18px;
     font-weight: 500;
-    min-width: 480px;
+    width: 480px;
     border-radius: 8px;
     background-color: white;
     padding: 32px 8px;
@@ -68,6 +68,3 @@
     }
 }
 
-.submit {
-    width: 100% !important;
-}
