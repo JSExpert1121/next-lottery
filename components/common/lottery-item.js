@@ -18,7 +18,7 @@ const LotteryItem = (props) => {
 			</div>
 			<div className="flexRow">
 				<div className={`countdown caro_clock_${id}`} />
-				<Link href={`${link}`}><a className="playNowBtn">Play Now</a></Link>
+				<a href={`${link}`} className="playNowBtn">Play Now</a>
 			</div>
 		</div>
 	)

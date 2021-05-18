@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 // import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Layout from 'components/layout';
+import SingleGame from 'components/games/single';
 import { getAllDraws, getLotteryRules, getPricesAndDiscounts } from 'service/globalinfo';
+import { parseJsonFile } from 'helpers/json';
 
 const LottoGame = (props) => {
 	const router = useRouter();
 	const { lotto } = router.query;
-	const { data, group } = props;
+	const { data } = props;
 
 	const [curTime, setCurTime] = useState({
 		days: 0, hours: 0, minutes: 0, seconds: 0, tm: 0
@@ -107,6 +109,29 @@ const LottoGame = (props) => {
 								</div>
 							</div>
 						</div>
+						<SingleGame data={data} />
+						<div class="select_page_det left">
+
+							<div class="col8 left">
+								<h1 class="Play-online">Play MegaMillions online</h1>
+								<p>
+									Initially called ‘The Big Game Mega Millions’ – the US Mega Millions is an American multi-jurisdictional lottery game; it is offered in 44 states, the District of Columbia, and the U.S. Virgin Islands. Draws take place twice a week, on Tuesdays at 23:00, and on Fridays at 23:00 USA Eastern time.</p>
+								<h1 class="play-about">About MegaMillions</h1>
+								<p></p>
+								<h2 class="play-winn">WINNING THE US MEGAMILLIONS</h2>
+								<p>
+									There are 9 different ways to win with the US Mega Millions. In order to win the Jackpot one needs to match 5 correct numbers along with an additional number, the Mega ball. As the prize divisions move further away from the top prize!</p>
+								<h2 class="play-jackpot">LARGEST JACKPOTS WON</h2>
+								<p>
+									The highest individual US Mega Millions win ever to be claimed was by Jesus Davila Jr. who matched all six numbers (26; 32; 44; 45; 58 and 11) and claimed $265 Million on February 24th 2015.</p>
+								<h2></h2>
+							</div>
+
+							<div class="col2 left">
+								<img src="/images/scanned_ticket.png" />
+							</div>
+
+						</div>
 					</div>
 				</div>
 			</main>
@@ -129,7 +154,12 @@ export async function getStaticProps(context) {
 	const { params: { lotto } } = context;
 
 	try {
-		const result = await Promise.all([getAllDraws(), getLotteryRules(), getPricesAndDiscounts(1, 3)]);
+		const result = await Promise.all([
+			parseJsonFile('data/lotteries.json'),
+			parseJsonFile('data/rules.json'),
+			parseJsonFile('data/prices.json')
+		]);
+		// const result = await Promise.all([getAllDraws(), getLotteryRules(), getPricesAndDiscounts(1, 3)]);
 		const draws = result[0];
 		const lottery = draws.find(item => item.LotteryName.replace(' ', '').toLowerCase() === lotto);
 
@@ -138,7 +168,6 @@ export async function getStaticProps(context) {
 		if (!rule) {
 			return { props: {} };
 		}
-		console.log('rule: ', rule);
 
 		const data = { ...lottery, MinExtraNumber: 1 };
 		data.MinExtraNumber = rule.MinExtraNumber;
@@ -148,7 +177,6 @@ export async function getStaticProps(context) {
 
 		const groups = result[2];
 		const group = groups.find(item => item.LotteryTypeId == lottery.LotteryTypeId);
-		console.log('group: ', group);
 		return {
 			props: {
 				data,

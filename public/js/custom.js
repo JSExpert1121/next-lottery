@@ -367,6 +367,51 @@ function extraNumbersCheckForAutoclose(numberContext, rangeFunc) {
     var extraselected = jQuery(numberContext).parent().children(".extra_active").length;
     triggerLineClose(numberContext, mainselected, extraselected);
 }
+
+// Calculate total in single.
+function totalForSingle() {
+
+    // total price
+    var lottery = jQuery("#otherdata").val().split("|");
+    var stp = jQuery("#stp").val();
+
+    var totalcard = 0;
+    jQuery('.cardline').find(".select_num_col").each(function () {
+        if (jQuery(this).hasClass("selected")) {
+            totalcard = parseInt(totalcard + 1);
+        }
+    });
+
+    var stp1 = parseFloat(stp * totalcard).toFixed(2);
+    console.log('total price: ', stp1);
+    jQuery("#single").find(".lines").html(totalcard + " lines");
+    jQuery("#single").find(".subtotal").html(stp1);
+    jQuery("#single").find(".bonusmoney").html(stp1);
+    jQuery("#single").find(".totalprice").html(stp1);
+
+    if (jQuery("#single").find("input[name=single_drawop]:checked").attr("id") === "radio1") {
+        jQuery("#single").find(".draws").html('1 Draws');
+    }
+
+    if (jQuery("#single").find("input[name=single_drawop]:checked").attr("id") === "radio2") {
+        var draws = jQuery("#single").find(".single_totaldraw option:selected").val();
+        jQuery("#single").find(".subtotal").html(parseFloat(draws * stp1).toFixed(2));
+        jQuery("#single").find(".draws").html(draws + " draws");
+        DiscountCounter(draws, stp1, 1, "single");
+    }
+
+    if (jQuery("#single").find("input[name=single_drawop]:checked").attr("id") === "radio3") {
+
+        var draws = num_of_draws_group_per_week[lottery[1].toUpperCase()];
+        var weeks = jQuery("#single").find(".single_subs option:selected").val();
+
+        jQuery("#single").find(".subtotal").html(parseFloat(draws * weeks * stp1).toFixed(2));
+        jQuery("#single").find(".draws").html(parseInt(draws * weeks) + " draws");
+
+        DiscountCounter(draws, stp1, weeks, "single");
+    }
+}
+
 jQuery(document).on("click", ".lt_numbers_wrapper > span", function () {
 
     //needed in the mobile version
@@ -455,33 +500,4 @@ jQuery(document).ready(function ($) {
             $(this).closest('li.has-child.mobile-menu').addClass('active');
         }
     })
-
-
-    // $('.mobile-trigger').on('click', function(e) {
-    //     e.preventDefault();
-    //     var headerHeight = $('header').innerHeight();
-    //     var toggleClass = `show-${$(this).data('href')}`;
-    //     var menuItemsHeight = $('#menu-container > .wrap-top-menu').innerHeight();
-
-    //     if (!menu_collapse) {
-    //         // menu_collapse = true;
-    //         if ( !$('#header').is(`.${toggleClass}`) ) {
-    //             $('#header').addClass( toggleClass );
-    //             // $('html').css({'overflow-y': 'hidden'})
-    //             // $('#menu-container').animate({
-    //             //     height: menuItemsHeight
-    //             // }, 500, function() {
-    //             //     menu_collapse = false;
-    //             // })
-    //         } else {
-    //             $('#header').removeClass( toggleClass );
-    //             // $('html').css({'overflow-y': 'auto'})
-    //             // $('#menu-container').animate({
-    //             //     height: 0
-    //             // }, 500, function() {
-    //             //     menu_collapse = false;
-    //             // })
-    //         }
-    //     }
-    // });
 });
