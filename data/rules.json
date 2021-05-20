@@ -1,0 +1,4756 @@
+[
+    {
+        "LotteryType": "PowerBall",
+        "MinLines": 2,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 1,
+        "SelectNumbers": 69,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 5,
+        "ExtraNumbers": 26,
+        "MaxExtraNumbers": 1,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 2,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": true,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            }
+        ]
+    },
+    {
+        "LotteryType": "MegaMillions",
+        "MinLines": 2,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 2,
+        "SelectNumbers": 70,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 5,
+        "ExtraNumbers": 25,
+        "MaxExtraNumbers": 1,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 2,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            }
+        ]
+    },
+    {
+        "LotteryType": "Lotto649",
+        "MinLines": 2,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 3,
+        "SelectNumbers": 49,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 6,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 0,
+        "DrawsPerWeek": 2,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "LaPrimitiva",
+        "MinLines": 3,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 3,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 3,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 4,
+        "SelectNumbers": 49,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 6,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 2,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": true,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            }
+        ]
+    },
+    {
+        "LotteryType": "EuroMillions",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 5,
+        "SelectNumbers": 50,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 5,
+        "ExtraNumbers": 12,
+        "MaxExtraNumbers": 2,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 2,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": true,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            }
+        ]
+    },
+    {
+        "LotteryType": "SuperEnalotto",
+        "MinLines": 3,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 3,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 3,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 8,
+        "SelectNumbers": 90,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 6,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 3,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            }
+        ]
+    },
+    {
+        "LotteryType": "EuroJackpot",
+        "MinLines": 2,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 9,
+        "SelectNumbers": 50,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 5,
+        "ExtraNumbers": 10,
+        "MaxExtraNumbers": 2,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 1,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": true,
+                "Day": 5
+            }
+        ]
+    },
+    {
+        "LotteryType": "ElGordo",
+        "MinLines": 2,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 10,
+        "SelectNumbers": 54,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 5,
+        "ExtraNumbers": 9,
+        "MaxExtraNumbers": 1,
+        "MinExtraNumber": 0,
+        "DrawsPerWeek": 1,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": true,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "BonoLoto",
+        "MinLines": 5,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 5,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 5,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 11,
+        "SelectNumbers": 49,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 6,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 6,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": true,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            }
+        ]
+    },
+    {
+        "LotteryType": "Navidad",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [],
+        "LotteryTypeId": 13,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 0,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 0,
+        "DrawsPerWeek": 0,
+        "DrawDaysWeekly": []
+    },
+    {
+        "LotteryType": "NewYorkLotto",
+        "MinLines": 4,
+        "MaxLines": 10,
+        "EvenLinesOnly": true,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 4,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 4,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 2,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 14,
+        "SelectNumbers": 59,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 6,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 0,
+        "DrawsPerWeek": 2,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": true,
+                "Day": 6
+            }
+        ]
+    },
+    {
+        "LotteryType": "UkLotto",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 12,
+        "SelectNumbers": 59,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 6,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 2,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            }
+        ]
+    },
+    {
+        "LotteryType": "SummerLotto",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [],
+        "LotteryTypeId": 20,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 0,
+        "DrawDaysWeekly": []
+    },
+    {
+        "LotteryType": "ElNino",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [],
+        "LotteryTypeId": 24,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 0,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 0,
+        "DrawsPerWeek": 0,
+        "DrawDaysWeekly": []
+    },
+    {
+        "LotteryType": "OzLotto",
+        "MinLines": 4,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 4,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 4,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 28,
+        "SelectNumbers": 45,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 7,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 1,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 2
+            }
+        ]
+    },
+    {
+        "LotteryType": "FathersDay",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [],
+        "LotteryTypeId": 27,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 0,
+        "DrawDaysWeekly": []
+    },
+    {
+        "LotteryType": "RedCrossDraw",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [],
+        "LotteryTypeId": 29,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 0,
+        "DrawDaysWeekly": []
+    },
+    {
+        "LotteryType": "Valentine",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [],
+        "LotteryTypeId": 26,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 0,
+        "DrawDaysWeekly": []
+    },
+    {
+        "LotteryType": "PGFC",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 16,
+        "SelectNumbers": 45,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 6,
+        "ExtraNumbers": 10,
+        "MaxExtraNumbers": 1,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 1,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 4
+            }
+        ]
+    },
+    {
+        "LotteryType": "MegaJackpot",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 34,
+        "SelectNumbers": 49,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 6,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 7,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "BTCPowerPlay",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 35,
+        "SelectNumbers": 49,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 4,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 7,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "BTCRaffle_25",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 36,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 7,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "BTCRaffle_50",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 37,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 7,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "BTCRaffle_100",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 38,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 7,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "BTCRaffle_200",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 39,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 7,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "BTCRaffle_500",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 40,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 7,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "BTCRaffle_1000",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 41,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 7,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "BTCRaffle_2500",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 42,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 7,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "BTCRaffle_5000",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 43,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 7,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "BTCRaffle_10000",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 44,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 7,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "BTCRaffle_25000",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 45,
+        "SelectNumbers": 0,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 0,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 7,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    },
+    {
+        "LotteryType": "Keno",
+        "MinLines": 1,
+        "MaxLines": 10,
+        "EvenLinesOnly": false,
+        "ProductsDrawOptions": [
+            {
+                "ProductId": 1,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.02,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.10,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.15,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": false,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 1,
+                        "Discount": 0.0,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 2,
+                        "Discount": 0.04,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 4,
+                        "Discount": 0.08,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 8,
+                        "Discount": 0.12,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 26,
+                        "Discount": 0.17,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 52,
+                        "Discount": 0.25,
+                        "Weeks": 0
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 100,
+                        "Discount": 0.30,
+                        "Weeks": 0
+                    }
+                ]
+            },
+            {
+                "ProductId": 1,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            },
+            {
+                "ProductId": 3,
+                "IsSubscription": true,
+                "MultiDrawOptions": [
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 2
+                    },
+                    {
+                        "MinLines": 1,
+                        "MaxLines": 10,
+                        "NumberOfDraws": 0,
+                        "Discount": 0.0,
+                        "Weeks": 4
+                    }
+                ]
+            }
+        ],
+        "LotteryTypeId": 46,
+        "SelectNumbers": 29,
+        "MinSelectNumber": 1,
+        "MaxSelectNumbers": 6,
+        "ExtraNumbers": 0,
+        "MaxExtraNumbers": 0,
+        "MinExtraNumber": 1,
+        "DrawsPerWeek": 7,
+        "DrawDaysWeekly": [
+            {
+                "Is24_7": false,
+                "Day": 1
+            },
+            {
+                "Is24_7": false,
+                "Day": 2
+            },
+            {
+                "Is24_7": false,
+                "Day": 3
+            },
+            {
+                "Is24_7": false,
+                "Day": 4
+            },
+            {
+                "Is24_7": false,
+                "Day": 5
+            },
+            {
+                "Is24_7": false,
+                "Day": 6
+            },
+            {
+                "Is24_7": false,
+                "Day": 7
+            }
+        ]
+    }
+]

@@ -16,12 +16,12 @@ const setBalance = (data) => ({
 
 // authentication
 export const login = (email, password) => async dispatch => {
-  let res = await UserService.login(email, password);
-  console.log('User Profile: ', res);
-  dispatch(loginOK(res));
-  res = await UserService.getBalance(res.MemberId);
-  console.log('User Balance: ', res);
-  dispatch(setBalance(res));
+  const profile = await UserService.login(email, password);
+  console.log('User Profile: ', profile);
+  const balance = await UserService.getBalance(profile.MemberId);
+  console.log('User Balance: ', balance);
+  dispatch(loginOK(profile));
+  dispatch(setBalance(balance));
 }
 
 export const logout = () => dispatch => {

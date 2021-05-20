@@ -5,7 +5,7 @@ const FromInput = (props) => {
 
 	const { id, label, labelClass, ...others } = props;
 	return (
-		<div id={id} class='wrapper'>
+		<div id={id} className='wrapper'>
 			<label className={labelClass}>{label}</label>
 			<input {...others} />
 		</div>
@@ -42,6 +42,17 @@ export const CheckBox = (props) => {
 		<label className={styles.checklabel}>
 			<input type='checkbox' className={cls} {...others} />
 			<span className={styles.vmiddle}>{children}</span>
+		</label>
+	)
+}
+
+export const TTInput = props => {
+	const { desc, tooltip, labelClass, inputClass, ...others } = props;
+	return (
+		<label className={`${styles.customCheck} ${styles.tooltip} ${styles.top}`}>
+			<input className={inputClass} {...others} />
+			<span className={styles.clicked}>{desc}</span>
+			<span className={styles.tooltiptext}>{tooltip}</span>
 		</label>
 	)
 }

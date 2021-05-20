@@ -18,7 +18,8 @@ export default function Header() {
 
   const toggleNav = useCallback(() => setNav(!nav), [nav]);
   const cls = useMemo(() => nav ? 'show-nav clearfix' : 'clearfix', [nav]);
-  const user = useSelector(state => state.user);
+  const profile = useSelector(state => state.user.profile);
+  const balance = useSelector(state => state.user.balance);
   const dispatch = useDispatch();
 
   const handleLogout = useCallback(() => {
@@ -35,12 +36,14 @@ export default function Header() {
     <header id="header" className={cls}>
       <div className='menu'>
         <div className='left_menu'>
-          <a className='logo' href="/">
-            <img src="/images/bitcoinlottery@2x-1.png" />
-          </a>
+          <Link href="/">
+            <a className='logo' href="/">
+              <img src="/images/bitcoinlottery@2x-1.png" />
+            </a>
+          </Link>
           <ul>
-            <li className=""><a href="/lottery">Lottery</a></li>
-            <li className=""><a href="/lottery-results">Results</a></li>
+            <li className=""><Link href="/lottery">Lottery</Link></li>
+            <li className=""><Link href="/lottery-results">Results</Link></li>
             <li className="has-child">
               <a href="/about-us">
                 About&nbsp;
@@ -57,36 +60,38 @@ export default function Header() {
           </ul>
           <div className="header-bitcoin-values">
             {coins && coins.map(coin => (
-              <a key={coin.id} href="/lottery" className='link'>
-                <HeaderCoin {...coin} ratios={coinVals} />
-              </a>
+              <Link href="/lottery">
+                <a key={coin.id} href="/lottery" className='link'>
+                  <HeaderCoin {...coin} ratios={coinVals} />
+                </a>
+              </Link>
             ))}
             {/* <a href="https://buy.bitcoin.com" className="header-bitcoin-values-buy" target="_blank">Buy Bitcoin</a> */}
             <a href="#" className="header-bitcoin-values-buy show-sign-in deposit-page-nav-btn">Deposit Now</a>
           </div>
         </div>
         <div className="right_menu">
-          {user.profile && (
-            <div className='rsm-dropdown' style={{ marginRight: 32 }}>
+          {profile ? (
+            <div className="rsm-dropdown" style={{ marginRight: 32 }}>
               <div className='rsm-dropdown-box'>
                 <div className='rsm-avatar'>
-                  {(user.profile.FirstName && user.profile.LastName) ?
-                    `${user.profile.FirstName.charAt(0)}${user.profile.LastName.charAt(0)}`.toUpperCase() :
-                    user.profile.MemberId
+                  {(profile.FirstName && profile.LastName) ?
+                    `${profile.FirstName.charAt(0)}${profile.LastName.charAt(0)}`.toUpperCase() :
+                    profile.MemberId
                   }
                 </div>
                 <div>
                   <div className='rsm-account-username'>
-                    {(user.profile.FirstName && user.profile.LastName) ?
-                      `${user.profile.FirstName} ${user.profile.LastName}` :
-                      'Player ' + user.profile.MemberId
+                    {(profile.FirstName && profile.LastName) ?
+                      `${profile.FirstName} ${profile.LastName}` :
+                      'Player ' + profile.MemberId
                     }
                   </div>
                   <div className='rsm-account-balance'>
-                    {user.balance && (
+                    {balance && (
                       <>
-                        <span>{`Balance: € ${user.balance.AccountBalance.toFixed(2)}`}</span>
-                        <span>{`Bonus: € ${user.balance.BonusAmount.toFixed(2)}`}</span>
+                        <span>{`Balance: € ${balance.AccountBalance.toFixed(2)}`}</span>
+                        <span>{`Bonus: € ${balance.BonusAmount.toFixed(2)}`}</span>
                       </>
                     )}
                   </div>
@@ -99,8 +104,7 @@ export default function Header() {
                 <a onClick={handleLogout}><i className="fa fa-sign-out-alt"></i>Log out</a>
               </div>
             </div>
-          )}
-          {!user.profile && (
+          ) : (
             <div className="login-register">
               <a href='/auth/login' className='signin show-sign-in'><img src="/images/icon-login.png" />Log in</a>
               <a href='/auth/signup' className='register show-sign-up'><img src="/images/icon-register.png" />Register</a>

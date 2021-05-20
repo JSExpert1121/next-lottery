@@ -1,5 +1,5 @@
 import React, { useReducer, useCallback } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 import Layout from 'components/layout';
@@ -23,6 +23,12 @@ const LoginPage = () => {
 	const { email, password, remember, error, busy } = state;
 	const dispatch = useDispatch();
 	const router = useRouter();
+	const user = useSelector(state => state.user);
+	const { referer } = router.query;
+	if (user.profile) {
+		router.replace(referer ?? '/');
+
+	}
 
 	const handleEmailChange = useCallback(e => {
 		setState({

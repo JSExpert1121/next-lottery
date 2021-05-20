@@ -4,10 +4,20 @@ body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
 		Helvetica Neue, sans-serif;
+	position: relative;
 }
 
 * {
 	box-sizing: border-box;
+}
+
+.whole {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #111724;
 }
 
 #main {
@@ -388,6 +398,12 @@ img {
 	}
 }
 
+.lotterydetail {
+	& form {
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 1100px) {
 	#header .menu {
 		display: none;
@@ -544,6 +560,36 @@ img {
 		height: 1100px;
 		transition: ease-in-out 0.8s;
 	}
+
+	.lotterydetail .cardlist .tabin_main_select {
+		flex-direction: column;
+	}
+
+	.lotterydetail {
+		& .select_num_part_wrapper,
+		& .lt_numbers_wrapper {
+			grid-template-columns: repeat(9, 1fr);
+		}
+
+		& .select_num_col {
+			padding: 0;
+		}
+
+		& .beton-header {
+			height: auto;
+		}
+
+		& .lotto-timer table > tbody > tr > td {
+			display: table-cell;
+			& > div {
+				justify-content: center;
+			}
+		}
+
+		& .beton-header-mobile-section {
+			padding: 10px;
+		}
+	}
 }
 
 .submit {
@@ -602,12 +648,12 @@ img {
 			-3em 0 0 -1em, -2em -2em 0 0;
 	}
 	12.5% {
-		box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em,
-			-2em -2em 0 -1em;
+		box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em,
+			-3em 0 0 -1em, -2em -2em 0 -1em;
 	}
 	25% {
-		box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em,
-			-2em -2em 0 -1em;
+		box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em,
+			-3em 0 0 -1em, -2em -2em 0 -1em;
 	}
 	37.5% {
 		box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em,
@@ -618,16 +664,16 @@ img {
 			-3em 0em 0 -1em, -2em -2em 0 -1em;
 	}
 	62.5% {
-		box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0,
-			-2em -2em 0 -1em;
+		box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em,
+			-3em 0 0 0, -2em -2em 0 -1em;
 	}
 	75% {
 		box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0,
 			-3em 0em 0 0.2em, -2em -2em 0 0;
 	}
 	87.5% {
-		box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0,
-			-2em -2em 0 0.2em;
+		box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0,
+			-3em 0em 0 0, -2em -2em 0 0.2em;
 	}
 }
 @keyframes simple_spinner {
@@ -637,12 +683,12 @@ img {
 			-3em 0 0 -1em, -2em -2em 0 0;
 	}
 	12.5% {
-		box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em,
-			-2em -2em 0 -1em;
+		box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em,
+			-3em 0 0 -1em, -2em -2em 0 -1em;
 	}
 	25% {
-		box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em,
-			-2em -2em 0 -1em;
+		box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em,
+			-3em 0 0 -1em, -2em -2em 0 -1em;
 	}
 	37.5% {
 		box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em,
@@ -653,15 +699,15 @@ img {
 			-3em 0em 0 -1em, -2em -2em 0 -1em;
 	}
 	62.5% {
-		box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0,
-			-2em -2em 0 -1em;
+		box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em,
+			-3em 0 0 0, -2em -2em 0 -1em;
 	}
 	75% {
 		box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0,
 			-3em 0em 0 0.2em, -2em -2em 0 0;
 	}
 	87.5% {
-		box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0,
-			-2em -2em 0 0.2em;
+		box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0,
+			-3em 0em 0 0, -2em -2em 0 0.2em;
 	}
 }
