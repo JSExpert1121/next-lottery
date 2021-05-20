@@ -12,13 +12,13 @@ const ExLotteryItem = (props) => {
                 <div className="jackpotAmount">{amount}</div>
                 <div className="jackpotDesciption">{desc}</div>
                 <div className={`countdown caro_clock_${id}`}></div>
-                <Link href={`/${link}`}>
+                <Link href={`${link}`}>
                     <a className="playNowBtn">Play Now</a>
                 </Link>
             </div>
             <div className="flexRow">
-            <div className="lotteryImg">
-                <img src={image} alt={name} />
+                <div className="lotteryImg">
+                    <img src={image} alt={name} />
                 </div>
             </div>
         </div>

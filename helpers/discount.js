@@ -146,6 +146,8 @@ const discounts = {
 };
 
 export const get_discounts = (name, type, period) => {
-    const discount = discounts[name][type][period];
+    const item = discounts[name];
+    if (!item) return period + ' week';
+    const discount = item[type][period];
     return (discount > 0) ? period + ' week ' + discount + '% discount' : period + ' week';
 }

@@ -9,7 +9,7 @@ import { parseJsonFile } from 'helpers/json';
 const LottoGame = (props) => {
 	const router = useRouter();
 	const { lotto } = router.query;
-	const { data } = props;
+	const { data, post } = props;
 
 	const [curTime, setCurTime] = useState({
 		days: 0, hours: 0, minutes: 0, seconds: 0, tm: 0
@@ -40,7 +40,6 @@ const LottoGame = (props) => {
 		return () => clearInterval(id);
 	}, []);
 
-
 	return (
 		<Layout>
 			<main id="main" className="clearfix">
@@ -69,78 +68,70 @@ const LottoGame = (props) => {
 								<a href="#group" className="group-ticket-button" id="group-ticket-button">Group ticket</a>
 							</div>
 						</div>
-						<div class={`beton-header ${data.LotteryName}`}>
-							<div class="beton-header-mobile-section">
-								<div class="lotto-name-container">
-									<img src={`/images/${lotto}1.png`} class="lotto-logo" />
-									<span class="lotto-name">{data.LotteryName}</span>
+						<div className={`beton-header ${data.LotteryName}`}>
+							<div className="beton-header-mobile-section">
+								<div className="lotto-name-container">
+									<img src={`/images/${lotto}1.png`} className="lotto-logo" />
+									<span className="lotto-name">{data.LotteryName}</span>
 								</div>
-								<div class="lotto-prize-container">
-									<h1 class='lotto-prize'>{jackpot}<br />Win BTC</h1>
+								<div className="lotto-prize-container">
+									<h1 className='lotto-prize'>{jackpot}<br />Win BTC</h1>
 								</div>
-								<div class="lotto-timer">
-									<div class="timer-view">
-										{curTime.tm < 0 && <div class="item-expired">EXPIRED</div>}
+								<div className="lotto-timer">
+									<div className="timer-view">
+										{curTime.tm < 0 && <div className="item-expired">EXPIRED</div>}
 										{curTime.tm >= 0 && (
 											<table>
 												<tbody>
 													<tr>
-														<td><div class="timer-value timer-value-days value-days">{curTime.days}</div></td>
-														<td><div class="timer-delimiter">:</div></td>
-														<td><div class="timer-value timer-value-hours value-hours">{curTime.days}</div></td>
-														<td><div class="timer-delimiter">:</div></td>
-														<td><div class="timer-value timer-value-minutes value-minutes">{curTime.minutes}</div></td>
-														<td><div class="timer-delimiter">:</div></td>
-														<td><div class="timer-value timer-value-seconds value-seconds">{curTime.seconds}</div></td>
+														<td><div className="timer-value timer-value-days value-days">{curTime.days}</div></td>
+														<td><div className="timer-delimiter">:</div></td>
+														<td><div className="timer-value timer-value-hours value-hours">{curTime.days}</div></td>
+														<td><div className="timer-delimiter">:</div></td>
+														<td><div className="timer-value timer-value-minutes value-minutes">{curTime.minutes}</div></td>
+														<td><div className="timer-delimiter">:</div></td>
+														<td><div className="timer-value timer-value-seconds value-seconds">{curTime.seconds}</div></td>
 													</tr>
 													<tr>
-														<td><div class="timer-unit unit-0">days</div></td><td></td>
-														<td><div class="timer-unit unit-1">hrs</div></td><td></td>
-														<td><div class="timer-unit unit-2">min</div></td><td></td>
-														<td><div class="timer-unit unit-3">sec</div></td>
+														<td><div className="timer-unit unit-0">days</div></td><td></td>
+														<td><div className="timer-unit unit-1">hrs</div></td><td></td>
+														<td><div className="timer-unit unit-2">min</div></td><td></td>
+														<td><div className="timer-unit unit-3">sec</div></td>
 													</tr>
 												</tbody>
 											</table>
 										)}
 									</div>
 								</div>
-								<div class="lotto-action-container" id="pick-all-button">
-									<button type="button" id="magic-pickall" class="btn-magic-all"><i class="fa fa-magic"></i> <span class="btn-magic-all-text">Pick All</span></button>
+								<div className="lotto-action-container" id="pick-all-button">
+									<button type="button" id="magic-pickall" className="btn-magic-all"><i className="fa fa-magic"></i> <span className="btn-magic-all-text">Pick All</span></button>
 								</div>
 							</div>
 						</div>
 						<SingleGame data={data} />
-						<div class="select_page_det left">
+						<div className="select_page_det left">
 
-							<div class="col8 left">
-								<h1 class="Play-online">Play MegaMillions online</h1>
-								<p>
-									Initially called ‘The Big Game Mega Millions’ – the US Mega Millions is an American multi-jurisdictional lottery game; it is offered in 44 states, the District of Columbia, and the U.S. Virgin Islands. Draws take place twice a week, on Tuesdays at 23:00, and on Fridays at 23:00 USA Eastern time.</p>
-								<h1 class="play-about">About MegaMillions</h1>
-								<p></p>
-								<h2 class="play-winn">WINNING THE US MEGAMILLIONS</h2>
-								<p>
-									There are 9 different ways to win with the US Mega Millions. In order to win the Jackpot one needs to match 5 correct numbers along with an additional number, the Mega ball. As the prize divisions move further away from the top prize!</p>
-								<h2 class="play-jackpot">LARGEST JACKPOTS WON</h2>
-								<p>
-									The highest individual US Mega Millions win ever to be claimed was by Jesus Davila Jr. who matched all six numbers (26; 32; 44; 45; 58 and 11) and claimed $265 Million on February 24th 2015.</p>
-								<h2></h2>
-							</div>
+							<div className="col8 left" dangerouslySetInnerHTML={{ __html: post?.content }} />
 
-							<div class="col2 left">
+							<div className="col2 left">
 								<img src="/images/scanned_ticket.png" />
 							</div>
-
+							<div className="select_page_det2">
+								<div className="del_cup"><img src="/images/del_cup.png" /></div>
+								<div className="star"><img src="/images/star.png" /></div>
+								<div className="font13"></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</main>
-		</Layout>
+		</Layout >
 	)
 }
 
 export async function getStaticPaths() {
-	const draws = await getAllDraws();
+	// const draws = await getAllDraws();
+	const draws = await parseJsonFile('data/lotteries.json');
 	const paths = draws.map(draw => ({
 		params: { lotto: draw.LotteryName.replace(' ', '').toLowerCase() }
 	}));
@@ -152,12 +143,14 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
 	const { params: { lotto } } = context;
+	console.log('lotto: ', lotto);
 
 	try {
 		const result = await Promise.all([
 			parseJsonFile('data/lotteries.json'),
 			parseJsonFile('data/rules.json'),
-			parseJsonFile('data/prices.json')
+			parseJsonFile('data/prices.json'),
+			parseJsonFile('data/posts.json')
 		]);
 		// const result = await Promise.all([getAllDraws(), getLotteryRules(), getPricesAndDiscounts(1, 3)]);
 		const draws = result[0];
@@ -175,12 +168,15 @@ export async function getStaticProps(context) {
 		data.MaxLines = rule.MaxLines;
 		data.EvenLinesOnly = rule.EvenLinesOnly;
 
-		const groups = result[2];
-		const group = groups.find(item => item.LotteryTypeId == lottery.LotteryTypeId);
+		// const groups = result[2];
+		// const group = groups.find(item => item.LotteryTypeId == lottery.LotteryTypeId);
+		const posts = result[3];
+		const post = posts.find(item => item.name === `${lotto.replace(' ', '').toLowerCase()}-lottery`);
+		console.log('data: ', data);
 		return {
 			props: {
-				data,
-				group
+				data, post
+				// group
 			}
 		}
 	} catch (error) {

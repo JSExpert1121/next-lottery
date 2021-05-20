@@ -16441,11 +16441,6 @@ body:not(.home) #main {
     align-items: center;
 }
 
-.lotterydetail .beton-header > div {
-    padding-top: unset;
-    float: unset;
-}
-
 .lotterydetail .beton-header .lotto-name-container {
     min-height: unset;
     display: flex;

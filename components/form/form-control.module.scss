@@ -3,7 +3,7 @@
     line-height: 24px;
     padding: 8px;
     border-radius: 4px;
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     width: 100%;
 }
 
@@ -26,9 +26,9 @@
 .button {
     text-align: center;
     padding: 8px;
-    border: 1px solid #00C38A;
+    border: 1px solid #00c38a;
     border-radius: 4px;
-    background-color: #00C38A;
+    background-color: #00c38a;
 
     &:hover {
         background-color: #00d696;
@@ -50,4 +50,141 @@
 
 .vmiddle {
     vertical-align: middle;
+}
+
+.customCheck {
+    & > span:not(:last-child) {
+        font-size: 18px;
+        font-weight: 500;
+        color: #ddd;
+        padding-left: 28px;
+
+        &:before {
+            content: " ";
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px white solid;
+            background: transparent;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-44%);
+        }
+    }
+
+    & input[type="checkbox"] {
+        position: absolute;
+        z-index: -1000;
+        left: -1000px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+    }
+
+    & input[type="checkbox"]:checked + span:before {
+        background: #00c38a;
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+
+    & .tooltiptext {
+        visibility: hidden;
+        width: 240px;
+        background-color: black;
+        color: #eee;
+        position: absolute;
+        z-index: 1;
+        text-align: left;
+    }
+
+    &.top .tooltiptext {
+        border-radius: 6px;
+        padding: 5px 0;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -60px;
+        height: auto;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+    }
+
+    &.right .tooltiptext {
+        border-radius: 6px;
+        padding: 5px 0;
+        top: -5px;
+        left: 110%;
+        height: auto;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent black transparent transparent;
+        }
+    }
+
+    &.left .tooltiptext {
+        border-radius: 6px;
+        padding: 5px 0;
+        top: -5px;
+        right: 110%;
+        height: auto;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent black;
+        }
+    }
+
+    &.bottom .tooltiptext {
+        border-radius: 6px;
+        padding: 5px 0;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -60px;
+        height: auto;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+    }
+
+    &:hover .tooltiptext {
+        visibility: visible;
+    }
 }

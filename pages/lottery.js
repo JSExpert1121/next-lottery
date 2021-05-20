@@ -126,21 +126,4 @@ export const getStaticProps = async (ctx) => {
 			revalidate: 10
 		}
 	}
-
 }
-
-// export async function getServerSideProps() {
-// 	// Fetch data from external API
-// 	try {
-// 		const lotteries = await parseJsonFile('data/lotteries.json');
-// 		return { 
-// 			props: { 
-// 				lotteries: lotteries.lotteries
-// 			}
-// 		}
-// 	} catch (error) {
-// 		return {
-// 			props
-// 		}
-// 	}
-// }
