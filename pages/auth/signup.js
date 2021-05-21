@@ -80,6 +80,7 @@ const SignupPage = () => {
 		try {
 			setState({ busy: true });
 			await dispatch(UserActions.signup(firstName.value, lastName.value, email.value, phone.value, password.value, address.value))
+			router.push('/');
 		} catch (error) {
 			setState({ busy: false, error });
 		}
@@ -91,7 +92,7 @@ const SignupPage = () => {
 			<main className={styles.container}>
 				<form className={styles.form}>
 					{busy && <div className="simple-spinner"></div>}
-					<a href='/' className={styles.close}></a>
+					<Link href='/'><a className={styles.close}></a></Link>
 					<h1>Welcome</h1>
 					{error && <section className='error-msg'>{error}</section>}
 					<section className={styles.inputGroup}>

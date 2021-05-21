@@ -110,8 +110,9 @@ const LottoGame = (props) => {
 						</div>
 						<SingleGame data={data} />
 						<div className="select_page_det left">
-
-							<div className="col8 left" dangerouslySetInnerHTML={{ __html: post?.content }} />
+							{post?.content && (
+								<div className="col8 left" dangerouslySetInnerHTML={{ __html: post?.content }} />
+							)}
 
 							<div className="col2 left">
 								<img src="/images/scanned_ticket.png" />
@@ -171,11 +172,10 @@ export async function getStaticProps(context) {
 		// const groups = result[2];
 		// const group = groups.find(item => item.LotteryTypeId == lottery.LotteryTypeId);
 		const posts = result[3];
-		const post = posts.find(item => item.name === `${lotto.replace(' ', '').toLowerCase()}-lottery`);
-		console.log('data: ', data);
+		const post = posts.find(item => item.name === lotto.replace(' ', '').toLowerCase());
 		return {
 			props: {
-				data, post
+				data, post: post ?? {}
 				// group
 			}
 		}

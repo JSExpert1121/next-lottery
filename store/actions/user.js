@@ -29,14 +29,16 @@ export const logout = () => dispatch => {
 }
 
 export const signup = (firstName, lastName, email, phone, password, bchID) => async dispatch => {
-  const res = await UserService.signup(firstName, lastName, email, phone, password, bchID);
-  console.log('Sign up: ', res);
-  dispatch(loginOK(res));
+  const profile = await UserService.signup(firstName, lastName, email, phone, password, bchID);
+  console.log('User Profile: ', profile);
+  const balance = await UserService.getBalance(profile.MemberId);
+  console.log('User Balance: ', balance);
+  dispatch(loginOK(profile));
+  dispatch(setBalance(balance));
 }
 
 // user information
 export const getBalance = (memberID) => async dispatch => {
   const res = await UserService.getBalance(memberID);
-  console.log('User Balance: ', res);
   dispatch(setBalance(res));
 }
