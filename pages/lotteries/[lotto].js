@@ -15,6 +15,10 @@ const LottoGame = (props) => {
 		days: 0, hours: 0, minutes: 0, seconds: 0, tm: 0
 	});
 
+	if (!data) {
+		return <div>Not Found</div>
+	}
+
 	let jackpot = 'PENDING';
 	if (data.Jackpot < 0) {
 		jackpot = 'PENDING';
@@ -25,9 +29,9 @@ const LottoGame = (props) => {
 	}
 
 	useEffect(() => {
-		const deadline = new Date(data.DrawDate).getTime();
 		const id = setInterval(() => {
 			const tm = deadline - new Date().getTime();
+			const deadline = new Date(data.DrawDate).getTime();
 			setCurTime({
 				days: parseInt(tm / (86400000)),
 				hours: parseInt((tm % 86400000) / 3600000),
