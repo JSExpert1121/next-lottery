@@ -1,4 +1,4 @@
-import React, { useReducer, useCallback } from 'react';
+import React, { useReducer, useCallback, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import { useRouter } from 'next/router'
@@ -25,10 +25,13 @@ const LoginPage = () => {
 	const router = useRouter();
 	const user = useSelector(state => state.user);
 	const { referer } = router.query;
-	if (user.profile) {
-		router.replace(referer ?? '/');
 
-	}
+	console.log(referer);
+	useEffect(() => {
+		if (user.profile) {
+			router.replace(referer ? decodeURIComponent(referer) : '/');
+		}
+	}, [user.profile, router, referer])
 
 	const handleEmailChange = useCallback(e => {
 		setState({
@@ -69,7 +72,7 @@ const LoginPage = () => {
 			<main className={styles.container}>
 				<form className={styles.form} method='post' target='#here'>
 					{busy && <div className="simple-spinner"></div>}
-					<a href='/' className={styles.close}></a>
+					<Link href='/'><a className={styles.close}></a></Link>
 					<h1>Log in with your account</h1>
 					{error && <section className='error-msg'>{error}</section>}
 					<section className={styles.inputGroup}>
