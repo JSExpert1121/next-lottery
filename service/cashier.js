@@ -3,6 +3,14 @@ import { authPost } from './base';
 
 const BASE_URL = `${API_BASE_URL}/cashier`;
 
+export const requestWithdraw = async (amount, ticker, address) => {
+	return await authPost(
+		`${BASE_URL}/withdraw`,
+		SEC_TOKEN,
+		{ amt: amount, walletAddress: address, Ticker: ticker }
+	);
+}
+
 export const prepareOrder = async () => {
 	return await authPost(
 		`${BASE_URL}/get-all-lotteries`,
@@ -10,10 +18,11 @@ export const prepareOrder = async () => {
 	);
 }
 
-export const confirmProcessorOrdere = async () => {
+export const confirmProcessorOrder = async (MemberId, Amount, Ticker) => {
 	return await authPost(
 		`${BASE_URL}/processor-confirm-order`,
-		SEC_TOKEN
+		SEC_TOKEN,
+		{ MemberId, Amount, Ticker }
 	);
 }
 

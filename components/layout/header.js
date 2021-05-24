@@ -107,9 +107,9 @@ export default function Header() {
                 </div>
               </div>
               <div className="rsm-dropdown-content">
-                <Link href="/users/me"><a><i className="fa fa-user"></i>My Account</a></Link>
-                <Link href="/users/deposit"><a><i className="fa fa-money"></i>Deposit</a></Link>
-                <Link href="/users/withdraw"><a><i className="fa fa-credit-card"></i>Withdraw</a></Link>
+                <Link href="/user/me"><a><i className="fa fa-user"></i>My Account</a></Link>
+                <Link href="/user/deposit"><a><i className="fa fa-money"></i>Deposit</a></Link>
+                <Link href="/user/withdraw"><a><i className="fa fa-credit-card"></i>Withdraw</a></Link>
                 <a href="#" onClick={handleLogout}><i className="fa fa-sign-out-alt"></i>Log out</a>
               </div>
             </div>

@@ -8960,7 +8960,7 @@ input[type="radio"].css-checkbox + label.css-label.chk {
     font-size: 14px;
     height: 40px;
     text-align: right;
-    padding-left: 90px;
+    padding-left: 80px;
     width: 130px;
 }
 
@@ -9122,7 +9122,13 @@ input[type="radio"].css-checkbox + label.css-label.chk {
     height: 40px;
     position: relative;
     top: 0;
-    width: 158px;
+}
+
+.myaccount_detail_error,
+.cardupdatemsg {
+    line-height: 33px;
+    color: red;
+    font-size: 15px;
 }
 
 @media not all {
@@ -16359,7 +16365,7 @@ body.page .bg-inner {
     background: #101624;
 }
 
-body.page .hadding.inner-hadding h1 {
+.hadding.inner-hadding h1 {
     font-family: Gilroy-bold;
     font-size: 30px;
     color: #fff;
