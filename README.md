@@ -37,6 +37,8 @@ npm run build
 yarn build
 
 # After build is finished, run a command
+npm start 
+# or
 yarn start
 ```
 
