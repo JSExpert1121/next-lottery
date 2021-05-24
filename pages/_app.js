@@ -19,7 +19,7 @@ export default function MyApp({ Component, pageProps }) {
 	return (
 		<Provider store={store}>
 			<Transition>
-				<ProtectedRoute config={{ match: '/(lotteries|users)/*', url: '/auth/login' }}>
+				<ProtectedRoute config={{ match: '/user/*', url: '/auth/login' }}>
 					<Head>
 						<title>Bitcoin Lottery - Lottery with Bitcoins</title>
 					</Head>
