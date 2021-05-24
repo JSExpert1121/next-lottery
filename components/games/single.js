@@ -4,7 +4,7 @@ import { TTInput } from 'components/form/form-control';
 import { generateArray } from 'helpers/array';
 import { get_discounts } from 'helpers/discount';
 
-const SingleGame = ({ data }) => {
+const SingleGame = ({ data, selMs, selEs }) => {
 
 	const [selNo, setSelNo] = useState({});
 	const [flag2, setFlag2] = useState(true);
@@ -26,8 +26,6 @@ const SingleGame = ({ data }) => {
 		console.log(e.target.value);
 		setOption(e.target.value);
 	}, []);
-
-
 
 	return (
 		<form name="singledata" id="singledata">
@@ -52,29 +50,11 @@ const SingleGame = ({ data }) => {
 			</div >
 
 			<div className={`cardlist ${data.LotteryName}`}>
-				<input type="hidden" id="totallines" value="1" />
-				<input type="hidden" id="choosenTab" value="#single" />
-				<input type="hidden" id="lotteryId" value={data.LotteryTypeId} name="lotteryId" />
-				<input type="hidden" id="m" value={data.NumberOfMainNumbers} />
-				<input type="hidden" id="m1" value={data.AmountOfMainNumbersToMatch} />
-				<input type="hidden" id="e" value={data.NumberOfExtraNumbers} />
-				<input type="hidden" id="e1" value={data.AmountOfExtraNumbersToMatch} />
-				<input type="hidden" id="lines" name="lines" value={selNo.lines ?? ""} />
-				<input type="hidden" id="selno" name="selno" value={selNo.selno ?? ""} />
-				<input type="hidden" id="singtp" name="totalprice" value={selNo.totalprice ?? ""} />
-				<input type="hidden" id="singsubtp" name="subtotal" value={selNo.subtotal ?? ""} />
-				<input type="hidden" id="singbm" name="bonusmoney" value={selNo.bonusmoney ?? ""} />
-				<input type="hidden" id="minl" value="" />
-				<input type="hidden" id="maxl" value="" />
-				<input type="hidden" id="even" value="" />
-				<input type="hidden" id="storeselected" value={selNo.storeselected ?? ""} name="storeselected" />
-				<input type="hidden" id="otherdata" name="otherdata" value={`${data.LotteryCurrency2}|${data.LotteryName}|0`} />
-
 				<div className="card_row addcardrow cardline" id="row_1">
 					<div className="tabin_main">
 						<div className="tabin_main_select">
 							{generateArray(1, 4).map(i => (
-								<SelectNumbers data={data} numTickets={i} key={i} onSelected={selectChanged} />
+								<SelectNumbers data={data} numTickets={i} key={i} onSelected={selectChanged} selE={selEs[i - 1]} selM={selMs[i - 1]} />
 							))}
 						</div>
 

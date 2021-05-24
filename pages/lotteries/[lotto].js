@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 // import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Layout from 'components/layout';
 import SingleGame from 'components/games/single';
 import { getAllDraws, getLotteryRules, getPricesAndDiscounts } from 'service/globalinfo';
 import { parseJsonFile } from 'helpers/json';
+import { randomArray } from 'helpers/array';
 
 const LottoGame = (props) => {
 	const router = useRouter();
 	const { lotto } = router.query;
 	const { data, post } = props;
+	const [sels, setSels] = useState({ selMs: [[], [], [], []], selEs: [[], [], [], []] });
 
 	const [curTime, setCurTime] = useState({
 		days: 0, hours: 0, minutes: 0, seconds: 0, tm: 0
@@ -42,6 +44,29 @@ const LottoGame = (props) => {
 		}, 1000);
 
 		return () => clearInterval(id);
+	}, []);
+
+	const pickAll = useCallback(() => {
+		let count = 0;
+		const id = setInterval(() => {
+			setSels({
+				selMs: [
+					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch),
+					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch),
+					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch),
+					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch)
+				],
+				selEs: [
+					randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch),
+					randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch),
+					randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch),
+					randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch)
+				]
+			});
+
+			count++;
+			if (count === 5) clearInterval(id);
+		}, 300)
 	}, []);
 
 	return (
@@ -108,11 +133,13 @@ const LottoGame = (props) => {
 									</div>
 								</div>
 								<div className="lotto-action-container" id="pick-all-button">
-									<button type="button" id="magic-pickall" className="btn-magic-all"><i className="fa fa-magic"></i> <span className="btn-magic-all-text">Pick All</span></button>
+									<button type="button" id="magic-pickall" className="btn-magic-all" onClick={pickAll}>
+										<i className="fa fa-magic"></i> <span className="btn-magic-all-text">Pick All</span>
+									</button>
 								</div>
 							</div>
 						</div>
-						<SingleGame data={data} />
+						<SingleGame data={data} {...sels} />
 						<div className="select_page_det left">
 							{post?.content && (
 								<div className="col8 left" dangerouslySetInnerHTML={{ __html: post?.content }} />

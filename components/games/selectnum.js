@@ -8,7 +8,7 @@ const lotteriesNames = {
 	'EuroJackpot': ' 2 EuroStars'
 };
 
-const SelectNumbers = ({ data, numTickets, onSelected }) => {
+const SelectNumbers = ({ data, numTickets, onSelected, selE, selM }) => {
 
 	const [selectedM, setSelectedM] = useState([]);
 	const [selectedE, setSelectedE] = useState([]);
@@ -28,6 +28,14 @@ const SelectNumbers = ({ data, numTickets, onSelected }) => {
 			}
 		}
 	}, [selectedM, onSelected]);
+
+	useEffect(() => {
+		if (selE.length === 0 || selM.length === 0) return;
+
+		setSelectedM([...selM]);
+		setSelectedE([...selE]);
+		onSelected(numTickets, selM.length === data.AmountOfMainNumbersToMatch && selE.length === data.AmountOfExtraNumbersToMatch);
+	}, [selE, selM, onSelected]);
 
 	const handleExtra = useCallback(e => {
 		const idx = selectedE.indexOf(parseInt(e.target.outerText));
