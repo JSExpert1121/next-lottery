@@ -227,21 +227,6 @@ header div.userpanel div.panelhead .panelheadright {
     width: 15px;
 }
 
-/* cart page */
-
-.cart-page .cart-static {
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-.cart-page .product-line {
-    margin-bottom: 18px;
-}
-
-.cart-page .product-line:last-child {
-    border-bottom: 1px solid #858fff;
-}
-
 /* home page */
 .loading {
     opacity: 0.3;
@@ -458,26 +443,6 @@ header div.userpanel div.panelhead .panelheadright {
 .cart-popup hr {
     border-bottom: 1px dashed #444;
     background-color: black;
-}
-
-/* cart page */
-
-.cart-static {
-    width: 100%;
-    color: #0169b2;
-    line-height: 25px;
-    font-weight: bolder;
-}
-
-.cart-static .part1 {
-    width: 56%;
-}
-
-.cart-static .part2,
-.cart-static .part3,
-.cart-static .part4,
-.cart-static .part5 {
-    width: 10%;
 }
 
 /* top line */
@@ -17092,17 +17057,6 @@ body:not(.home) #main {
         0px 10px 20px rgba(0, 195, 138, 0.18);
 }
 
-#middle.cart-page .cart-page .cart-static {
-    display: flex;
-}
-
-#middle.cart-page .cart-page .cart-static > span {
-    font-family: Gilroy-Bold;
-    font-size: 24px;
-    color: #ffffff;
-    padding: 1%;
-}
-
 #middle.cart-page .product-top .draws .wordlines,
 #middle.cart-page .product-top .lines .wordlines {
     display: none;
@@ -19584,22 +19538,6 @@ body.home #header .has-child .submenu {
         width: calc(100% - 40px);
         white-space: -o-pre-wrap;
         word-wrap: break-word;
-        font-size: 14px;
-    }
-
-    #middle.cart-page .cart-page .cart-static > span.part1 {
-        width: 25%;
-        font-size: 14px;
-    }
-
-    #middle.cart-page .cart-page .cart-static > span.part2,
-    #middle.cart-page .cart-page .cart-static > span.part3 {
-        width: 30%;
-        font-size: 14px;
-    }
-
-    #middle.cart-page .cart-page .cart-static > span.part5 {
-        width: 15%;
         font-size: 14px;
     }
 
