@@ -11,6 +11,12 @@ body {
 	box-sizing: border-box;
 }
 
+a.disabled {
+	pointer-events: none;
+	color: #ccc;
+	cursor: default;
+}
+
 .whole {
 	width: 100vw;
 	height: 100vh;
@@ -622,6 +628,327 @@ img {
 	font-size: 0.75em;
 	color: red;
 	text-align: center;
+}
+
+/* cart page */
+.cart-wrapper {
+	font-family: Gilroy-Bold;
+
+	& .cart-page {
+		& .cart-static {
+			font-size: 12px;
+			text-transform: uppercase;
+			width: 100%;
+			color: #0169b2;
+			line-height: 25px;
+			font-weight: bolder;
+			display: flex;
+
+			& .part1 {
+				width: 56%;
+			}
+			& .part2,
+			& .part3,
+			& .part4,
+			& .part5 {
+				width: 10%;
+			}
+
+			& > span {
+				font-size: 24px;
+				color: #ffffff;
+				padding: 1%;
+			}
+		}
+
+		@media screen and (max-width: 1024px) {
+			& .cart-static {
+				& .part1 {
+					width: 45%;
+				}
+				& .part2,
+				& .part3,
+				& .part4 {
+					width: 15%;
+				}
+
+				& > span {
+					font-size: 16px;
+					color: #ffffff;
+					padding: 1%;
+				}
+			}
+		}
+
+		& .products {
+			background: linear-gradient(180deg, #111724 0%, #090e18 100%);
+			box-shadow: 0px 2px 4px #000000, inset 0px 0.51px 0px rgb(255 255 255 / 30%);
+			border-radius: 3px;
+			margin-bottom: 15px;
+			border: none;
+			margin-bottom: 18px;
+			padding: 16px;
+
+			& .product {
+				display: flex;
+				& .product-title {
+					display: flex;
+					width: 56%;
+
+					& .product-cover {
+						margin-right: 48px;
+
+						& .cover {
+							margin-left: 5px;
+							background-image: url("/images/logos/logos-sprite.png");
+							background-size: 500% 400%;
+							position: relative;
+							top: 3px;
+							width: 70px;
+							height: 70px;
+						}
+
+						.cover.MegaMillions {
+							background-position: 0px -696px;
+						}
+
+						.cover.MegaJackpot {
+							background-position: 0px -770px;
+						}
+
+						.cover.Lotto649 {
+							background-position: 138px 0px;
+						}
+						.cover.OzLotto {
+							background-position: 0px 213px;
+						}
+
+						.cover.ElGordo {
+							background-position: 419px 214px;
+						}
+
+						.cover.SuperEnalotto {
+							background-position: 70px 143px;
+						}
+
+						.cover.SuperEnalotto {
+							margin-left: -10px;
+						}
+
+						.cover.UkLotto {
+							background-position: 70px 0px;
+							/*    margin-left: 15px;*/
+						}
+
+						.cover.BTCPowerPlay {
+							background-position: -75px 72px;
+						}
+
+						.cover.EuroMillions {
+							background-position: 210px 0px;
+						}
+
+						.cover.NewYorkLotto {
+							/*margin-left:11px;*/
+							background-position: -420px 0px;
+						}
+
+						.cover.LaPrimitiva {
+							background-position: -68px 214px;
+						}
+
+						.cover.PowerBall {
+							background-position: 0px 0px;
+							margin-left: 0px;
+						}
+
+						.cover.BonoLoto {
+							background-position: 140px 142px;
+						}
+					}
+
+					& .product-name {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						& span {
+							font-size: 18px;
+							color: #ffffff;
+						}
+					}
+				}
+
+				& .lines,
+				& .draws,
+				& .price {
+					font-size: 18px;
+					color: #fff;
+					width: 10%;
+					height: 30px;
+					text-align: left;
+					padding: 0 24px;
+					line-height: 70px;
+				}
+
+				& .price {
+					font-size: 22px;
+					color: #00c38a;
+					text-shadow: 0px 6px 16px rgb(19 209 156 / 35%);
+				}
+			}
+
+			@media screen and (max-width: 1024px) {
+				& .product {
+					& .product-title {
+						width: 45%;
+					}
+					& .lines,
+					& .draws,
+					& .price {
+						width: 15%;
+					}
+
+					& > span {
+						font-size: 16px;
+						color: #ffffff;
+						padding: 1%;
+					}
+				}
+			}
+
+			@media screen and (max-width: 648px) {
+				& .product {
+					& .product-title {
+						width: 45%;
+						& .product-cover {
+							display: none;
+						}
+					}
+
+					& .lines,
+					& .draws,
+					& .price {
+						line-height: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	& .cart-total {
+		display: flex;
+		align-items: center;
+		padding: 16px 0;
+
+		& .holder {
+			width: 66%;
+		}
+		& .label,
+		& .value {
+			margin: 0 16px;
+		}
+
+		& .label {
+			font-size: 22px;
+			color: #ffffff;
+		}
+
+		& .value {
+			color: #00c38a;
+			font-size: 28px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			& .holder {
+				width: 56%;
+			}
+		}
+
+		@media screen and (max-width: 648px) {
+			justify-content: center;
+			padding: 16px 20%;
+
+			& .holder {
+				display: none;
+			}
+		}
+	}
+
+	& .cart-actions {
+		display: flex;
+		padding: 24px;
+		align-items: center;
+		height: 96px;
+
+		& .title {
+			flex-grow: 1;
+			font-size: 22px;
+			color: #ffffff;
+		}
+
+		& .ticker-select {
+			width: 12%;
+			min-width: 120px;
+
+			& select {
+				padding: 10px;
+				width: 100%;
+
+				&:after {
+					content: "";
+					position: absolute;
+					background: "/images/select-arrow.png" no-repeat;
+					right: 10px;
+					top: 15px;
+					background-size: contain;
+					width: 10px;
+					height: 22px;
+				}
+
+				&:focus {
+					border: 1px solid #00c38a;
+					box-sizing: border-box;
+					box-shadow: 0px 0px 4px rgb(19 209 156 / 45%);
+					border-radius: 8px;
+				}
+			}
+		}
+
+		& .action {
+			margin-left: 32px;
+
+			& > input {
+				background: #13d19c;
+				border-radius: 4px;
+				border: none;
+				font-size: 18px;
+				color: #ffffff;
+				padding: 16px 32px;
+				width: 100%;
+				max-width: 100%;
+				height: auto;
+				margin: 0;
+			}
+		}
+
+		@media screen and (max-width: 648px) {
+			flex-wrap: wrap;
+			justify-content: space-between;
+			& .title {
+				flex-grow: 0;
+				width: 45%;
+			}
+
+			& .ticker-select {
+				width: 45%;
+			}
+			& .action {
+				margin: 0;
+				margin-top: 16px;
+				width: 100% !important;
+			}
+		}
+	}
 }
 
 // spinner

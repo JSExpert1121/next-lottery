@@ -1,24 +1,46 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useCallback, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import Link from 'next/link';
 import SelectNumbers from './selectnum';
 import { TTInput } from 'components/form/form-control';
 import { generateArray } from 'helpers/array';
 import { get_discounts } from 'helpers/discount';
+import { selected_dump } from 'helpers/pickio';
+import { setGameStatus } from 'store/actions/game';
 
 const SingleGame = ({ data, selMs, selEs }) => {
 
 	const [selNo, setSelNo] = useState({});
+	const [flag1, setFlag1] = useState(0);
 	const [flag2, setFlag2] = useState(true);
 	const [flags, setFlags] = useState([false, false, false, false]);
-	const [sdraw, setsDraw] = useState(1);
+	const [selectedM, setSelectedM] = useState(selMs);
+	const [selectedE, setSelectedE] = useState(selEs);
 	const [option, setOption] = useState(1);
-	const [flag1, setFlag1] = useState(0);
+	const dispatch = useDispatch();
 
-	const selectChanged = useCallback((i, flag) => {
-		flags[i - 1] = flag;
+	const selectChanged = useCallback((i, selM, selE) => {
+		flags[i - 1] = selM.length === data.AmountOfMainNumbersToMatch &&
+			selE.length === data.AmountOfExtraNumbersToMatch;
+		const lines = flags.filter(f => f).length;
 		setFlags([...flags]);
+
+		selectedM[i - 1] = [...selM];
+		selectedE[i - 1] = [...selE];
+		setSelectedM([...selectedM]);
+		setSelectedE([...selectedE]);
+
+		dispatch(setGameStatus({
+			name: data.LotteryName,
+			lines,
+			price: lines * data.PricePerLine,
+			draws: 1,
+			picks: selected_dump(selectedM, selectedE)
+		}));
+
 		setSelNo({
 			...selNo,
-			totalprice: flags.filter(f => f).length * data.PricePerLine
+			totalprice: lines * data.PricePerLine
 		})
 	}, [flags]);
 
@@ -27,6 +49,12 @@ const SingleGame = ({ data, selMs, selEs }) => {
 		setOption(e.target.value);
 	}, []);
 
+	useEffect(() => {
+		setSelectedM([...selMs]);
+		setSelectedE([...selEs]);
+	}, [selEs, selMs]);
+
+	const enable = (selNo.totalprice ?? 0) > 0;
 	return (
 		<form name="singledata" id="singledata">
 			<div className="single active" id="single">
@@ -54,7 +82,7 @@ const SingleGame = ({ data, selMs, selEs }) => {
 					<div className="tabin_main">
 						<div className="tabin_main_select">
 							{generateArray(1, 4).map(i => (
-								<SelectNumbers data={data} numTickets={i} key={i} onSelected={selectChanged} selE={selEs[i - 1]} selM={selMs[i - 1]} />
+								<SelectNumbers data={data} numTickets={i} key={i} onSelected={selectChanged} selE={selectedE[i - 1]} selM={selectedM[i - 1]} />
 							))}
 						</div>
 
@@ -116,14 +144,14 @@ const SingleGame = ({ data, selMs, selEs }) => {
 								</div>
 
 								{(data.LotteryName == 'BTC Power Play' || data.LotteryName == 'MegaJackpot') ? (
-									<span className="draws" style={{ display: 'none' }}>{sdraw > 0 ? sdraw : '1'} Draws</span>
+									<span className="draws" style={{ display: 'none' }}>1 Draws</span>
 								) : (
 									<div className="space_add">
 										<div className="spa oro-fill-width">
 											<div className="oro-lines-draws">
 												<div>
 													<div className="lines oro-lines">{flags.filter(f => f).length} lines</div>
-													<div className="oro-draws-label">X <span className="draws">{sdraw > 0 ? sdraw : '1'} Draws</span></div>
+													<div className="oro-draws-label">X <span className="draws">1 Draws</span></div>
 												</div>
 												<div className="oro-lines-draws-price">
 													€&nbsp;
@@ -171,7 +199,9 @@ const SingleGame = ({ data, selMs, selEs }) => {
 										</div>
 										<input type="hidden" value={data.PricePerLine.toFixed(2)} id="stp" />
 										<div className="tpt">
-											<a className="oro-single-total_share_conti_btn" id="single_continue">Continue</a>
+											<Link href='/user/cart'>
+												<a className={enable ? "oro-single-total_share_conti_btn" : "oro-single-total_share_conti_btn disabled"} id="single_continue">Continue</a>
+											</Link>
 										</div>
 									</div>
 								</div>

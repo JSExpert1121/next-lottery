@@ -94,7 +94,7 @@ export const getStaticProps = async (ctx) => {
 				}
 			}
 
-			let flag = `/images/flag_${item.CountryName}.png`;
+			let flag = `/images/flag_${item.CountryName.toLowerCase()}.png`;
 			if (item.LotteryName.includes('BTC Power Play') ||
 				item.LotteryName.includes('MegaJackpot') ||
 				item.LotteryName.includes('Raffle')) flag = null;

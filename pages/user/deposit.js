@@ -2,12 +2,9 @@ import React, { useState, useCallback } from 'react';
 import { useSelector } from 'react-redux';
 import Layout from 'components/layout';
 
-
+import { currencies } from 'helpers/constants';
 import { prepareConfirmDeposit } from 'service/client/user';
 
-const currencies = [
-	"BCH", "BTC", "ETH", "USDT.erc20", "USDT", "LTC", "DOGE", "XRP", "DASH", "XMR", "USDC", "TRX", "ETC", "NEO", "BSV", "ZEN", "XVG", "ZEC", "EOS", "DAI"
-];
 const DepositPage = () => {
 
 	const [currency, setCurrency] = useState('');
