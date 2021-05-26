@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import { generateArray } from 'helpers/array';
+import { generateArray, randomArray } from 'helpers/array';
 
 const lotteriesNames = {
 	'PowerBall': ' 1 Power Ball',
@@ -43,17 +43,27 @@ const SelectNumbers = ({ data, numTickets, onSelected, selE, selM }) => {
 		}
 	}, [selE, onSelected]);
 
+	const quickPick = useCallback(e => {
+		const ms = randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch);
+		const es = randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch);
+		onSelected(numTickets, ms, es);
+	}, [onSelected]);
+
+	const deletePick = useCallback(e => {
+		onSelected(numTickets, [], []);
+	}, [onSelected]);
+
 
 	return (
 		<div className="select_num_col">
 			<div className="select_num_col_part">
 				<div className="select_num_col_part-blue"></div>
 				<div className="quickpic">
-					<div className="quickpic_text on_ticket">&nbsp;</div>
+					<div className="quickpic_text on_ticket" onClick={quickPick}>&nbsp;</div>
 					<h6 className="pick_num_title">{`Pick ${data.AmountOfMainNumbersToMatch} Numbers`}</h6>
-					<a href="#" className="quickpic_delete">
+					<a className="quickpic_delete" onClick={deletePick}>
 					</a>
-					<a href="#" className="quickpic_close hidden">
+					<a className="quickpic_close hidden">
 						<img src="/images/close-icon.png" />
 					</a>
 				</div>

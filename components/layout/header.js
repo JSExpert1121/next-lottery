@@ -75,8 +75,7 @@ export default function Header() {
                 </a>
               </Link>
             ))}
-            {/* <a href="https://buy.bitcoin.com" className="header-bitcoin-values-buy" target="_blank">Buy Bitcoin</a> */}
-            <a href="#" className="header-bitcoin-values-buy show-sign-in deposit-page-nav-btn">Deposit Now</a>
+            <a href="/user/deposit" className="header-bitcoin-values-buy show-sign-in deposit-page-nav-btn">Deposit Now</a>
           </div>
         </div>
         <div className="right_menu">
@@ -171,13 +170,12 @@ export default function Header() {
             )}
             <li className="header_mobile_menu_bitcoin_values_part">
               <div className="header-bitcoin-values">
-                <Link href="/deposit"><a className="header-bitcoin-values-buy deposit-page-nav-btn">Deposit</a></Link>
+                <Link href="/user/deposit"><a className="header-bitcoin-values-buy deposit-page-nav-btn">Deposit</a></Link>
                 {coins && coins.map(coin => (
                   <Link key={coin.id} href="/lottery">
                     <a className='link'><HeaderCoin {...coin} ratios={coinVals} /></a>
                   </Link>
                 ))}
-                {/* <a href="https://buy.bitcoin.com" className="header-bitcoin-values-buy" target="_blank">Buy Bitcoin</a> */}
               </div>
             </li>
           </ul>
