@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './form-control.module.scss';
 
-const FromInput = (props) => {
+const FormInput = (props) => {
 
 	const { id, label, labelClass, ...others } = props;
 	return (
@@ -12,7 +12,22 @@ const FromInput = (props) => {
 	)
 }
 
-export default FromInput;
+export default FormInput;
+
+export const FormSelect = (props) => {
+
+	const { id, label, labelClass, values, ...others } = props;
+	return (
+		<div id={id} className='wrapper'>
+			<label className={labelClass}>{label}</label>
+			<select {...others}>
+				{Object.keys(values).map(key => (
+					<option key={key} value={key}>{values[key]}</option>
+				))}
+			</select>
+		</div>
+	)
+}
 
 export const Input = (props) => {
 	const { error, ...others } = props;
