@@ -60,7 +60,7 @@ const LoginPage = () => {
 		try {
 			setState({ busy: true });
 			await dispatch(UserActions.login(email.value, password.value));
-			router.push('/');
+			router.replace(referer ? decodeURIComponent(referer) : '/');
 		} catch (error) {
 			setState({ busy: false, error });
 		}
