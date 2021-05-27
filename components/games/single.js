@@ -193,8 +193,7 @@ const SingleGame = ({ data, selMs, selEs }) => {
 										<div className="oro-total-price-text">
 											<div className="font13 oro-total-price-label">Total</div>
 											<div className="font22 oro-total-price-number">
-												€&nbsp;
-															<span className="totalprice">{(selNo?.totalprice ?? 0).toFixed(2)}</span>
+												€&nbsp;<span className="totalprice">{(selNo?.totalprice ?? 0).toFixed(2)}</span>
 											</div>
 										</div>
 										<input type="hidden" value={data.PricePerLine.toFixed(2)} id="stp" />
