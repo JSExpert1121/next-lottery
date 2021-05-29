@@ -20,7 +20,6 @@ class MyDocument extends Document {
 					<link rel='stylesheet' id='theme-styles-css' href='/styles/style.css' type='text/css' media='all' />
 					<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossOrigin="anonymous" />
 					<link rel="stylesheet" id="open-sans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&amp;subset=latin%2Clatin-ext&amp;ver=4.5.14" type="text/css" media="all"></link>
-
 					<script type='text/javascript' src='/js/jquery.js'></script>
 					<script type='text/javascript' src='/js/jquery-migrate.js'></script>
 					<script type='text/javascript' src='/js/owl.carousel.js'></script>
