@@ -1,7 +1,7 @@
 import { confirmProcessorOrder } from 'service/cashier';
 
 export default async function handler(req, res) {
-    const { memberID, amount, ticker } = req.query;
+    const { memberID, amount, ticker } = req.body;
     if (req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
     }

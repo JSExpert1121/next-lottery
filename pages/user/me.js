@@ -1,14 +1,19 @@
-import React, { useCallback, useState, useReducer } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useCallback, useState } from 'react';
+import { useSelector } from 'react-redux';
 import Link from 'next/link';
 import Layout from 'components/layout';
 import ProfileForm from 'components/form/profile-form';
-import Table from 'components/form/table';
+import DataTable from 'containers/table/data-table';
 import { parseJsonFile } from 'helpers/json';
+import * as UserActions from 'store/actions/user';
+
 
 const MyAccount = ({ countries }) => {
 
 	const [tab, setTab] = useState(0);
+	const transactions = useSelector(state => state.user.transactions);
+	const tickets = useSelector(state => state.user.tickets);
+	const products = useSelector(state => state.user.products);
 
 	const tabClicked = useCallback((index) => () => {
 		setTab(index);
@@ -66,13 +71,25 @@ const MyAccount = ({ countries }) => {
 									<ProfileForm countries={countries} />
 								)}
 								{tab === 1 && (
-									<Table headers={['Transactions', 'ID', 'Date', 'Amount', 'Lottery', 'Product']} />
+									<DataTable 
+										headers={['Transactions', 'ID', 'Date', 'Amount', 'Lottery', 'Product']} 
+										values={transactions}
+										action={UserActions.getTransactions}
+									/>
 								)}
 								{tab === 2 && (
-									<Table headers={['Country', 'Lottery', 'Type', 'Date', 'Status', 'Winnings', 'Details']} />
+									<DataTable 
+										headers={['Country', 'Lottery', 'Type', 'Date', 'Status', 'Winnings', 'Details']} 
+										values={tickets}
+										action={UserActions.getTickets}
+									/>
 								)}
 								{tab === 3 && (
-									<Table headers={['Product', 'Lottery', 'Group Shares', 'Draws Left', 'Total Lines', 'Purchased on', 'End Date', 'Status']} />
+									<DataTable 
+										headers={['Product', 'Lottery', 'Group Shares', 'Draws Left', 'Total Lines', 'Purchased on', 'End Date', 'Status']}
+										values={products}
+										action={UserActions.getProducts}
+									/>
 								)}
 							</div>
 						</div>

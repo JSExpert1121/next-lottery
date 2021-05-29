@@ -419,7 +419,7 @@ img {
 	}
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1180px) {
 	#header .menu {
 		display: none;
 	}
@@ -637,6 +637,16 @@ img {
 	font-size: 12px;
 	color: red;
 	text-align: center;
+	width: 100%
+}
+
+.success-msg {
+	padding: 0 16px;
+	font-weight: 400;
+	font-size: 14px;
+	color: rgb(0, 182, 39);
+	text-align: center;
+	width: 100%;
 }
 
 /* cart page */

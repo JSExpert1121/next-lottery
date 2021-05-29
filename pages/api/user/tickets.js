@@ -1,14 +1,14 @@
-import { requestWithdraw } from 'service/cashier';
+import { getDrawsTickets } from 'service/playlottery';
 
 export default async function handler(req, res) {
-    const { amount, ticker, address } = req.body;
+    const { page, memberID } = req.body;
     if (req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
     try {
         // call api
-        const result = await requestWithdraw(amount, ticker, address);
+        const result = await getDrawsTickets(memberID, page);
         res.status(200).json(result);
     } catch (error) {
         console.log('error: ', error);

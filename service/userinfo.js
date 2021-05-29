@@ -64,7 +64,7 @@ export const getPersonalDetailsByEmail = async (email) => {
 }
 
 export const updatePersonalDetails = async (
-	email, password, firstName, lastName,
+	email, firstName, lastName,
 	memberID, phone, mobile, countryCode,
 	address, city, state, zipCode, birthday
 ) => {
@@ -75,7 +75,6 @@ export const updatePersonalDetails = async (
 			BrandID: BRAND_ID,
 			MemberID: memberID,
 			Email: email,
-			Password: password,
 			FirstName: firstName,
 			LastName: lastName,
 			PhoneNumber: phone,
