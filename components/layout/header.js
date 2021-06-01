@@ -36,6 +36,16 @@ export default function Header() {
     })
 
     setMounted(true);
+    jQuery(".contact-us-modal").on("click", function () {
+      jQuery("#contact-us-modal").modal({
+        fadeDuration: 300,
+      });
+    });
+    
+    jQuery("#contact-us-modal .fa-close").on("click", function () {
+      jQuery("#contact-us-modal a.close-modal").click();
+    });
+    
     return () => setMounted(false);
   }, []);
 
@@ -52,7 +62,7 @@ export default function Header() {
             <li className=""><Link href="/lottery">Lottery</Link></li>
             <li className=""><Link href="/lottery-results">Results</Link></li>
             <li className="has-child">
-              <Link href="/about-us">
+              <Link href="/help/about-us">
                 <a>
                   About&nbsp;
                   <svg className="arrowsvg" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,9 +71,9 @@ export default function Header() {
                 </a>
               </Link>
               <ul className="submenu">
-                <li><Link href="/faq">FAQ</Link></li>
+                <li><Link href="/help/faq">FAQ</Link></li>
                 <li><a className="contact-us-modal" href="#">Contact Us</a></li>
-                <li><a className="tc-modal" href="#">Terms and Conditions</a></li>
+                <li><a className="tc-modal" href="/help/terms-conditions">Terms and Conditions</a></li>
               </ul>
             </li>
           </ul>
@@ -139,7 +149,7 @@ export default function Header() {
             <li className=""><Link href="/lottery-results">Results</Link></li>
             <li className="has-child mobile-menu">
               <div>
-                <Link href="/about-us">About</Link>
+                <Link href="/help/about-us">About</Link>
                 <div className="arrow_down_button">
                   <svg className="arrowsvg" width="20" height="20" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1L6.92766 7L13 1" strokeWidth="2" />
@@ -147,10 +157,18 @@ export default function Header() {
                 </div>
               </div>
               <ul className="submenu" style={{ display: "none" }}>
-                <li><Link href="/faq">FAQ</Link></li>
+                <li><Link href="/help/faq">FAQ</Link></li>
                 <li><a className="contact-us-modal" href="#">Contact Us</a></li>
-                <li><a className="tc-modal" href="#">Terms and Conditions</a></li>
-                <li><a className="privacy-modal" href="#">Privacy Policy</a></li>
+                <li>
+                  <Link href='/help/terms-conditions'>
+                    <a className="tc-modal">Terms and Conditions</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/help/privacy'>
+                    <a className="privacy-modal">Privacy Policy</a>
+                  </Link>
+                  </li>
               </ul>
             </li>
             {(profile && mounted) ? (
