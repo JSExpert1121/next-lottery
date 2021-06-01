@@ -39,38 +39,6 @@ jQuery(".close-iframe-button").click(function (e) {
 	jQuery('.dark-blur').hide();
 });
 
-jQuery(".contact-us-modal").on("click", function () {
-	jQuery("#contact-us-modal").modal({
-		fadeDuration: 300,
-	});
-});
-
-jQuery("#contact-us-modal .fa-close").on("click", function () {
-	jQuery("#contact-us-modal a.close-modal").click();
-});
-
-jQuery(".tc-modal").on("click", function () {
-	jQuery('.close-signup-signin').click();
-	jQuery("#tc-modal").modal({
-		fadeDuration: 300,
-	});
-});
-
-jQuery("#tc-modal .fa-close").on("click", function () {
-	jQuery("#tc-modal a.close-modal").click();
-});
-
-jQuery(".privacy-modal").on("click", function () {
-	jQuery('.close-signup-signin').click();
-	jQuery("#privacy-modal").modal({
-		fadeDuration: 300,
-	});
-});
-
-jQuery("#privacy-modal .fa-close").on("click", function () {
-	jQuery("#privacy-modal a.close-modal").click();
-});
-
 jQuery('.forgotpass').click(function (e) {
 	e.preventDefault();
 	jQuery('.signin_error').empty();

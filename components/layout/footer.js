@@ -1,4 +1,5 @@
-import styles from "./footer.module.css"
+import styles from "./footer.module.css";
+import Link from 'next/link';
 
 export default function Footer() {
 	return (
@@ -8,26 +9,6 @@ export default function Footer() {
 				<div className="right close-modal"><span className="fa fa-close" rel="modal:close"></span></div>
 				<div className="modal-header">CONTACT US</div>
 				<div className="modal-body">If you want to contact us directly, you can email us at<br /><a href="mailto:support-lottery@bitcoin.com">support-lottery@bitcoin.com</a></div>
-			</div>
-
-			{/* <!-- T&C Modal --> */}
-			<div id="tc-modal" className="modal">
-				<div className="right close-modal"><span className="fa fa-close" rel="modal:close"></span></div>
-				<div className="modal-header">TERMS AND CONDITIONS</div>
-				<div className="modal-body">
-					{/* <iframe src="pdf/tc.pdf" width="100%" height="100%" style={{width: '100%', height: '100%'}} frameborder="0" scrolling="no"></iframe> */}
-					<div className="top_toolbar"></div>
-				</div>
-			</div>
-
-			{/* <!-- Privacy Policy Modal --> */}
-			<div id="privacy-modal" className="modal">
-				<div className="right close-modal"><span className="fa fa-close" rel="modal:close"></span></div>
-				<div className="modal-header">PRIVACY POLICY</div>
-				<div className="modal-body">
-					{/* <iframe src="pdf/privacy.pdf" width="100%" height="100%" style={{width: '100%', height: '100%'}} frameborder="0" scrolling="no"></iframe> */}
-					<div className="top_toolbar"></div>
-				</div>
 			</div>
 
 			<div id="gradient-bg" className="pt-4 pb-2">
@@ -43,10 +24,26 @@ export default function Footer() {
 				</div>
 				<div className="center-list text-center">
 					<ul className="link-list">
-						<li><a href="/lottery/">US PowerBall</a></li>
-						<li><a href="#owl-demo-user">Sure-Win Games</a></li>
-						<li><a href="/megajackpot-lottery/">Mega Jackpot</a></li>
-						<li><a href="/btcpowerplay-lottery/">PowerPlay</a></li>
+						<li>
+							<Link href='/lottery'>
+								<a>US PowerBall</a>
+							</Link>
+						</li>
+						<li>
+							<Link href='/lottery'>
+								<a>Sure-Win Games</a>
+							</Link>
+						</li>
+						<li>
+							<Link href='/lotteries/megajackpot'>
+								<a>Mega Jackpot</a>
+							</Link>
+						</li>
+						<li>
+							<Link href='/lotteries/btcpowerplay'>
+								<a>PowerPlay</a>
+							</Link>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -54,17 +51,39 @@ export default function Footer() {
 				<div className="footer-container">
 					<div className="page-list text-center grayout">
 						<ul className="link-list">
-							<li><a href="/faq/">FAQ</a></li>
-							<li><a href="#" className="contact-us-modal">Contact Us</a></li>
-							<li><a href="/promotions/">Promotion</a></li>
-							<li><a href="#" className="tc-modal">Terms of Service</a></li>
-							<li><a href="#" className="privacy-modal">Private Policy</a></li>
+							<li>
+								<Link href='/help/faq'>
+									<a>FAQ</a>
+								</Link>
+							</li>
+							<li>
+								<a href="#" className="contact-us-modal">Contact Us</a>
+							</li>
+							<li>
+								<Link href='/promotions'>
+									<a>Promotion</a>
+								</Link>
+							</li>
+							<li>
+								<Link href='/help/terms-conditions'>
+									<a className="tc-modal">Terms of Service</a>
+								</Link>
+							</li>
+							<li>
+								<Link href='/help/privacy'>
+									<a className="privacy-modal">Private Policy</a>
+								</Link>
+							</li>
 						</ul>
 					</div>
 					<div className="payment-list text-center">
 						<ul className="link-list mt-0 mb-0">
-							<li><span className="image-aligner"><img src="/images/bit-coin-2.png" /></span></li>
-							<li><span className="image-aligner"><img src="/images/bit-coin-1.png" /></span></li>
+							<li><span className="image-aligner">
+								<img src="/images/bit-coin-2.png" />
+							</span></li>
+							<li><span className="image-aligner">
+								<img src="/images/bit-coin-1.png" />
+							</span></li>
 						</ul>
 					</div>
 					<div className="age-18-plus text-center grayout">
