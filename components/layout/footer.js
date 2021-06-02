@@ -13,7 +13,7 @@ export default function Footer() {
 
 			<div id="gradient-bg" className="pt-4 pb-2">
 				<div className="pb-3 text-center">
-					<img id="footer-logo" src="/images/bitcoinlottery@2x-1.png" alt="Bitcoin.com" title="Bitcoin.com" height="26" style={{ cursor: 'pointer' }} />
+					<img id="footer-logo" src="/images/bitcoinlottery@2x-1.png" alt="BitcoinLotterys.com" title="BitcoinLotterys.com" height="26" style={{ cursor: 'pointer' }} />
 				</div>
 				<div className="center-list text-center">
 					<ul className="link-list">
