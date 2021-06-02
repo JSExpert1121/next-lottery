@@ -10,9 +10,11 @@ const Table = ({ headers, values }) => {
 					))}
 				</tr>
 				<tbody>
-					{/* {values.map(value => (
-
-					))} */}
+					{values && values.map(value => (
+						<tr>
+							
+						</tr>
+					))}
 				</tbody>
 			</thead>
 			<tbody id="mytransaction"></tbody>

@@ -123,11 +123,11 @@ const DepositPage = () => {
 								</div>
 							</div>
 						</div>
-						<h2 className="deposit_subtitle">The Bitcoin.com Lottery supports 20 different types of cryptocurrencies</h2>
+						<h2 className="deposit_subtitle">The BitcoinLotterys.com supports 20 different types of cryptocurrencies</h2>
 						<div className="withdrawexplanation">
 							<div className="widthdrawinnercontainer">
 								<p>
-									Directly deposit cryptocurrency to your Bitcoin.com Lottery secure wallet<br />
+									Directly deposit cryptocurrency to your BitcoinLotterys.com secure wallet<br />
                     You set the amount you want to deposit, all amounts are defined in a Euro format
               </p>
 							</div>
