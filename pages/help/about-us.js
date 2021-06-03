@@ -42,10 +42,8 @@ const About = () => {
 									Once your order is submitted our team of select local distributors will purchase your order with an official lottery agent and shortly thereafter you will receive a scanned copy of your lotto ticket in your account.</p>
 								<h1 className="item-title" id="contact-us">Contact Us</h1>
 								<p>
-									Send us an e-mail to: <a href="mailto:support-lottery@bitcoin.com">support-lottery@<span className='text-primary'>bitcoin</span><span className='text-secondary'>lotterys.com</span></a></p>
-								<h1 className="item-title">For More Information Please Visit</h1>
-								<p>
-									<a href="https://www.bitcoin.com/about-us/">https://www.bitcoin.com/about-us/</a></p>
+									Send us an e-mail to: <a href="mailto:support-lottery@bitcoin.com">support-lottery@<span className='text-primary'>bitcoin</span><span className='text-secondary'>lotterys.com</span></a>
+								</p>
 							</div>
 						</div>
 					</div>
