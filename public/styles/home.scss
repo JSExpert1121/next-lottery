@@ -1,19 +1,39 @@
+@import 'variables';
+
+.text-primary { color: $color-primary; }
+.text-secondary { color: $color-secondary; }
+
+.lotto_banner .slogan_block {
+    font-size: 3.5rem;
+    color: #fff;
+    font-family: Gilroy-bold;
+    text-align: center;
+}
+
+.lotto_banner .slogan_block .slogan_2 {
+    font-size: 3.5rem;
+    color: #fff;
+    font-family: Gilroy-bold;
+    text-align: center;
+}
+
+
 .view-all-lotts {
     margin: 0px 130px 40px 0;
     font-family: Gilroy-Regular;
     font-size: 20px;
     line-height: 23px;
-    color: #ffffff;
+    color: $color-white;
     transition: 0.3s;
 
     &:hover {
-        color: #13d19c;
+        color: $color-primary;
         transition: 0.3s;
     }
 }
 
 #owl-demo .slide {
-    border: 1px solid rgba(19, 209, 156, 0.2);
+    border: 1px solid $color-border;
     box-sizing: border-box;
     border-radius: 10px;
 
@@ -32,9 +52,9 @@
         font-family: Gilroy-Bold;
         font-size: 18px;
         white-space: nowrap;
-        color: #ffffff;
+        color: $color-white;
         padding: 10px;
-        background: #13d19c;
+        background: $color-primary;
         border-radius: 5px;
         transition: 0.3s;
         margin-right: 10px;
@@ -52,11 +72,11 @@
             font-size: 18px;
             line-height: 21px;
             text-align: center;
-            color: #ffffff;
+            color: $color-white;
             min-height: 60px;
 
             & span {
-                color: #13d19c;
+                color: $color-primary;
             }
         }
 
@@ -66,14 +86,14 @@
         }
 
         & a.playNowBtn.hover {
-            background: #13d19cc9;
+            background: $color-primary;
             transition: 0.3s;
         }
 
         & .jackpotAmount {
             font-family: Gilroy-bold;
             font-size: 3.5rem;
-            color: #13d19c;
+            color: $color-secondary;
         }
     }
 }
@@ -93,7 +113,7 @@
             font-family: Gilroy-Bold;
             font-size: 28px;
             text-align: center;
-            color: #ffffff;
+            color: $color-white;
             text-align: center;
             align-self: center;
             align-items: center;
@@ -104,7 +124,7 @@
             font-family: Gilroy-medium;
             font-size: 16px;
             line-height: 19px;
-            color: #ffffff;
+            color: $color-white;
             padding: 10px;
         }
     }
@@ -113,7 +133,7 @@
         font-family: Gilroy-Bold;
         font-size: 28px;
         line-height: 33px;
-        color: #ffffff;
+        color: $color-white;
         text-align: center;
         border-radius: 4px;
     }
@@ -124,7 +144,7 @@
 
     & h1 {
         font-size: 30px;
-        color: #fff;
+        color: $color-white;
         line-height: 40px;
     }
 
@@ -136,7 +156,7 @@
     & .track {
         display: flex;
         flex: 1;
-        border: 1px solid rgba(19, 209, 156, 0.2);
+        border: 1px solid $color-border;
         box-sizing: border-box;
         border-radius: 10px;
         margin-right: 20px;
@@ -149,12 +169,12 @@
 
     & .jackpotAmount {
         font-size: 30px;
-        color: #13d19c;
+        color: $color-secondary;
     }
 
     & .jackpotDesciption {
         font-size: 24px;
-        color: #fff;
+        color: $color-white;
         margin-bottom: 20px;
     }
 
@@ -168,9 +188,9 @@
 
     & a.playNowBtn {
         font-size: 20px;
-        color: #ffffff;
+        color: $color-white;
         padding: 10px 40px;
-        background: #13d19c;
+        background: $color-primary;
         border-radius: 5px;
         transition: 0.3s;
         line-height: 50px;
@@ -181,7 +201,7 @@
         }
 
         &:hover {
-            background: #13d19cc9;
+            background: $color-primary;
             transition: 0.3s;
         }
     }
@@ -200,7 +220,7 @@
             & .itemBg {
                 font-size: 20px;
                 text-align: center;
-                color: #ffffff;
+                color: $color-white;
                 text-align: center;
                 align-self: center;
                 align-items: center;
@@ -211,7 +231,7 @@
                 font-family: Gilroy-medium;
                 font-size: 16px;
                 line-height: 19px;
-                color: #ffffff;
+                color: $color-white;
                 padding: 10px;
             }
         }
@@ -268,7 +288,7 @@
 
         & > div > h1 {
             font-size: 30px;
-            color: #fff;
+            color: $color-white;
             line-height: 40px;
             margin-bottom: 40px;
         }
@@ -289,8 +309,8 @@
 
 .lotteryresultslist-new li.block {
     text-align: left;
-    background: linear-gradient(180deg, #111724 0%, #090e18 100%);
-    box-shadow: 0px 2px 4px #000000, inset 0px 0.51px 0px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(180deg, $color-background 0%, $color-darkbg 100%);
+    box-shadow: 0px 2px 4px $color-black, inset 0px 0.51px 0px $color-lightgray;
     border-radius: 3px;
     list-style-type: none;
     width: auto;
@@ -321,7 +341,7 @@
         font-family: Gilroy-Bold;
         font-size: 24px;
         line-height: 33px;
-        color: #ffffff;
+        color: $color-white;
         text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(255, 255, 255, 0.12),
             0px 4px 8px rgba(255, 255, 255, 0.18);
         align-self: center;
@@ -331,16 +351,16 @@
         font-family: Gilroy-bold;
         font-size: 22px;
         line-height: 26px;
-        color: #ffffff;
+        color: $color-white;
         padding: 16px 30px;
-        background: #13d19c;
+        background: $color-primary;
         box-shadow: 0px 10px 16px rgba(19, 209, 156, 0.16), 0px 4px 6px rgba(0, 0, 0, 0.06);
         border-radius: 10px;
         margin-left: auto !important;
         transition: 0.3s;
 
         &:hover {
-            background: #13d19cc9;
+            background: $color-primary;
             transition: 0.3s;
         }
     }
@@ -351,13 +371,13 @@
 }
 
 .lotto-results-section .more-result-link {
-    background: #13d19c;
+    background: $color-primary;
     box-shadow: 0px 10px 16px rgba(19, 209, 156, 0.16), 0px 4px 6px rgba(0, 0, 0, 0.06);
     border-radius: 5px;
     font-family: Gilroy-bold;
     font-size: 22px !important;
     line-height: 26px !important;
-    color: #ffffff !important;
+    color: $color-white !important;
     padding: 16px 0px !important;
     width: 100% !important;
     border: 0 !important;
@@ -367,7 +387,7 @@
     transition: 0.3s;
 
     &:hover {
-        background: #13d19cc9;
+        background: $color-primary;
         transition: 0.3s;
     }
 }

@@ -59,9 +59,9 @@ export default function LotteryResultsPage({ results }) {
 							<div className="results-page">
 								<h1>Real-Time Results !</h1>
 								<p>
-									BitcoinLotterys.com provides players with a variety of lotteries from the US, Canada and Europe.
+									<span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> provides players with a variety of lotteries from the US, Canada and Europe.
                                 </p>
-								<p>With BitcoinLotterys.com, your lottery results online are just a click away, at any time and any place. As long as you have internet access alongside a computing device, checking lottery results is now as easy as one click of your mouse.</p>
+								<p>With <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span>, your lottery results online are just a click away, at any time and any place. As long as you have internet access alongside a computing device, checking lottery results is now as easy as one click of your mouse.</p>
 								<h1></h1>
 							</div>
 						</div>

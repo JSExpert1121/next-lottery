@@ -12,7 +12,7 @@ const News = ({ items }) => {
                         </div>
                         <div className="news-details">
                             <div className="news-date">9 July 2020, 12:05 am</div>
-                            <div className="news-title">�Bitcoin Is Not a Privacy Coin� Says Crypto Evangelist Andreas Antonopoulos</div>
+                            <div className="news-title">"Bitcoin Is Not a Privacy Coin" Says Crypto Evangelist Andreas Antonopoulos</div>
                             <div className="news-excerpt">Andreas Antonopoulos discussed how he desired to see Bitcoin have more &ldquo;privacy features&rdquo; in a recent live stream Q&am...</div>
                             <div className="news-readmore-link">
                                 <a href="#" target="_blank">Read More</a>

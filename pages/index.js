@@ -5,8 +5,6 @@ import Layout from 'components/layout';
 import Banner from 'components/common/banner';
 import LotteryList from 'components/common/lottery-list';
 import ExLotteryList from 'components/common/exlottery-list';
-// import ProductList from 'components/common/product-list';
-// import CartPopup from 'components/home/cart-popup';
 import PlayGroup from 'components/home/play-group';
 import LottoResult from 'components/home/lotto-result';
 import Royalty from 'components/home/loyalty';
@@ -79,11 +77,11 @@ export const getStaticProps = async (ctx) => {
 
 	const banners = await parseJsonFile('data/banners.json');
 	try {
-		// const res = await Promise.all([getAllDraws(), getResultsByBrand()]);
-		const res = await Promise.all([
-			parseJsonFile('data/lotteries.json'),
-			parseJsonFile('data/results.json'),
-		]);
+		const res = await Promise.all([getAllDraws(), getResultsByBrand()]);
+		// const res = await Promise.all([
+		// 	parseJsonFile('data/lotteries.json'),
+		// 	parseJsonFile('data/results.json'),
+		// ]);
 		const draws = res[0];
 		const lotteries = draws.filter(draw => !(
 			draw.LotteryName == 'BTC Power Play' || draw.LotteryName == 'MegaJackpot' || draw.LotteryName == 'BTC Raffle 50'

@@ -45,6 +45,16 @@ export default function Header() {
     jQuery("#contact-us-modal .fa-close").on("click", function () {
       jQuery("#contact-us-modal a.close-modal").click();
     });
+
+    jQuery('.arrow_down_button').on('click', function () {
+      if (jQuery(this).closest('li.has-child.mobile-menu').hasClass('active')) {
+        jQuery('li.has-child.mobile-menu').removeClass('active');
+      } else {
+        jQuery('li.has-child.mobile-menu').removeClass('active');
+        jQuery(this).closest('li.has-child.mobile-menu').addClass('active');
+      }
+    })
+  
     
     return () => setMounted(false);
   }, []);
@@ -55,7 +65,8 @@ export default function Header() {
         <div className='left_menu'>
           <Link href="/">
             <a className='logo'>
-              <img src="/images/bitcoinlottery@2x-1.png" />
+              <span>Bitcoin</span>
+              <span>Lotterys.com</span>
             </a>
           </Link>
           <ul>

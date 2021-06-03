@@ -5,7 +5,7 @@
             "background": "url('images/Lotto-2.jpg') no-repeat",
             "position": "72% 30%",
             "subject1": "Play the <span className=\"slogan_2 text-green\">Official</span>",
-            "subject2": "BitcoinLotterys.com <span class=\"slogan_2 text-green\">Lottery</span> Platform",
+            "subject2": "<span class='text-primary'>Bitcoin</span><span class='text-secondary'>Lotterys.com</span> <span class=\"slogan_2 text-green\">Lottery</span> Platform",
             "descHtml": "Powerball, Megamillion, Lotto649<br/> LaPrimitiva, and much more!"
         },
         {

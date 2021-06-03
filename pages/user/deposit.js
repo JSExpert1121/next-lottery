@@ -123,13 +123,13 @@ const DepositPage = () => {
 								</div>
 							</div>
 						</div>
-						<h2 className="deposit_subtitle">The BitcoinLotterys.com supports 20 different types of cryptocurrencies</h2>
+						<h2 className="deposit_subtitle">The <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> supports 20 different types of cryptocurrencies</h2>
 						<div className="withdrawexplanation">
 							<div className="widthdrawinnercontainer">
 								<p>
-									Directly deposit cryptocurrency to your BitcoinLotterys.com secure wallet<br />
-                    You set the amount you want to deposit, all amounts are defined in a Euro format
-              </p>
+									Directly deposit cryptocurrency to your <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> secure wallet<br />
+                    				You set the amount you want to deposit, all amounts are defined in a Euro format
+              					</p>
 							</div>
 						</div>
 						<div className="widthdrawmoneydown">
@@ -138,7 +138,7 @@ const DepositPage = () => {
 								<div className="widthdrawmoneydowninnerwrapper">
 									<div className="howmuchwuthdrawtext">
 										Choose how much you would like to deposit:
-                	</div>
+                					</div>
 									<div className="howmuchwuthdrawinputtext">
 										<input type="text" className="cvc2_field" name="amt" onKeyPress={handleKeyPress} maxLength="6" value={amount} onChange={amountChange} />
 										<span className="deposit_amount-unit" id="deposit_amount-unit">€</span>
@@ -154,7 +154,7 @@ const DepositPage = () => {
 									<div className="withdrawbtnpart" id="deposit_submit-btn">
 										<div className="withdrawbtn" onClick={handleDeposit}>
 											Deposit
-                    </div>
+                    					</div>
 									</div>
 								</div>
 								<div className="myaccount_detail_error">

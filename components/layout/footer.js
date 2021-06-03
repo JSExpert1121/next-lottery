@@ -12,8 +12,9 @@ export default function Footer() {
 			</div>
 
 			<div id="gradient-bg" className="pt-4 pb-2">
-				<div className="pb-3 text-center">
-					<img id="footer-logo" src="/images/bitcoinlottery@2x-1.png" alt="BitcoinLotterys.com" title="BitcoinLotterys.com" height="26" style={{ cursor: 'pointer' }} />
+				<div className="pb-3 text-center logo">
+					<span>Bitcoin</span>
+					<span>Lotterys.com</span>
 				</div>
 				<div className="center-list text-center">
 					<ul className="link-list">
@@ -89,7 +90,7 @@ export default function Footer() {
 					<div className="age-18-plus text-center grayout">
 						<span id="age-18-plus-text">
 							<img src="/images/18-plus.png" />
-							This website is operated by Saint Bitts LLC
+							This website is operated by Bravio Technologies Limited
 						</span>
 					</div>
 				</div>

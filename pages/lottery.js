@@ -56,22 +56,22 @@ export default function LotteryPage({ lotteries }) {
 							</div>
 							<div className="clear_inner">&nbsp;</div>
 							<div className="resultschecker">
-								<h1>We are the Official BitcoinLotterys.com Lottery Provider</h1>
+								<h1>We are the Official <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> Provider</h1>
 								<p>
-									Choose your preferred lottery from the list above, click 'Play' and select Your Lucky Numbers. BitcoinLotterys.com offers our customers the option to purchase original lottery tickets in the worlds most recognised lotteries such as the Powerball and the Mega-Millions from the USA and Europe's Major lotteries such as Euro-Millions , Euro jackpot with your BCH and BTC accounts
+									Choose your preferred lottery from the list above, click 'Play' and select Your Lucky Numbers. <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> offers our customers the option to purchase original lottery tickets in the worlds most recognised lotteries such as the Powerball and the Mega-Millions from the USA and Europe's Major lotteries such as Euro-Millions , Euro jackpot with your BCH and BTC accounts
 									</p>
 								<h1>Buy Secure Lotto Tickets</h1>
 								<p>
-									At BitcoinLotterys.com, we use the highest security standards to guarantee that your BTC and BCH transactions are safe. You buy lottery ticket digitally only via our secured Blockchain managed e-wallet protocols https://wallet.bitcoin.com/
+									At <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span>, we use the highest security standards to guarantee that your BTC and BCH transactions are safe. You buy lottery ticket digitally only via our secured Blockchain managed e-wallet protocols https://wallet.bitcoin.com/
 									</p>
 								<h1>Electronic Ticket Scan &amp; Winning Transfer Service:</h1>
 								<p>
-									It is a part of our service that every ticket you buy is scanned and uploaded to your account up to 30 minutes before each draw. After the draw, BitcoinLotterys.com will announce the results on the lottery.bitcoin.com website and automatically calculate your winnings consistent with the numbers you have previously chosen. Your winnings will be transferred to your account and are displayed as 'Real Money' in the &#8220;Account Balance&#8221; section of your lottery.bitycoin.com dashboard . By contacting the BitcoinLotterys.com support team mailto:support@bitcoin.braviotechnology.com your winnings will be transferred to your bank account as per our lottery.bitcoin.com payout protocols advise within our Lottery Platforms Terms and Conditions. http://bitcoin.braviotechnology.com/terms-and-conditions/
+									It is a part of our service that every ticket you buy is scanned and uploaded to your account up to 30 minutes before each draw. After the draw, <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> will announce the results on the lottery.bitcoin.com website and automatically calculate your winnings consistent with the numbers you have previously chosen. Your winnings will be transferred to your account and are displayed as 'Real Money' in the &#8220;Account Balance&#8221; section of your lottery.bitycoin.com dashboard . By contacting the <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> support team mailto:support@bitcoin.braviotechnology.com your winnings will be transferred to your bank account as per our lottery.bitcoin.com payout protocols advise within our Lottery Platforms Terms and Conditions. http://bitcoin.braviotechnology.com/terms-and-conditions/
 									</p>
 								<h1>Worldwide Lottery Collection</h1>
 								<p>
-									At BitcoinLotterys.com, we have gathered the greatest and most profitable lottery games from around the world. Our customers can now enjoy the option to participate at anytime and from anywhere in these world wide lotteries by purchasing the Original Ticket in the Original Lottery with their own BCH and BTC.<br />
-										BCH and BTC wallet holders hosted on the BitcoinLotterys.com website can now play and win the biggest lotto jackpots in the world.
+									At <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span>, we have gathered the greatest and most profitable lottery games from around the world. Our customers can now enjoy the option to participate at anytime and from anywhere in these world wide lotteries by purchasing the Original Ticket in the Original Lottery with their own BCH and BTC.<br />
+										BCH and BTC wallet holders hosted on the <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> website can now play and win the biggest lotto jackpots in the world.
 									</p>
 								<h1>Boost Your Chances With A Group Acquisition:</h1>
 								<p>

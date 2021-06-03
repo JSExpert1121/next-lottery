@@ -178,13 +178,18 @@ export async function getStaticProps(context) {
 	console.log('lotto: ', lotto);
 
 	try {
+		// const result = await Promise.all([
+		// 	parseJsonFile('data/lotteries.json'),
+		// 	parseJsonFile('data/rules.json'),
+		// 	parseJsonFile('data/prices.json'),
+		// 	parseJsonFile('data/posts.json')
+		// ]);
 		const result = await Promise.all([
-			parseJsonFile('data/lotteries.json'),
-			parseJsonFile('data/rules.json'),
-			parseJsonFile('data/prices.json'),
+			getAllDraws(),
+			getLotteryRules(),
+			// getPricesAndDiscounts(1, 3),
 			parseJsonFile('data/posts.json')
 		]);
-		// const result = await Promise.all([getAllDraws(), getLotteryRules(), getPricesAndDiscounts(1, 3)]);
 		const draws = result[0];
 		const lottery = draws.find(item => item.LotteryName.replace(' ', '').toLowerCase() === lotto);
 
@@ -202,7 +207,8 @@ export async function getStaticProps(context) {
 
 		// const groups = result[2];
 		// const group = groups.find(item => item.LotteryTypeId == lottery.LotteryTypeId);
-		const posts = result[3];
+		// const posts = result[3];
+		const posts = result[2];
 		const post = posts.find(item => item.name === lotto.replace(' ', '').toLowerCase());
 		return {
 			props: {
