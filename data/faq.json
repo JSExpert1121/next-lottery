@@ -1,6 +1,6 @@
 [
     {
-        "title": "What is Bitcoin.lottery.com?",
+        "title": "What is <span class='text-primary'>Bitcoin</span><span class='text-secondary'>Lotterys.com</span>?",
         "answer": "The Bitcoin lottery platform is an online lottery ticketing system that exclusively uses the cryptocurrency Bitcoin Cash (BCH) and Bitcoin (BTC)"
     },
     {
@@ -33,11 +33,11 @@
     },
     {
         "title": "How can I protect my account?",
-        "answer": "BitcoinLottery now supports account passwords and two factor authentication (2fa). If you set up an account password, you will be asked to enter this password every time you initially access your account using your unique URL. If you enable 2fa, you will need to enter a code from your smart phone to access your account, and to make withdrawals. You will be able to access these features from the 'Extra Security' section in 'My Account'"
+        "answer": "Bitcoin</span><span class='text-secondary'>Lotterys</span> now supports account passwords and two factor authentication (2fa). If you set up an account password, you will be asked to enter this password every time you initially access your account using your unique URL. If you enable 2fa, you will need to enter a code from your smart phone to access your account, and to make withdrawals. You will be able to access these features from the 'Extra Security' section in 'My Account'"
     },
     {
         "title": "What does provably fair mean?",
-        "answer": "Play with confidence! We guarantee that every game you play at BitcoinLottery s is completely fair. Check out the 'Provably Fair' section in the 'About' tab on bitcoin.com."
+        "answer": "Play with confidence! We guarantee that every game you play at Bitcoin</span><span class='text-secondary'>Lotterys</span> s is completely fair. Check out the 'Provably Fair' section in the 'About' tab on bitcoin.com."
     },
     {
         "title": "Can I play on my mobile phone?",
@@ -49,11 +49,11 @@
     },
     {
         "title": "What is the minimum deposit?",
-        "answer": "In BitcoinLottery your minimum deposit is The cost of a Original Lottery Ticket plus the calculated Bitcoin.com adminsstration fees located on the payment page of the website "
+        "answer": "In Bitcoin</span><span class='text-secondary'>Lotterys</span> your minimum deposit is The cost of a Original Lottery Ticket plus the calculated Bitcoin.com adminsstration fees located on the payment page of the website "
     },
     {
         "title": "What happens if I send Bitcoin on the segwit enabled chain instead of Bitcoin Cash?",
-        "answer": "Any amount sent on the wrong chain will not be credited on BitcoinLottery. Any bitcoin sent to the wrong chain will be forfeit.<br /> It is also possible to meet people selling Bitcoin (BCH) in your area, though a site like https://localbitcoins.com."
+        "answer": "Any amount sent on the wrong chain will not be credited on Bitcoin</span><span class='text-secondary'>Lotterys</span>. Any bitcoin sent to the wrong chain will be forfeit.<br /> It is also possible to meet people selling Bitcoin (BCH) in your area, though a site like https://localbitcoins.com."
     },
     {
         "title": "How does the referral program work?",
