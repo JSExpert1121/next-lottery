@@ -31,7 +31,7 @@ const FaqPage = ({ faqs }) => {
 										<ul className="faq-main">
 											{faqs && faqs.map((faq, index) => (
 												<li key={index} onClick={() => toggleOpen(index)} className={opens.includes(index) ? 'open-answer' : ''}>
-													<h3 className="question-title">{faq.title}<span className="fa right fa-plus"></span></h3>
+													<h3 className="question-title" dangerouslySetInnerHTML={{ __html: faq.title }} />
 													<div className="answer-content">
 														<p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
 													</div>
