@@ -184,7 +184,7 @@ export default function Header() {
             </li>
             {(profile && mounted) ? (
               <>
-                <li className=""><Link href="/users/me">My Account</Link></li>
+                <li className=""><Link href="/user/me">My Account</Link></li>
                 <li className=""><a href="#" onClick={handleLogout}>Log out</a></li>
               </>
             ) : (

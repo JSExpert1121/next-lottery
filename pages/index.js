@@ -61,9 +61,9 @@ export default function Home(props) {
 					<div id="middle_sec" style={{ cursor: 'pointer' }}>
 						<div className="bannersignup" />
 					</div>
-					<section className="loyalty">
+					{/* <section className="loyalty">
 						<Royalty />
-					</section>
+					</section> */}
 					<section id="middle_about" className="wrap news-section-new" >
 						<News />
 					</section>
