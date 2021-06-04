@@ -1301,34 +1301,186 @@ img {
 				}
 			}
 
-			& table {
-				border: none;
-				border-collapse: collapse;
-				overflow: auto;
-				margin: 16px 0;
+			& .data-table {
 				width: 100%;
+				overflow-x: auto;
+				& table {
+					min-width: 720px;
+					border: none;
+					border-collapse: collapse;
+					overflow: auto;
+					margin: 16px 0;
+					width: 100%;
 
-				& thead {
-					background: linear-gradient(180deg, $color-background 0%, $color-darkbg 100%);
-					box-shadow: 0px 2px 4px $color-black, inset 0px 0.51px 0px rgb(255 255 255 / 30%);
-					border-radius: 3px;
-					font-weight: normal;
-					line-height: 42px;
-					color: $color-white;
-
-					& th {
-						font-family: Gilroy-Bold;
-						font-size: 18px;
+					& thead {
+						background: linear-gradient(180deg, $color-background 0%, $color-darkbg 100%);
+						box-shadow: 0px 2px 4px $color-black, inset 0px 0.51px 0px rgb(255 255 255 / 30%);
+						border-radius: 3px;
+						font-weight: normal;
+						line-height: 42px;
 						color: $color-white;
-						padding-top: 10px;
-						padding-bottom: 10px;
-						height: 30px;
-						text-align: center;
+
+						& th {
+							font-family: Gilroy-Bold;
+							font-size: 18px;
+							color: $color-white;
+							padding-top: 10px;
+							padding-bottom: 10px;
+							height: 30px;
+							text-align: center;
+						}
+					}
+
+					& tbody {
+						& tr td {
+							font-family: Gilroy-Regular;
+							height: 48px;
+							font-size: 16px;
+							line-height: 3;
+							text-align: center;
+							font-weight: normal;
+							border: 1px solid $color-white;
+						}
+					}
+
+					& .btn_dark-blue {
+						background-color: rgb(29, 50, 101) !important;
 					}
 				}
 
-				& .btn_dark-blue {
-					background-color: rgb(29, 50, 101) !important;
+				& .tickets-table,
+				& .products-table {
+					& th,
+					& td {
+						width: 14% !important;
+					}
+
+					& .collapsable-table-row {
+						border: 1px solid $color-white;
+						border-radius: 4px;
+						min-width: 720px;
+						margin: 16px 0;
+
+						& table.header {
+							margin: 0;
+							cursor: pointer;
+
+							& th,
+							& td {
+								font-weight: 500 !important;
+								border: none;
+								font-size: 18px;
+							}
+
+							& tbody {
+								border-radius: 4px;
+
+								& td .drawer-header-icon {
+									width: 26px;
+									height: 26px;
+									background: #00c38a url("/images/right_long_white_arrow.svg") no-repeat center;
+									border-radius: 4px;
+									margin: auto;
+								}
+
+								& td.center {
+									vertical-align: middle;
+									& img {
+										height: 20px;
+										margin-top: -3px;
+									}
+								}
+							}
+						}
+
+						& table.contents {
+							margin: 0;
+							width: 100%;
+
+							& th,
+							& td {
+								font-weight: 500 !important;
+								width: 33% !important;
+								border: none;
+								font-size: 18px;
+								padding: 0;
+							}
+
+							& thead {
+								border-top: 1px solid $color-white;
+								border-bottom: 1px solid $color-white;
+							}
+
+							& tbody {
+								border-radius: 4px;
+
+								& td .drawer-header-icon {
+									width: 26px;
+									height: 26px;
+									background: #00c38a url("/images/right_long_white_arrow.svg") no-repeat center;
+									border-radius: 4px;
+									margin: auto;
+								}
+
+								& td.center {
+									vertical-align: middle;
+									& img {
+										height: 20px;
+										margin-top: -3px;
+									}
+								}
+
+								& td.selected-numbers {
+									height: auto;
+									padding: 8px 0;
+
+									& div {
+										display: inline-block;
+										margin: auto;
+									}
+								}
+							}
+						}
+
+						& table.hidden {
+							height: 0;
+						}
+					}
+				}
+
+				& .products-table {
+					& th,
+					& td {
+						width: 12.5% !important;
+					}
+
+					& .contents {
+						border-top: 1px solid $color-white;
+
+						& > div {
+							padding: 16px;
+							text-align: center;
+							&:first-child {
+								display: flex;
+								align-items: center;
+								border-bottom: 1px solid $color-white;
+								padding: 16px;
+
+								& > div:last-child {
+									flex-grow: 1;
+									text-align: center;
+
+									& div {
+										display: inline-block;
+									}
+								}
+							}
+
+						}
+					}
+					& .hidden {
+						height: 0;
+					}
 				}
 			}
 		}
@@ -1343,6 +1495,7 @@ img {
 			color: #00c58a;
 			font-family: "Gilroy-bold";
 			margin-bottom: 40px;
+			text-transform: none;
 
 			&:not(:first-child) {
 				margin-top: 100px;
@@ -1356,7 +1509,7 @@ img {
 				color: #00c58a;
 				font-family: "Gilroy-bold";
 				margin-bottom: 20px;
-	
+
 				&:not(:first-child) {
 					margin-top: 40px;
 				}
@@ -1378,6 +1531,45 @@ img {
 	}
 }
 
+.paginator {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 16px;
+	color: $color-white;
+	background-color: $color-background;
+	font-size: 20px;
+	font-weight: 500;
+
+	& button {
+		background: linear-gradient(180deg, #111724 0%, #090e18 100%);
+		box-shadow: 0px 2px 4px #000000, inset 0px 0.51px 0px rgb(255 255 255 / 30%);
+		border-radius: 3px;
+		border: none;
+		width: 32px;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 0 !important;
+		color: $color-white;
+
+		& span {
+			background: url("/images/left_white_arrow.svg") no-repeat center;
+			background-size: 15px 15px;
+			width: 15px;
+			height: 15px;
+		}
+
+		&:last-child span {
+			transform: rotate(180deg);
+		}
+	}
+
+	& span {
+		padding: 0 8px;
+	}
+}
 // spinner
 .simple-spinner {
 	color: $color-primary-hover;

@@ -39,16 +39,16 @@ const ProfileForm = ({ countries }) => {
 
 	useEffect(() => {
 		profile && setState({
-			firstname: profile.FirstName,
-			lastname: profile.LastName,
-			email: profile.Email,
-			cstate: profile.State,
-			country: profile.CountryCode,
-			city: profile.City,
-			address: profile.Address,
-			zipcode: profile.ZipCode,
-			phone1: profile.PhoneNumber,
-			phone2: profile.MobileNumber,
+			firstname: profile.FirstName ?? '',
+			lastname: profile.LastName ?? '',
+			email: profile.Email ?? '',
+			cstate: profile.State ?? '',
+			country: profile.CountryCode ?? '',
+			city: profile.City ?? '',
+			address: profile.Address ?? '',
+			zipcode: profile.ZipCode ?? '',
+			phone1: profile.PhoneNumber ?? '',
+			phone2: profile.MobileNumber ?? '',
 			oldpwd: '',
 			newpwd: '',
 			confirmpwd: ''

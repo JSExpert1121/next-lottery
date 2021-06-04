@@ -4,10 +4,10 @@ const ProductItem = (props) => {
     const { id, image, name1, name2, no, x, y } = props;
 
     const viewMorePopUp = useCallback((id, x, y) => {
-        console.log("view popup: ", id, x, y);
+        // console.log("view popup: ", id, x, y);
     }, []);
     const buyNowProductBtn = useCallback(id => {
-        console.log("buy now: ", id);
+        // console.log("buy now: ", id);
     }, []);
 
     return (

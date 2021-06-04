@@ -45,7 +45,6 @@ const SingleGame = ({ data, selMs, selEs }) => {
 	}, [flags]);
 
 	const optionChanged = useCallback(e => {
-		console.log(e.target.value);
 		setOption(e.target.value);
 	}, []);
 

@@ -77,14 +77,17 @@ export const resetPassword = (email, oldPwd, newPwd) => async dispatch => {
 export const getTransactions = (page, memberID) => async dispatch => {
   const result = await UserService.getTransactions(page, memberID);
   dispatch(setTransactions(result));
+  return result;
 }
 
 export const getTickets = (page, memberID) => async dispatch => {
   const result = await UserService.getTickets(page, memberID);
   dispatch(setTickets(result));
+  return result;
 }
 
 export const getProducts = (page, memberID) => async dispatch => {
   const result = await UserService.getProducts(page, memberID);
   dispatch(setProducts(result));
+  return result;
 }
