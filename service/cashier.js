@@ -1,4 +1,4 @@
-import { API_BASE_URL, SEC_TOKEN } from './config';
+import { API_BASE_URL, SEC_TOKEN, BRAND_ID } from './config';
 import { authPost } from './base';
 
 const BASE_URL = `${API_BASE_URL}/cashier`;
@@ -47,10 +47,11 @@ export const confirmProcessorFireGameOrder = async () => {
 	);
 }
 
-export const confirmProcessorDeposit = async () => {
+export const confirmProcessorDeposit = async (MemberId, Amount, Ticker) => {
 	return await authPost(
-		`${BASE_URL}/processor-confirm-fire-game-order`,
-		SEC_TOKEN
+		`${BASE_URL}/processor-confirm-deposit`,
+		SEC_TOKEN,
+		{ BrandId: BRAND_ID, MemberId, Amount, Ticker }
 	);
 }
 

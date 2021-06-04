@@ -15,6 +15,16 @@ const DepositPage = () => {
 
 	const handleDeposit = useCallback(async () => {
 		console.log(amount, currency);
+		if (amount <= 0) {
+			setError('Please enter amount to deposit');
+			return;
+		}
+
+		if (!currency) {
+			setError('You must select coin you wish to use');
+			return;
+		}
+		
 		const popupCenter = ({ url, title, w, h }) => {
 			// Fixes dual-screen position                             Most browsers      Firefox
 			const dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : window.screenX;
