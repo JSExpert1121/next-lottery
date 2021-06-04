@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout from 'components/layout';
@@ -7,7 +6,6 @@ import LotteryList from 'components/common/lottery-list';
 import ExLotteryList from 'components/common/exlottery-list';
 import PlayGroup from 'components/home/play-group';
 import LottoResult from 'components/home/lotto-result';
-import Royalty from 'components/home/loyalty';
 import News from 'components/home/news';
 import { parseJsonFile } from 'helpers/json';
 import { getAllDraws, getResultsByBrand } from 'service/globalinfo';

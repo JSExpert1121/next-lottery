@@ -82,6 +82,7 @@ export default function Header() {
                 </a>
               </Link>
               <ul className="submenu">
+                <li><Link href="/help/affiliate">Affiliate</Link></li>
                 <li><Link href="/help/faq">FAQ</Link></li>
                 <li><a className="contact-us-modal" href="#">Contact Us</a></li>
                 <li><a className="tc-modal" href="/help/terms-conditions">Terms and Conditions</a></li>
@@ -169,6 +170,7 @@ export default function Header() {
                 </div>
               </div>
               <ul className="submenu" style={{ display: "none" }}>
+                <li><Link href="/help/affiliate">Affiliate</Link></li>
                 <li><Link href="/help/faq">FAQ</Link></li>
                 <li><a className="contact-us-modal" href="#">Contact Us</a></li>
                 <li>

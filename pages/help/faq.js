@@ -18,7 +18,6 @@ const FaqPage = ({ faqs }) => {
 	return (
 		<Layout>
 			<div id="main" className="clearfix">
-
 				<div className="wrap">
 					<div id="middle" className="innerbg view-all-lottery" style={{ marginTop: 32 }}>
 						<div className="wrap">

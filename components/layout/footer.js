@@ -53,6 +53,11 @@ export default function Footer() {
 					<div className="page-list text-center grayout">
 						<ul className="link-list">
 							<li>
+								<Link href='/help/affiliate'>
+									<a>Affiliate</a>
+								</Link>
+							</li>
+							<li>
 								<Link href='/help/faq'>
 									<a>FAQ</a>
 								</Link>
