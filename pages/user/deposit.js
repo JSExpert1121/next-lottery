@@ -59,8 +59,9 @@ const DepositPage = () => {
 			const resp = await prepareConfirmDeposit(profile.MemberId, amount, currency);
 			console.log(resp);
 			if (resp.PaymentId) {
-				popupCenter({ url: resp.PaymentUrl, title: 'Deposit', w: 500, h: 700 });
+				// popupCenter({ url: resp.PaymentUrl, title: 'Deposit', w: 500, h: 700 });
 				orderWindow.location.replace(resp.PaymentUrl);
+				orderWindow.title = 'Deposit';
 
 				if (resp.PaymentUrl.startsWith('https://pay.bitcoin.com/')) {
 					// connect socket
