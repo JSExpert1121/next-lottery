@@ -6,15 +6,8 @@
             "position": "72% 30%",
             "subject1": "Play the <span className=\"slogan_2 text-green\">Official</span>",
             "subject2": "<span class='text-primary'>Bitcoin</span><span class='text-secondary'>Lotterys.com</span> <span class=\"slogan_2 text-green\">Lottery</span> Platform",
-            "descHtml": "Powerball, Megamillion, Lotto649<br/> LaPrimitiva, and much more!"
-        },
-        {
-            "type": 1,
-            "background": "url('images/Lotto-1.jpg') no-repeat",
-            "position": "27% 30%",
-            "subject1": "Exclusive <span class=\"slogan_1 text-green\">Lottery:</span>",
-            "subject2": "<span class=\"slogan_1 text-green\">Mega</span> Jackpot",
-            "descHtml": "Get a chance to win a <b>$1,000,000</b><br/><b>Daily</b> in BTC with our EXCLUSIVE<br/>lottery Mega Jackpot"
+            "descHtml": "Powerball, Megamillion, Lotto649<br/> LaPrimitiva, and much more!",
+            "link": "/lotteries/megamillion"
         },
         {
             "type": 1,
@@ -22,7 +15,8 @@
             "position": "72% 30%",
             "subject1": "Exclusive <span class=\"slogan_1 text-green\">Lottery:</span>",
             "subject2": "<span class=\"slogan_1 text-green\">BTC</span> Power Play",
-            "descHtml": "Everyone can be a winner with our<br/>exclusive lottery BTC Power Play.<br/>Get a chance to win <b>$100 every 5 minutes.</b>"
+            "descHtml": "Everyone can be a winner with our<br/>exclusive lottery BTC Power Play.<br/>Get a chance to win <b>$100 every 5 minutes.</b>",
+            "link": "/lotteries/btcpowerplay"
         }
     ]
 }

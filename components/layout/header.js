@@ -144,7 +144,8 @@ export default function Header() {
       <div className="wrap new_header_mobile_menu">
         <Link href="/">
           <a className="new_header_menu_logo">
-            <img src="/images/bitcoinlottery@2x-1.png" />
+            <span className='text-primary'>Bitcoin</span>
+             <span className='text-secondary'>Lotterys.com</span>
           </a>
         </Link>
         <a data-href="nav" className="mobile-trigger trigger-nav" onClick={toggleNav}>

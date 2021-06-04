@@ -7574,11 +7574,12 @@ input[type="radio"].css-checkbox + label.css-label.chk {
 
 .result_number {
     float: left;
-    width: 356px;
+    /* width: 356px; */
 }
 
 .result_number ul {
-    float: left;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .result_ellipse_blue {
@@ -10519,11 +10520,6 @@ input.css-checkbox[type="radio"] + label.css-label.clr {
         margin: 0 auto;
     }
 
-    .table_style_1 th:nth-of-type(1),
-    td:nth-of-type(1) {
-        display: none;
-    }
-
     .drawer-content thead {
         display: none;
     }
@@ -11634,10 +11630,6 @@ input.css-checkbox[type="radio"] + label.css-label.clr {
 
     .resultjackpot_detail {
         float: left;
-    }
-
-    table.tablesorter {
-        min-width: 900px;
     }
 
     .lt_numbers_wrapper span {
@@ -16815,13 +16807,6 @@ body:not(.home) #main {
     border: none;
 }
 
-#middle.lottery-result .tablesorter-result thead tr th,
-#middle.view-all-lottery .lotteries-table thead tr .header {
-    background-color: transparent;
-    font-family: Gilroy-Bold;
-    font-size: 24px;
-}
-
 #middle.singleresult .prizebreakdown2_table tr:first-child {
     padding-bottom: 30px;
 }
@@ -16893,12 +16878,6 @@ body:not(.home) #main {
 #middle.singleresult .prizebreakdown2_table tbody tr,
 #middle.singleresult .prizebreakdown2_table tbody td {
     border-color: transparent !important;
-}
-
-#middle.lottery-result .tablesorter-result tbody td,
-#middle.view-all-lottery .lotteries-table tbody td {
-    border-color: transparent !important;
-    padding: 11px 11px 11px 20px;
 }
 
 #middle.view-all-lottery .lotteries-table tbody td:last-child {
@@ -19672,11 +19651,6 @@ body.home #header .has-child .submenu {
         margin-top: 40px;
     }
 
-    .lotto_banner {
-        /* width  : 80vw !important; */
-        padding: 20vw 10vw 0 !important;
-    }
-
     .home-new-section-playgroup-result h1 {
         font-size: 30px;
     }
@@ -19719,12 +19693,6 @@ body.home #header .has-child .submenu {
 
     .box_det .col3:last-child {
         display: none;
-    }
-
-    .lotto_banner .slogan_block_1,
-    .lotto_banner .slogan_block_2 {
-        width: 100% !important;
-        margin: 0 !important;
     }
 
     .lotto_banner .slogan_block .slogan_btn {
@@ -20476,7 +20444,8 @@ body #header {
 }
 
 .lotto_banner .slogan_block .slogan_btn {
-    width: 45%;
+    min-width: 240px;
+    max-width: 360px;
     margin: 0 auto;
     background: #00c38a;
     border-radius: 8px;
