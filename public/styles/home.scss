@@ -1,7 +1,11 @@
-@import 'variables';
+@import "variables";
 
-.text-primary { color: $color-primary; }
-.text-secondary { color: $color-secondary; }
+.text-primary {
+    color: $color-primary;
+}
+.text-secondary {
+    color: $color-secondary;
+}
 
 .lotto_banner .slogan_block {
     font-size: 3.5rem;
@@ -16,7 +20,6 @@
     font-family: Gilroy-bold;
     text-align: center;
 }
-
 
 .view-all-lotts {
     margin: 0px 130px 40px 0;
@@ -284,17 +287,63 @@
 
     & .playgroup-result {
         display: flex;
+        justify-content: space-between;
         margin-bottom: 40px;
-
-        & > div > h1 {
-            font-size: 30px;
-            color: $color-white;
-            line-height: 40px;
-            margin-bottom: 40px;
-        }
+        width: 100%;
+        float: left;
+        height: 550px;
+        font-family: Gilroy-medium;
+        height: auto;
 
         & > div {
-            height: 555px;
+            height: 570px;
+            width: 48%;
+
+            &:first-child {
+                height: 570px;
+
+                & .home-banner-new {
+                    background: url("/images/playingroup.png") no-repeat 100% 100%;
+                    background-position: 0px 0px;
+                    height: 490px;
+                    position: relative;
+
+                    & h2 {
+                        position: absolute;
+                        left: 30px;
+                        color: $color-white;
+                        line-height: 1.5;
+                        font-size: 30px;
+                        font-family: Gilroy-bold;
+                        top: 240px;
+                    }
+
+                    & a {
+                        position: absolute;
+                        font-size: 30px;
+                        font-family: Gilroy-bold;
+                        left: 30px;
+                        top: 400px;
+                        color: $color-white;
+                        background-color: $color-primary;
+                        min-width: 180px;
+                        padding: 12px;
+                        text-align: center;
+                        border-radius: 4px;
+
+                        &:hover {
+                            background-color: $color-primary-hover;
+                        }
+                    }
+                }
+            }
+
+            & > h1 {
+                font-size: 30px;
+                color: $color-white;
+                line-height: 40px;
+                margin-bottom: 40px;
+            }
         }
     }
 }
@@ -367,7 +416,7 @@
 }
 
 .lotteryresultslist-new .simply-scroll-clip {
-    height: 380px;
+    height: 400px;
 }
 
 .lotto-results-section .more-result-link {
@@ -382,7 +431,7 @@
     width: 100% !important;
     border: 0 !important;
     text-align: center;
-    margin-top: 35px !important;
+    margin-top: 30px !important;
     display: block;
     transition: 0.3s;
 
@@ -419,6 +468,46 @@
             & .lotto-results-section,
             & .home-banner-new {
                 margin-top: 40px;
+            }
+
+            & > div {
+                width: 55%;
+            }
+
+            @media screen and (max-width: 960px) {
+                & > div {
+                    min-width: 50%;
+                }
+            }
+
+            @media screen and (max-width: 800px) {
+                & > div {
+                    min-width: none !important;
+                    min-width: 60%;
+                }
+            }
+
+            @media screen and (max-width: 560px) {
+                & > div {
+                    max-width: 500px;
+                    overflow: hidden;
+                    width: 80%;
+                }
+            }
+
+            @media screen and (max-width: 450px) {
+                & h1 {
+                    font-size: 24px !important;
+                }
+
+                & .home-banner-new {
+                    & h2 {
+                        font-size: 24px !important;
+                    }
+                    & h2 {
+                        top: 200px !important;
+                    }
+                }
             }
         }
 
