@@ -38,7 +38,7 @@ const News = ({ items }) => {
                         </div>
                         <div className="news-details">
                             <div className="news-date">8 July 2020, 7:15 pm</div>
-                            <div className="news-title">Jeffrey Epstein Confidant Ghislaine Maxwell�s Last Reddit Post Was About Bitcoin</div>
+                            <div className="news-title">Jeffrey Epstein Confidant Ghislaine Maxwell's Last Reddit Post Was About Bitcoin</div>
                             <div className="news-excerpt">The cryptocurrency community has been discussing the infamous Ghislaine Maxwell, the associate of the financier and convicted sex ...</div>
                             <div className="news-readmore-link">
                                 <a href="#" target="_blank">Read More</a>

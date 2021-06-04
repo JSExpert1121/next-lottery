@@ -1,4 +1,5 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useCallback, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Layout from 'components/layout';
 import format from 'format-number';
@@ -8,8 +9,7 @@ import { getAllDraws } from 'service/globalinfo';
 const formatter = format();
 export default function LotteryPage({ lotteries }) {
 
-	useEffect(async () => {
-	}, []);
+	const router = useRouter();
 	return (
 		<Layout>
 			<main id="main" className="clearfix">
@@ -32,7 +32,7 @@ export default function LotteryPage({ lotteries }) {
 									<tbody className="allbrands">
 										{lotteries && lotteries.map(item => (
 											<Fragment key={item.id}>
-												<tr>
+												<tr onClick={() => router.push(item.link)}>
 													<td><img src={item.flag} />&nbsp;{item.country}</td>
 													<td className="lottery">{item.name}</td>
 													<td>{dateFormat(new Date(parseInt(item.date)), 'dd/mm/yyyy')}</td>

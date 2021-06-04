@@ -117,7 +117,7 @@ const DepositPage = () => {
 								<div className="widthdrawtitleinner">
 									<div className="widthdrawtitlepart">
 										<h2>
-											<span id="ContentPlaceHolder1_Label1">Deposit cash to your Lottery.Bitcoin wallet</span>
+											<span id="ContentPlaceHolder1_Label1">Deposit cash to your <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> wallet</span>
 										</h2>
 									</div>
 								</div>

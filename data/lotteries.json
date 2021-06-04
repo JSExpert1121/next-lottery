@@ -57,11 +57,11 @@
         "BrandId": 256
     },
     {
-        "DrawId": 147482,
+        "DrawId": 147483,
         "LotteryTypeId": 8,
         "LotteryName": "SuperEnalotto",
-        "Jackpot": 35700000.0,
-        "DrawDate": "2021-06-03T20:00:00",
+        "Jackpot": 36400000.0,
+        "DrawDate": "2021-06-05T20:00:00",
         "LotteryCurrency": "€",
         "LotteryCurrency2": "€",
         "CountryCode": "it",
@@ -114,11 +114,11 @@
         "BrandId": 256
     },
     {
-        "DrawId": 35345,
+        "DrawId": 35369,
         "LotteryTypeId": 4,
         "LotteryName": "LaPrimitiva",
-        "Jackpot": 9300000.0,
-        "DrawDate": "2021-06-03T22:30:00",
+        "Jackpot": 10000000.0,
+        "DrawDate": "2021-06-05T22:30:00",
         "LotteryCurrency": "€",
         "LotteryCurrency2": "€",
         "CountryCode": "es",
@@ -228,11 +228,11 @@
         "BrandId": 256
     },
     {
-        "DrawId": 8384,
+        "DrawId": 8385,
         "LotteryTypeId": 11,
         "LotteryName": "BonoLoto",
-        "Jackpot": 400000.0,
-        "DrawDate": "2021-06-03T21:00:00",
+        "Jackpot": 500000.0,
+        "DrawDate": "2021-06-04T21:00:00",
         "LotteryCurrency": "€",
         "LotteryCurrency2": "€",
         "CountryCode": "es",
@@ -418,11 +418,11 @@
         "BrandId": 256
     },
     {
-        "DrawId": 139415,
+        "DrawId": 139606,
         "LotteryTypeId": 35,
         "LotteryName": "BTC Power Play",
         "Jackpot": 100.0,
-        "DrawDate": "2021-06-03T17:20:00",
+        "DrawDate": "2021-06-04T09:15:00",
         "LotteryCurrency": "€",
         "LotteryCurrency2": "€",
         "CountryCode": "eu",

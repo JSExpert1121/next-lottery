@@ -77,11 +77,11 @@ export const getStaticProps = async (ctx) => {
 
 	const banners = await parseJsonFile('data/banners.json');
 	try {
-		const res = await Promise.all([getAllDraws(), getResultsByBrand()]);
-		// const res = await Promise.all([
-		// 	parseJsonFile('data/lotteries.json'),
-		// 	parseJsonFile('data/results.json'),
-		// ]);
+		// const res = await Promise.all([getAllDraws(), getResultsByBrand()]);
+		const res = await Promise.all([
+			parseJsonFile('data/lotteries.json'),
+			parseJsonFile('data/results.json'),
+		]);
 		const draws = res[0];
 		const lotteries = draws.filter(draw => !(
 			draw.LotteryName == 'BTC Power Play' || draw.LotteryName == 'MegaJackpot' || draw.LotteryName == 'BTC Raffle 50'

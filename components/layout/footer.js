@@ -8,7 +8,7 @@ export default function Footer() {
 			<div id="contact-us-modal" className="modal">
 				<div className="right close-modal"><span className="fa fa-close" rel="modal:close"></span></div>
 				<div className="modal-header">CONTACT US</div>
-				<div className="modal-body">If you want to contact us directly, you can email us at<br /><a href="mailto:support-lottery@bitcoin.com">support-lottery@bitcoin.com</a></div>
+				<div className="modal-body">If you want to contact us directly, you can email us at<br /><a href="mailto:support-lottery@bitcoinlotterys.com">support-lottery@bitcoinlotterys.com</a></div>
 			</div>
 
 			<div id="gradient-bg" className="pt-4 pb-2">
@@ -61,7 +61,7 @@ export default function Footer() {
 								<a href="#" className="contact-us-modal">Contact Us</a>
 							</li>
 							<li>
-								<Link href='/promotions'>
+								<Link href='/lottery'>
 									<a>Promotion</a>
 								</Link>
 							</li>

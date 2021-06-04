@@ -1,7 +1,7 @@
 
 const BannerItem = (props) => {
     const {
-        type, subject1, subject2, descHtml, background, position
+        type, subject1, subject2, descHtml, background, position, link
     } = props;
     const cls = "slogan_" + type;
     return (
@@ -22,7 +22,7 @@ const BannerItem = (props) => {
                     className="slogan_description"
                     dangerouslySetInnerHTML={{__html: descHtml}}
                 /><br/>
-                <a href="https://lottery.bitcoin.com/lottery" id="lotto-1-btn">
+                <a href={link} id="lotto-1-btn">
                     <p className="slogan_btn">Start Playing Now</p>
                 </a>
                 </div>

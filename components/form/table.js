@@ -2,7 +2,7 @@ import React from 'react'
 
 const Table = ({ headers, values }) => {
 	return (
-		<table cellspacing="1" cellpadding="0">
+		<table cellspacing="1" cellPadding="0">
 			<thead class="btn_dark-blue">
 				<tr>
 					{headers.map(item => (

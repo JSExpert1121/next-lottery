@@ -1,4 +1,4 @@
-@import '../public/styles/variables';
+@import "../public/styles/variables";
 
 html,
 body {
@@ -452,6 +452,8 @@ img {
 
 		& .new_header_menu_logo {
 			max-width: 200px;
+			font-size: 24px;
+			font-weight: 600;
 		}
 
 		& .new_header_menu_logo img {
@@ -617,6 +619,78 @@ img {
 
 		& .beton-header-mobile-section {
 			padding: 10px;
+		}
+	}
+}
+
+#middle .lotteries-table,
+#middle .tablesorter-result {
+	& thead th {
+		background-color: transparent;
+		font-family: Gilroy-Bold;
+		font-size: 24px;
+	}
+
+	& tbody td {
+		border-color: transparent !important;
+		padding: 11px 11px 11px 20px;
+
+		& .result_number {
+			width: 360px;
+		}
+	}
+
+	@media screen and (max-width: 1150px) {
+		& thead th,
+		& tbody td {
+			font-size: 16px;
+		}
+
+		& tbody td {
+			padding: 0 5px;
+		}
+	}
+
+	@media screen and (max-width: 720px) {
+		& th:nth-of-type(1),
+		& td:nth-of-type(1) {
+			display: none;
+		}
+
+		& tbody td .result_number {
+			width: 100%;
+		}
+	}
+}
+
+.lotto_banner {
+	display: flex;
+	align-items: center;
+
+	& .slogan_block_1,
+	.slogan_block_2 {
+		width: 40%;
+	}
+
+	@media screen and (max-width: 960px) {
+		& .slogan_block_1,
+		.slogan_block_2 {
+			width: 50%;
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		justify-content: center;
+
+		& .slogan_block_1,
+		.slogan_block_2 {
+			width: 60%;
+			padding: 0;
+			margin: 0;
+
+			@media screen and (max-width: 640px) {
+				width: 80%;
+			}
 		}
 	}
 }
