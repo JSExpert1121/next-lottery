@@ -1336,15 +1336,31 @@ img {
 }
 
 #main {
-	& .main-content h1.item-title {
-		font-size: 24px;
-		line-height: 42px;
-		color: #00c58a;
-		font-family: "Gilroy-bold";
-		margin-bottom: 40px;
+	& .main-content {
+		& h1.item-title {
+			font-size: 24px;
+			line-height: 42px;
+			color: #00c58a;
+			font-family: "Gilroy-bold";
+			margin-bottom: 40px;
 
-		&:not(:first-child) {
-			margin-top: 100px;
+			&:not(:first-child) {
+				margin-top: 100px;
+			}
+		}
+
+		&.affiliate {
+			& h1.item-title {
+				font-size: 22px;
+				line-height: 36px;
+				color: #00c58a;
+				font-family: "Gilroy-bold";
+				margin-bottom: 20px;
+	
+				&:not(:first-child) {
+					margin-top: 40px;
+				}
+			}
 		}
 	}
 }
