@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useState } from 'react';
-// import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Layout from 'components/layout';
 import SingleGame from 'components/games/single';
@@ -162,8 +161,8 @@ const LottoGame = (props) => {
 }
 
 export async function getStaticPaths() {
-	// const draws = await getAllDraws();
-	const draws = await parseJsonFile('data/lotteries.json');
+	const draws = await getAllDraws();
+	// const draws = await parseJsonFile('data/lotteries.json');
 	const paths = draws.map(draw => ({
 		params: { lotto: draw.LotteryName.replace(' ', '').toLowerCase() }
 	}));
@@ -175,7 +174,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
 	const { params: { lotto } } = context;
-	console.log('lotto: ', lotto);
 
 	try {
 		// const result = await Promise.all([

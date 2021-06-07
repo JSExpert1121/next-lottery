@@ -1,0 +1,54 @@
+@import "../../public/styles/variables";
+
+.footer {
+  margin-top: 2rem;
+}
+
+.navItems {
+  margin-bottom: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.navItem {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.depositBar {
+  position: fixed;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  padding: 8px 16px;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 100;
+  background-color: $color-background;
+
+  & .balance {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+
+    & .amount {
+      color: $color-primary;
+    }
+  }
+
+  & .button {
+    color: $color-white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: $color-primary-hover;
+    min-width: 120px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: flex;
+  }
+}
+
