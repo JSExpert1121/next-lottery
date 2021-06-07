@@ -1,0 +1,149 @@
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import Layout from 'components/layout';
+import styles from './[lotto].module.scss';
+import Selections from 'components/common/selections';
+import { getLottoLastResults, getAllLotteries, getLottoLastResultsPrizes } from 'service/globalinfo';
+import { parseJsonFile } from 'helpers/json';
+import { formatDate } from 'helpers/dateformat';
+
+const LottoResult = ({ data }) => {
+
+	const { title, header, footer, name, results, prizes } = data;
+	const [date, setDate] = useState(results[0].DrawDate);
+	const [selection, setSelection] = useState(results[0].WinningResult + results[0].BonusNumber);
+	const [selPrizes, setSelPrizes] = useState([]);
+
+	const dateChanged = useCallback(e => {
+		setDate(e.target.value);
+	}, []);
+
+	useEffect(() => {
+		const result = results.find(res => res.DrawDate === date);
+		setSelection(result.WinningResult + result.BonusNumber);
+		setSelPrizes(prizes.filter(item => item.DrawId === result.DrawId));
+	}, [date, prizes, results]);
+
+
+	console.log(results, prizes);
+	return (
+		<Layout>
+			<main id="main" className="clearfix">
+				<div className='wrap'>
+					<div className={styles.result}>
+						<section className={styles.head}>
+							<div>
+								<img src={`/images/${title}1.png`} className={styles.image} alt={title} />
+							</div>
+							<div className={styles.desc} dangerouslySetInnerHTML={{ __html: header }} />
+						</section>
+
+						<section className={styles.content}>
+							<div className={styles.contentHeader}>
+								<h2>{`${name} Results & Winning Numbers`}</h2>
+								<select value={date} onChange={dateChanged} className={styles.dateList}>
+									{results.map(res => (
+										<option key={res.DrawDate} value={res.DrawDate}>
+											{formatDate(new Date(res.DrawDate))}
+										</option>
+									))}
+								</select>
+							</div>
+							<hr />
+							<div className={styles.description}>
+								<h5>{`${name} Results for ${new Date(date).toDateString()}`}</h5>
+								<div className={styles.slection}>
+									<Selections selection={selection} />
+								</div>
+							</div>
+							<div className={styles.prizes}>
+								<table>
+									<thead>
+										<tr>
+											<th>Division</th>
+											<th>Match</th>
+											<th>Payout Per Winner</th>
+										</tr>
+									</thead>
+									<tbody>
+										{selPrizes.map((item, idx) => (
+											<tr key={idx}>
+												<td>{item.Division}</td>
+												<td>{item.Match}</td>
+												<td>{item.LastDraw}</td>
+											</tr>
+										))}
+									</tbody>
+								</table>
+							</div>
+						</section>
+
+						<section className={styles.foot}>
+							<div dangerouslySetInnerHTML={{ __html: footer }} />
+						</section>
+					</div>
+				</div>
+			</main>
+		</Layout>
+	)
+}
+
+export async function getStaticPaths() {
+	const lotteries = await getAllLotteries();
+	// const lotteries = await parseJsonFile('data/lotteries.json');
+
+	const paths = lotteries.map(lottery => ({
+		params: { lotto: lottery.LotteryName.replace(/ /g, '').toLowerCase() }
+	}));
+
+	return {
+		paths, fallback: true
+	};
+}
+
+export async function getStaticProps(context) {
+	const { params: { lotto } } = context;
+
+	try {
+		const result = await Promise.all([
+			getAllLotteries(),
+			getLottoLastResults(),
+			getLottoLastResultsPrizes(),
+			parseJsonFile('data/results.json')
+		]);
+		const lotteries = result[0];
+		const lottery = lotteries.find(item => item.LotteryName.replace(/ /g, '').toLowerCase() === lotto);
+		if (!lottery) {
+			throw "Invalid lottery";
+		}
+
+		const allResults = result[1];
+		const results = allResults.filter(res => res.LotteryTypeId === lottery.LotteryTypeId);
+		const prizes = result[2].filter(prize => prize.LotteryTypeId === lottery.LotteryTypeId);
+		const descriptions = result[3];
+		const description = descriptions.find(value => value.title === lotto);
+		if (!description) {
+			return {
+				props: {
+					data: {
+						results, prizes,
+						title: lotto,
+						name: lottery?.LotteryName ?? '',
+						header: '',
+						footer: ''
+					}
+				}
+			}
+		}
+
+		return {
+			props: { data: { ...description, results, prizes, name: lottery?.LotteryName ?? '' } }
+		}
+	} catch (error) {
+		console.log(error);
+		return {
+			props: { data: { title: lotto, name: '', header: '', footer: '' } }
+		}
+	}
+}
+
+export default LottoResult;
