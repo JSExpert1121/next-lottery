@@ -6,11 +6,9 @@ const Transition = ({ children }) => {
     const [loading, setLoading] = useState(false)
 
     const handleStart = useCallback(() => {
-        console.log('navigation started');
         setLoading(true);
     }, []);
     const handleStop = useCallback(() => {
-        console.log('navigation finished');
         setLoading(false);
     }, []);
     useEffect(() => {

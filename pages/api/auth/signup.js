@@ -7,7 +7,6 @@ export default async function handler(req, res) {
 
   try {
     // call api
-    console.log(req.body);
     const result = await signUp(req.body);
 
     // check the api resultult

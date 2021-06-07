@@ -1,11 +1,13 @@
-import React, { useCallback, useState } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useCallback, useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Link from 'next/link';
 import Layout from 'components/layout';
 import ProfileForm from 'components/form/profile-form';
 import DataTable from 'containers/table/data-table';
 import { parseJsonFile } from 'helpers/json';
 import * as UserActions from 'store/actions/user';
+import TicketsTable from 'components/account/tickets-table';
+import ProductsTable from 'components/account/products-table';
 
 const tabs = [
 	{ title: 'Details', class: 'avatar' },
@@ -17,12 +19,16 @@ const tabs = [
 const MyAccount = ({ countries }) => {
 
 	const [tab, setTab] = useState(0);
+	const balance = useSelector(state => state.user.balance);
 	const transactions = useSelector(state => state.user.transactions);
 	const tickets = useSelector(state => state.user.tickets);
 	const products = useSelector(state => state.user.products);
+	const dispatch = useDispatch();
 
-	const tabClicked = useCallback((index) => () => {
-		setTab(index);
+	useEffect(() => {
+		dispatch(UserActions.setTransactions([]));
+		dispatch(UserActions.setTickets([]));
+		dispatch(UserActions.setProducts([]));
 	}, []);
 
 	return (
@@ -36,19 +42,19 @@ const MyAccount = ({ countries }) => {
 						<div className="my-account-contents">
 							<div className="tab-bar-container">
 								<ul className="tab-bar">
-									{tabs.map((tab, index) => (
-										<li className="tab-item" key={tab.title}>
-										<a href="#" onClick={tabClicked(index)} className={tab === index ? 'active' : ''}>
-											<i className={tab.class}>&nbsp;</i>
-											<span>{tab.title}</span>
-										</a>
-									</li>
+									{tabs.map((item, index) => (
+										<li className="tab-item" key={item.title}>
+											<a href="#" onClick={() => setTab(index)} className={tab === index ? 'active' : ''}>
+												<i className={item.class}>&nbsp;</i>
+												<span>{item.title}</span>
+											</a>
+										</li>
 									))}
 								</ul>
 								<div className='actions-bar'>
 									<div className='winning'>
 										<span>Winning Money</span>
-										<span className='money'>€ {'0.00'}</span>
+										<span className='money'>€ {balance ? balance.WinningAmount : '0.00'}</span>
 									</div>
 									<div className='buttons'>
 										<Link href='/user/deposit'><a className='button'>Deposit</a></Link>
@@ -63,6 +69,7 @@ const MyAccount = ({ countries }) => {
 								{tab === 1 && (
 									<DataTable
 										headers={['Transactions', 'ID', 'Date', 'Amount', 'Lottery', 'Product']}
+										keys={['TransactionType', 'TransactionId', 'Date', 'Amount', 'Name', 'ProductName']}
 										values={transactions}
 										action={UserActions.getTransactions}
 									/>
@@ -72,6 +79,7 @@ const MyAccount = ({ countries }) => {
 										headers={['Country', 'Lottery', 'Type', 'Date', 'Status', 'Winnings', 'Details']}
 										values={tickets}
 										action={UserActions.getTickets}
+										component={TicketsTable}
 									/>
 								)}
 								{tab === 3 && (
@@ -79,6 +87,7 @@ const MyAccount = ({ countries }) => {
 										headers={['Product', 'Lottery', 'Group Shares', 'Draws Left', 'Total Lines', 'Purchased on', 'End Date', 'Status']}
 										values={products}
 										action={UserActions.getProducts}
+										component={ProductsTable}
 									/>
 								)}
 							</div>
