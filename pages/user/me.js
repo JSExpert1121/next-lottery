@@ -13,6 +13,7 @@ import ProductsTable from 'components/account/products-table';
 const MyAccount = ({ countries }) => {
 
 	const [tab, setTab] = useState(0);
+	const balance = useSelector(state => state.user.balance);
 	const transactions = useSelector(state => state.user.transactions);
 	const tickets = useSelector(state => state.user.tickets);
 	const products = useSelector(state => state.user.products);
@@ -60,7 +61,7 @@ const MyAccount = ({ countries }) => {
 								<div className='actions-bar'>
 									<div className='winning'>
 										<span>Winning Money</span>
-										<span className='money'>€ {'0.00'}</span>
+										<span className='money'>€ {balance ? balance.WinningAmount : '0.00'}</span>
 									</div>
 									<div className='buttons'>
 										<Link href='/user/deposit'><a className='button'>Deposit</a></Link>
