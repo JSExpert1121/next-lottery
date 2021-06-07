@@ -1,7 +1,9 @@
-import styles from "./footer.module.css";
 import Link from 'next/link';
+import { useSelector } from 'react-redux';
+import styles from './footer.module.scss';
 
 export default function Footer() {
+	const balance = useSelector(state => state.user?.balance)
 	return (
 		<footer>
 			{/* <!-- Contact US Modal --> */}
@@ -100,6 +102,16 @@ export default function Footer() {
 					</div>
 				</div>
 			</div>
+			{balance && (
+				<div className={styles.depositBar}>
+					<span className={styles.balance}>
+						My Wallet: <span className={styles.amount}>€ {balance.AccountBalance}</span>
+					</span>
+					<Link href='/user/deposit'>
+						<a className={styles.button}>Deposit</a>
+					</Link>
+				</div>
+			)}
 		</footer>
 	)
 }
