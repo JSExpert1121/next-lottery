@@ -9,6 +9,12 @@ import * as UserActions from 'store/actions/user';
 import TicketsTable from 'components/account/tickets-table';
 import ProductsTable from 'components/account/products-table';
 
+const tabs = [
+	{ title: 'Details', class: 'avatar' },
+	{ title: 'Transactions', class: 'transactions' },
+	{ title: 'Tickets', class: 'tickets' },
+	{ title: 'Products', class: 'products' }
+]
 
 const MyAccount = ({ countries }) => {
 
@@ -25,10 +31,6 @@ const MyAccount = ({ countries }) => {
 		dispatch(UserActions.setProducts([]));
 	}, []);
 
-	const tabClicked = useCallback((index) => () => {
-		setTab(index);
-	}, []);
-
 	return (
 		<Layout>
 			<main id="main" className="clearfix">
@@ -40,30 +42,14 @@ const MyAccount = ({ countries }) => {
 						<div className="my-account-contents">
 							<div className="tab-bar-container">
 								<ul className="tab-bar">
-									<li className="tab-item">
-										<a href="#" onClick={tabClicked(0)} className={tab === 0 ? 'active' : ''}>
-											<i className="avatar">&nbsp;</i>
-											<span>Details</span>
-										</a>
-									</li>
-									<li className="tab-item">
-										<a href="#" onClick={tabClicked(1)} className={tab === 1 ? 'active' : ''}>
-											<i className="transactions">&nbsp;</i>
-											<span>Transactions</span>
-										</a>
-									</li>
-									<li className="tab-item">
-										<a href="#" onClick={tabClicked(2)} className={tab === 2 ? 'active' : ''}>
-											<i className="tickets">&nbsp;</i>
-											<span>Tickets</span>
-										</a>
-									</li>
-									<li className="tab-item">
-										<a href="#" onClick={tabClicked(3)} className={tab === 3 ? 'active' : ''}>
-											<i className="products">&nbsp;</i>
-											<span>Products</span>
-										</a>
-									</li>
+									{tabs.map((item, index) => (
+										<li className="tab-item" key={item.title}>
+											<a href="#" onClick={() => setTab(index)} className={tab === index ? 'active' : ''}>
+												<i className={item.class}>&nbsp;</i>
+												<span>{item.title}</span>
+											</a>
+										</li>
+									))}
 								</ul>
 								<div className='actions-bar'>
 									<div className='winning'>
@@ -91,7 +77,6 @@ const MyAccount = ({ countries }) => {
 								{tab === 2 && (
 									<DataTable
 										headers={['Country', 'Lottery', 'Type', 'Date', 'Status', 'Winnings', 'Details']}
-										keys={['CountryName', 'LotteryName', 'LotteryTypeID', 'DrawDate', 'Status', 'Winning', 'WinningResult']}
 										values={tickets}
 										action={UserActions.getTickets}
 										component={TicketsTable}
@@ -100,7 +85,6 @@ const MyAccount = ({ countries }) => {
 								{tab === 3 && (
 									<DataTable
 										headers={['Product', 'Lottery', 'Group Shares', 'Draws Left', 'Total Lines', 'Purchased on', 'End Date', 'Status']}
-										keys={[]}
 										values={products}
 										action={UserActions.getProducts}
 										component={ProductsTable}
