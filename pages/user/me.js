@@ -7,6 +7,12 @@ import DataTable from 'containers/table/data-table';
 import { parseJsonFile } from 'helpers/json';
 import * as UserActions from 'store/actions/user';
 
+const tabs = [
+	{ title: 'Details', class: 'avatar' },
+	{ title: 'Transactions', class: 'transactions' },
+	{ title: 'Tickets', class: 'tickets' },
+	{ title: 'Products', class: 'products' }
+]
 
 const MyAccount = ({ countries }) => {
 
@@ -30,30 +36,14 @@ const MyAccount = ({ countries }) => {
 						<div className="my-account-contents">
 							<div className="tab-bar-container">
 								<ul className="tab-bar">
-									<li className="tab-item">
-										<a href="#" onClick={tabClicked(0)} className={tab === 0 ? 'active' : ''}>
-											<i class="avatar">&nbsp;</i>
-											<span>Details</span>
+									{tabs.map((tab, index) => (
+										<li className="tab-item" key={tab.title}>
+										<a href="#" onClick={tabClicked(index)} className={tab === index ? 'active' : ''}>
+											<i className={tab.class}>&nbsp;</i>
+											<span>{tab.title}</span>
 										</a>
 									</li>
-									<li className="tab-item">
-										<a href="#" onClick={tabClicked(1)} className={tab === 1 ? 'active' : ''}>
-											<i class="transactions">&nbsp;</i>
-											<span>Transactions</span>
-										</a>
-									</li>
-									<li className="tab-item">
-										<a href="#" onClick={tabClicked(2)} className={tab === 2 ? 'active' : ''}>
-											<i class="tickets">&nbsp;</i>
-											<span>Tickets</span>
-										</a>
-									</li>
-									<li className="tab-item">
-										<a href="#" onClick={tabClicked(3)} className={tab === 3 ? 'active' : ''}>
-											<i class="products">&nbsp;</i>
-											<span>Products</span>
-										</a>
-									</li>
+									))}
 								</ul>
 								<div className='actions-bar'>
 									<div className='winning'>
@@ -71,21 +61,21 @@ const MyAccount = ({ countries }) => {
 									<ProfileForm countries={countries} />
 								)}
 								{tab === 1 && (
-									<DataTable 
-										headers={['Transactions', 'ID', 'Date', 'Amount', 'Lottery', 'Product']} 
+									<DataTable
+										headers={['Transactions', 'ID', 'Date', 'Amount', 'Lottery', 'Product']}
 										values={transactions}
 										action={UserActions.getTransactions}
 									/>
 								)}
 								{tab === 2 && (
-									<DataTable 
-										headers={['Country', 'Lottery', 'Type', 'Date', 'Status', 'Winnings', 'Details']} 
+									<DataTable
+										headers={['Country', 'Lottery', 'Type', 'Date', 'Status', 'Winnings', 'Details']}
 										values={tickets}
 										action={UserActions.getTickets}
 									/>
 								)}
 								{tab === 3 && (
-									<DataTable 
+									<DataTable
 										headers={['Product', 'Lottery', 'Group Shares', 'Draws Left', 'Total Lines', 'Purchased on', 'End Date', 'Status']}
 										values={products}
 										action={UserActions.getProducts}
