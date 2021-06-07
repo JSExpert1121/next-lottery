@@ -9,22 +9,22 @@ const setProfile = (data) => ({
 
 const loggedOut = () => ({ type: ActionTypes.AUTH_USER_LOGGED_OUT });
 
-const setBalance = (data) => ({
+export const setBalance = (data) => ({
   type: ActionTypes.USER_BALANCE_SET,
   payload: data
 })
 
-const setTransactions = data => ({
+export const setTransactions = data => ({
   type: ActionTypes.USER_TRANSACTIONS,
   payload: data
 });
 
-const setTickets = data => ({
+export const setTickets = data => ({
   type: ActionTypes.USER_TICKETS,
   payload: data
 });
 
-const setProducts = data => ({
+export const setProducts = data => ({
   type: ActionTypes.USER_PRODIUCTS,
   payload: data
 });

@@ -15,7 +15,7 @@ const Table = ({ headers, values, keys, style }) => {
 				{values && values.map((value, index) => (
 					<tr key={`th-${index}`}>
 						{keys.map((key, idx) => (
-							<td>{value[key]}</td>
+							<td key={idx}>{value[key]}</td>
 						))}
 					</tr>
 				))}

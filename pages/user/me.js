@@ -1,5 +1,5 @@
-import React, { useCallback, useState } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useCallback, useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Link from 'next/link';
 import Layout from 'components/layout';
 import ProfileForm from 'components/form/profile-form';
@@ -17,6 +17,13 @@ const MyAccount = ({ countries }) => {
 	const transactions = useSelector(state => state.user.transactions);
 	const tickets = useSelector(state => state.user.tickets);
 	const products = useSelector(state => state.user.products);
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		dispatch(UserActions.setTransactions([]));
+		dispatch(UserActions.setTickets([]));
+		dispatch(UserActions.setProducts([]));
+	}, []);
 
 	const tabClicked = useCallback((index) => () => {
 		setTab(index);
