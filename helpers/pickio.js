@@ -14,13 +14,13 @@ export const selected_dump = (selMs, selEs) => {
 export const selected_load = (txt) => {
     const rows = txt.split(':');
     if (rows.length !== 4) return [[[], [], [], []], [[], [], [], []]];
-    selMs = rows.map(row => {
+    const selMs = rows.map(row => {
         const arr = row.split('#');
         if (!arr) return [];
         return arr[0].split(',');
     });
 
-    selEs = rows.map(row => {
+    const selEs = rows.map(row => {
         const arr = row.split('#');
         if (!arr || !arr[1]) return [];
         return arr[1].split(',');
@@ -28,3 +28,12 @@ export const selected_load = (txt) => {
 
     return [selMs, selEs];
 }
+
+export const selected_row_load = txt => {
+    const result = [[], []]; 
+    const arr = txt.split('#');
+    if (!arr) return result;
+    result[0] = arr[0].split(',');
+    if (arr[1]) result[1] = arr[1].split(',');
+    return result;
+} 

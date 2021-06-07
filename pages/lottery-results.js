@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Layout from 'components/layout';
 import { formatDate } from 'helpers/dateformat';
 import { getResultsByBrand } from 'service/globalinfo';
 
 export default function LotteryResultsPage({ results }) {
+	const router = useRouter();
+	const gotoDetail = useCallback(link => router.push(link), []);
 	return (
 		<Layout>
 			<main id="main" className="clearfix">
@@ -28,9 +31,11 @@ export default function LotteryResultsPage({ results }) {
 									<tbody className="allresult">
 										{results && results.map((item, idx) => (
 											<React.Fragment key={idx}>
-												<tr>
+												<tr onClick={() => gotoDetail(`/results/${item.name.toLowerCase()}`)}>
 													<td><img src={item.flag ?? '/images/logo-icon.svg'} />&nbsp;&nbsp;{item.country}</td>
-													<td><a href={`/${item.name.toLowerCase()}-results`}>{item.name}</a></td>
+													<td>
+														<Link href={`/results/${item.name.toLowerCase()}`}>{item.name}</Link>
+													</td>
 													<td>{formatDate(new Date(item.date))}</td>
 													<td>{item.earned.unit}&nbsp;{item.earned.amount}</td>
 													<td>

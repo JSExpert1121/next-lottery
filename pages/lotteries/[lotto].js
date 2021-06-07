@@ -164,7 +164,7 @@ export async function getStaticPaths() {
 	const draws = await getAllDraws();
 	// const draws = await parseJsonFile('data/lotteries.json');
 	const paths = draws.map(draw => ({
-		params: { lotto: draw.LotteryName.replace(' ', '').toLowerCase() }
+		params: { lotto: draw.LotteryName.replace(/ /g, '').toLowerCase() }
 	}));
 	return {
 		paths,
@@ -189,7 +189,7 @@ export async function getStaticProps(context) {
 			parseJsonFile('data/posts.json')
 		]);
 		const draws = result[0];
-		const lottery = draws.find(item => item.LotteryName.replace(' ', '').toLowerCase() === lotto);
+		const lottery = draws.find(item => item.LotteryName.replace(/ /g, '').toLowerCase() === lotto);
 
 		const rules = result[1];
 		const rule = rules.find(item => item.LotteryTypeId == lottery.LotteryTypeId);
@@ -207,7 +207,7 @@ export async function getStaticProps(context) {
 		// const group = groups.find(item => item.LotteryTypeId == lottery.LotteryTypeId);
 		// const posts = result[3];
 		const posts = result[2];
-		const post = posts.find(item => item.name === lotto.replace(' ', '').toLowerCase());
+		const post = posts.find(item => item.name === lotto.replace(/ /g, '').toLowerCase());
 		return {
 			props: {
 				data, post: post ?? {}
