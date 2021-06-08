@@ -16458,7 +16458,7 @@ body:not(.home) #main {
 .lotterydetail .cardlist.PowerBall .lt_numbers_wrapper span:hover,
 .lotterydetail .cardlist.PowerBall .lt_numbers_wrapper span.main_active,
 .lotterydetail .cardlist.PowerBall .select_num_part_wrapper span.extra_active {
-    background: #00c38a;
+    background: #05070c;
 }
 
 .lotterydetail .select_num_col .select_num_part {
