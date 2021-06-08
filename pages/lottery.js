@@ -107,7 +107,7 @@ export const getStaticProps = async (ctx) => {
 			image: `/images/${draw.LotteryName.toLowerCase()}1.png`,
 			unit: draw.LotteryCurrency2,
 			amount: draw.Jackpot,
-			link: `/lotteries/${draw.LotteryName.replace(' ', '').toLowerCase()}`,
+			link: `/lotteries/${draw.LotteryName.replace(/ /g, '').toLowerCase()}`,
 			country: draw.CountryName,
 			flag: `/images/flag_${draw.CountryName.toLowerCase()}.png`
 		}));

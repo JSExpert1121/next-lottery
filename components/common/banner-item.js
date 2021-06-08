@@ -1,3 +1,5 @@
+import React from 'react';
+import Link from 'next/link';
 
 const BannerItem = (props) => {
     const {
@@ -22,9 +24,9 @@ const BannerItem = (props) => {
                     className="slogan_description"
                     dangerouslySetInnerHTML={{__html: descHtml}}
                 /><br/>
-                <a href={link} id="lotto-1-btn">
-                    <p className="slogan_btn">Start Playing Now</p>
-                </a>
+                <Link href={link}>
+                    <a className="slogan_btn">Start Playing Now</a>
+                </Link>
                 </div>
             </div>
         </div>

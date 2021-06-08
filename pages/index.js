@@ -33,22 +33,16 @@ export default function Home(props) {
 				<div className="clear" />
 
 				{/* exclusive lotteries */}
-				<section className="wrap">
+				{/* <section className="wrap">
 					<div className="wrap">
 						<ExLotteryList items={exlottos} />
 					</div>
 				</section>
-				<div className="clear">&nbsp;</div>
+				<div className="clear">&nbsp;</div> */}
 
 				{/* middle home */}
 				<section id="middle_home">
 					<div className="wrap">
-						{/* <section id="middle_about">
-							<ProductList products={products} />
-						</section>
-						<section className="cart-popup">
-							<CartPopup />
-						</section> */}
 						<section className="wrap">
 							<div className="playgroup-result">
 								<PlayGroup />
@@ -96,7 +90,7 @@ export const getStaticProps = async (ctx) => {
 			image: `/images/${draw.LotteryName.toLowerCase()}1.png`,
 			unit: draw.LotteryCurrency2,
 			amount: draw.Jackpot,
-			link: `/lotteries/${draw.LotteryName.replace(' ', '').toLowerCase()}`,
+			link: `/lotteries/${draw.LotteryName.replace(/ /g, '').toLowerCase()}`,
 			country: draw.CountryName,
 			flag: `/images/flag_${draw.CountryName.toLowerCase()}.png`
 		}));
@@ -107,15 +101,16 @@ export const getStaticProps = async (ctx) => {
 			id: draw.DrawId,
 			name: draw.LotteryName === 'MegaJackpot' ? "BTC Jackpot" : "BTC Power Play",
 			date: new Date(draw.DrawDate).getTime(),
-			image: `/images/${draw.LotteryName.toLowerCase()}1.png`,
+			image: `/images/${draw.LotteryName.replace(/ /g, '').toLowerCase()}1.png`,
 			amount: draw.LotteryName === 'MegaJackpot' ? "$1 Million Daily" : "$100",
 			desc: draw.LotteryName === 'MegaJackpot' ? "Daily Draw 9am CET" : "Draw every 5 Minutes",
-			link: `/lotteries/${draw.LotteryName.replace(' ', '').toLowerCase()}`
+			link: `/lotteries/${draw.LotteryName.replace(/ /g, '').toLowerCase()}`
 		}));
 
 		const results = res[1].filter(item => (
 			item.LotteryTypeId !== 13 && item.LotteryTypeId !== 24 &&
-			!!item.WinningResult && item.LotteryTypeId !== 27
+			!!item.WinningResult && item.LotteryTypeId !== 27 && 
+			item.LotteryTypeId !== 34 && item.LotteryTypeId !== 35
 		)).map(item => {
 			let scores = null;
 			const arr = item.WinningResult.split(/,|#/g);

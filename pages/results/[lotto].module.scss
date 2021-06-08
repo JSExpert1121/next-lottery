@@ -1,0 +1,117 @@
+@import "../../public/styles/variables";
+
+.result {
+    display: flex;
+    flex-direction: column;
+    font-family: Gilroy-Regular;
+    padding: 16px;
+
+    & .head {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        display: flex;
+
+        & .image {
+            width: 100px;
+            margin-left: 64px;
+            margin-right: 64px;
+        }
+
+        & .desc {
+            font-size: 18px;
+            line-height: 1.5;
+            color: white;
+
+            & h2 {
+                font-family: Gilroy-Bold;
+                font-size: 30px;
+                text-shadow: 0px 4px 12px rgb(0 195 138 / 20%);
+            }
+        }
+    }
+
+    & .content {
+        margin: 64px 0;
+
+        & .contentHeader {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & h2 {
+                font-family: Gilroy-Bold;
+                font-size: 24px;
+                color: $color-primary-hover;
+            }
+
+            & .dateList {
+                color: $color-primary;
+                background-color: transparent;
+                color: #00c38a;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                height: 29px;
+                line-height: 29px;
+                outline: medium none !important;
+                padding: 4px 8px;
+            }
+        }
+
+        & .description {
+            & h5 {
+                font-size: 18px;
+                color: $color-white;
+                margin-top: 32px;
+                font-weight: 400;
+            }
+
+            & .slection {
+                margin: 8px 0;
+                display: flex;
+            }
+        }
+
+        & .prizes {
+            width: 100%;
+
+            & table {
+                width: 100%;
+                color: $color-white;
+
+                & th {
+                    text-align: center !important;
+                    border: none;
+                    background-color: transparent;
+                    font-family: Gilroy-Bold;
+                    font-size: 24px;
+                    padding: 16px 0;
+                }
+
+                & tbody tr {
+                    background: linear-gradient(180deg, #111724 0%, #090e18 100%) !important;
+                    box-shadow: 0px 2px 4px #000000, inset 0px 0.51px 0px rgb(255 255 255 / 30%);
+                    border-radius: 3px;
+                    line-height: 2.5;
+                    font-size: 18px;
+
+                    & td {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    & .foot {
+        margin-top: 64px;
+        font-size: 18px;
+        line-height: 1.5;
+        color: white;
+
+        & h2 {
+            font-family: "Gilroy-Bold";
+            font-size: 24px;
+            color: #00c38a;
+        }
+    }
+}
