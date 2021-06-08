@@ -51,6 +51,17 @@ const SingleGame = ({ data, selMs, selEs }) => {
 	useEffect(() => {
 		setSelectedM([...selMs]);
 		setSelectedE([...selEs]);
+
+		for (let i=0;i<4;i++) {
+			flags[i] = selMs[i].length === data.AmountOfMainNumbersToMatch &&
+			selEs[i].length === data.AmountOfExtraNumbersToMatch;
+		}
+		const lines = flags.filter(f => f).length;
+		setFlags([...flags]);
+		setSelNo({
+			...selNo,
+			totalprice: lines * data.PricePerLine
+		})
 	}, [selEs, selMs]);
 
 	const enable = (selNo.totalprice ?? 0) > 0;
