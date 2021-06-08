@@ -6,7 +6,7 @@ class MyDocument extends Document {
 			<Html>
 				<Head>
 					<meta charSet="UTF-9" />
-					<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+					{/* <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> */}
 					<link rel='stylesheet' id='fancybox-style-css' href='/styles/jquery.fancybox.css' type='text/css' media='all' />
 					<link rel='stylesheet' id='theme-jquery-ui-css' href='/styles/jquery-ui.css' type='text/css' media='all' />
 					<link rel='stylesheet' id='theme-fonts-css' href='/styles/fonts.css' type='text/css' media='all' />

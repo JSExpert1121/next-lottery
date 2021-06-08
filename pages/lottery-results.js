@@ -82,7 +82,8 @@ export const getStaticProps = async (ctx) => {
 		const res = await getResultsByBrand();
 		const results = res.filter(item => (
 			item.LotteryTypeId !== 13 && item.LotteryTypeId !== 24 &&
-			item.LotteryTypeId !== 27 && item.LotteryTypeId !== 36
+			item.LotteryTypeId !== 27 && item.LotteryTypeId !== 36 &&
+			item.LotteryTypeId !== 34 && item.LotteryTypeId !== 35
 		)).map(item => {
 			let scores = null;
 			if (item.WinningResult) {

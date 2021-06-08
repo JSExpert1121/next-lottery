@@ -188,6 +188,8 @@ export async function getStaticProps(context) {
 			// getPricesAndDiscounts(1, 3),
 			parseJsonFile('data/posts.json')
 		]);
+
+		console.log('param: ', lotto);
 		const draws = result[0];
 		const lottery = draws.find(item => item.LotteryName.replace(/ /g, '').toLowerCase() === lotto);
 

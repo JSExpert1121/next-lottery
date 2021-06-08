@@ -102,7 +102,7 @@ const LoginPage = () => {
 							value={remember}
 							onChange={handleRememberChange}
 						>
-							Remeber Me
+							Remember Me
 					</CheckBox>
 					</section>
 					<section className={styles.actionGroup}>

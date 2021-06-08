@@ -15,7 +15,7 @@ export default function MyApp({ Component, pageProps }) {
 			<Transition>
 				<ProtectedRoute config={{ match: '/user/*', url: '/auth/login' }}>
 					<Head>
-						<title>Bitcoin Lottery - Lottery with Bitcoins</title>
+						<title>BitcoinLotterys - Lottery with Bitcoins</title>
 					</Head>
 					<Component {...pageProps} />
 				</ProtectedRoute>

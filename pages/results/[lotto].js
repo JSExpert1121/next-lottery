@@ -24,7 +24,6 @@ const LottoResult = ({ data }) => {
 	}, [date, prizes, results]);
 
 
-	console.log(results, prizes);
 	return (
 		<Layout>
 			<main id="main" className="clearfix">
@@ -131,17 +130,20 @@ export async function getStaticProps(context) {
 						header: '',
 						footer: ''
 					}
-				}
+				},
+				revalidate: 10
 			}
 		}
 
 		return {
-			props: { data: { ...description, results, prizes, name: lottery?.LotteryName ?? '' } }
+			props: { data: { ...description, results, prizes, name: lottery?.LotteryName ?? '' } },
+			revalidate: 10
 		}
 	} catch (error) {
 		console.log(error);
 		return {
-			props: { data: { title: lotto, name: '', header: '', footer: '' } }
+			props: { data: { title: lotto, name: '', header: '', footer: '' } },
+			revalidate: 10
 		}
 	}
 }

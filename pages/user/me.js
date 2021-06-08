@@ -52,7 +52,7 @@ const MyAccount = ({ countries }) => {
 									</div>
 									<div className='buttons'>
 										<Link href='/user/deposit'><a className='button'>Deposit</a></Link>
-										<Link href='/user/withdraw'><a className='button'>Withdraw</a></Link>
+										{/* <Link href='/user/withdraw'><a className='button'>Withdraw</a></Link> */}
 									</div>
 								</div>
 							</div>
