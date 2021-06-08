@@ -31,7 +31,7 @@ export default function LotteryResultsPage({ results }) {
 									<tbody className="allresult">
 										{results && results.map((item, idx) => (
 											<React.Fragment key={idx}>
-												<tr onClick={() => gotoDetail(`/results/${item.name.toLowerCase()}`)}>
+												<tr onClick={() => gotoDetail(`/results/${item.name.replace(/ /g, '').toLowerCase()}`)}>
 													<td><img src={item.flag ?? '/images/logo-icon.svg'} />&nbsp;&nbsp;{item.country}</td>
 													<td>
 														<Link href={`/results/${item.name.toLowerCase()}`}>{item.name}</Link>
@@ -84,7 +84,11 @@ export const getStaticProps = async (ctx) => {
 			item.LotteryTypeId !== 13 && item.LotteryTypeId !== 24 &&
 			item.LotteryTypeId !== 27 && item.LotteryTypeId !== 36 &&
 			item.LotteryTypeId !== 34 && item.LotteryTypeId !== 35
-		)).map(item => {
+		)).filter(item => {
+			return !(item.LotteryName.includes('BTC Power Play') ||
+			item.LotteryName.includes('MegaJackpot') ||
+			item.LotteryName.includes('Raffle'));
+		}).map(item => {
 			let scores = null;
 			if (item.WinningResult) {
 				const arr = item.WinningResult.split(/,|#/g);
