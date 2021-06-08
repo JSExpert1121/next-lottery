@@ -20,9 +20,12 @@ export default function Footer() {
 				</div>
 				<div className="center-list text-center">
 					<ul className="link-list">
-						<li><a target="_blank" href="https://t.me/bitcoincomlottery" className="f_social_icon"><i className="fab fa-telegram-plane"></i></a></li>
+						{/* <li><a target="_blank" href="https://t.me/bitcoincomlottery" className="f_social_icon"><i className="fab fa-telegram-plane"></i></a></li>
 						<li><a href="https://www.twitter.com/bitcoincomlott?lang=en" target="_blank" className="f_social_icon"><i className="fab fa-twitter"></i></a></li>
-						<li><a target="_blank" href="https://www.facebook.com/BitcoincomLottery" className="f_social_icon"><i className="fab fa-facebook-f"></i></a></li>
+						<li><a target="_blank" href="https://www.facebook.com/BitcoincomLottery" className="f_social_icon"><i className="fab fa-facebook-f"></i></a></li> */}
+						<li><a href="#" className="f_social_icon"><i className="fab fa-telegram-plane"></i></a></li>
+						<li><a href="#" className="f_social_icon"><i className="fab fa-twitter"></i></a></li>
+						<li><a href="#" className="f_social_icon"><i className="fab fa-facebook-f"></i></a></li>
 					</ul>
 				</div>
 				<div className="center-list text-center">

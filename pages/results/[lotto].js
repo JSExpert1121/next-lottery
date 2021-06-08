@@ -8,9 +8,8 @@ import { formatDate } from 'helpers/dateformat';
 
 const LottoResult = ({ data }) => {
 
-	const { title, header, footer, name, results, prizes } = data;
-	const [date, setDate] = useState(results[0].DrawDate);
-	const [selection, setSelection] = useState(results[0].WinningResult + results[0].BonusNumber);
+	const [date, setDate] = useState('');
+	const [selection, setSelection] = useState('');
 	const [selPrizes, setSelPrizes] = useState([]);
 
 	const dateChanged = useCallback(e => {
@@ -18,11 +17,23 @@ const LottoResult = ({ data }) => {
 	}, []);
 
 	useEffect(() => {
-		const result = results.find(res => res.DrawDate === date);
-		setSelection(result.WinningResult + result.BonusNumber);
-		setSelPrizes(prizes.filter(item => item.DrawId === result.DrawId));
-	}, [date, prizes, results]);
+		if (!data) return;
 
+		setDate(data.results[0].DrawDate)
+	}, []);
+
+	useEffect(() => {
+		if (!data) return;
+
+		const result = data.results.find(res => res.DrawDate === date);
+		if (result) {
+			setSelection(result.WinningResult + result.BonusNumber);
+			setSelPrizes(data.prizes.filter(item => item.DrawId === result.DrawId));
+		}
+	}, [date]);
+
+	if (!data) return null;
+	const { title, header, footer, name, results } = data;
 
 	return (
 		<Layout>
@@ -40,7 +51,7 @@ const LottoResult = ({ data }) => {
 							<div className={styles.contentHeader}>
 								<h2>{`${name} Results & Winning Numbers`}</h2>
 								<select value={date} onChange={dateChanged} className={styles.dateList}>
-									{results.map(res => (
+									{results && results.map(res => (
 										<option key={res.DrawDate} value={res.DrawDate}>
 											{formatDate(new Date(res.DrawDate))}
 										</option>
@@ -87,11 +98,16 @@ const LottoResult = ({ data }) => {
 }
 
 export async function getStaticPaths() {
+	const results = await getLottoLastResults();
 	const lotteries = await getAllLotteries();
-	// const lotteries = await parseJsonFile('data/lotteries.json');
+	const lottos = results.map(res => res.LotteryTypeId);
+	const uniqueIds = [...new Set(lottos)];
+	const names = lotteries.filter(lotto => uniqueIds.includes(lotto.LotteryTypeId))
+		.map(lotto => lotto.LotteryName.replace(/ /g, '').toLowerCase())
+		.filter(name => !!name);
 
-	const paths = lotteries.map(lottery => ({
-		params: { lotto: lottery.LotteryName.replace(/ /g, '').toLowerCase() }
+	const paths = names.map(lottery => ({
+		params: { lotto: lottery }
 	}));
 
 	return {
@@ -101,6 +117,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
 	const { params: { lotto } } = context;
+	console.log('param: ', lotto);
 
 	try {
 		const result = await Promise.all([
@@ -140,7 +157,6 @@ export async function getStaticProps(context) {
 			revalidate: 10
 		}
 	} catch (error) {
-		console.log(error);
 		return {
 			props: { data: { title: lotto, name: '', header: '', footer: '' } },
 			revalidate: 10

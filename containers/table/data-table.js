@@ -15,7 +15,6 @@ const DataTable = props => {
             setBusy(true);
             try {
                 const result = await dispatch(action(page, profile.MemberId));
-                console.log(result);
             } catch (error) {
                 console.log(error);
             } finally {

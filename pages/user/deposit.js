@@ -14,7 +14,6 @@ const DepositPage = () => {
 	const profile = useSelector(state => state.user.profile);
 
 	const handleDeposit = useCallback(async () => {
-		console.log(amount, currency);
 		if (amount <= 0) {
 			setError('Please enter amount to deposit');
 			return;
@@ -57,7 +56,6 @@ const DepositPage = () => {
 		try {
 			setBusy(true);
 			const resp = await prepareConfirmDeposit(profile.MemberId, amount, currency);
-			console.log(resp);
 			if (resp.PaymentId) {
 				// popupCenter({ url: resp.PaymentUrl, title: 'Deposit', w: 500, h: 700 });
 				orderWindow.location.replace(resp.PaymentUrl);
