@@ -36,4 +36,4 @@ export const selected_row_load = txt => {
     result[0] = arr[0].split(',');
     if (arr[1]) result[1] = arr[1].split(',');
     return result;
-} 
+}

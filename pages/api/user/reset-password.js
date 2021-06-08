@@ -9,7 +9,6 @@ export default async function handler(req, res) {
     try {
         // call api
         const result = await resetPasswordCommit(email, oldPwd, newPwd);
-        console.log(result);
         if (result.Result === 'Password updated') {
             res.status(200).json("OK");
         } else {
