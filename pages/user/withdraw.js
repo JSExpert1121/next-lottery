@@ -27,7 +27,6 @@ const WithdrawPage = () => {
 
 	const handleKeyPress = useCallback(evt => {
 		const charCode = evt.which ?? evt.keyCode;
-		console.log(charCode);
 		if (charCode !== 46 && charCode > 31 && (charCode < 48 || charCode > 57)) {
 			evt.preventDefault();
 			return false;

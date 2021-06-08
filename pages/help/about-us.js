@@ -10,7 +10,7 @@ const About = () => {
 						<div className="wrap">
 							<div className="innerpage">
 								<div className="all-lot-title">
-									<h1>About Bitcoin.com</h1>
+									<h1>About Us</h1>
 								</div>
 								<div className="oro-aboutus-contact-us">
 									<a href="">

@@ -1,19 +1,19 @@
 [
     {
         "title": "What is <span class='text-primary'>Bitcoin</span><span class='text-secondary'>Lotterys.com</span>?<span class=\"fa right fa-plus\">",
-        "answer": "The Bitcoin lottery platform is an online lottery ticketing system that exclusively uses the cryptocurrency Bitcoin Cash (BCH) and Bitcoin (BTC)"
+        "answer": "The Bitcoin lottery platform is an online lottery ticketing system that uses the cryptocurrency"
     },
     {
         "title": "How do I create an account?<span class=\"fa right fa-plus\">",
-        "answer": "Every user is automatically given an anonymous account when they enter our site. To return to your account, use the unique URL found by clicking the My Account menu tab in the Header. Don’t give out your account information to anyone, or they will have access to your credit balance."
+        "answer": "Click the Register button to create a new account. Fill in the required details, we may need your number to call you if you win a major prize. To return to your account, simply click the My Account menu tab and enter your unique password. Don’t give out your account information to anyone, or they will have access to your credit balance."
     },
     {
         "title": "How do I Deposit?<span class=\"fa right fa-plus\">",
-        "answer": "You can be playing in just a couple seconds! We do not wait for any confirmations before funding your account. As soon as your deposit transaction is detected on the Bitcoin network, your account will be credited.<br /> You can use any Bitcoin wallet to deposit funds into your account. At the top right of your screen is a button that says \"Deposit\". Simply send Bitcoin (BCH) to that address and your account will be credited within a few seconds.<br /> If you are viewing the site on a mobile phone, tap the Bitcoin address and you will be taken to your associated Bitcoin wallet app."
+        "answer": "You can be playing in just a couple seconds! Simply click the Deposit button, select the cryptocurrency you want to use and follow the prompts and wallet address QR codes. As soon as we receive confirmation through the blockchain we automatically credit your account. Once you have credit, playing is instant."
     },
     {
         "title": "How do I withdraw?<span class=\"fa right fa-plus\">",
-        "answer": "At the 'MY ACCOUNT' menu bar of your screen, you will find a section called \"CASH OUT\". Click that button, fill out the amount and destination address and click \"Withdraw\". The withdrawal transaction will be sent to the Bitcoin network in just a few seconds.<br /> In order to withdraw funds, all of your previous deposits must have gotten at least 2 confirmations. This usually takes about 10 or 20 minutes. This is to prevent malicious users from creating fraudulent transactions. A small transaction fee of 0.0001 BCH will be deducted."
+        "answer": "At the 'MY ACCOUNT' menu bar of your screen, you will find a section called \"CASH OUT\". Click that button, fill out the amount and destination address and click \"Withdraw\"."
     },
     {
         "title": "Is there a full screen mode?<span class=\"fa right fa-plus\">",
@@ -41,19 +41,11 @@
     },
     {
         "title": "Can I play on my mobile phone?<span class=\"fa right fa-plus\">",
-        "answer": "We have a native Android app that you can download and install. It currently supports Video Poker, Blackjack and Slots, and integrates directly with your mobile Bitcoin wallet.<br /> You can download the app by clicking the \"Android App\" link in the 'About' section."
-    },
-    {
-        "title": "Can I convert other coins to play with BCH?<span class=\"fa right fa-plus\">",
-        "answer": "Yes, you simply need to click 'Convert Other Coins' button on the top hand right on the bitcoin.com - Header and you will be able to select which coin you want to convert in BCH."
+        "answer": "Tour site works on mobile devices."
     },
     {
         "title": "What is the minimum deposit?<span class=\"fa right fa-plus\">",
-        "answer": "In <span class='text-primary'>Bitcoin</span><span class='text-secondary'>Lotterys</span> your minimum deposit is The cost of a Original Lottery Ticket plus the calculated Bitcoin.com adminsstration fees located on the payment page of the website "
-    },
-    {
-        "title": "What happens if I send Bitcoin on the segwit enabled chain instead of Bitcoin Cash?<span class=\"fa right fa-plus\">",
-        "answer": "Any amount sent on the wrong chain will not be credited on <span class='text-primary'>Bitcoin</span><span class='text-secondary'>Lotterys</span>. Any bitcoin sent to the wrong chain will be forfeit.<br /> It is also possible to meet people selling Bitcoin (BCH) in your area, though a site like https://localbitcoins.com."
+        "answer": "In <span class='text-primary'>Bitcoin</span><span class='text-secondary'>Lotterys</span> your minimum deposit is The cost of a Original Lottery Ticket."
     },
     {
         "title": "How does the referral program work?<span class=\"fa right fa-plus\">",
@@ -65,6 +57,6 @@
     },
     {
         "title": "How can I contact you?<span class=\"fa right fa-plus\">",
-        "answer": "<a href=\"mailto:support@bitcoinlotterys.com\">support@<span class='text-primary'>bitcoin</span><span class='text-secondary'>lotterys.com</span></a><br />Twitter: <a href=\"https://twitter.com/BitcoincomLott\" target=\"_blank\">@BitcoincomLott</a><br />Telegram: <a href=\"https://t.me/bitcoincomlottery\" target=\"_blank\">t.me/bitcoincomlottery</a>"
+        "answer": "<a href=\"mailto:support@bitcoinlotterys.com\">support@<span class='text-primary'>bitcoin</span><span class='text-secondary'>lotterys.com</span></a><br />Twitter: <br />Telegram: "
     }
 ]
