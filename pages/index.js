@@ -68,30 +68,20 @@ export default function Home(props) {
 
 export const getStaticProps = async (ctx) => {
 
-	const banners = await parseJsonFile('data/banners.json');
-	const newsData = await parseXmlFile('data/news.xml');
-	// const newsData = await fetch('https://news.bitcoin.com/feed/');
 
-	const news = newsData.rss.channel[0].item.slice(0, 3).map(item => {
-		const text = item.description[0].replace(/<img[^>]+>/g, '');
-		const images = item.description[0].match(/<img[^>]+>/g);
-		const src = images[0] ? images[0].match(/src=\"[^"]+\"/g) ?? [] : [];
-		return {
-			title: item.title[0],
-			date: item.pubDate[0],
-			link: item.link[0],
-			image:src[0] ? src[0].substr(5, src[0].length - 6) : '',
-			desc: (text.length > 128) ? text.substr(0, 128) + '...' : text
-		}
-	});
-	console.log(news);
 
 	try {
-		const res = await Promise.all([getAllDraws(), getResultsByBrand()]);
-		// const res = await Promise.all([
-		// 	parseJsonFile('data/lotteries.json'),
-		// 	parseJsonFile('data/results.json'),
-		// ]);
+
+		// const banners = await parseJsonFile('data/banners.json');
+		// const newsData = await parseXmlFile('data/news.xml');
+		// const newsData = await fetch('https://news.bitcoin.com/feed/');
+
+		const res = await Promise.all([
+			getAllDraws(), 
+			getResultsByBrand(), 
+			parseJsonFile('data/banners.json'),
+			fetch('https://news.bitcoin.com/feed/')
+		]);
 		const draws = res[0];
 		const lotteries = draws.filter(draw => !(
 			draw.LotteryName == 'BTC Power Play' || draw.LotteryName == 'MegaJackpot' || draw.LotteryName == 'BTC Raffle 50'
@@ -149,6 +139,21 @@ export const getStaticProps = async (ctx) => {
 				date: item.LocalDrawDateTime,
 				earned: { unit: item.LotteryCurrency, amount: item.RollOver },
 				scores
+			}
+		});
+
+		const banners = res[2];
+		const newsData = res[3];
+		const news = newsData.rss.channel[0].item.slice(0, 3).map(item => {
+			const text = item.description[0].replace(/<img[^>]+>/g, '');
+			const images = item.description[0].match(/<img[^>]+>/g);
+			const src = images[0] ? images[0].match(/src=\"[^"]+\"/g) ?? [] : [];
+			return {
+				title: item.title[0],
+				date: item.pubDate[0],
+				link: item.link[0],
+				image: src[0] ? src[0].substr(5, src[0].length - 6) : '',
+				desc: (text.length > 128) ? text.substr(0, 128) + '...' : text
 			}
 		});
 
