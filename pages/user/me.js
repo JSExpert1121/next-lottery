@@ -54,7 +54,7 @@ const MyAccount = ({ countries }) => {
 								<div className='actions-bar'>
 									<div className='winning'>
 										<span>Winning Money</span>
-										<span className='money'>€ {balance ? balance.WinningAmount : '0.00'}</span>
+										<span className='money'>€ {balance ? parseInt(balance.WinningAmount).toFixed(2) : '0.00'}</span>
 									</div>
 									<div className='buttons'>
 										<Link href='/user/deposit'><a className='button'>Deposit</a></Link>

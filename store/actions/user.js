@@ -31,8 +31,9 @@ export const setProducts = data => ({
 
 // authentication
 export const login = (email, password) => async dispatch => {
-  const profile = await UserService.login(email, password);
-  const balance = await UserService.getBalance(profile.MemberId);
+  const user = await UserService.login(email, password);
+  const profile = await UserService.getProfile(user.MemberId)
+  const balance = await UserService.getBalance(user.MemberId);
   dispatch(setProfile(profile));
   dispatch(setBalance(balance));
 }
@@ -42,10 +43,9 @@ export const logout = () => dispatch => {
 }
 
 export const signup = (firstName, lastName, email, phone, password, bchID) => async dispatch => {
-  const profile = await UserService.signup(firstName, lastName, email, phone, password, bchID);
-  // console.log('User Profile: ', profile);
-  const balance = await UserService.getBalance(profile.MemberId);
-  // console.log('User Balance: ', balance);
+  const user = await UserService.signup(firstName, lastName, email, phone, password, bchID);
+  const profile = await UserService.getProfile(user.MemberId)
+  const balance = await UserService.getBalance(user.MemberId);
   dispatch(setProfile(profile));
   dispatch(setBalance(balance));
 }
