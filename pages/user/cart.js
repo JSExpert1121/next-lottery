@@ -10,6 +10,7 @@ const CartPage = () => {
 	const [currency, setCurrency] = useState('');
 	const [error, setError] = useState('');
 	const status = useSelector(state => state.game);
+	const balance = useSelector(state => state.user.balance);
 
 	const handleCurrency = useCallback((e) => {
 		setCurrency(e.target.value);
@@ -67,15 +68,19 @@ const CartPage = () => {
 							</div>
 							<div className='cart-error'>{error}</div>
 							<div className='cart-actions'>
-								<div className='title'>CHECKOUT</div>
-								<div className="ticker-select">
-									<select id="ticker-select" value={currency} onChange={handleCurrency}>
-										<option value="" key="">Select Coin</option>
-										{currencies.map(cur => (
-											<option value={cur} key={cur}>{cur}</option>
-										))}
-									</select>
-								</div>
+								{balance?.AccountBalance > status.price ? null : (
+									<>
+										<div className='title'>CHECKOUT</div>
+										<div className="ticker-select">
+											<select id="ticker-select" value={currency} onChange={handleCurrency}>
+												<option value="" key="">Select Coin</option>
+												{currencies.map(cur => (
+													<option value={cur} key={cur}>{cur}</option>
+												))}
+											</select>
+										</div>
+									</>
+								)}
 								<div className='action'>
 									<input type='button' className='' value='Submit Order' onClick={handleSubmit} />
 								</div>

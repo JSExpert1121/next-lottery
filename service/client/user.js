@@ -17,6 +17,8 @@ export const requestWithdraw = (amount, ticker, address) => post('/api/user/with
   amount, ticker, address
 });
 
+export const getProfile = (memberID) => get('/api/user/profile', { memberID });
+
 export const updateProfile = (
   email, firstName, lastName,
   memberID, phone, mobile, countryCode,
