@@ -31,7 +31,7 @@ export default function Footer() {
 				<div className="center-list text-center">
 					<ul className="link-list">
 						<li>
-							<Link href='/lottery'>
+							<Link href='/lotteries/powerball'>
 								<a>US PowerBall</a>
 							</Link>
 						</li>

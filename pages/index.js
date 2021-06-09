@@ -78,6 +78,7 @@ export const getStaticProps = async (ctx) => {
 		const res = await Promise.all([
 			getAllDraws(),
 			getResultsByBrand(),
+			// parseXmlFile('data/news.xml'),
 			fetch('https://news.bitcoin.com/feed/')
 		]);
 		const draws = res[0];
@@ -140,7 +141,8 @@ export const getStaticProps = async (ctx) => {
 			}
 		});
 
-		const newsData = await parseStringPromise(res[2]);
+		// const newsData = res[2];
+		const newsData = await parseStringPromise(await res[2].text());
 		const news = newsData.rss.channel[0].item.slice(0, 3).map(item => {
 			const text = item.description[0].replace(/<img[^>]+>/g, '');
 			const images = item.description[0].match(/<img[^>]+>/g);
