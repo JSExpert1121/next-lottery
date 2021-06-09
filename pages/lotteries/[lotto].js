@@ -31,8 +31,9 @@ const LottoGame = (props) => {
 
 	useEffect(() => {
 		const id = setInterval(() => {
-			const tm = deadline - new Date().getTime();
 			const deadline = new Date(data.DrawDate).getTime();
+			const tm = deadline - new Date().getTime();
+			console.log(deadline);
 			setCurTime({
 				days: parseInt(tm / (86400000)),
 				hours: parseInt((tm % 86400000) / 3600000),
