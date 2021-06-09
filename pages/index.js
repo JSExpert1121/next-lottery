@@ -8,8 +8,9 @@ import PlayGroup from 'components/home/play-group';
 import LottoResult from 'components/home/lotto-result';
 import News from 'components/home/news';
 import { parseJsonFile } from 'helpers/json';
-import { parseXmlFile } from 'helpers/xml';
+import { parseStringPromise } from 'xml2js';
 import { getAllDraws, getResultsByBrand } from 'service/globalinfo';
+// import { parseXmlFile } from 'helpers/xml';
 
 export default function Home(props) {
 
@@ -68,18 +69,15 @@ export default function Home(props) {
 
 export const getStaticProps = async (ctx) => {
 
-
-
+	const banners = await parseJsonFile('data/banners.json');
 	try {
 
-		// const banners = await parseJsonFile('data/banners.json');
 		// const newsData = await parseXmlFile('data/news.xml');
 		// const newsData = await fetch('https://news.bitcoin.com/feed/');
 
 		const res = await Promise.all([
-			getAllDraws(), 
-			getResultsByBrand(), 
-			parseJsonFile('data/banners.json'),
+			getAllDraws(),
+			getResultsByBrand(),
 			fetch('https://news.bitcoin.com/feed/')
 		]);
 		const draws = res[0];
@@ -142,8 +140,7 @@ export const getStaticProps = async (ctx) => {
 			}
 		});
 
-		const banners = res[2];
-		const newsData = res[3];
+		const newsData = await parseStringPromise(res[2]);
 		const news = newsData.rss.channel[0].item.slice(0, 3).map(item => {
 			const text = item.description[0].replace(/<img[^>]+>/g, '');
 			const images = item.description[0].match(/<img[^>]+>/g);
