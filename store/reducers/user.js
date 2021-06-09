@@ -1,8 +1,6 @@
 import * as ActionTypes from 'store/action-types';
 const initState = {
-  user: null,
   profile: null,
-  token: null,
   balance: null,
   transactions: [],
   tickets: [],
