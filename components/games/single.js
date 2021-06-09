@@ -57,6 +57,13 @@ const SingleGame = ({ data, selMs, selEs }) => {
 			selEs[i].length === data.AmountOfExtraNumbersToMatch;
 		}
 		const lines = flags.filter(f => f).length;
+		dispatch(setGameStatus({
+			name: data.LotteryName,
+			lines,
+			price: lines * data.PricePerLine,
+			draws: 1,
+			picks: selected_dump(selMs, selEs)
+		}));
 		setFlags([...flags]);
 		setSelNo({
 			...selNo,
