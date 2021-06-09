@@ -100,6 +100,8 @@ export const getStaticProps = async (ctx) => {
 			|| draw.LotteryName == 'BTC Raffle 1000' || draw.LotteryName == 'BTC Raffle 2500' || draw.LotteryName == 'BTC Raffle 5000'
 			|| draw.LotteryName == 'BTC Raffle 10000' || draw.LotteryName == 'BTC Raffle 20000' || draw.LotteryName == 'BTC Raffle 25'
 			|| draw.LotteryName == 'BTC Raffle' || draw.Jackpot < 0 || draw.LotteryName == 'BTC Raffle 25000'
+		)).filter(draw => (
+			draw.LotteryTypeId !== 45 && draw.LotteryTypeId !== 46
 		)).map(draw => ({
 			id: draw.DrawId,
 			name: draw.LotteryName,

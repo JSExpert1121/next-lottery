@@ -83,7 +83,8 @@ export const getStaticProps = async (ctx) => {
 		const results = res.filter(item => (
 			item.LotteryTypeId !== 13 && item.LotteryTypeId !== 24 &&
 			item.LotteryTypeId !== 27 && item.LotteryTypeId !== 36 &&
-			item.LotteryTypeId !== 34 && item.LotteryTypeId !== 35
+			item.LotteryTypeId !== 34 && item.LotteryTypeId !== 35 &&
+			item.LotteryTypeId !== 45 && item.LotteryTypeId !== 46
 		)).filter(item => {
 			return !(item.LotteryName.includes('BTC Power Play') ||
 			item.LotteryName.includes('MegaJackpot') ||
