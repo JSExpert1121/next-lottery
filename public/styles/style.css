@@ -16036,7 +16036,7 @@ body .wrap {
 
 .news-section-new .news-column img {
     width: 100%;
-    height: 276px;
+    height: auto;
 }
 
 .news-section-new .news-column .news-date {
