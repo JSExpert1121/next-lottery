@@ -8,11 +8,12 @@ import PlayGroup from 'components/home/play-group';
 import LottoResult from 'components/home/lotto-result';
 import News from 'components/home/news';
 import { parseJsonFile } from 'helpers/json';
+import { parseXmlFile } from 'helpers/xml';
 import { getAllDraws, getResultsByBrand } from 'service/globalinfo';
 
 export default function Home(props) {
 
-	const { banners, lotteries, exlottos, results } = props;
+	const { banners, lotteries, news, results } = props;
 	return (
 		<Layout>
 			<Head><title>Bitcoin Lottery - Lottery with Bitcoins</title></Head>
@@ -57,7 +58,7 @@ export default function Home(props) {
 						<Royalty />
 					</section> */}
 					<section id="middle_about" className="wrap news-section-new" >
-						<News />
+						<News items={news} />
 					</section>
 				</section>
 			</main>
@@ -67,13 +68,20 @@ export default function Home(props) {
 
 export const getStaticProps = async (ctx) => {
 
-	const banners = await parseJsonFile('data/banners.json');
+
+
 	try {
-		const res = await Promise.all([getAllDraws(), getResultsByBrand()]);
-		// const res = await Promise.all([
-		// 	parseJsonFile('data/lotteries.json'),
-		// 	parseJsonFile('data/results.json'),
-		// ]);
+
+		// const banners = await parseJsonFile('data/banners.json');
+		// const newsData = await parseXmlFile('data/news.xml');
+		// const newsData = await fetch('https://news.bitcoin.com/feed/');
+
+		const res = await Promise.all([
+			getAllDraws(), 
+			getResultsByBrand(), 
+			parseJsonFile('data/banners.json'),
+			fetch('https://news.bitcoin.com/feed/')
+		]);
 		const draws = res[0];
 		const lotteries = draws.filter(draw => !(
 			draw.LotteryName == 'BTC Power Play' || draw.LotteryName == 'MegaJackpot' || draw.LotteryName == 'BTC Raffle 50'
@@ -109,7 +117,7 @@ export const getStaticProps = async (ctx) => {
 
 		const results = res[1].filter(item => (
 			item.LotteryTypeId !== 13 && item.LotteryTypeId !== 24 &&
-			!!item.WinningResult && item.LotteryTypeId !== 27 && 
+			!!item.WinningResult && item.LotteryTypeId !== 27 &&
 			item.LotteryTypeId !== 34 && item.LotteryTypeId !== 35
 		)).map(item => {
 			let scores = null;
@@ -134,12 +142,28 @@ export const getStaticProps = async (ctx) => {
 			}
 		});
 
+		const banners = res[2];
+		const newsData = res[3];
+		const news = newsData.rss.channel[0].item.slice(0, 3).map(item => {
+			const text = item.description[0].replace(/<img[^>]+>/g, '');
+			const images = item.description[0].match(/<img[^>]+>/g);
+			const src = images[0] ? images[0].match(/src=\"[^"]+\"/g) ?? [] : [];
+			return {
+				title: item.title[0],
+				date: item.pubDate[0],
+				link: item.link[0],
+				image: src[0] ? src[0].substr(5, src[0].length - 6) : '',
+				desc: (text.length > 128) ? text.substr(0, 128) + '...' : text
+			}
+		});
+
 		return {
 			props: {
 				banners: banners.items,
 				lotteries,
 				exlottos,
-				results
+				results,
+				news
 			},
 			revalidate: 10
 		}
@@ -150,7 +174,8 @@ export const getStaticProps = async (ctx) => {
 				banners: banners.items,
 				lotteries: [],
 				exlottos: [],
-				results: []
+				results: [],
+				news: []
 			},
 			revalidate: 10
 		}
