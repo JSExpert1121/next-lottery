@@ -25,7 +25,7 @@ export const ProtectedRoute = ({ children, config }) => {
                 query: { referer: router.asPath === url ? '/' : router.asPath }
             });
         }
-    }, []);
+    }, [profile, match]);
 
     // if (!profile && router.asPath !== url && match) {
     //     return <Loading />
