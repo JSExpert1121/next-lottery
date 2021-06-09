@@ -1,0 +1,687 @@
+       <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+       	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+       	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+       	xmlns:dc="http://purl.org/dc/elements/1.1/"
+       	xmlns:atom="http://www.w3.org/2005/Atom"
+       	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+       	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+       	>
+       
+       <channel>
+       	<title>Bitcoin News</title>
+       	<atom:link href="https://news.bitcoin.com/feed/" rel="self" type="application/rss+xml" />
+       	<link>https://news.bitcoin.com</link>
+       	<description>Daily Bitcoin News</description>
+       	<lastBuildDate>Wed, 09 Jun 2021 03:18:00 +0000</lastBuildDate>
+       	<language>en-US</language>
+       	<sy:updatePeriod>
+       	hourly	</sy:updatePeriod>
+       	<sy:updateFrequency>
+       	1	</sy:updateFrequency>
+       	<generator>https://wordpress.org/?v=5.6.4</generator>
+       	<item>
+       		<title>Mike Novogratz: Bitcoin Investors Waiting for a New Narrative Shift</title>
+       		<link>https://news.bitcoin.com/mike-novogratz-bitcoin-investors-waiting-for-a-new-narrative-shift/</link>
+       		
+       		<dc:creator><![CDATA[Sergio Goschenko]]></dc:creator>
+       		<pubDate>Wed, 09 Jun 2021 05:30:51 +0000</pubDate>
+       				<category><![CDATA[News]]></category>
+       		<category><![CDATA[Bitcoin]]></category>
+       		<category><![CDATA[Cryptocurrency]]></category>
+       		<category><![CDATA[DeFi]]></category>
+       		<category><![CDATA[ETF]]></category>
+       		<category><![CDATA[institutional investors]]></category>
+       		<category><![CDATA[Mike Novogratz]]></category>
+       		<category><![CDATA[Price]]></category>
+       		<category><![CDATA[Regulation]]></category>
+       		<category><![CDATA[traditional banks]]></category>
+       		<guid isPermaLink="false">https://news.bitcoin.com/?p=464913</guid>
+       
+       					<description><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Mike Novogratz" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" />Mike Novogratz declared institutional investors are waiting for the next narrative shift in a recent interview at the Bitcoin 2021 conference in Miami. The CEO of Galaxy Digital thinks the market is now in a consolidation phase after the price crash last month. Novogratz also commented on what the rise of defi could mean for [&#8230;]]]></description>
+       										<content:encoded><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Mike Novogratz" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><p><strong>Mike Novogratz declared institutional investors are waiting for the next narrative shift in a recent interview at the Bitcoin 2021 conference in Miami. The CEO of Galaxy Digital thinks the market is now in a consolidation phase after the price crash last month. Novogratz also commented on what the rise of defi could mean for banking operators in the near future.</strong></p>
+       <h2 style="text-align: center;">Mike Novogratz Thinks Bitcoin Investors Are Waiting for a New Narrative</h2>
+       <p>Galaxy Digital&rsquo;s CEO Mike Novogratz thinks Bitcoin is still in a phase of consolidation after the dump in prices experienced last month. According to the entrepreneur, possible investors are waiting for the next shift in the Bitcoin narrative. This new push would entice them to start pumping money into digital assets again. Novogratz explained in an <a href="https://finance.yahoo.com/news/warren-buffett-of-crypto-mike-novogratz-sees-looming-bitcoin-price-catalysts-221712176.html" target="_blank" rel="noopener">interview</a> with Yahoo Finance that he thinks institutional investors are to blame for the recent tank in prices.</p>
+       <p>Institutional investors were able to accumulate Bitcoin cheap at $9K prices, and with the sudden price hike this year, they had to take profits. Novogratz elaborates:</p>
+       <blockquote><p>A year later it&rsquo;s at $60,000 and the urge to ring the cash register is such a deep-seated human urge that that&rsquo;s what happened &hellip; We&rsquo;ll see a long period of consolidation &hellip; and you&rsquo;re waiting for the new narrative to arrive that brings the next wave of money and I think we&rsquo;re in one of those periods right now.&rdquo;</p></blockquote>
+       <p>Novogratz thinks the new narrative shift is already in the works. A Bitcoin or crypto ETF might bring this new blood to the market. These instruments could push crypto to older Americans, that have been traditionally skeptical of cryptocurrency investments. Galaxy Digital, Novogratz&rsquo;s company, <a href="https://news.bitcoin.com/novogratzs-galaxy-digital-jumps-into-the-bitcoin-etf-fray/" target="_blank" rel="noopener">filed</a> an application for a Bitcoin ETF back in April.</p>
+       <!-- growjs zone placement 31 --> <ins> <ins class="growjs-placement"></ins> <script type="text/javascript"> if (!window.GrowJs) { (function () { var s = document.createElement('script'); s.async = true; s.type = 'text/javascript'; s.src = 'https://bitcoinads.growadvertising.com/adserve/app'; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n); }()); } </script> <script type="text/javascript"> var GrowJs = GrowJs || {}; GrowJs.ads = GrowJs.ads || []; GrowJs.ads.push({ node: document.currentScript.parentElement, handler: function (node) { var banner = GrowJs.createBanner(node, 31, [300, 250], null, []); GrowJs.showBanner(banner.index); } }); </script> </ins> <!-- end of growjs zone placement --> 
+       <h2 style="text-align: center;">Defi Will Affect Traditional Banking</h2>
+       <p>Mike Novogratz also commented on the state of defi and how it will affect traditional banking in the near future. For him, the next five years will see the world surprised at the rise of defi. This means that banking services will suffer in comparison, due to the regulations they have to comply with. Defi protocols, on the other hand, are pretty much free to offer whatever yield they want according to their activities. Traditional finance service providers will fight for these to be regulated.</p>
+       <p>In any case, the entrepreneur thinks banks are fighting a losing battle. He stressed:</p>
+       <blockquote><p>Banks are going to lobby like crazy &mdash; less against bitcoin, more against Defi &mdash; but bitcoin is the trojan horse to get everything in to digital assets and so revolutions don&rsquo;t happen without a little bloodshed.</p></blockquote>
+       <p><em><strong>What do you think about Mike Novogratz&rsquo;s thoughts on the market? Tell us in the comments section below.</strong></em></p>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       ]]></content:encoded>
+       					
+       		
+       		
+       		<post-thumbnail><url>https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_770476459-760x428.jpg</url><width>760</width><height>428</height></post-thumbnail><barker_title><![CDATA[Mike Novogratz declared #Bitcoin investors are likely waiting for a new narrative to pour more money into markets.]]></barker_title><late_barker_title><![CDATA[The entrepreneur also declared #defi will affect traditional #banking markets in the next 5 years. ]]></late_barker_title>	</item>
+       		<item>
+       		<title>Members of East Africa Community Explore Potential Use of CBDC for Alternative Regional Payment System</title>
+       		<link>https://news.bitcoin.com/members-east-africa-community-explore-potential-use-cbdc-alternative-regional-payment-system/</link>
+       		
+       		<dc:creator><![CDATA[Terence Zimwara]]></dc:creator>
+       		<pubDate>Wed, 09 Jun 2021 03:30:49 +0000</pubDate>
+       				<category><![CDATA[Fintech]]></category>
+       		<category><![CDATA[CBDC]]></category>
+       		<category><![CDATA[centralized liquidity]]></category>
+       		<category><![CDATA[collateral]]></category>
+       		<category><![CDATA[East Africa Community]]></category>
+       		<category><![CDATA[East African Payment System]]></category>
+       		<category><![CDATA[emerging technologies]]></category>
+       		<category><![CDATA[trading bloc]]></category>
+       		<guid isPermaLink="false">https://news.bitcoin.com/?p=464849</guid>
+       
+       					<description><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" />Six East African states are reportedly set to explore the possibility of using central bank digital currencies (CBDC) as an alternative to their shared payment system. The six countries, which are all members of the East Africa Community (EAC) trading bloc, are hoping this alternative will create a pathway that leads to the attainment of [&#8230;]]]></description>
+       										<content:encoded><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><p><strong>Six East African states are reportedly set to explore the possibility of using central bank digital currencies (CBDC) as an alternative to their shared payment system. The six countries, which are all members of the East Africa Community (EAC) trading bloc, are hoping this alternative will create a pathway that leads to the attainment of &ldquo;a single currency for the region by 2024.&rdquo;</strong></p>
+       <h2>The Moribund EAPS</h2>
+       <p>The revelations of the EAC&rsquo;s digital currency plan follow the bloc secretariat&rsquo;s &ldquo;consultancy call for a feasibility study&rdquo; on the planned upgrade of the East African Payment System (EAPS). Since its launch in 2014, the EAPS has failed to function properly due to member states&rsquo; distrust of each other&rsquo;s currency.</p>
+       <p>Consequently, according to a <a href="https://www.theeastafrican.co.ke/tea/business/eac-explores-potential-of-common-digital-cash-3422726">report</a>, the EAC says the selected &ldquo;consultant will conduct an exploratory scoping of such developments.&rdquo; The consultant is similarly expected to conduct an exploratory scoping for &ldquo;emerging technologies and their adoption, including but not limited to technologies involving the use of Central Bank Digital Currencies (CBDCs).&rdquo;</p>
+       <p style="text-align: center;"><!-- growjs zone placement 31 --> <ins> <ins class="growjs-placement"></ins> <script type="text/javascript"> if (!window.GrowJs) { (function () { var s = document.createElement('script'); s.async = true; s.type = 'text/javascript'; s.src = 'https://bitcoinads.growadvertising.com/adserve/app'; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n); }()); } </script> <script type="text/javascript"> var GrowJs = GrowJs || {}; GrowJs.ads = GrowJs.ads || []; GrowJs.ads.push({ node: document.currentScript.parentElement, handler: function (node) { var banner = GrowJs.createBanner(node, 31, [300, 250], null, []); GrowJs.showBanner(banner.index); } }); </script> </ins> <!-- end of growjs zone placement --> </p>
+       <h2>Distrust Between Member States</h2>
+       <p>Meanwhile, the same report quotes the EAC secretariat detailing some of the key challenges that have been observed with the EAPS. The secretariat said:</p>
+       <blockquote><p>The original funding model where participants sourced for funding of other EAC currencies from the market is proving expensive due to unavailability of partner States&rsquo; currencies in the local market.</p></blockquote>
+       <p>The secretariat adds that the &ldquo;lack of a centralised user support means that resolution of any problems with the usage of the system takes a long time.&rdquo; This in turn impacts negatively on the operations of the system.</p>
+       <p>&ldquo;The fact the system does not operate on a single platform also means that centralised liquidity and collateral management is not possible,&rdquo; concludes the EAC secretariat.</p>
+       <p>According to the report, Kenya currently dominates transactions in the EAPS, which allows citizens of member countries to make and receive payments in regional currencies. The other five member states that will be party to the CBDC exploratory process are Uganda, Tanzania, Rwanda, Burundi, and South Sudan.</p>
+       <p><em><strong>What are your thoughts on the EAC members&rsquo; plan to create a CBDC? You can share your views in the comments section below.</strong></em></p>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       ]]></content:encoded>
+       					
+       		
+       		
+       		<post-thumbnail><url>https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1940306578-760x428.jpg</url><width>760</width><height>428</height></post-thumbnail><barker_title><![CDATA[The East #Africa Community says the selected "consultant will conduct an exploratory scoping of such development." #CBDC]]></barker_title><late_barker_title><![CDATA[The six countries are hoping this alternative will create a pathway that leads to the attainment of "a single currency for the region by 2024." #Africa #CBDC]]></late_barker_title>	</item>
+       		<item>
+       		<title>Elon Musk Agrees With Vitalik Buterin on Dogecoin and Ethereum Collaboration</title>
+       		<link>https://news.bitcoin.com/elon-musk-vitalik-buterin-dogecoin-ethereum-collaboration/</link>
+       		
+       		<dc:creator><![CDATA[Kevin Helms]]></dc:creator>
+       		<pubDate>Wed, 09 Jun 2021 02:00:35 +0000</pubDate>
+       				<category><![CDATA[Altcoins]]></category>
+       		<category><![CDATA[Collaboration]]></category>
+       		<category><![CDATA[doge eth]]></category>
+       		<category><![CDATA[elon musk dogecoin]]></category>
+       		<category><![CDATA[elon musk ethereum]]></category>
+       		<category><![CDATA[elon musk vitalik buterin]]></category>
+       		<category><![CDATA[elon vitalik]]></category>
+       		<category><![CDATA[eth doge]]></category>
+       		<category><![CDATA[Vitalik Buterin]]></category>
+       		<category><![CDATA[vitalik buterin bitcoin]]></category>
+       		<category><![CDATA[vitalik buterin doge]]></category>
+       		<category><![CDATA[vitalik buterin dogecoin]]></category>
+       		<guid isPermaLink="false">https://news.bitcoin.com/?p=464956&#038;preview=true&#038;preview_id=464956</guid>
+       
+       					<description><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Elon Musk Agrees With Vitalik Buterin on Dogecoin and Ethereum Collaboration" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" />Tesla CEO Elon Musk said he &#8220;pretty much&#8221; agrees with Ethereum co-founder Vitalik Buterin about a collaboration between Dogecoin and Ethereum. Buterin said: &#8220;if we can have a secure Doge-to-Ethereum bridge. That would be amazing.&#8221; Vitalik Buterin Talks About Dogecoin and Ethereum Bridge, Elon Musk Agrees Ethereum co-founder Vitalik Buterin talked about a potential collaboration [&#8230;]]]></description>
+       										<content:encoded><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Elon Musk Agrees With Vitalik Buterin on Dogecoin and Ethereum Collaboration" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><p><strong>Tesla CEO Elon Musk said he &ldquo;pretty much&rdquo; agrees with Ethereum co-founder Vitalik Buterin about a collaboration between Dogecoin and Ethereum. Buterin said: &ldquo;if we can have a secure Doge-to-Ethereum bridge. That would be amazing.&rdquo;</strong></p>
+       <h2 style="text-align: center;">Vitalik Buterin Talks About Dogecoin and Ethereum Bridge, Elon Musk Agrees</h2>
+       <p>Ethereum co-founder Vitalik Buterin talked about a potential collaboration between Ethereum and Dogecoin in an <a href="https://www.youtube.com/watch?v=XW0QZmtbjvs" target="_blank" rel="noopener">interview</a> with AI researcher Lex Fridman last week.</p>
+       <p>Referring to the Tesla and Spacex CEO repeatedly tweeting about dogecoin, Fridman said, &ldquo;There&rsquo;s a power behind someone like Elon Musk pushing the development of a cryptocurrency.&rdquo; He then asked Buterin, &ldquo;is there a way to leverage that power and momentum to improve Ethereum?&rdquo; Buterin said:</p>
+       <blockquote><p>If DOGE wants to somehow bridge to Ethereum, and then people can trade DOGE thousands of times a second inside of loopring, then that would be amazing.</p></blockquote>
+       <p>&ldquo;I definitely don&rsquo;t think Ethereum is opposed to dog coins,&rdquo; the co-founder emphasized. &ldquo;I kind of want the fans to feel like Ethereum is, at least a little bit, in spirit itself a dog coin.&rdquo;</p>
+       <p>He elaborated: &ldquo;I think if we can have a secure Doge-to-Ethereum bridge. That would be amazing, and then when Ethereum gets any scalability that works for Ethereum assets, you would be able to trade wrapped DOGE with very low transaction fees and very high speed as well.&rdquo;</p>
+       <p>Commenting on Musk&rsquo;s action to support dogecoin, Buterin said: &ldquo;You would make a mistake if you were to ascribe too much sophisticated malevolence or any deep intentionality to the whole process. He&rsquo;s just a human being, and he likes dogs just like I like dogs.&rdquo;</p>
+       <p>Musk then commented on the interview, tweeting:</p>
+       <blockquote><p>I pretty much agree with Vitalik.</p></blockquote>
+       <p style="text-align: center;"><!-- growjs zone placement 31 --> <ins> <ins class="growjs-placement"></ins> <script type="text/javascript"> if (!window.GrowJs) { (function () { var s = document.createElement('script'); s.async = true; s.type = 'text/javascript'; s.src = 'https://bitcoinads.growadvertising.com/adserve/app'; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n); }()); } </script> <script type="text/javascript"> var GrowJs = GrowJs || {}; GrowJs.ads = GrowJs.ads || []; GrowJs.ads.push({ node: document.currentScript.parentElement, handler: function (node) { var banner = GrowJs.createBanner(node, 31, [300, 250], null, []); GrowJs.showBanner(banner.index); } }); </script> </ins> <!-- end of growjs zone placement --> </p>
+       <p>Ethereum is currently undergoing an upgrade transitioning from a proof-of-work (PoW) consensus model to a proof-of-stake (PoS) model. Buterin recently explained why the upgrade is taking longer than expected.</p>
+       <p>&ldquo;One of the biggest problems I&rsquo;ve found with our project is not the technical problems, it&rsquo;s problems related with people &hellip; Ethereum is now in a better economic position, but it took us five years to get to where we are now. We have a lot of internal team conflicts in these five years. If you are building a team, it is important to know who you are working with,&rdquo; the Ethereum co-founder <a href="https://news.bitcoin.com/vitalik-buterin-says-people-difficulties-not-technical-difficulties-slowed-the-ethereum-2-0-rollout/">described</a>.</p>
+       <p>Last month, Musk proposed some <a href="https://news.bitcoin.com/elon-musk-doubles-down-on-dogecoin-tweets-about-ideal-improvements/">improvements</a> for Dogecoin, claiming to have met with DOGE developers. Musk wrote: &ldquo;Ideally, Doge speeds up block time 10X, increases block size 10X & drops fee 100X. Then it wins hands down.&rdquo;</p>
+       <p><em><strong>Do you think Ethereum and Dogecoin should collaborate? Let us know in the comments section below.</strong></em></p>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       ]]></content:encoded>
+       					
+       		
+       		
+       		<post-thumbnail><url>https://static.news.bitcoin.com/wp-content/uploads/2021/06/doge-eth-760x428.jpg</url><width>760</width><height>428</height></post-thumbnail><barker_title><![CDATA["If doge wants to somehow bridge to #ethereum, and then people can trade #doge thousands of times a second inside of loopring, then that would be amazing." #cryptocurrency]]></barker_title><late_barker_title><![CDATA["I think if we can have a secure Doge-to-Ethereum bridge. That would be amazing." #ethereum #doge #cryptocurrency]]></late_barker_title>	</item>
+       		<item>
+       		<title>Coinbase Says Interest From Pension Funds and Hedge Funds Has Skyrocketed, Institutional Holdings Soar 170%</title>
+       		<link>https://news.bitcoin.com/coinbase-interest-pension-funds-hedge-funds-skyrocketed-institutional-holdings-soar-170/</link>
+       		
+       		<dc:creator><![CDATA[Kevin Helms]]></dc:creator>
+       		<pubDate>Wed, 09 Jun 2021 00:30:22 +0000</pubDate>
+       				<category><![CDATA[Exchanges]]></category>
+       		<category><![CDATA[Coinbase]]></category>
+       		<category><![CDATA[coinbase custody]]></category>
+       		<category><![CDATA[Hedge Funds]]></category>
+       		<category><![CDATA[Institutional Interest]]></category>
+       		<category><![CDATA[institutional investors]]></category>
+       		<category><![CDATA[pension funds]]></category>
+       		<guid isPermaLink="false">https://news.bitcoin.com/?p=464975&#038;preview=true&#038;preview_id=464975</guid>
+       
+       					<description><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Coinbase Says Interest From Pension Funds and Hedge Funds Has Skyrocketed, Institutional Holding Soars 170%" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" />The Nasdaq-listed cryptocurrency exchange Coinbase has revealed record growth in its institutional business. &#8220;This year, interest from pension funds and hedge funds has skyrocketed, supported by the roll-out of crypto-ETPs as well as an increased understanding of the crypto economy,&#8221; said Coinbase. Coinbase Sees Interest From Institutional Investors Skyrocketing Cryptocurrency exchange Coinbase (Nasdaq: COIN) reportedly [&#8230;]]]></description>
+       										<content:encoded><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Coinbase Says Interest From Pension Funds and Hedge Funds Has Skyrocketed, Institutional Holding Soars 170%" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><p><strong>The Nasdaq-listed cryptocurrency exchange Coinbase has revealed record growth in its institutional business. &ldquo;This year, interest from pension funds and hedge funds has skyrocketed, supported by the roll-out of crypto-ETPs as well as an increased understanding of the crypto economy,&rdquo; said Coinbase.</strong></p>
+       <h2 style="text-align: center;">Coinbase Sees Interest From Institutional Investors Skyrocketing</h2>
+       <p>Cryptocurrency exchange Coinbase (Nasdaq: COIN) reportedly revealed Tuesday that between Dec. 31 last year and the end of the first quarter this year, its institutional holdings grew 170% from $45 billion to $122 billion.</p>
+       <p>The company has over 8,000 institutional clients currently, including hedge funds, asset managers, pension funds, and endowments. Many institutional clients use Coinbase Custody, a crypto custody service with an insurance policy for institutional clients. The service, launched in 2018, supports over 90% of cryptocurrencies by market capitalization.</p>
+       <p>Drew Robinson, Head of Hedge Fund Sales at Coinbase, says:</p>
+       <blockquote><p>Over the last 12 months, we have seen a growing interest from institutional investors seeking to take advantage of the crypto space. However, this year, interest from pension funds and hedge funds has skyrocketed, supported by the roll-out of crypto-ETPs as well as an increased understanding of the crypto economy.</p></blockquote>
+       <!-- growjs zone placement 31 --> <ins> <ins class="growjs-placement"></ins> <script type="text/javascript"> if (!window.GrowJs) { (function () { var s = document.createElement('script'); s.async = true; s.type = 'text/javascript'; s.src = 'https://bitcoinads.growadvertising.com/adserve/app'; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n); }()); } </script> <script type="text/javascript"> var GrowJs = GrowJs || {}; GrowJs.ads = GrowJs.ads || []; GrowJs.ads.push({ node: document.currentScript.parentElement, handler: function (node) { var banner = GrowJs.createBanner(node, 31, [300, 250], null, []); GrowJs.showBanner(banner.index); } }); </script> </ins> <!-- end of growjs zone placement --> 
+       <p>He was further quoted as saying: &ldquo;Over time we have seen a variety of factors pulling institutional investors into the space; these range from hedging against inflation, diversification of corporate balance sheets and the desire for broader engagement in the digital economy, including areas such as payments, payroll and cross border payments. Client demand is also playing a significant role.&rdquo;</p>
+       <p>Coinbase is not the only company seeing soaring institutional demand for cryptocurrency. Goldman Sachs said last month that fear of missing out (FOMO) has <a href="https://news.bitcoin.com/goldman-sachs-fomo-institutional-investors-bitcoin/">driven</a> institutional investors to cryptocurrency. The firm has been saying for months that it is seeing <a href="https://news.bitcoin.com/goldman-sachs-huge-institutional-demand-bitcoin-btc-price-100k/">huge institutional demand</a> for bitcoin.</p>
+       <p><em><strong>What do you think about Coinbase&rsquo;s institutional holdings growing 170%? Let us know in the comments section below.</strong></em></p>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       ]]></content:encoded>
+       					
+       		
+       		
+       		<post-thumbnail><url>https://static.news.bitcoin.com/wp-content/uploads/2021/06/coinbase-760x428.jpg</url><width>760</width><height>428</height></post-thumbnail><barker_title><![CDATA[#Coinbase's institutional holdings grew 170% from $45 billion to $122 billion in Q1. #bitcoin #cryptocurrency]]></barker_title><late_barker_title><![CDATA["This year, interest from pension funds and hedge funds has skyrocketed, supported by the roll-out of crypto-ETPs as well as an increased understanding of the crypto economy." #coinbase #bitcoin]]></late_barker_title>	</item>
+       		<item>
+       		<title>Bitcoin Keys Cannot be Hacked: Skeptics Question the Official Colonial Pipeline Bitcoin Seizure Story</title>
+       		<link>https://news.bitcoin.com/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story/</link>
+       		
+       		<dc:creator><![CDATA[Jamie Redman]]></dc:creator>
+       		<pubDate>Tue, 08 Jun 2021 23:00:30 +0000</pubDate>
+       				<category><![CDATA[News]]></category>
+       		<category><![CDATA[$2.3 million]]></category>
+       		<category><![CDATA[Bitcoin]]></category>
+       		<category><![CDATA[Bitcoin (BTC)]]></category>
+       		<category><![CDATA[Bitcoin seizure]]></category>
+       		<category><![CDATA[Colonial Pipeline]]></category>
+       		<category><![CDATA[Darkside]]></category>
+       		<category><![CDATA[Department of Justice (DoJ)]]></category>
+       		<category><![CDATA[Deputy Attorney General]]></category>
+       		<category><![CDATA[DOJ]]></category>
+       		<category><![CDATA[FBI]]></category>
+       		<category><![CDATA[Lisa Monaco]]></category>
+       		<category><![CDATA[ransomware]]></category>
+       		<category><![CDATA[ransomware hackers]]></category>
+       		<category><![CDATA[story]]></category>
+       		<category><![CDATA[US]]></category>
+       		<category><![CDATA[US agents]]></category>
+       		<guid isPermaLink="false">https://news.bitcoin.com/?p=465004</guid>
+       
+       					<description><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Bitcoin Keys Cannot be Hacked: Skeptics Question the Official Colonial Pipeline Bitcoin Seizure Story" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" />On June 7, the United States Justice Department and the Federal Bureau of Investigation (FBI) announced the &#8220;recovery&#8221; of 63.70 bitcoin from the funds Colonial Pipeline sent to the hackers. The official story has a number of inconsistencies and federal investigators did not disclose how the FBI was able to confiscate the Darkside gang&#8217;s private [&#8230;]]]></description>
+       										<content:encoded><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Bitcoin Keys Cannot be Hacked: Skeptics Question the Official Colonial Pipeline Bitcoin Seizure Story" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><p><strong>On June 7, the United States Justice Department and the Federal Bureau of Investigation (FBI) announced the &ldquo;recovery&rdquo; of 63.70 bitcoin from the funds Colonial Pipeline sent to the hackers. The official story has a number of inconsistencies and federal investigators did not disclose how the FBI was able to confiscate the Darkside gang&rsquo;s private key.</strong></p>
+       <h2>Darkside Ransomware Gang Story Loaded With Discrepancies and a Vague Bitcoin Key Capture</h2>
+       <p>The cryptocurrency space has been discussing the recent law enforcement capture of 63.7 <a class="lar-automated-link" href="https://markets.bitcoin.com/crypto/BTC" 311996  target="_blank">BTC</a> or $2.3 million worth of bitcoin at the time of seizure. There have been issues with the way the story has unfolded and people are skeptical of the official story. Bitcoin.com News <a href="https://news.bitcoin.com/fbi-agent-recovers-private-key-2-3m-bitcoin-paid-colonial-pipeline-hackers/">reported</a> on Monday, how the Justice Department and Deputy Attorney General Lisa Monaco revealed the seizure story. Monaco detailed that federal authorities had &ldquo;turned the tables on Darkside.&rdquo;</p>
+       <p>But from the very moment this story broke by a number of mainstream media outlets, there were a few discrepancies. The first was whether or not the U.S. government advised Colonial Pipeline to oblige the ransomware demands or specifically told the company to pay. If the government did tell the business to pay Darkside then it would <a href="https://www.fbi.gov/scams-and-safety/common-scams-and-crimes/ransomware">contradict</a> the government&rsquo;s stance toward not paying ransomware hackers.</p>
+       <blockquote class="twitter-tweet" data-width="550" data-dnt="true">
+       <p lang="en" dir="ltr">The criminals used a "Payment Server" that was easily tracked by the FBI and their physical cloud server was just found and searched for a password.</p>
+       <p>This had nothing to do with <a href="https://twitter.com/hashtag/Bitcoin?src=hash&ref_src=twsrc%5Etfw">#Bitcoin</a> itself.<a href="https://t.co/AmJsHXJRha">https://t.co/AmJsHXJRha</a></p>
+       <p>&mdash; Documenting Bitcoin &#128196; (@DocumentingBTC) <a href="https://twitter.com/DocumentingBTC/status/1402311142148542478?ref_src=twsrc%5Etfw">June 8, 2021</a></p></blockquote>
+       <p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+       <p>Another issue with the original story is when CNN originally <a href="https://edition.cnn.com/2021/05/12/politics/colonial-pipeline-ransomware-payment/index.html">reported</a> on the hack, the news outlet claimed the oil company wasn&rsquo;t intending to pay the ransom. According to <a href="https://www.bloomberg.com/news/articles/2021-05-13/colonial-pipeline-paid-hackers-nearly-5-million-in-ransom">Bloomberg,</a> shortly after, Colonial Pipeline did pay nearly $5 million to the ransomware gang Darkside.</p>
+       <p>Besides the two contradicting elements in both CNN and Bloomberg&rsquo;s stories, the articles also noted differences with the digital currency used. CNN originally reported that the payment was demanded to be paid in &ldquo;bitcoin,&rdquo; while Bloomberg wrote Darkside asked for &ldquo;difficult-to-trace&rdquo; cryptocurrencies. CNN&rsquo;s article was updated after Bloomberg&rsquo;s article published to reflect the same narrative.</p>
+       <p>Then there&rsquo;s the fact that it is impossible to crack a bitcoin (<a class="lar-automated-link" href="https://markets.bitcoin.com/crypto/BTC" 311996  target="_blank">BTC</a>) key without forcing the owner to reveal the private key. This is a constant theme on Twitter, as the crypto community discusses the situation of how the FBI agent obtained the private key. The story&rsquo;s affidavit <a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.379840/gov.uscourts.cand.379840.1.0.pdf">filed</a> on June 7, 2021, explains how law enforcement leveraged &ldquo;blockchain explorers&rdquo; to trace the coins. But other than that the affidavit is extremely vague and contains lots of redactions.</p>
+       <p>The report published yesterday on Bitcoin.com News explains that executives from <a href="https://blockchaingroup.io/">Blockchain Intelligence Group </a>(CSE: BIGG) highlight that law enforcement was dependent on &ldquo;training and analysis [that] requires advanced tools and learning&rdquo; Other blockchain surveillance companies also followed the ransomware coins as Elliptic recently <a href="https://www.elliptic.co/blog/elliptic-follows-bitcoin-ransoms-paid-by-darkside-ransomware-victims">wrote</a> about following Darkside funds.</p>
+       <p>So far between all the comments from Monaco, the Justice Department, the FBI agent&rsquo;s affidavit, and comments from a few blockchain analysis teams, there are no dots that are deeply connected to how the FBI obtained ownership of the private key now in possession.</p>
+       <!-- growjs zone placement 31 --> <ins> <ins class="growjs-placement"></ins> <script type="text/javascript"> if (!window.GrowJs) { (function () { var s = document.createElement('script'); s.async = true; s.type = 'text/javascript'; s.src = 'https://bitcoinads.growadvertising.com/adserve/app'; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n); }()); } </script> <script type="text/javascript"> var GrowJs = GrowJs || {}; GrowJs.ads = GrowJs.ads || []; GrowJs.ads.push({ node: document.currentScript.parentElement, handler: function (node) { var banner = GrowJs.createBanner(node, 31, [300, 250], null, []); GrowJs.showBanner(banner.index); } }); </script> </ins> <!-- end of growjs zone placement --> 
+       <h2>Crypto Sleuths Discover Hackers Stored Data on the Cloud, Feds Obtain Cloud Server Password via Warrant</h2>
+       <p>A <a href="https://www.npr.org/2021/06/08/1004223000/how-a-new-team-of-feds-hacked-the-hackers-and-got-colonial-pipelines-bitcoin-bac">report</a> published by NPR discloses three possible scenarios. One possibility, NPR&rsquo;s Vanessa Romo notes is that maybe the federal agents were tipped off by an insider in the Darkside gang. The second theory is that Darkside was &ldquo;careless&rdquo; or a member of the gang slipped by releasing information tied to the key.</p>
+       <p>Another theory could be that the FBI was able to shakedown a third party or possibly a cryptocurrency exchange. Some people even openly <a href="https://twitter.com/atheist_in_nc/status/1402086918901358599?s=20">attacked</a> bitcoin&rsquo;s &ldquo;key selling points&rdquo; that it was supposed to be &ldquo;beyond the reach of the government.&rdquo;</p>
+       <blockquote class="twitter-tweet" data-width="550" data-dnt="true">
+       <p lang="en" dir="ltr">Something seems weird about this whole case. Was the <a class="lar-automated-link" href="https://markets.bitcoin.com/crypto/BTC" 311996  target="_blank">BTC</a> sent to an exchange?</p>
+       <p>&mdash; Rick McCracken DIGI (@RichardMcCrackn) <a href="https://twitter.com/RichardMcCrackn/status/1402247643074600965?ref_src=twsrc%5Etfw">June 8, 2021</a></p></blockquote>
+       <p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+       <p>The lawyer Jake Chervinsky who often comments on the blockchain and crypto space regularly <a href="https://twitter.com/jchervinsky/status/1402038945978929155?s=20">said</a>: &ldquo;We don&rsquo;t know exactly how FBI seized the Colonial Pipeline ransom [and] they&rsquo;re not telling us. The warrant application suggests they got the private key. Maybe from the DarkSide server seizure? There&rsquo;s no suggestion that an exchange or custodian was involved, but that&rsquo;s possible.&rdquo;</p>
+       <p>Independent journalist Jordan Schachtel gave his opinion about the situation on Twitter and <a href="https://twitter.com/JordanSchachtel/status/1402301745502564361?s=20">told</a> his 123,000 followers that the &ldquo;FBI did not &lsquo;hack back&rsquo; a bitcoin wallet, despite claims that they did. It&rsquo;s mathematically impossible to hack private keys.&rdquo; Schachtel <a href="https://twitter.com/JordanSchachtel/status/1402303604476854273?s=20">continued</a>:</p>
+       <blockquote><p><em><strong>[There is] no evidence of Russian involvement. This was all entirely avoidable if Colonial had basic security measures in place. I think it&rsquo;s fair to say that it is currently impossible to hack private keys. Improbable is not strong enough language to demonstrate how unlikely it is to retain a private key through computing power. Quantum is still very much a theoretical threat.</strong></em></p></blockquote>
+       <p>Schachtel and many others also <a href="https://twitter.com/JordanSchachtel/status/1401996717394960389?s=20">discovered</a> the warrant that does indicate the U.S. government obtained the key by leveraging a warrant. The journalist said that it was possibly an exchange based in San Fransico or a database server based in the state of California.</p>
+       <blockquote class="twitter-tweet" data-width="550" data-dnt="true">
+       <p lang="en" dir="ltr">Ransom hackers </p>
+       <p>used a rented cloud server.</p>
+       <p>FBI got a subpoena to take control of the rented server</p>
+       <p>and recover half of the total 75 <a href="https://twitter.com/hashtag/btc?src=hash&ref_src=twsrc%5Etfw">#btc</a> </p>
+       <p>The FBI didn&rsquo;t &ldquo;crack Bitcoin.&rdquo; </p>
+       <p>They got the wallet encryption key (password) from the server. <a href="https://t.co/WwHTRjiHod">pic.twitter.com/WwHTRjiHod</a></p>
+       <p>&mdash; Amy Snow (@helloamysnow) <a href="https://twitter.com/helloamysnow/status/1402192894266544135?ref_src=twsrc%5Etfw">June 8, 2021</a></p></blockquote>
+       <p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+       <p>The CSO at Coinbase, Philip Martin, said he saw a lot of accusations pointing at Coinbase as possibly being &ldquo;involved&rdquo; with the seizure. Martin and Coinbase <a href="https://twitter.com/SecurityGuyPhil/status/1402079973003849739?s=20">insist</a> that &ldquo;Coinbase was not the target of the warrant and did not receive the ransom or any part of the ransom at any point. We also have no evidence that the funds went through a Coinbase account/wallet.&rdquo;</p>
+       <p>The election attorney, litigator, and bitcoin practice group leader, Bryan Jacoutot, <a href="https://twitter.com/BryanJacoutot/status/1402222913818927104?s=20">reiterated</a> the fact that bitcoin private keys cannot be &ldquo;hacked.&rdquo;</p>
+       <p>&ldquo;For those of you who think the US gov&rsquo;t cracked SHA-256 and correctly guessed the private key of the Colonial Pipeline hackers,&rdquo; Jacoutot said. &ldquo;Here&rsquo;s a fun fact: The size of bitcoin&rsquo;s private key space is 10^77. For comparison, the amount of *atoms* in the observable universe is 10^80.&rdquo;</p>
+       <p>A Twitter account called &ldquo;Cthulhu&rdquo; <a href="https://twitter.com/GuyFromV2/status/1402289666506641411?s=20https://twitter.com/GuyFromV2/status/1402289666506641411?s=20">mentioned</a> it could be a false flag and said:</p>
+       <blockquote><p><em><strong>So either the FBI were the hackers of the Colonial Pipeline or they don&rsquo;t need a key to get anyone&rsquo;s <a class="lar-automated-link" href="https://markets.bitcoin.com/crypto/BTC" 311996  target="_blank">BTC</a>. LOL. I don&rsquo;t think too much thought went into doing this false flag.</strong></em></p></blockquote>
+       <p>&ldquo;The FBI either was given the private keys or they stole them,&rdquo; another individual dubbed Kingt Crypto <a href="https://twitter.com/KingT_Crypto/status/1402033876042764289?s=20">remarked</a> on Monday. The fact is the FBI didn&rsquo;t crack a bitcoin wallet. No one can crack a secure bitcoin wallet. The FBI obtained the private keys to the Darkside funds via getting an encryption key to a <a href="https://krebsonsecurity.com/2021/05/darkside-ransomware-gang-quits-after-servers-bitcoin-stash-seized/">cloud server</a> by obtaining a <a href="https://twitter.com/JordanSchachtel/status/1401996717394960389?s=20">warrant</a> issued in San Fransico.</p>
+       <p>Currently, as the story continues to trend across the web, there are lots of skeptics questioning the &lsquo;official&rsquo; tale told by the U.S. government.</p>
+       <p><em><strong>Do you believe the federal government&rsquo;s official story about the Colonial Pipeline bitcoin ransomware case? Let us know what you think about this subject in the comments section below.</strong></em></p>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       ]]></content:encoded>
+       					
+       		
+       		
+       		<post-thumbnail><url>https://static.news.bitcoin.com/wp-content/uploads/2021/06/bitcoin-keys-cannot-be-hacked-skeptics-question-the-official-colonial-pipeline-bitcoin-seizure-story-760x428.jpg</url><width>760</width><height>428</height></post-thumbnail><barker_title><![CDATA[It is impossible to crack a #bitcoin private key without forcing the owner to reveal the private key.]]></barker_title><late_barker_title><![CDATA[Darkside hackers used a rented cloud server. The FBI simply got a warrant to obtain the encryption key. It is impossible to crack a #bitcoin private key.]]></late_barker_title>	</item>
+       		<item>
+       		<title>Amazon Job Listing Seeks Blockchain Lead &#8211; Internet Giant Looks to Create &#8216;Business Use Cases Across Defi&#8217;</title>
+       		<link>https://news.bitcoin.com/amazon-job-listing-seeks-blockchain-lead-internet-giant-looks-to-create-business-use-cases-across-defi/</link>
+       		
+       		<dc:creator><![CDATA[Jamie Redman]]></dc:creator>
+       		<pubDate>Tue, 08 Jun 2021 21:30:13 +0000</pubDate>
+       				<category><![CDATA[Blockchain]]></category>
+       		<category><![CDATA[Amazon]]></category>
+       		<category><![CDATA[Amazon Managed Blockchain]]></category>
+       		<category><![CDATA[AMB]]></category>
+       		<category><![CDATA[Blockchain Space]]></category>
+       		<category><![CDATA[DeFi]]></category>
+       		<category><![CDATA[Digital Currencies]]></category>
+       		<category><![CDATA[ecommerce]]></category>
+       		<category><![CDATA[job listing]]></category>
+       		<category><![CDATA[Mexico]]></category>
+       		<category><![CDATA[payment solutions]]></category>
+       		<category><![CDATA[pilot project]]></category>
+       		<guid isPermaLink="false">https://news.bitcoin.com/?p=464981</guid>
+       
+       					<description><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Amazon Job Listing Seeks Blockchain Lead - Internet Giant Looks to Create &#039;Business Use Cases Across Defi&#039;" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" />Amazon is looking for a blockchain expert, according to a job posting published on the company&#8217;s employment portal. The firm wants someone who is &#8220;passionate about blockchain and decentralized networks&#8221; and someone who can build innovative &#8220;business use cases&#8221; across decentralized finance (defi). Online Marketplace Amazon Hopes to Hire a Head of Product to Lead [&#8230;]]]></description>
+       										<content:encoded><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Amazon Job Listing Seeks Blockchain Lead - Internet Giant Looks to Create &#039;Business Use Cases Across Defi&#039;" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><p><strong>Amazon is looking for a blockchain expert, according to a job posting published on the company&rsquo;s employment portal. The firm wants someone who is &ldquo;passionate about blockchain and decentralized networks&rdquo; and someone who can build innovative &ldquo;business use cases&rdquo; across decentralized finance (defi). </strong></p>
+       <h2>Online Marketplace Amazon Hopes to Hire a Head of Product to Lead Blockchain Innovation</h2>
+       <p>The world&rsquo;s largest online marketplace Amazon is seemingly watching blockchain innovations and current defi platforms make waves in the world of finance. Since the firm&rsquo;s inception, Amazon has disrupted the online world via technological innovation and now it wants someone to help with blockchain technology.</p>
+       <p>The company posted a job listing this week that shows Amazon is looking for a &ldquo;Head of Product&rdquo; with a comprehensive blockchain and cryptocurrency background. The business already has a product called the &ldquo;Amazon Managed Blockchain (AMB)&rdquo; and a team behind the project as well.</p>
+       <p>&ldquo;Come join us to head product on the Amazon Managed Blockchain team,&rdquo; Amazon&rsquo;s job listing states. &ldquo;Amazon Managed Blockchain (AMB) is a fully managed service that accelerates customers&rsquo; ability to create and leverage scalable blockchain technology for current and innovative business use cases across Defi, Supply Chain, Financial Services, Identity, and more. We are looking for an experienced product leader to drive the vision, roadmap, feature definition and go-to-market strategy of the AWS product offering across the rapidly evolving and broad landscape of blockchain technology and use cases.&rdquo;</p>
+       <p>Interested applicants are required to have a BS or BA degree, over a decade of experience in the field of product management experience and the company prefers someone with a degree in computer science. Amazon&rsquo;s job listing description adds:</p>
+       <blockquote><p><em><strong>The candidate will have a track record delivering outstanding products at scale in emerging spaces, and is passionate about blockchain, distributed systems, and cloud scale software. Ideally you will have experience delivering products or innovations in the blockchain space, and in particular Defi or Traditional Financial Services.</strong></em></p></blockquote>
+       <!-- growjs zone placement 31 --> <ins> <ins class="growjs-placement"></ins> <script type="text/javascript"> if (!window.GrowJs) { (function () { var s = document.createElement('script'); s.async = true; s.type = 'text/javascript'; s.src = 'https://bitcoinads.growadvertising.com/adserve/app'; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n); }()); } </script> <script type="text/javascript"> var GrowJs = GrowJs || {}; GrowJs.ads = GrowJs.ads || []; GrowJs.ads.push({ node: document.currentScript.parentElement, handler: function (node) { var banner = GrowJs.createBanner(node, 31, [300, 250], null, []); GrowJs.showBanner(banner.index); } }); </script> </ins> <!-- end of growjs zone placement --> 
+       <h2 style="text-align: center;">Not the First Job Listing Seeking Blockchain Help</h2>
+       <p>The blockchain expert job listing posted on Amazon&rsquo;s employment portal follows the job listing <a href="https://news.bitcoin.com/amazon-works-on-digital-currencies-solutions-pilot-project-set-to-launch-in-mexico/">added</a> back in February when the e-commerce giant was looking to build a pilot project in Mexico.</p>
+       <p>&ldquo;This product will enable customers to convert their cash in to digital currency using which customers can enjoy online services including shopping for goods and/or services like Prime Video,&rdquo; the Amazon job listing explained at the time.</p>
+       <p>The listing from February has since been removed from the e-commerce firm&rsquo;s employment web portal.</p>
+       <p><strong><em>What do you think about Amazon looking for a blockchain expert who can build</em> business use cases tethered to defi? Let us know what you think about this subject in the comments section below.</strong></p>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       ]]></content:encoded>
+       					
+       		
+       		
+       		<post-thumbnail><url>https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1247288113-760x428.jpg</url><width>760</width><height>428</height></post-thumbnail><barker_title><![CDATA["The candidate will have a track record delivering outstanding products at scale in emerging spaces, and is passionate about #blockchain, distributed systems," Amazon says. ]]></barker_title><late_barker_title><![CDATA["Ideally, you will have experience delivering products or innovations in the #blockchain space, and in particular #Defi or Traditional Financial Services," Amazon says.]]></late_barker_title>	</item>
+       		<item>
+       		<title>IRS Seeks Congressional Authority to Obtain Data on Cryptocurrency Transactions</title>
+       		<link>https://news.bitcoin.com/irs-congressional-authority-data-cryptocurrency-transactions/</link>
+       		
+       		<dc:creator><![CDATA[Kevin Helms]]></dc:creator>
+       		<pubDate>Tue, 08 Jun 2021 19:30:21 +0000</pubDate>
+       				<category><![CDATA[Taxes]]></category>
+       		<category><![CDATA[collect crypto information]]></category>
+       		<category><![CDATA[Congress]]></category>
+       		<category><![CDATA[congressional power]]></category>
+       		<category><![CDATA[IRS]]></category>
+       		<category><![CDATA[irs collect data]]></category>
+       		<category><![CDATA[irs needs authority]]></category>
+       		<category><![CDATA[irs needs more poer]]></category>
+       		<category><![CDATA[tax authority]]></category>
+       		<guid isPermaLink="false">https://news.bitcoin.com/?p=465036&#038;preview=true&#038;preview_id=465036</guid>
+       
+       					<description><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="IRS Seeks Congressional Authority to Obtain Data on Cryptocurrency Transactions" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" />The U.S. Internal Revenue Service (IRS) says it needs congressional authority in order to obtain the information needed to regulate cryptocurrency. &#8220;We get challenged frequently and to have a clear dictate from Congress on the authority for us to collect that information is critical,&#8221; IRS Commissioner Charles Rettig said. IRS Says It Needs More Authority [&#8230;]]]></description>
+       										<content:encoded><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="IRS Seeks Congressional Authority to Obtain Data on Cryptocurrency Transactions" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><p><strong>The U.S. Internal Revenue Service (IRS) says it needs congressional authority in order to obtain the information needed to regulate cryptocurrency. &ldquo;We get challenged frequently and to have a clear dictate from Congress on the authority for us to collect that information is critical,&rdquo; IRS Commissioner Charles Rettig said.</strong></p>
+       <h2 style="text-align: center;">IRS Says It Needs More Authority to Collect Crypto Data</h2>
+       <p>IRS Commissioner Charles Rettig said Tuesday during a Senate Finance Committee hearing that the IRS needs more authority to do its job in regulating cryptocurrency. He said:</p>
+       <blockquote><p>I think we need congressional authority. We get challenged frequently and to have a clear dictate from Congress on the authority for us to collect that information is critical.</p></blockquote>
+       <p>The commissioner noted that the cryptocurrency market is growing and its value is now approximately $2 trillion, with more than 8,600 exchanges worldwide.</p>
+       <p>The Biden administration has proposed requiring businesses to report information on cryptocurrency transactions valued at more than <a href="https://news.bitcoin.com/us-treasury-biden-tax-cryptocurrency-transfers-over-10000-reported-to-irs/">$10,000</a> to the IRS. This is part of the administration&rsquo;s broader efforts to crack down on tax evasion. &ldquo;Cryptocurrency already poses a significant detection problem by facilitating illegal activity broadly including tax evasion,&rdquo; the U.S. Treasury Department stated.</p>
+       <p>Rettig opined:</p>
+       <blockquote><p>Most crypto, virtual currencies are designed to stay off the radar screen.</p></blockquote>
+       <!-- growjs zone placement 31 --> <ins> <ins class="growjs-placement"></ins> <script type="text/javascript"> if (!window.GrowJs) { (function () { var s = document.createElement('script'); s.async = true; s.type = 'text/javascript'; s.src = 'https://bitcoinads.growadvertising.com/adserve/app'; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n); }()); } </script> <script type="text/javascript"> var GrowJs = GrowJs || {}; GrowJs.ads = GrowJs.ads || []; GrowJs.ads.push({ node: document.currentScript.parentElement, handler: function (node) { var banner = GrowJs.createBanner(node, 31, [300, 250], null, []); GrowJs.showBanner(banner.index); } }); </script> </ins> <!-- end of growjs zone placement --> 
+       <p>The IRS recently issued John Doe summonses to cryptocurrency exchanges <a href="https://news.bitcoin.com/us-court-authorizes-irs-cryptocurrency-user-records-circle-poloniex/">Circle</a>, including Poloniex, and <a href="https://news.bitcoin.com/court-authorizes-irs-user-records-kraken-cryptocurrency-exchange/">Kraken </a>to obtain records of their cryptocurrency users. The tax agency seeks &ldquo;information about U.S. taxpayers who conducted at least the equivalent of $20,000 in transactions in cryptocurrency during the years 2016 to 2020&rdquo; on these exchanges. The summonses direct the exchanges to &ldquo;produce records identifying the U.S. taxpayers described above, along with other documents relating to their cryptocurrency transactions.&rdquo;</p>
+       <p>Robert Wearing, IRS&rsquo; deputy associate chief counsel for Procedure & Administration, said last month that the agency will <a href="https://news.bitcoin.com/irs-seize-cryptocurrencies-investors-settle-tax-debts/">seize</a> cryptocurrencies and sell them to satisfy tax collection if taxpayers fail to meet their tax obligations. In March, the IRS launched <a href="https://news.bitcoin.com/irs-operation-hidden-treasure-unreported-crypto-income/">Operation Hidden Treasure</a> to target unreported crypto income.</p>
+       <p><em><strong>What do you think about the IRS seeking congressional authority to collect crypto data? Let us know in the comments section below.</strong></em></p>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       ]]></content:encoded>
+       					
+       		
+       		
+       		<post-thumbnail><url>https://static.news.bitcoin.com/wp-content/uploads/2021/06/irs-congress-760x428.jpg</url><width>760</width><height>428</height></post-thumbnail><barker_title><![CDATA["I think we need congressional authority. We get challenged frequently and to have a clear dictate from Congress on the authority for us to collect that information is critical." #bitcoin #crypto]]></barker_title><late_barker_title><![CDATA["Most crypto, virtual currencies are designed to stay off the radar screen," said the #IRS chief. #bitcoin #cryptocurrency]]></late_barker_title>	</item>
+       		<item>
+       		<title>Skybridge Capital Says Bitcoin Still Has More Upside Than Gold</title>
+       		<link>https://news.bitcoin.com/skybridge-capital-says-bitcoin-still-has-more-upside-than-gold/</link>
+       		
+       		<dc:creator><![CDATA[Kevin Helms]]></dc:creator>
+       		<pubDate>Tue, 08 Jun 2021 18:00:14 +0000</pubDate>
+       				<category><![CDATA[News]]></category>
+       		<category><![CDATA[Anthony Scaramucci]]></category>
+       		<category><![CDATA[Anthony Scaramucci bitcoin]]></category>
+       		<category><![CDATA[asset manager]]></category>
+       		<category><![CDATA[Bitcoin vs gold]]></category>
+       		<category><![CDATA[gold vs bitcoin]]></category>
+       		<category><![CDATA[hedge fund manager]]></category>
+       		<category><![CDATA[Skybridge Capital]]></category>
+       		<guid isPermaLink="false">https://news.bitcoin.com/?p=464918&#038;preview=true&#038;preview_id=464918</guid>
+       
+       					<description><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Skybridge Capital Says Bitcoin Still Has More Upside Than Gold" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" />The chief investment officer of global investment firm Skybridge Capital says bitcoin still has more upside than gold. While expecting both gold and bitcoin to rally, he said his hedge fund is sticking to bitcoin. Asset Manager Skybridge Prefers Bitcoin to Gold Troy Gayeski, co-chief investment officer (CIO) and senior portfolio manager at Skybridge Capital, [&#8230;]]]></description>
+       										<content:encoded><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Skybridge Capital Says Bitcoin Still Has More Upside Than Gold" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><p><strong>The chief investment officer of global investment firm Skybridge Capital says bitcoin still has more upside than gold. While expecting both gold and bitcoin to rally, he said his hedge fund is sticking to bitcoin.</strong></p>
+       <h2 style="text-align: center;">Asset Manager Skybridge Prefers Bitcoin to Gold</h2>
+       <p>Troy Gayeski, co-chief investment officer (CIO) and senior portfolio manager at Skybridge Capital, a $7.5 billion hedge fund, says gold is good but bitcoin is better, Bloomberg reported Sunday. He believes that both gold and bitcoin are likely to rally even as the Federal Reserve moves to taper asset purchases, elaborating:</p>
+       <blockquote><p>We&rsquo;re going to stick to bitcoin and crypto because we just think there&rsquo;s more upside.</p></blockquote>
+       <p>While acknowledging that bitcoin has more volatility than gold, the CIO noted: &ldquo;you&rsquo;re going to capture a little bit more juice than you will in gold from that same phenomenon.&rdquo;</p>
+       <p>The price of bitcoin soared to the $65,000 level in April before plunging. It currently stands at $32,512 based on data from <a href="https://markets.bitcoin.com/crypto/BTC">Bitcoin.com Markets</a>. Meanwhile, gold came close to sinking into a bear market in March but its price recovered and erases year-to-date losses.</p>
+       <p>Gayeski, added:</p>
+       <blockquote><p>All fiat-currency alternatives &mdash; which have all gone through fairly recent substantial corrections &mdash; are in a much better place now to handle that eventual taper and gradual slowing of money-supply growth, than they were as they were making higher-highs after higher-highs.</p></blockquote>
+       <p style="text-align: center;"><!-- growjs zone placement 31 --> <ins> <ins class="growjs-placement"></ins> <script type="text/javascript"> if (!window.GrowJs) { (function () { var s = document.createElement('script'); s.async = true; s.type = 'text/javascript'; s.src = 'https://bitcoinads.growadvertising.com/adserve/app'; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n); }()); } </script> <script type="text/javascript"> var GrowJs = GrowJs || {}; GrowJs.ads = GrowJs.ads || []; GrowJs.ads.push({ node: document.currentScript.parentElement, handler: function (node) { var banner = GrowJs.createBanner(node, 31, [300, 250], null, []); GrowJs.showBanner(banner.index); } }); </script> </ins> <!-- end of growjs zone placement --> </p>
+       <p>Skybridge <a href="https://news.bitcoin.com/skybridge-bitcoin-fund-launches-million-anthony-scaramucci-avalanche-institutional-investors/">launched</a> its bitcoin fund in December last year with $25 million. By the time it opened up to the public in January, the fund&rsquo;s assets under management had risen to <a href="https://news.bitcoin.com/skybridge-bitcoin-fund-310-million-btc-worth-535k/">$310 million</a>. The Skybridge Bitcoin Fund is an institutional-grade fund investing in bitcoin. Fidelity Digital Assets, a division of Fidelity Investments, serves as the firm&rsquo;s bitcoin custodian and Ernst & Young serves as its auditor.</p>
+       <p>According to Gayeski, the Skybridge Bitcoin Fund is up 51.2% as of June 1, from its inception last December.</p>
+       <p>The firm&rsquo;s founder, Anthony Scaramucci, has <a href="https://news.bitcoin.com/skybridge-capital-predicts-100k-bitcoin-price-this-year-heavy-demand-diminishing-supply/">predicted</a> that the price of bitcoin will reach $100,000 before the year-end simply due to heavy demand for the cryptocurrency and its diminishing supply.</p>
+       <p>In March, the firm <a href="https://news.bitcoin.com/scaramuccis-skybridge-capital-registers-with-sec-to-launch-a-bitcoin-etf/">registered</a> a bitcoin exchange-traded fund (ETF) with the U.S. Securities and Exchange Commission (SEC). Gayeski expects the SEC to approve the product by the fourth quarter of 2021 or the first quarter of next year.</p>
+       <p><em><strong>Do you agree with Skybridge Capital&rsquo;s executive about bitcoin? Let us know in the comments section below.</strong></em></p>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       ]]></content:encoded>
+       					
+       		
+       		
+       		<post-thumbnail><url>https://static.news.bitcoin.com/wp-content/uploads/2021/06/gold-760x428.jpg</url><width>760</width><height>428</height></post-thumbnail><barker_title><![CDATA["We’re going to stick to #bitcoin and crypto because we just think there’s more upside," said the asset manager. #cryptocurrency]]></barker_title><late_barker_title><![CDATA["You’re going to capture a little bit more juice than you will in gold from that same phenomenon," said the asset manager. #bitcoin #cryptocurrency]]></late_barker_title>	</item>
+       		<item>
+       		<title>British Asset Manager Ruffer Bags $1.1 Billion Profit From Bitcoin</title>
+       		<link>https://news.bitcoin.com/british-asset-manager-ruffer-1-1-billion-profit-bitcoin/</link>
+       		
+       		<dc:creator><![CDATA[Kevin Helms]]></dc:creator>
+       		<pubDate>Tue, 08 Jun 2021 16:30:27 +0000</pubDate>
+       				<category><![CDATA[Featured]]></category>
+       		<category><![CDATA[asset management firm]]></category>
+       		<category><![CDATA[asset manager]]></category>
+       		<category><![CDATA[bitcoin holdings]]></category>
+       		<category><![CDATA[bitcoin treasury]]></category>
+       		<category><![CDATA[britsh fund manager]]></category>
+       		<category><![CDATA[ruffer]]></category>
+       		<category><![CDATA[ruffer bitcoin]]></category>
+       		<category><![CDATA[ruffer btc]]></category>
+       		<category><![CDATA[ruffer crypto]]></category>
+       		<category><![CDATA[ruffer cryptocurrency]]></category>
+       		<guid isPermaLink="false">https://news.bitcoin.com/?p=464895&#038;preview=true&#038;preview_id=464895</guid>
+       
+       					<description><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="British Asset Manager Ruffer Bags $1.1 Billion Profit From Bitcoin" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" />British asset management firm Ruffer reportedly said its bitcoin investment has generated about $1.1 billion in profit. The firm says bitcoin has been &#8220;a wonderful store of value&#8221; and it is still optimistic about the cryptocurrency in the long term. Ruffer Profits $1.1 Billion From Bitcoin Investment London-based asset management firm Ruffer revealed that it [&#8230;]]]></description>
+       										<content:encoded><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="British Asset Manager Ruffer Bags $1.1 Billion Profit From Bitcoin" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><p><strong>British asset management firm Ruffer reportedly said its bitcoin investment has generated about $1.1 billion in profit. The firm says bitcoin has been &ldquo;a wonderful store of value&rdquo; and it is still optimistic about the cryptocurrency in the long term.</strong></p>
+       <h2 style="text-align: center;">Ruffer Profits $1.1 Billion From Bitcoin Investment</h2>
+       <p>London-based asset management firm Ruffer revealed that it made $1.1 billion in profit from its bitcoin investment in five months, The Sunday Times reported on June 6. The firm has about &pound;22.4 billion ($32 billion) under management as of April 30.</p>
+       <p>Hamish Baillie, an investment director at Ruffer, said the asset management firm initially <a href="https://news.bitcoin.com/asset-manager-ruffer-750-million-bitcoin-investment-hedge-fiat-currency-devaluation/">invested</a> about $600 million in bitcoin in November last year when the price of <a class="lar-automated-link" href="https://markets.bitcoin.com/crypto/BTC" 311996  target="_blank">BTC</a> was below $20,000. The director detailed:</p>
+       <blockquote><p>When the price doubled, we took some profits for our clients in December and early January. We actively managed the position and by the time we sold the last tranche in April, the total profit was slightly more than $1.1 billion.</p></blockquote>
+       <p>Baillie explained that stimulus checks have fueled some demand for cryptocurrencies, noting that younger people&rsquo;s interest in them could falter as lockdowns end and economies reopen.</p>
+       <p>The investment director expects institutions to keep buying <a class="lar-automated-link" href="https://markets.bitcoin.com/crypto/BTC" 311996  target="_blank">BTC</a> for their portfolios and embrace the cryptocurrency as an alternative haven asset.</p>
+       <p>Regarding whether Ruffer will buy more bitcoin, the director said that it is &ldquo;certainly not off the menu.&rdquo; Moreover, he called out &ldquo;hyperbole and misinformation&rdquo; surrounding bitcoin&rsquo;s energy consumption. He also pointed out bitcoin&rsquo;s &ldquo;huge social benefits&rdquo; in countries such as Venezuela. Baillie opined:</p>
+       <blockquote><p>It&rsquo;s been a wonderful store of value.</p></blockquote>
+       <!-- growjs zone placement 31 --> <ins> <ins class="growjs-placement"></ins> <script type="text/javascript"> if (!window.GrowJs) { (function () { var s = document.createElement('script'); s.async = true; s.type = 'text/javascript'; s.src = 'https://bitcoinads.growadvertising.com/adserve/app'; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n); }()); } </script> <script type="text/javascript"> var GrowJs = GrowJs || {}; GrowJs.ads = GrowJs.ads || []; GrowJs.ads.push({ node: document.currentScript.parentElement, handler: function (node) { var banner = GrowJs.createBanner(node, 31, [300, 250], null, []); GrowJs.showBanner(banner.index); } }); </script> </ins> <!-- end of growjs zone placement --> 
+       <p>Ruffer previously <a href="https://news.bitcoin.com/asset-manager-ruffer-750-million-bitcoin-investment-hedge-fiat-currency-devaluation/">explained</a> that its <a class="lar-automated-link" href="https://markets.bitcoin.com/crypto/BTC" 311996  target="_blank">BTC</a> investment &ldquo;diversifies the company&rsquo;s investments in gold and inflation-linked bonds, and acts as a hedge to some of the monetary and market risks that we see.&rdquo; The firm further noted: &ldquo;Due to zero interest rates the investment world is desperate for new safe-havens and uncorrelated assets. We think we are relatively early to this, at the foothills of a long trend of institutional adoption and financialisation of bitcoin.&rdquo;</p>
+       <p>A spokesperson for Ruffer was quoted by Reuters on Tuesday as saying:</p>
+       <blockquote><p>Long term, we remain interested in digital assets and the role they can play in real wealth preservation. In the short term, following the sharp increase in the bitcoin price, we felt bitcoin was exhibiting more risk.</p></blockquote>
+       <p><em><strong>What do you think about Ruffer&rsquo;s bitcoin strategy? Let us know in the comments section below.</strong></em></p>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       ]]></content:encoded>
+       					
+       		
+       		
+       		<post-thumbnail><url>https://static.news.bitcoin.com/wp-content/uploads/2021/06/ruffer1-760x428.jpg</url><width>760</width><height>428</height></post-thumbnail><barker_title><![CDATA[When the price doubled, we took some profits for our clients. We actively managed the position and by the time we sold the last tranche in April, the total profit was slightly more than $1.1 billion. ]]></barker_title><late_barker_title><![CDATA[Bitcoin has been "a wonderful store of value," said the asset manager who profited $1.1 billion from a 5-month #bitcoin investment. #cryptocurrency]]></late_barker_title>	</item>
+       		<item>
+       		<title>Deutsche Bank Warns: Ignoring Rising US Inflation Akin to &#8216;Sitting on a Time Bomb&#8217;</title>
+       		<link>https://news.bitcoin.com/deutsche-bank-warns-ignoring-rising-us-inflation-time-bomb/</link>
+       		
+       		<dc:creator><![CDATA[Jamie Redman]]></dc:creator>
+       		<pubDate>Tue, 08 Jun 2021 15:00:52 +0000</pubDate>
+       				<category><![CDATA[Economics]]></category>
+       		<category><![CDATA['70s]]></category>
+       		<category><![CDATA[1970s]]></category>
+       		<category><![CDATA[Asian Markets]]></category>
+       		<category><![CDATA[David Folkerts-Landau]]></category>
+       		<category><![CDATA[deutsche]]></category>
+       		<category><![CDATA[Deutsche Bank Report]]></category>
+       		<category><![CDATA[European markets]]></category>
+       		<category><![CDATA[Fed]]></category>
+       		<category><![CDATA[Federal Reserve]]></category>
+       		<category><![CDATA[inflation]]></category>
+       		<category><![CDATA[Inflation rising]]></category>
+       		<category><![CDATA[Jim Reid]]></category>
+       		<category><![CDATA[Monetary Easing]]></category>
+       		<category><![CDATA[Peter Hooper]]></category>
+       		<category><![CDATA[Rising Inflation]]></category>
+       		<category><![CDATA[stagflation]]></category>
+       		<category><![CDATA[Time Bomb]]></category>
+       		<category><![CDATA[transitory]]></category>
+       		<category><![CDATA[transitory inflation]]></category>
+       		<category><![CDATA[US Inflation]]></category>
+       		<guid isPermaLink="false">https://news.bitcoin.com/?p=464842</guid>
+       
+       					<description><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Deutsche Bank Warns Ignoring Rising US Inflation Akin to &#039;Sitting on a Time Bomb&#039;" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" />Deutsche Bank published a report Monday noting that the United States is facing &#8220;the very real specter of consumer-driven inflation.&#8221; The bank&#8217;s chief economist David Folkerts-Landau and others notably highlight the Federal Reserve&#8217;s monetary easing policy and recent tolerance toward higher inflation. Deutsche Report: &#8216;Transitory Inflation Could Feed Into &#8217;70s Style Stagflation&#8217; The price of [&#8230;]]]></description>
+       										<content:encoded><![CDATA[<img width="768" height="432" src="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-768x432.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Deutsche Bank Warns Ignoring Rising US Inflation Akin to &#039;Sitting on a Time Bomb&#039;" loading="lazy" style="float:left; margin:0 15px 15px 0;" srcset="https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-768x432.jpg 768w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-300x169.jpg 300w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-1024x576.jpg 1024w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-696x385.jpg 696w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-1068x601.jpg 1068w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-747x420.jpg 747w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-190x107.jpg 190w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-380x214.jpg 380w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-760x428.jpg 760w, https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134.jpg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><p><strong>Deutsche Bank published a report Monday noting that the United States is facing &ldquo;the very real specter of consumer-driven inflation.&rdquo; The bank&rsquo;s chief economist David Folkerts-Landau and others notably highlight the Federal Reserve&rsquo;s monetary easing policy and recent tolerance toward higher inflation.</strong></p>
+       <h2>Deutsche Report: &lsquo;Transitory Inflation Could Feed Into &rsquo;70s Style Stagflation&rsquo;</h2>
+       <p>The price of commodities in the U.S. has surged according to a number of recently published <a href="https://www.grainews.ca/daily/u-s-grains-soybeans-corn-ease-on-inflation-fears/">studies</a> over the last two months. Currently, commodity-price increases are moving in lockstep as products like oil tapped a <a href="https://www.wsj.com/articles/oil-rallies-to-highest-in-two-years-as-stockpiles-shrink-11622549154?mod=article_inline">two-year high</a>, the price of lumber jumped <a href="https://finance.yahoo.com/news/lumber-prices-surged-happened-end-195358325.html">377%</a> in a year&rsquo;s time, electronics are <a href="https://www.bloomberg.com/news/articles/2021-05-11/china-s-soaring-factory-export-costs-send-inflation-warning-to-the-world">10% more expensive</a> across the board, copper has risen to <a href="https://www.wsj.com/articles/bets-on-economic-rebound-push-copper-prices-to-record-high-11620384716?mod=article_inline">record highs</a>, soybeans and corn prices have <a href="https://www.wsj.com/articles/surging-grain-prices-fuel-surprise-farm-recovery-11611322634?mod=article_inline">skyrocketed</a>, and retail beef and pork is eliciting &ldquo;<a href="https://www.washingtonpost.com/business/2021/05/29/beef-pork-retail-prices-skyrocket/">sticker shock</a>.&rdquo;</p>
+       <p>On June 7, Germany&rsquo;s lending giant Deutsche Bank published a report with a dire warning to the U.S. concerning inflation. The study features Deutsche&rsquo;s chief economist, David Folkerts-Landau, the company&rsquo;s head of economic research, Peter Hooper, and thematic researcher Jim Reid. The analysts believe rising inflation could be a ticking &ldquo;time bomb&rdquo; and the U.S. central bank may feel consequences for delaying actions.</p>
+       <p>&ldquo;The consequence of delay will be greater disruption of economic and financial activity than would otherwise be the case when the Fed does finally act,&rdquo; Folkerts-Landau wrote in the report. &ldquo;In turn, this could create a significant recession and set off a chain of financial distress around the world, particularly in emerging markets,&rdquo; the Deutsche economist added. However, the inflation may start a little later than most think, as economies are more fluid than they were last year being locked down.</p>
+       <p>&ldquo;Consumers will surely spend at least some of their savings as economies reopen,&rdquo; Folkerts-Landau detailed in the report.</p>
+       <!-- growjs zone placement 31 --> <ins> <ins class="growjs-placement"></ins> <script type="text/javascript"> if (!window.GrowJs) { (function () { var s = document.createElement('script'); s.async = true; s.type = 'text/javascript'; s.src = 'https://bitcoinads.growadvertising.com/adserve/app'; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n); }()); } </script> <script type="text/javascript"> var GrowJs = GrowJs || {}; GrowJs.ads = GrowJs.ads || []; GrowJs.ads.push({ node: document.currentScript.parentElement, handler: function (node) { var banner = GrowJs.createBanner(node, 31, [300, 250], null, []); GrowJs.showBanner(banner.index); } }); </script> </ins> <!-- end of growjs zone placement --> 
+       <h2>Foreign Markets Rattled by US Inflation Data</h2>
+       <p>U.S. inflation fears are troubling foreign markets as both <a href="https://www.reuters.com/article/southkorea-markets-midday-idUSL2N2NQ030">Asian</a> and <a href="https://www.cnbc.com/2021/06/07/european-markets-stocks-data-earnings-breaking-news-.html">European markets</a> have been shaken due to American inflation data concerns. Meanwhile, the cryptocurrency economy has not performed as most believed it would in the face of inflation, while gold on the other hand has seen a <a href="https://www.cnbc.com/2021/06/07/gold-markets-dollar-bond-yields-us-economy.html">significant lift in value</a> from the economic fears gripping the United States.</p>
+       <p>The Deutsche team says the Fed may be patient for a year and continue to be tolerant of higher inflation rates. However, the Deutsche reports&rsquo; authors Folkerts-Landau, Hooper, and Reid disagree with the Fed&rsquo;s current assessment.</p>
+       <p>&ldquo;It may take a year longer until 2023 but inflation will re-emerge. And while it is admirable that this patience is due to the fact that the Fed&rsquo;s priorities are shifting towards social goals, neglecting inflation leaves global economies sitting on a time bomb,&rdquo; according to the report. &ldquo;The effects could be devastating, particularly for the most vulnerable in society.&rdquo; Furthermore, the Deutsche team says that inflation could be transitory but eventually it could boil over into something far worse.</p>
+       <p>&ldquo;A lack of preparation for the return of inflation is concerning. Even if some inflation today is transitory, it may feed into expectations as in the 1970s,&rdquo; the report concludes. &ldquo;Even if only embedded for a few months, these expectations may be difficult to contain with stimulus so great.&rdquo;</p>
+       <p><em><strong>What do you think about the Deutsche Bank report warning the U.S. about rising inflation? Let us know what you think about this subject in the comments section below.</strong></em></p>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       ]]></content:encoded>
+       					
+       		
+       		
+       		<post-thumbnail><url>https://static.news.bitcoin.com/wp-content/uploads/2021/06/shutterstock_1102551134-760x428.jpg</url><width>760</width><height>428</height></post-thumbnail><barker_title><![CDATA[“A lack of preparation for the return of #inflation is concerning. Even if some inflation today is transitory, it may feed into expectations as in the 1970s,” Deutsche Bank said. ]]></barker_title><late_barker_title><![CDATA["While it is admirable the Fed’s priorities are shifting towards social goals, neglecting #inflation leaves global economies sitting on a time bomb,” Deutsche Bank said.]]></late_barker_title>	</item>
+       	</channel>
+       </rss>
+       

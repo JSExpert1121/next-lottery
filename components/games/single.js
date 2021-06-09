@@ -11,7 +11,7 @@ import { setGameStatus } from 'store/actions/game';
 const SingleGame = ({ data, selMs, selEs }) => {
 
 	const [selNo, setSelNo] = useState({});
-	const [flag1, setFlag1] = useState(0);
+	const [flag1, setFlag1] = useState(true);
 	const [flag2, setFlag2] = useState(true);
 	const [flags, setFlags] = useState([false, false, false, false]);
 	const [selectedM, setSelectedM] = useState(selMs);
@@ -57,6 +57,13 @@ const SingleGame = ({ data, selMs, selEs }) => {
 			selEs[i].length === data.AmountOfExtraNumbersToMatch;
 		}
 		const lines = flags.filter(f => f).length;
+		dispatch(setGameStatus({
+			name: data.LotteryName,
+			lines,
+			price: lines * data.PricePerLine,
+			draws: 1,
+			picks: selected_dump(selMs, selEs)
+		}));
 		setFlags([...flags]);
 		setSelNo({
 			...selNo,
