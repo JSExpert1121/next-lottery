@@ -16343,6 +16343,7 @@ body:not(.home) #main {
     height: 44px;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: "Gilroy-Bold";
     font-size: 28px;
 }
