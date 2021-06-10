@@ -225,12 +225,12 @@ const SingleGame = ({ data, selMs, selEs }) => {
 						</div>
 					</div>
 
-					<div className="mobile-ticket-buttons">
+					{/* <div className="mobile-ticket-buttons">
 						<a href="#single" className="person-ticket-button" id="person-ticket-button" style={{ display: 'none' }}>Person ticket</a>
 						{(data.LotteryName != 'BTC Power Play' && data.LotteryName != 'MegaJackpot') && (
 							<a href="#group" className="group-ticket-button" id="group-ticket-button">Group ticket</a>
 						)}
-					</div>
+					</div> */}
 				</div >
 			</div >
 			<div className="clear_inner hidden-xs" style={{ height: 5 }}>&nbsp;</div>

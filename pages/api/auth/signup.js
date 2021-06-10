@@ -1,4 +1,5 @@
 import { signUp } from 'service/userinfo';
+import { sendWelcome } from 'service/mailservice';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -13,6 +14,7 @@ export default async function handler(req, res) {
     if (typeof result === 'string') {
       res.status(409).json({ reason: result });
     } else {
+      await sendWelcome(result.MemberId, result.Email, result.CountryCode);
       res.status(200).json(result);
     }
   } catch (error) {
