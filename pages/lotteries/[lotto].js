@@ -204,6 +204,8 @@ export async function getStaticProps(context) {
 		data.MinLines = rule.MinLines;
 		data.MaxLines = rule.MaxLines;
 		data.EvenLinesOnly = rule.EvenLinesOnly;
+		const options = rule.ProductsDrawOptions.find(option => option.ProductId === 1 && !option.IsSubscription)
+		data.Options = options.MultiDrawOptions;
 
 		// const groups = result[2];
 		// const group = groups.find(item => item.LotteryTypeId == lottery.LotteryTypeId);
