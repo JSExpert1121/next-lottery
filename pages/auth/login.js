@@ -66,7 +66,7 @@ const LoginPage = () => {
 		}
 	}
 
-	const enable = !email.error && !password.error && !busy && !password.value.length && !email.value.length;
+	const enable = !email.error && !password.error && !busy && password.value.length && email.value.length;
 	return (
 		<Layout>
 			<main className={styles.container}>
