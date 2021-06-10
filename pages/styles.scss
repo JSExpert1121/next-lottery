@@ -23,6 +23,75 @@ a.disabled {
 	cursor: default;
 }
 
+.btn-primary {
+	background-color: $color-primary;
+	color: $color-white;
+
+	&:hover {
+		background-color: $color-primary-hover;
+	}
+}
+
+.btn-secondary {
+	background-color: $color-secondary;
+	color: $color-white;
+
+	&:hover {
+		background-color: $color-secondary-hover;
+	}
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.modal-background {
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.1);
+	z-index: 1001;
+
+	& .modal-dialog {
+		font-family: "Gilroy-Regular";
+		background-color: $color-white;
+		min-width: 240px;
+		color: #222;
+		display: flex;
+		flex-direction: column;
+		font-weight: 400;
+
+		& .modal-header {
+			font-size: 20px;
+			font-weight: 600;
+			background-color: #EEE;
+			display: flex;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+			padding: 16px;
+		}
+
+		& .modal-body {
+			font-size: 16px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+			padding: 16px;
+		}
+
+		& .modal-footer {
+			font-size: 20px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+			padding: 16px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}
+
 .whole {
 	width: 100vw;
 	height: 100vh;

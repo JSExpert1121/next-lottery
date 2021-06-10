@@ -1,3 +1,4 @@
+import { useState, useCallback } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout from 'components/layout';
@@ -9,16 +10,35 @@ import LottoResult from 'components/home/lotto-result';
 import News from 'components/home/news';
 import { parseJsonFile } from 'helpers/json';
 import { parseStringPromise } from 'xml2js';
+import { ModalDialog } from 'components/dialog';
 import { getAllDraws, getResultsByBrand } from 'service/globalinfo';
 // import { parseXmlFile } from 'helpers/xml';
 
 export default function Home(props) {
 
 	const { banners, lotteries, news, results } = props;
+	const [modal, setModal] = useState(false);
+
+	const showModal = useCallback(() => {
+		setModal(true);
+	}, []);
+
+	const hideModal = useCallback(() => {
+		setModal(false);
+	}, []);
+
 	return (
 		<Layout>
 			<Head><title>Bitcoin Lottery - Lottery with Bitcoins</title></Head>
 			<main id="main" className="clearfix">
+				<ModalDialog
+					show={modal}
+					header={'Confirm'}
+					body={'Coming soon'}
+					footer={(
+							<button onClick={hideModal} className='btn btn-primary w-100'>OK</button>
+					)}
+				/>
 				{/* banner */}
 				<Banner banners={banners} />
 				<div className="clear" />
@@ -47,7 +67,7 @@ export default function Home(props) {
 					<div className="wrap">
 						<section className="wrap">
 							<div className="playgroup-result">
-								<PlayGroup />
+								<PlayGroup handleJoin={showModal} />
 								<LottoResult items={results} />
 							</div>
 						</section>

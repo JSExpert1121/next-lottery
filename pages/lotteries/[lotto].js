@@ -92,10 +92,10 @@ const LottoGame = (props) => {
 									<div className="text">Click continue</div>
 								</div>
 							</div>
-							<div className="desktop-ticket-buttons">
+							{/* <div className="desktop-ticket-buttons">
 								<a href="#single" className="person-ticket-button" id="person-ticket-button" style={{ display: 'none' }}>Person ticket</a>
 								<a href="#group" className="group-ticket-button" id="group-ticket-button">Group ticket</a>
-							</div>
+							</div> */}
 						</div>
 						<div className={`beton-header ${data.LotteryName}`}>
 							<div className="beton-header-mobile-section">

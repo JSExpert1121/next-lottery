@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { useSelector } from 'react-redux';
 import Layout from 'components/layout';
+import { ModalDialog } from 'components/dialog';
 
 import { currencies } from 'helpers/constants';
 
@@ -11,6 +12,7 @@ const CartPage = () => {
 	const [error, setError] = useState('');
 	const status = useSelector(state => state.game);
 	const balance = useSelector(state => state.user.balance);
+	const [modal, setModal] = useState(false);
 
 	const handleCurrency = useCallback((e) => {
 		setCurrency(e.target.value);
@@ -18,13 +20,24 @@ const CartPage = () => {
 	}, []);
 
 	const handleSubmit = e => {
-		e.preventDefault();
-
+		setModal(false);
+		console.log('submit order');
 	}
 
 	return (
 		<Layout>
 			<main id="main" className="clearfix">
+				<ModalDialog 
+					show={modal} 
+					header={'Confirm'}
+					body={'Do you want to submit your order?'}
+					footer={(
+						<>
+							<button onClick={handleSubmit} className='btn btn-primary'>OK</button>
+							<button onClick={() => setModal(false)} className='btn btn-primary'>Cancel</button>
+						</>
+					)}
+				/>
 				<div className="wrap">
 					<div id="middle" className="innerbg innerbg_select_page singleresult cart-page">
 						<div className="banner_txt">
@@ -82,7 +95,7 @@ const CartPage = () => {
 									</>
 								)}
 								<div className='action'>
-									<input type='button' className='' value='Submit Order' onClick={handleSubmit} />
+									<input type='button' value='Submit Order' onClick={() => setModal(true)} />
 								</div>
 							</div>
 						</div>

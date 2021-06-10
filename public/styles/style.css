@@ -16281,7 +16281,6 @@ body:not(.home) #main {
     border: none;
     min-height: 70px;
     flex: 8;
-    margin-right: 20px;
 }
 
 .lotterydetail .how-to-play .text,
@@ -19442,6 +19441,22 @@ body.home #header .has-child .submenu {
     }
 }
 
+@media screen and (max-width: 960px) {
+    .beton-header-mobile-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 8px;
+        margin: 0;
+        padding: 15px;
+        box-sizing: border-box;
+        background: #343538;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.16), 0px 0px 6px rgba(0, 0, 0, 0.16), 0px 4px 20px rgba(0, 0, 0, 0.26),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    }
+}
+
 @media screen and (max-width: 768px) {
     #main {
         margin-top: 20px;
@@ -19615,20 +19630,6 @@ body.home #header .has-child .submenu {
     #middle.view-all-lottery .lotteries-table tbody td {
         font-size: 16px;
         width: auto;
-    }
-
-    .beton-header-mobile-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        border-radius: 8px;
-        margin: 0;
-        padding: 15px;
-        box-sizing: border-box;
-        background: #343538;
-        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.16), 0px 0px 6px rgba(0, 0, 0, 0.16), 0px 4px 20px rgba(0, 0, 0, 0.26),
-            inset 0px 1px 0px rgba(255, 255, 255, 0.2);
     }
 
     .lotterydetail .beton-header {
