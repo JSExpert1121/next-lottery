@@ -113,7 +113,7 @@ const DepositPage = () => {
 		return true;
 	}, []);
 
-	const amountChange = useCallback(e => setAmount(parseInt(e.target.value)), []);
+	const amountChange = useCallback(e => setAmount(e.target.value.length === 0 ? 0 : parseInt(e.target.value)), []);
 
 	return (
 		<Layout>

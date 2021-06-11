@@ -2,7 +2,6 @@ import React, { useState, useCallback } from 'react';
 import { useSelector } from 'react-redux';
 import Layout from 'components/layout';
 import { ModalDialog } from 'components/dialog';
-
 import { currencies } from 'helpers/constants';
 
 const CartPage = () => {

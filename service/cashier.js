@@ -11,11 +11,11 @@ export const requestWithdraw = async (amount, ticker, address) => {
 	);
 }
 
-export const prepareOrder = async (MemberId) => {
+export const prepareOrder = async (MemberId, numbers) => {
 	return await authPost(
 		`${BASE_URL}/prepare-order`,
 		SEC_TOKEN,
-		{ MemberId, BrandId: BRAND_ID }
+		{ MemberId, BrandId: BRAND_ID, ProductNumsLottery: numbers }
 	);
 }
 

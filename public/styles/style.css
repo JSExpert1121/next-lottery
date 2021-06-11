@@ -17528,7 +17528,7 @@ body #middle.cart-page .mainpaymenttabsexist select {
 
 .widthdrawpage .widthdrawmoneydown .widthdrawmoneydowninner {
     box-shadow: none;
-    width: calc(100% - 40px);
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -17558,7 +17558,10 @@ body #middle.cart-page .mainpaymenttabsexist select {
     position: unset;
     top: unset;
     width: 100%;
+    flex-wrap: wrap;
 }
+
+
 
 .widthdrawpage .widthdrawmoneydown .widthdrawmoneydowninner .howmuchwuthdrawtext,
 .widthdrawpage .widthdrawmoneydown p {
@@ -17572,6 +17575,13 @@ body #middle.cart-page .mainpaymenttabsexist select {
     line-height: 26px;
     color: #ffffff;
     font-family: "Gilroy-Regular";
+}
+
+@media screen and (max-width: 900px) {
+    .widthdrawpage .widthdrawmoneydown .widthdrawmoneydowninner .howmuchwuthdrawtext {
+        width: 100%;
+        margin-bottom: 16px;
+    }
 }
 
 .widthdrawpage .widthdrawmoneydown .widthdrawmoneydowninner .howmuchwuthdrawinputtext {
@@ -17617,6 +17627,13 @@ body #middle.cart-page .mainpaymenttabsexist select {
     top: unset;
     color: #fff !important;
     margin: 0 !important;
+}
+
+@media screen and (max-width: 480px) {
+    .widthdrawpage .widthdrawmoneydown .widthdrawmoneydowninner .withdrawbtnpart {
+        width: 100%;
+        margin: 16px 10px;
+    }
 }
 
 .page-template-deposit .icesupport #middle.cart-page .icesupport {
