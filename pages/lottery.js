@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Layout from 'components/layout';
 import format from 'format-number';
-import dateFormat from 'dateformat';
 import { getAllDraws } from 'service/globalinfo';
+import { formatDate } from 'helpers/dateformat';
 
 const formatter = format();
 export default function LotteryPage({ lotteries }) {
@@ -35,14 +35,14 @@ export default function LotteryPage({ lotteries }) {
 												<tr onClick={() => router.push(item.link)}>
 													<td><img src={item.flag} />&nbsp;{item.country}</td>
 													<td className="lottery">{item.name}</td>
-													<td>{dateFormat(new Date(parseInt(item.date)), 'dd/mm/yyyy')}</td>
+													<td>{formatDate(new Date(parseInt(item.date)), 'dd/mm/yyyy')}</td>
 													<td>
 														<div>
 															{`${item.unit} ${formatter(item.amount)}`}
 															<Link href={`${item.link}`}>
 																<a className="dd_play_button" style={{ float: 'right' }}>
 																	Play Now
-																	</a>
+																</a>
 															</Link>
 
 														</div>
