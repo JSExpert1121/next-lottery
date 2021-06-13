@@ -112,7 +112,7 @@ export const getStaticProps = async (ctx) => {
 		)).map(draw => ({
 			id: draw.DrawId,
 			name: draw.LotteryName,
-			date: new Date(draw.DrawDate).getTime(),
+			date: draw.DrawDate,
 			image: `/images/${draw.LotteryName.toLowerCase()}1.png`,
 			unit: draw.LotteryCurrency2,
 			amount: draw.Jackpot,

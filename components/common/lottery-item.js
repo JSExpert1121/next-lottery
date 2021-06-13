@@ -13,8 +13,9 @@ const LotteryItem = (props) => {
 
 	useEffect(() => {
 		const id = setInterval(() => {
+			const deadline = new Date(date).getTime();
 			const timezoneOffset = new Date().getTimezoneOffset();
-			const tm = date - 180 * 60 * 1000 - (new Date().getTime() + timezoneOffset * 60000);
+			const tm = deadline - 180 * 60 * 1000 - (new Date().getTime() + timezoneOffset * 60000);
 			setCurTime({
 				days: parseInt(tm / (86400000)),
 				hours: parseInt((tm % 86400000) / 3600000),
