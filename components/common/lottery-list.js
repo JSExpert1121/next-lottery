@@ -39,25 +39,6 @@ const LotteryList = ({ items }) => {
 				}
 			}
 		});
-		jQuery('#owl-demo .slide').each(function () {
-			var deadline = jQuery(this).data('date');
-			var number = jQuery(this).data('number');
-			var x = setInterval(function () {
-				var now = new Date().getTime();
-				var timezoneOffset = new Date().getTimezoneOffset();
-				var t = deadline - 180 * 60 * 1000 - (now + timezoneOffset * 60000); // Israel timezone
-				var days = Math.floor(t / (1000 * 60 * 60 * 24));
-				var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-				var seconds = Math.floor((t % (1000 * 60)) / 1000);
-				jQuery("#owl-demo .caro_clock_" + number).html('<div class="itemCt"><div class="itemBg">' + days + 'd ' + hours + ':' + minutes + ':' + seconds + '</div></div>');
-
-				if (t < 0) {
-					clearInterval(x);
-					jQuery("#owl-demo .caro_clock_" + number).html('<div class="itemExpired"><div class="itemBg">EXPIRED</div></div>');
-				}
-			}, 1000);
-		});
 	}, []);
 	return (
 		<div id="owl-demo" className="owl-carousel">
