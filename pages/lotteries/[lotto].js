@@ -216,7 +216,8 @@ export async function getStaticProps(context) {
 			props: {
 				data, post: post ?? {}
 				// group
-			}
+			},
+			revalidate: 60
 		}
 	} catch (error) {
 		console.log(error);
