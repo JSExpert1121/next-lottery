@@ -32,8 +32,8 @@ const LottoGame = (props) => {
 	useEffect(() => {
 		const id = setInterval(() => {
 			const deadline = new Date(data.DrawDate).getTime();
-			const tm = deadline - new Date().getTime();
-			console.log(deadline);
+			const timezoneOffset = new Date().getTimezoneOffset();
+			const tm = deadline - 180 * 60 * 1000 - (new Date().getTime() + timezoneOffset * 60000);
 			setCurTime({
 				days: parseInt(tm / (86400000)),
 				hours: parseInt((tm % 86400000) / 3600000),
@@ -115,7 +115,7 @@ const LottoGame = (props) => {
 													<tr>
 														<td><div className="timer-value timer-value-days value-days">{curTime.days}</div></td>
 														<td><div className="timer-delimiter">:</div></td>
-														<td><div className="timer-value timer-value-hours value-hours">{curTime.days}</div></td>
+														<td><div className="timer-value timer-value-hours value-hours">{curTime.hours}</div></td>
 														<td><div className="timer-delimiter">:</div></td>
 														<td><div className="timer-value timer-value-minutes value-minutes">{curTime.minutes}</div></td>
 														<td><div className="timer-delimiter">:</div></td>
@@ -189,7 +189,7 @@ export async function getStaticProps(context) {
 			// getPricesAndDiscounts(1, 3),
 			parseJsonFile('data/posts.json')
 		]);
-		
+
 		const draws = result[0];
 		const lottery = draws.find(item => item.LotteryName.replace(/ /g, '').toLowerCase() === lotto);
 

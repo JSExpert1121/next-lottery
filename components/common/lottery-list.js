@@ -45,7 +45,7 @@ const LotteryList = ({ items }) => {
 			var x = setInterval(function () {
 				var now = new Date().getTime();
 				var timezoneOffset = new Date().getTimezoneOffset();
-				var t = (deadline - timezoneOffset * 60 * 1000) - now;
+				var t = deadline - 180 * 60 * 1000 - (now + timezoneOffset * 60000); // Israel timezone
 				var days = Math.floor(t / (1000 * 60 * 60 * 24));
 				var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 				var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
