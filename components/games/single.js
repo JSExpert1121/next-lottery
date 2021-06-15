@@ -33,6 +33,7 @@ const SingleGame = ({ data, selMs, selEs }) => {
 		dispatch(setGameStatus({
 			name: data.LotteryName,
 			lines,
+			typeId: data.LotteryTypeId,
 			price: lines * data.PricePerLine,
 			draws: 1,
 			picks: selected_dump(selectedM, selectedE)
@@ -60,6 +61,7 @@ const SingleGame = ({ data, selMs, selEs }) => {
 		dispatch(setGameStatus({
 			name: data.LotteryName,
 			lines,
+			typeId: data.LotteryTypeId,
 			price: lines * data.PricePerLine,
 			draws: 1,
 			picks: selected_dump(selMs, selEs)

@@ -19,11 +19,27 @@ export const prepareOrder = async (MemberId, numbers) => {
 	);
 }
 
-export const confirmProcessorOrder = async (MemberId, Amount, Ticker) => {
+export const confirmProcessorOrder = async (
+	memberId,
+	email,
+	session,
+	ticker,
+	orderData
+) => {
 	return await authPost(
 		`${BASE_URL}/processor-confirm-order`,
 		SEC_TOKEN,
-		{ MemberId, Amount, Ticker }
+		{ 
+			PhoneOrEmail: email,
+			ProcessorApi: '',
+			AffiliatedId: 0,
+			ReedemCode: '',
+			SessionId: session,
+			MemberId: memberId,
+			Ticker: ticker,
+			OrderData: orderData,
+			BrandID: BRAND_ID
+		}
 	);
 }
 

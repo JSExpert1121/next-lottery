@@ -1,15 +1,61 @@
 import { confirmProcessorOrder } from 'service/cashier';
 
 export default async function handler(req, res) {
-    const { memberID, amount, ticker } = req.body;
+    
     if (req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
+    const { 
+        memberId,
+        email,
+        session,
+        ticker,
+        draws,
+        lotteryTypeId,
+        isVIP,
+        isCash,
+        isOnline,
+        productId,
+        numbers
+    } = req.body;
+
     try {
+        // construct orderData
+        const selNumbers = numbers.split(':');
+        const lines = selNumbers.length;
+        let orderData = 'EmailCode={emailcode}&productCounter=1';
+        orderData += `&numOfDraws=${draws}`;
+        orderData += `&numOfLines=${lines}`;
+        selNumbers.forEach((number, index) => {
+            orderData += `&MemberId=${memberId}`;
+            orderData += `&LotteryTypeID=${lotteryTypeId}`;
+            orderData += `&SelectedNumbers=${number}`;
+            orderData += `&IsVIP=${isVIP ? 'true' : 'false'}`;
+            orderData += `&IsCash=${isCash ? 'true' : 'false'}`;
+            orderData += `&isOnline=${isOnline}`;
+            orderData += `&ProductID=${productId}`;
+            if (index < (lines - 1)) {
+                orderData += '|';
+            }
+        })
+
+        console.log(orderData);
+
         // call api
-        const result = await confirmProcessorOrder(memberID, amount, ticker);
-        res.status(200).json(result);
+        const result = await confirmProcessorOrder(
+            memberId,
+            email,
+            session,
+            ticker,
+            orderData
+        );
+
+        if (typeof result === 'string') {
+            result.status(500).json({ reason: result });
+        } else {
+            res.status(200).json(result);
+        }
     } catch (error) {
         console.log('error: ', error);
         res.status(500).json({ reason: 'unknown server error' });
