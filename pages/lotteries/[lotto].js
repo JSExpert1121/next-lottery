@@ -185,8 +185,7 @@ export async function getStaticProps(context) {
 		// ]);
 		const result = await Promise.all([
 			getAllDraws(),
-			getLotteryRules(),
-			// getPricesAndDiscounts(1, 3),
+			parseJsonFile('data/rules.json'),
 			parseJsonFile('data/posts.json')
 		]);
 
