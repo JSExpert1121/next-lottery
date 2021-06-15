@@ -1,5 +1,8 @@
-export const selected_dump = (selMs, selEs) => {
+export const selected_dump = (selMs, selEs, nM, nE) => {
     const rows = selMs.map((selM, i) => {
+        if (selMs[i].length !== nM || selEs[i].length !== nE) {
+            return '';
+        }
         if (selEs[i].length) {
             return selM.join(',') + '#' + selEs[i].join(',');
         } else {
@@ -7,7 +10,8 @@ export const selected_dump = (selMs, selEs) => {
         }
     });
 
-    return rows.join(':');
+    console.log(rows);
+    return rows.filter(row => !!row).join(':');
 }
 
 
