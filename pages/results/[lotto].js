@@ -148,13 +148,13 @@ export async function getStaticProps(context) {
 						footer: ''
 					}
 				},
-				revalidate: 10
+				revalidate: 60
 			}
 		}
 
 		return {
 			props: { data: { ...description, results, prizes, name: lottery?.LotteryName ?? '' } },
-			revalidate: 10
+			revalidate: 60
 		}
 	} catch (error) {
 		return {

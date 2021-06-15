@@ -183,7 +183,7 @@ export const getStaticProps = async (ctx) => {
 				results,
 				news
 			},
-			revalidate: 10
+			revalidate: 60
 		}
 	} catch (error) {
 		console.log(error);
