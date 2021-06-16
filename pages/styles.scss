@@ -806,26 +806,6 @@ img {
 	width: 100%;
 }
 
-a.playNowBtn {
-	font-size: 20px;
-	color: $color-white;
-	padding: 10px 40px;
-	background: $color-primary;
-	border-radius: 5px;
-	transition: 0.3s;
-	line-height: 50px;
-
-	&.expiredDate {
-			opacity: 0;
-			visibility: hidden;
-	}
-
-	&:hover {
-			background: $color-primary-hover;
-			transition: 0.3s;
-	}
-}
-
 /* cart page */
 .cart-wrapper {
 	font-family: Gilroy-Bold;
@@ -1603,15 +1583,46 @@ a.playNowBtn {
 		}
 
 		&.affiliate {
-			& h1.item-title {
-				font-size: 22px;
-				line-height: 36px;
-				color: #00c58a;
-				font-family: "Gilroy-bold";
-				margin-bottom: 20px;
+			display: flex;
 
-				&:not(:first-child) {
-					margin-top: 40px;
+			@media screen and (max-width: 840px) {
+				flex-direction: column;
+			}
+
+			& .content {
+				// flex-grow: 1;
+				& h1.item-title {
+					font-size: 22px;
+					line-height: 36px;
+					color: #00c58a;
+					font-family: "Gilroy-bold";
+					margin-bottom: 20px;
+	
+					&:not(:first-child) {
+						margin-top: 40px;
+					}
+				}
+			}
+
+			& .action {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				& a.playNowBtn {
+					font-size: 20px;
+					color: $color-white;
+					padding: 10px 30px;
+					background: $color-primary;
+					border-radius: 5px;
+					transition: 0.3s;
+					line-height: 30px;
+					min-width: 144px;
+				
+					&:hover {
+							background: $color-primary-hover;
+							transition: 0.3s;
+					}
 				}
 			}
 		}
