@@ -12,10 +12,7 @@ const Affiliate = () => {
 								<div className="all-lot-title">
 									<h1>Partner With <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> and Earn up to up to 50% Revenue Share with Us Today</h1>
 									<hr />
-									<div className='d-flex'>
-										<h1>Why Join <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> Affiliate Program?</h1>
-										&nbsp;&nbsp;<a href="mailto:support@bitcoinlotterys.com" className='playNowBtn'>Join Now</a>
-									</div>
+									<h1>Why Join <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> Affiliate Program?</h1>
 								</div>
 								<div className="main-content affiliate">
 									<h1 className="item-title">Net Revenue Share up to 50%</h1>
@@ -30,6 +27,7 @@ const Affiliate = () => {
 									<p>An experienced team ready to help you at any time.</p>
 									<h1 className="item-title" id="contact-us">Unique and Trusted Brand</h1>
 									<p>Unique to <span className='text-primary'>bitcoin</span><span className='text-secondary'>lotterys.com</span> play official lotteries and BTC games your players can’t find elsewhere!</p>
+									&nbsp;&nbsp;<a href="mailto:support@bitcoinlotterys.com" className='playNowBtn'>Join Now</a>
 								</div>
 							</div>
 						</div>
