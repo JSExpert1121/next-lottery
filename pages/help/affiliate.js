@@ -12,7 +12,10 @@ const Affiliate = () => {
 								<div className="all-lot-title">
 									<h1>Partner With <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> and Earn up to up to 50% Revenue Share with Us Today</h1>
 									<hr />
-									<h1>Why Join <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> Affiliate Program?</h1>
+									<div className='d-flex'>
+										<h1>Why Join <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> Affiliate Program?</h1>
+										&nbsp;&nbsp;<a href="mailto:support@bitcoinlotterys.com" className='playNowBtn'>Join Now</a>
+									</div>
 								</div>
 								<div className="main-content affiliate">
 									<h1 className="item-title">Net Revenue Share up to 50%</h1>
