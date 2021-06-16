@@ -36,18 +36,18 @@ export default function Footer() {
 							</Link>
 						</li>
 						<li>
-							<Link href='/lottery'>
-								<a>Sure-Win Games</a>
+							<Link href='/lotteries/megamillions'>
+								<a>Mega Millions</a>
 							</Link>
 						</li>
 						<li>
-							<Link href='/lotteries/megajackpot'>
-								<a>Mega Jackpot</a>
+							<Link href='/lotteries/euromillions'>
+								<a>Euro Millions</a>
 							</Link>
 						</li>
 						<li>
-							<Link href='/lotteries/btcpowerplay'>
-								<a>PowerPlay</a>
+							<Link href='/lotteries/eurojackpot'>
+								<a>Euro Jackpot</a>
 							</Link>
 						</li>
 					</ul>

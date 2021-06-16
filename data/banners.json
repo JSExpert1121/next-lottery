@@ -7,16 +7,16 @@
             "subject1": "Play the <span className=\"slogan_2 text-green\">Official</span>",
             "subject2": "<span class='text-primary'>Bitcoin</span><span class='text-secondary'>Lotterys.com</span> <span class=\"slogan_2 text-green\">Lottery</span> Platform",
             "descHtml": "Megamillion, Lotto649<br/> LaPrimitiva, and much more!",
-            "link": "/lotteries/megamillions"
+            "link": "/lottery"
         },
         {
             "type": 1,
             "background": "url('images/Carousel_PowerPlay.jpg') no-repeat",
             "position": "72% 30%",
             "subject1": "Exclusive <span class=\"slogan_1 text-green\">Lottery:</span>",
-            "subject2": "<span class=\"slogan_1 text-green\"></span> Power Ball",
-            "descHtml": "Get a chance to win <b>$1,000,000</b><br/> in our Power Ball",
-            "link": "/lotteries/powerball"
+            "subject2": "<span class=\"slogan_1 text-green\"></span> Euro Millions",
+            "descHtml": "Get a chance to win <b>$1,000,000</b><br/> in Euro Millions",
+            "link": "/lottery"
         }
     ]
 }

@@ -13,7 +13,7 @@
     },
     {
         "title": "How do I withdraw?<span class=\"fa right fa-plus\">",
-        "answer": "At the 'MY ACCOUNT' menu bar of your screen, you will find a section called \"CASH OUT\". Click that button, fill out the amount and destination address and click \"Withdraw\"."
+        "answer": "At the 'MY ACCOUNT' menu bar of your screen, you will find a section called \"Withdraw\". Click that button, fill out the amount and destination address and click \"Withdraw\"."
     },
     {
         "title": "Is there a full screen mode?<span class=\"fa right fa-plus\">",
@@ -36,12 +36,8 @@
         "answer": "<span class='text-primary'>Bitcoin</span><span class='text-secondary'>Lotterys</span> now supports account passwords and two factor authentication (2fa). If you set up an account password, you will be asked to enter this password every time you initially access your account using your unique URL. If you enable 2fa, you will need to enter a code from your smart phone to access your account, and to make withdrawals. You will be able to access these features from the 'Extra Security' section in 'My Account'"
     },
     {
-        "title": "What does provably fair mean?<span class=\"fa right fa-plus\">",
-        "answer": "Play with confidence! We guarantee that every game you play at <span class='text-primary'>Bitcoin</span><span class='text-secondary'>Lotterys</span> s is completely fair. Check out the 'Provably Fair' section in the 'About' tab on bitcoin.com."
-    },
-    {
         "title": "Can I play on my mobile phone?<span class=\"fa right fa-plus\">",
-        "answer": "Tour site works on mobile devices."
+        "answer": "Our site works on mobile devices."
     },
     {
         "title": "What is the minimum deposit?<span class=\"fa right fa-plus\">",
@@ -49,7 +45,7 @@
     },
     {
         "title": "How does the referral program work?<span class=\"fa right fa-plus\">",
-        "answer": "Coming Soon."
+        "answer": "Contact us at <a href=\"mailto:support@bitcoinlotterys.com\">support@<span class='text-primary'>bitcoin</span><span class='text-secondary'>lotterys.com</span></a>."
     },
     {
         "title": "What if I can't stop playing?<span class=\"fa right fa-plus\">",

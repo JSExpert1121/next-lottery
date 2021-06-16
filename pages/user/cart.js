@@ -127,8 +127,8 @@ const CartPage = () => {
 					body={'Do you want to submit your order?'}
 					footer={(
 						<>
-							<button onClick={handleSubmit} className='btn btn-primary'>OK</button>
-							<button onClick={() => setModal(false)} className='btn btn-primary'>Cancel</button>
+							<button onClick={() => setModal(false)} className='btn btn-primary'>No</button>
+							<button onClick={handleSubmit} className='btn btn-primary'> Yes </button>
 						</>
 					)}
 				/>
