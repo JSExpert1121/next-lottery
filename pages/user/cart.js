@@ -128,7 +128,7 @@ const CartPage = () => {
 					footer={(
 						<>
 							<button onClick={() => setModal(false)} className='btn btn-primary'>No</button>
-							<button onClick={handleSubmit} className='btn btn-primary'> Yes </button>
+							<button onClick={handleSubmit} className='btn btn-primary'> YES </button>
 						</>
 					)}
 				/>
