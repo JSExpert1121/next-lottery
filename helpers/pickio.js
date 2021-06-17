@@ -10,7 +10,6 @@ export const selected_dump = (selMs, selEs, nM, nE) => {
         }
     });
 
-    console.log(rows);
     return rows.filter(row => !!row).join(':');
 }
 
