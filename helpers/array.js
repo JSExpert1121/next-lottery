@@ -7,12 +7,12 @@ export const generateArray = (start, end) => {
 	return arr;
 }
 
-export const randomArray = (start, end, count) => {
+export const randomArray = (start, numbers, count) => {
 	const arr = [];
 	for (let i = 0; i < count; i++) {
-		let value = Math.floor(Math.random() * (end - start)) % (end - start);
+		let value = Math.floor(Math.random() * numbers) + start;
 		while (arr.includes(value)) {
-			value = Math.floor(Math.random() * (end - start)) % (end - start);
+			value = Math.floor(Math.random() * numbers) + start;
 		}
 
 		arr.push(value);
