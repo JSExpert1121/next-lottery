@@ -69,7 +69,7 @@ const TicketsTable = ({ headers, values, style }) => {
 								<td align="center" valign="middle" style={{ color: '#00C38A' }}>{value.LotteryName}</td>
 								<td align="center" valign="middle">{'Personal'}</td>
 								<td align="center" valign="middle">{formatDate(new Date(value.DrawDate))}</td>
-								<td align="center" valign="middle">{value.Winning === 0 ? 'No Win' : 'Win'}</td>
+								<td align="center" valign="middle">{value.WinningResult ? value.Winning === 0 ? 'No Win' : 'Win' : 'Yet to Draw'}</td>
 								<td align="center" valign="middle">{value.Winning}</td>
 								<td align="center" valign="middle"><div className="drawer-header-icon"></div></td>
 							</tr>
@@ -96,7 +96,7 @@ const TicketsTable = ({ headers, values, style }) => {
 									{selectedNumbers(value.SingleLines.SelectedNumbers)}
 								</td>
 								<td className='selected-numbers'>
-									{selectedRow(value.WinningResult + value.BonusNumber)}
+									{value.WinningResult ? selectedRow(value.WinningResult + value.BonusNumber) : ""}
 								</td>
 							</tr>
 						</tbody>
