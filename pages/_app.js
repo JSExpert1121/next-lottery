@@ -1,4 +1,3 @@
-import { useCallback, useRef } from 'react';
 import Head from 'next/head';
 import { ProtectedRoute } from 'custom/guards';
 import Transition from 'custom/transition';

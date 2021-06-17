@@ -2,9 +2,11 @@ import { applyMiddleware, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from './reducers';
 
+const storeItem = 'lottery-bitcoin';
+
 const loadState = () => {
   try {
-    const serializedState = localStorage.getItem('lottery-bitcoin');
+    const serializedState = localStorage.getItem(storeItem);
     if (serializedState === null) {
       return {};
     }
@@ -18,18 +20,19 @@ const loadState = () => {
 const saveState = (state) => {
   try {
     const serializedState = JSON.stringify(state);
-    localStorage.setItem('lottery-bitcoin', serializedState);
+    localStorage.setItem(storeItem, serializedState);
   } catch (error) {
     console.log('Local Storage: Save failed with code ', error);
   }
 };
 
-const peristedState = loadState();
+// const peristedState = loadState();
 export default function configureStore() {
   const storeEnhancers = compose;
+  saveState({});
   const store = createStore(
     rootReducer,
-    peristedState,
+    {},
     storeEnhancers(applyMiddleware(thunk))
   );
 
