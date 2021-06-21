@@ -75,8 +75,6 @@ export const getStaticProps = async (ctx) => {
 	try {
 
 		// const newsData = await parseXmlFile('data/news.xml');
-		// const newsData = await fetch('https://news.bitcoin.com/feed/');
-
 		const res = await Promise.all([
 			getAllDraws(),
 			getResultsByBrand(),

@@ -53,9 +53,9 @@ const SingleGame = ({ data, selMs, selEs }) => {
 		setSelectedM([...selMs]);
 		setSelectedE([...selEs]);
 
-		for (let i=0;i<4;i++) {
+		for (let i = 0; i < 4; i++) {
 			flags[i] = selMs[i].length === data.AmountOfMainNumbersToMatch &&
-			selEs[i].length === data.AmountOfExtraNumbersToMatch;
+				selEs[i].length === data.AmountOfExtraNumbersToMatch;
 		}
 		const lines = flags.filter(f => f).length;
 		dispatch(setGameStatus({
@@ -165,10 +165,10 @@ const SingleGame = ({ data, selMs, selEs }) => {
 									</div>
 								</div>
 
-								{(data.LotteryName == 'BTC Power Play' || data.LotteryName == 'MegaJackpot') ? (
-									<span className="draws" style={{ display: 'none' }}>1 Draws</span>
-								) : (
-									<div className="space_add">
+								<div className="space_add">
+									{(data.LotteryName == 'BTC Power Play' || data.LotteryName == 'MegaJackpot') ? (
+										<span className="draws" style={{ display: 'none' }}>1 Draws</span>
+									) : (
 										<div className="spa oro-fill-width">
 											<div className="oro-lines-draws">
 												<div>
@@ -177,7 +177,7 @@ const SingleGame = ({ data, selMs, selEs }) => {
 												</div>
 												<div className="oro-lines-draws-price">
 													€&nbsp;
-												<span className="subtotal">{(selNo?.totalprice ?? 0).toFixed(2)}</span>
+													<span className="subtotal">{(selNo?.totalprice ?? 0).toFixed(2)}</span>
 												</div>
 											</div>
 											<div style={{ marginBottom: 10 }}>
@@ -194,9 +194,9 @@ const SingleGame = ({ data, selMs, selEs }) => {
 													<span className="tooltip">
 														<span className="fa fa-info-circle"></span>
 														<span>Bonus Money
-														<hr /><br />
-														This is the amount of bonus money you get on this   purchase. Bonus money can be used to purchase more tickets for free.
-													</span>
+															<hr /><br />
+															This is the amount of bonus money you get on this   purchase. Bonus money can be used to purchase more tickets for free.
+														</span>
 													</span>
 													<div>
 														<span className="bmcurrency oro-bmcurrency">€</span>&nbsp;
@@ -207,22 +207,20 @@ const SingleGame = ({ data, selMs, selEs }) => {
 												</div>
 											</div>
 										</div>
-									</div>
-								)}
-
-								<div className="total space_add oro-total-width">
-									<div className="spa oro-fill-width">
-										<div className="oro-total-price-text">
-											<div className="font13 oro-total-price-label">Total</div>
-											<div className="font22 oro-total-price-number">
-												€&nbsp;<span className="totalprice">{(selNo?.totalprice ?? 0).toFixed(2)}</span>
+									)}
+									<div className="total space_add oro-total-width">
+										<div className="spa oro-fill-width">
+											<div className="oro-total-price-text">
+												<div className="font13 oro-total-price-label">Total</div>
+												<div className="font22 oro-total-price-number">
+													€&nbsp;<span className="totalprice">{(selNo?.totalprice ?? 0).toFixed(2)}</span>
+												</div>
 											</div>
-										</div>
-										<input type="hidden" value={data.PricePerLine.toFixed(2)} id="stp" />
-										<div className="tpt">
-											<Link href='/user/cart'>
-												<a className={enable ? "oro-single-total_share_conti_btn" : "oro-single-total_share_conti_btn disabled"} id="single_continue">Continue</a>
-											</Link>
+											<div className="tpt">
+												<Link href='/user/cart'>
+													<a className={enable ? "oro-single-total_share_conti_btn" : "oro-single-total_share_conti_btn disabled"} id="single_continue">Continue</a>
+												</Link>
+											</div>
 										</div>
 									</div>
 								</div>
