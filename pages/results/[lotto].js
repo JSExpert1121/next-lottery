@@ -28,7 +28,9 @@ const LottoResult = ({ data }) => {
 		const result = data.results.find(res => res.DrawDate === date);
 		if (result) {
 			setSelection(result.WinningResult + result.BonusNumber);
-			setSelPrizes(data.prizes.filter(item => item.DrawId === result.DrawId));
+			const prizes = data.prizes.filter(item => item.DrawId === result.DrawId);
+			prizes.sort((a, b) => parseFloat(b.LastDraw - a.LastDraw))
+			setSelPrizes(prizes);
 		}
 	}, [date]);
 
@@ -77,7 +79,7 @@ const LottoResult = ({ data }) => {
 									<tbody>
 										{selPrizes.map((item, idx) => (
 											<tr key={idx}>
-												<td>{item.Division}</td>
+												<td>{`Prize ${idx + 1}`}</td>
 												<td>{item.Match}</td>
 												<td>{item.LastDraw}</td>
 											</tr>
