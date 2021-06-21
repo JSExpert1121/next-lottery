@@ -4,7 +4,7 @@ import Loading from 'components/common/loadding';
 
 const Transition = ({ children }) => {
     const [loading, setLoading] = useState(false)
-
+    
     const handleStart = useCallback(() => {
         setLoading(true);
     }, []);
