@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { ProtectedRoute } from 'custom/guards';
 import Transition from 'custom/transition';
@@ -9,10 +10,16 @@ import { Provider } from 'react-redux';
 import IdleLogout from './_idle';
 import configureStore from '../store';
 
-const store = configureStore();
 
 export default function MyApp({ Component, pageProps }) {
-	return (
+
+	const [store, setStore] = useState(null);
+
+	useEffect(() => {
+		setStore(configureStore());
+	}, []);
+
+	return !!store && (
 		<Provider store={store}>
 			<Transition>
 				<ProtectedRoute config={{ match: '/user/*', url: '/auth/login' }}>

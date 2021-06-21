@@ -90,7 +90,6 @@ const CartPage = () => {
 						const res = JSON.parse(server_message);
 
 						if (res.status === 'payed') {
-							localStorage.clear();
 							router.replace('/thankyou');
 						}
 

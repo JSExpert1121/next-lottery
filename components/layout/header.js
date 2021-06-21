@@ -4,9 +4,10 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import HeaderCoin from 'components/common/header-coin';
 import supported_coins from 'data/coins.json';
-import * as UserActions from 'store/actions/user';
 import { getCoins } from 'service/client/coin';
 
+import * as UserActions from 'store/actions/user';
+import * as AuthActions from 'store/actions/auth';
 
 // The approach used in this component shows how to built a sign in and sign out
 // component that works on pages which support both client and server side
@@ -27,6 +28,7 @@ export default function Header() {
 
   const handleLogout = useCallback(() => {
     dispatch(UserActions.logout());
+    dispatch(AuthActions.clearCredentials());
     router.push('/');
   }, []);
 

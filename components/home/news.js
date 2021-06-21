@@ -6,8 +6,8 @@ const News = ({ items }) => {
             <div>
                 <h1 style={{ marginTop: '40px' }}>Latest news</h1>
                 <div id="box-news" className="clearfix">
-                    {items && items.map(item => (
-                        <div className="news-column">
+                    {items && items.map((item, idx) => (
+                        <div className="news-column" key={idx}>
                             <div className="news-column-thumbnail">
                                 <img className="news-thumbnail" src={item.image} alt="" title="" />
                             </div>

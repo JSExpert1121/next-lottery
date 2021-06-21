@@ -7,6 +7,7 @@ import validator from 'validator';
 import { Input, CheckBox, Button } from 'components/form/form-control';
 
 import * as UserActions from 'store/actions/user';
+import * as AuthActions from 'store/actions/auth';
 
 import styles from './login.module.scss';
 
@@ -60,6 +61,9 @@ const LoginPage = () => {
 		try {
 			setState({ busy: true });
 			await dispatch(UserActions.login(email.value, password.value));
+			if (remember) {
+				dispatch(AuthActions.saveCredentials(email.value, password.value));
+			}
 			router.replace(referer ? decodeURIComponent(referer) : '/');
 		} catch (error) {
 			setState({ busy: false, error });
