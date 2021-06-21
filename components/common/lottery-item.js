@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { formatNumber } from 'helpers/number';
+import { formatNumber, numberWithLength } from 'helpers/number';
 
 const LotteryItem = (props) => {
 	const {
@@ -41,7 +41,7 @@ const LotteryItem = (props) => {
 			</div>
 			<div className="flexRow">
 				<div className={`countdown caro_clock_${id}`}>
-					{curTime.tm > 0 && <div className="itemCt"><div className="itemBg">{`${curTime.days}d ${curTime.hours}:${curTime.minutes}:${curTime.seconds}`}</div></div>}
+					{curTime.tm > 0 && <div className="itemCt"><div className="itemBg">{`${curTime.days}d ${numberWithLength(curTime.hours, 2)}:${numberWithLength(curTime.minutes, 2)}:${numberWithLength(curTime.seconds, 2)}`}</div></div>}
 					{curTime.tm < 0 && <div className="itemExpired"><div className="itemBg">EXPIRED</div></div>}
 				</div>
 				<Link href={`${link}`}><a className="playNowBtn">Play Now</a></Link>

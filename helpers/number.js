@@ -6,3 +6,6 @@ export const formatNumber = (num) => {
     } else return num;
 }
 
+export const numberWithLength = (num, len) => {
+    return `${num}`.padStart(len, '0');
+}
