@@ -11,7 +11,7 @@ import News from 'components/home/news';
 import { parseJsonFile } from 'helpers/json';
 import { parseStringPromise } from 'xml2js';
 import { getAllDraws, getResultsByBrand } from 'service/globalinfo';
-// import { parseXmlFile } from 'helpers/xml';
+import { parseXmlFile } from 'helpers/xml';
 
 export default function Home(props) {
 
@@ -78,8 +78,8 @@ export const getStaticProps = async (ctx) => {
 		const res = await Promise.all([
 			getAllDraws(),
 			getResultsByBrand(),
-			// parseXmlFile('data/news.xml')
-			fetch('https://news.bitcoin.com/feed/')
+			parseXmlFile('data/news.xml')
+			// fetch('https://news.bitcoin.com/feed/')
 		]);
 		const draws = res[0];
 		const lotteries = draws.filter(draw => !(
@@ -141,8 +141,8 @@ export const getStaticProps = async (ctx) => {
 			}
 		});
 
-		// const newsData = res[2];
-		const newsData = await parseStringPromise(await res[2].text());
+		const newsData = res[2];
+		// const newsData = await parseStringPromise(await res[2].text());
 		const news = newsData.rss.channel[0].item.slice(0, 3).map(item => {
 			const text = item.description[0].replace(/<img[^>]+>/g, '');
 			const images = item.description[0].match(/<img[^>]+>/g);

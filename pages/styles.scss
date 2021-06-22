@@ -1599,7 +1599,7 @@ img {
 					color: #00c58a;
 					font-family: "Gilroy-bold";
 					margin-bottom: 20px;
-	
+
 					&:not(:first-child) {
 						margin-top: 40px;
 					}
@@ -1620,11 +1620,195 @@ img {
 					transition: 0.3s;
 					line-height: 30px;
 					min-width: 144px;
-				
+
 					&:hover {
-							background: $color-primary-hover;
-							transition: 0.3s;
+						background: $color-primary-hover;
+						transition: 0.3s;
 					}
+				}
+			}
+		}
+	}
+}
+
+// group page
+.groups-page {
+	padding: 32px 16px 16px;
+	& > h1 {
+		font-size: 24px;
+		font-family: "Signikabold";
+		text-shadow: 1px 1px 4px rgb(0 0 0 / 42%);
+		color: #fff;
+		line-height: 60px;
+	}
+
+	& .all-groups {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		& .group-item {
+			width: 21%;
+			box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
+			border: 1px solid #e6edff;
+			border-radius: 3px;
+			height: 290px;
+			text-align: center;
+			transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+			margin-bottom: 32px;
+
+			&:hover {
+				transform: scale(1.15, 1.15);
+				z-index: 999;
+			}
+
+			&.euromillions {
+				background: linear-gradient(#093d81, #fdbf3a);
+			}
+			&.powerball {
+				background: linear-gradient(#fc162d, #fedadd);
+			}
+			&.laprimitiva {
+				background: linear-gradient(#ad15b6, #f6e6f9);
+			}
+			&.eurojackpot {
+				background: linear-gradient(#128296, #a9fbf7);
+			}
+			&.megamillions {
+				background: linear-gradient(#333796, #cf8486);
+			}
+			&.ozlotto {
+				background: linear-gradient(#7dc929, #f5f02b);
+			}
+			&.lotto649 {
+				background: linear-gradient(#474fa7, #d33c3e);
+			}
+			&.newyorklotto {
+				background: linear-gradient(#712847, #5c51a7);
+			}
+			&.bonoloto {
+				background: linear-gradient(#4aa5be, #aadfec);
+			}
+			&.superenalotto {
+				background: linear-gradient(#ff720e, #ffe9c2);
+			}
+			&.elgordo {
+				background: linear-gradient(#508ac2, #c30000);
+			}
+			&.uklotto {
+				background: linear-gradient(#b12ab3, #9aa8a1);
+			}
+
+			& .group-box {
+				width: 100%;
+				border-bottom: 1px solid #e6edff;
+				padding-bottom: 5px;
+
+				& .group-image img {
+					width: 110px;
+					height: 126px;
+					padding-top: 10px;
+				}
+
+				& .group-name {
+					font-size: 26px;
+					font-family: "daxline";
+					color: #fff;
+					text-shadow: 1px 1px 4px rgb(0 0 0 / 42%);
+				}
+
+				& .group-jackpot {
+					width: 100%;
+					text-align: center;
+					font-size: 26px;
+					font-family: "daxlinebold";
+					color: #fff;
+					text-shadow: 1px 1px 4px rgb(0 0 0 / 42%);
+				}
+			}
+
+			& .group-middle {
+				padding: 5px;
+				color: #fff;
+			}
+
+			& .group-boxfooter {
+				& .group-play-button {
+					color: #fff;
+					font-size: 14px;
+					padding: 10px 30px;
+					display: block;
+					border-radius: 5px;
+					background: linear-gradient(to bottom, #b4e391 15%, #61c419 55%);
+					width: 80%;
+					box-sizing: border-box;
+					margin: 0 auto;
+
+					&:hover {
+						background: #0df90d;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+// group game
+#groupdata {
+	& .group-option-section {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 100%;
+
+		& .choose-option {
+			& .draw-option {
+				margin: 16px;
+				display: flex;
+				align-items: center;
+
+				& .group_totaldraw {
+					background: #090d14;
+					color: rgba(255, 255, 255, 0.6);
+					display: inline-flex !important;
+					height: 30px;
+					line-height: 29px;
+					vertical-align: middle;
+					-webkit-appearance: none;
+					font-size: 12px;
+					padding: 0 10px;
+					box-sizing: border-box;
+					border: 1px solid #d3d0d0 !important;
+					border-radius: 4px;
+					margin-left: 24px;
+				}
+			}
+		}
+
+		& .total-sum {
+			font-family: Muller;
+			font-size: 14px;
+			color: #e1e1e1;
+			margin-left: 16px;
+			border: 1px solid #d3d0d0;
+			border-radius: 4px;
+			padding: 16px 24px;
+
+			& .shares-draws,
+			& .total {
+				margin-bottom: 16px;
+			}
+
+			& .total {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				& .total-price {
+					color: #13d19c;
+					font-family: "MullerExtraBold";
+					font-size: 28px;
 				}
 			}
 		}
