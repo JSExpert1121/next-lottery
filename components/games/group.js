@@ -104,7 +104,8 @@ const GroupGame = (props) => {
               1 Shares X 2 Draws € 13.80
             </div>
             <div className='total'>
-              Total <span className='total-price'>€ 13.80</span>
+              <span className='total-label'>Total</span>
+              <span className='total-price'>€ 13.80</span>
             </div>
             <Link href='/user/cart'>
               <a className='oro-single-total_share_conti_btn'>
