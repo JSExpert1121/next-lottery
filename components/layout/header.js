@@ -115,7 +115,7 @@ export default function Header() {
                 <div>
                   <div className='rsm-account-username'>
                     {(profile.FirstName && profile.LastName) ?
-                      `${profile.FirstName} ${profile.LastName} ${profile.MemberId}` :
+                      `${profile.FirstName} ${profile.LastName}` :
                       'Player ' + profile.MemberId
                     }
                   </div>
@@ -130,7 +130,7 @@ export default function Header() {
                 </div>
               </div>
               <div className="rsm-dropdown-content">
-                <Link href="/user/me"><a><i className="fa fa-user"></i>{`My Account`}</a></Link>
+                <Link href="/user/me"><a><i className="fa fa-user"></i>{`My Account (ID: ${profile.MemberId})`}</a></Link>
                 <Link href="/user/deposit"><a><i className="fa fa-money"></i>Deposit</a></Link>
                 <Link href="/user/withdraw"><a><i className="fa fa-credit-card"></i>Withdraw</a></Link>
                 <a href="#" onClick={handleLogout}><i className="fa fa-sign-out-alt"></i>Log out</a>

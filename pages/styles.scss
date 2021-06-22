@@ -1795,9 +1795,14 @@ img {
 			border-radius: 4px;
 			padding: 16px 24px;
 
-			& .shares-draws,
 			& .total {
-				margin-bottom: 16px;
+				margin: 16px 0;
+			}
+
+			& .discount {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 4px;
 			}
 
 			& .total {
@@ -1810,6 +1815,10 @@ img {
 					font-family: "MullerExtraBold";
 					font-size: 28px;
 				}
+			}
+
+			& > a {
+				text-align: center;
 			}
 		}
 	}
