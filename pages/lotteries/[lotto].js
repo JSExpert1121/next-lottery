@@ -5,6 +5,8 @@ import SingleGame from 'components/games/single';
 import { getAllDraws, getLotteryRules, getPricesAndDiscounts } from 'service/globalinfo';
 import { parseJsonFile } from 'helpers/json';
 import { randomArray } from 'helpers/array';
+import { numberWithLength } from 'helpers/number';
+
 
 const LottoGame = (props) => {
 	const router = useRouter();
@@ -115,11 +117,11 @@ const LottoGame = (props) => {
 													<tr>
 														<td><div className="timer-value timer-value-days value-days">{curTime.days}</div></td>
 														<td><div className="timer-delimiter">:</div></td>
-														<td><div className="timer-value timer-value-hours value-hours">{curTime.hours}</div></td>
+														<td><div className="timer-value timer-value-hours value-hours">{numberWithLength(curTime.hours, 2)}</div></td>
 														<td><div className="timer-delimiter">:</div></td>
-														<td><div className="timer-value timer-value-minutes value-minutes">{curTime.minutes}</div></td>
+														<td><div className="timer-value timer-value-minutes value-minutes">{numberWithLength(curTime.minutes, 2)}</div></td>
 														<td><div className="timer-delimiter">:</div></td>
-														<td><div className="timer-value timer-value-seconds value-seconds">{curTime.seconds}</div></td>
+														<td><div className="timer-value timer-value-seconds value-seconds">{numberWithLength(curTime.seconds, 2)}</div></td>
 													</tr>
 													<tr>
 														<td><div className="timer-unit unit-0">days</div></td><td></td>
