@@ -65,7 +65,7 @@ const GroupLotto = (props) => {
                 </div>
               </div>
               <div className="desktop-ticket-buttons">
-								<Link href="/lotteries/" id="person-ticket-button">
+								<Link href={`/lotteries/${data.LotteryName.replace(/ /g, '').toLowerCase()}`} id="person-ticket-button">
                   <a className="person-ticket-button">Person ticket</a>
                 </Link>
 							</div>
@@ -108,6 +108,17 @@ const GroupLotto = (props) => {
 							</div>
 						</div>
             <GroupGame data={data} />
+						<div className="select_page_det left">
+							{post?.content && (
+								<div className="col8 left" dangerouslySetInnerHTML={{ __html: post?.content }} />
+							)}
+
+							<div className="select_page_det2">
+								<div className="del_cup"><img src="/images/del_cup.png" /></div>
+								<div className="star"><img src="/images/star.png" /></div>
+								<div className="font13"></div>
+							</div>
+						</div>
           </div>
         </div>
       </main>

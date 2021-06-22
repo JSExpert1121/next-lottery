@@ -6,6 +6,34 @@ const GroupGame = (props) => {
 
   const { data } = props;
   const [option, setOption] = useState(0);
+  const [shares, setShares] = useState(1);
+  const [draws, setDraws] = useState(1);
+
+  const handleLinesChange = e => {
+    setShares(parseInt(e.target.value) === NaN ? 1 : parseInt(e.target.value));
+  }
+
+  const linesPlus = () => {
+    setShares(shares + 1);
+  }
+
+  const linesMinus = () => {
+    setShares((shares - 1) < 1 ? 1 : shares - 1)
+  }
+
+  const selectSingle = () => {
+    setDraws(1);
+    setOption(0);
+  }
+
+  const selectMulti = () => {
+    setDraws(2);
+    setOption(1);
+  }
+
+  const options = data.Options.filter(opt => opt.NumberOfDraws > 1);
+  const total = (shares * draws * data.PricePerShare / 8).toFixed(2);
+  const discount = (shares * draws * data.PricePerShare / 8 * data.Options.find(opt => opt.NumberOfDraws === draws)?.Discount ?? 0).toFixed(2);
 
   return (
     <form name='groupdata' id='groupdata'>
@@ -23,15 +51,15 @@ const GroupGame = (props) => {
                 <table width='100%' border='0'>
                   <tr>
                     <td width='35' align='left' valign='middle'>
-                      <a href='javascript:void(0)' className='qtyminus' field='quantity'>
+                      <a href='javascript:void(0);' className='qtyminus' field='quantity' onClick={linesMinus}>
                         <span className='fa fa-minus-circle fa-2x'></span>
                       </a>
                     </td>
                     <td width='80' align='center' valign='middle'>
-                      <input type='text' name='quantity' className='u_share_fill qty' value='' />
+                      <input type='text' name='quantity' className='u_share_fill qty' value={shares} onChange={handleLinesChange} />
                     </td>
                     <td width='35' align='right' valign='middle'>
-                      <a href='javascript:void(0)' className='qtyplus' field='quantity'>
+                      <a href='javascript:void(0);' className='qtyplus' field='quantity' onClick={linesPlus}>
                         <span className='fa fa-plus-circle fa-2x'></span>
                       </a>
                     </td>
@@ -56,7 +84,7 @@ const GroupGame = (props) => {
                   </span>
                 )}
                 checked={option === 0}
-                onChange={() => setOption(0)}
+                onChange={selectSingle}
                 tooltip={(
                   <span style={{ fontSize: 14 }}>
                     <span className="fa fa-info-circle"></span>
@@ -80,7 +108,7 @@ const GroupGame = (props) => {
                   </span>
                 )}
                 checked={option === 1}
-                onChange={() => setOption(1)}
+                onChange={selectMulti}
                 tooltip={(
                   <span style={{ fontSize: 14 }}>
                     <span className="fa fa-info-circle"></span>
@@ -89,23 +117,29 @@ const GroupGame = (props) => {
                 )}
               />
               {option === 1 && (
-                <select className="group_totaldraw" name="group_totaldraw">
-                  <option value="2">2 draws</option>
-                  <option value="4">4 draws</option>
-                  <option value="8">8 draws</option>
-                  <option value="26">26 draws 15% discount</option>
-                  <option value="52">52 draws 20% discount</option>
+                <select className="group_totaldraw" name="group_totaldraw" value={draws} onChange={e => setDraws(parseInt(e.target.value))}>
+                  {options.map(opt => (
+                    <option value={opt.NumberOfDraws} key={`${data.LotteryName}-${opt.NumberOfDraws}`}>
+                      {parseInt(opt.Discount * 100) === 0 ? `${opt.NumberOfDraws} draws` : `${opt.NumberOfDraws} draws ${parseInt(opt.Discount * 100)} % discount`}
+                    </option>
+                  ))}
                 </select>
               )}
             </div>
           </div>
           <div className='total-sum'>
             <div className='shares-draws'>
-              1 Shares X 2 Draws € 13.80
+              {`${shares} Shares X ${draws} Draws ${total}`}
             </div>
+            {discount > 0 && (
+              <div className='discount'>
+                <span>Discount</span>
+                <span>{`- € ${discount}`}</span>
+              </div>
+            )}
             <div className='total'>
               <span className='total-label'>Total</span>
-              <span className='total-price'>€ 13.80</span>
+              <span className='total-price'>{`€ ${(total - discount).toFixed(2)}`}</span>
             </div>
             <Link href='/user/cart'>
               <a className='oro-single-total_share_conti_btn'>

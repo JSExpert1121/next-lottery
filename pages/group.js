@@ -19,7 +19,7 @@ const GroupPage = ({ draws }) => {
                     <Link href={draw.link}>
                       <div style={{ cursor: 'pointer' }}>
                         <div className="group-box">
-                          <div class="group-image"><img src={draw.image} /></div>
+                          <div className="group-image"><img src={draw.image} /></div>
                           <div className="group-name">{draw.name}</div>
                           <div className="group-jackpot">
                             {draw.amount < 0 ? 'PENDING' : `${draw.unit} ${formatNumber(draw.amount)}`}
@@ -38,7 +38,7 @@ const GroupPage = ({ draws }) => {
                   </article>
                 ))}
               </div>
-              <div class="resultschecker">
+              <div className="resultschecker">
                 <p>&nbsp;</p>
                 <h1 className="item-title">Boost Your Chances With A Group Acquisition</h1>
                 <p>
@@ -60,7 +60,6 @@ const GroupPage = ({ draws }) => {
 export const getStaticProps = async (ctx) => {
 
   try {
-
     const res = await Promise.all([
       getAllDraws(),
     ]);
