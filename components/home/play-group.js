@@ -7,7 +7,7 @@ export const PlayGroup = () => {
 			<h1>Playing in a group</h1>
 			<div id="nav-megamillions-group-ticket" className="home-banner-new" style={{ cursor: 'pointer' }}>
 				<h2>Playing in a group is <br />more fun and <br />cost less!</h2>
-				<a href="mailto:support@bitcoinlotterys.com">Join Now</a>
+				<Link href="/group">Join Now</Link>
 			</div>
 		</div>
 	)

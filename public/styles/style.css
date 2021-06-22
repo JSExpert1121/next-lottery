@@ -15361,6 +15361,7 @@ span.bin.oro-bonus-money {
 
 .group-ticket-section .body-section {
     display: flex;
+    justify-content: center;
 }
 
 .group-ticket-section .body-section .body-left {
@@ -15409,6 +15410,22 @@ span.bin.oro-bonus-money {
 .group-option-section {
     padding: 0 20px 20px;
     width: calc(100% - 40px);
+}
+
+@media screen and (max-width: 1080px) {
+    .group-ticket-section .body-section {
+        flex-wrap: wrap;
+    }
+    
+    .group-ticket-section .body-section .body-left img {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .group-ticket-section .body-section .body-right p {
+        width: 100%;
+    }
 }
 
 .total_sum .shares-draws {
@@ -16281,6 +16298,7 @@ body:not(.home) #main {
     border: none;
     min-height: 70px;
     flex: 8;
+    margin-right: 16px;
 }
 
 .lotterydetail .how-to-play .text,
@@ -16330,6 +16348,7 @@ body:not(.home) #main {
 
 .beton-header-mobile-section {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -19458,7 +19477,7 @@ body.home #header .has-child .submenu {
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
     .beton-header-mobile-section {
         display: flex;
         flex-direction: column;
@@ -19472,9 +19491,6 @@ body.home #header .has-child .submenu {
         box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.16), 0px 0px 6px rgba(0, 0, 0, 0.16), 0px 4px 20px rgba(0, 0, 0, 0.26),
             inset 0px 1px 0px rgba(255, 255, 255, 0.2);
     }
-}
-
-@media screen and (max-width: 768px) {
     #main {
         margin-top: 20px;
     }
