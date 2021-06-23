@@ -1645,7 +1645,7 @@ img {
 	& .all-groups {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: space-around;
 
 		& .group-item {
 			width: 21%;
@@ -1751,6 +1751,25 @@ img {
 				}
 			}
 		}
+
+		@media screen and (max-width: 990px) {
+			& .group-item {
+				width: 28%;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			& .group-item {
+				width: 40%;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			justify-content: center;
+			& .group-item {
+				width: 80%;
+			}
+		}
 	}
 }
 
@@ -1819,6 +1838,63 @@ img {
 
 			& > a {
 				text-align: center;
+			}
+		}
+	}
+
+	& button.link-button {
+		background-color: transparent !important;
+		border: none !important;
+		color: $color-white !important;
+		text-align: center !important;
+		font-weight: 500;
+		font-size: 18px;
+
+		&:hover {
+			color: $color-primary-hover !important;
+		}
+	}
+
+	& button.qtyminus,
+	& button.qtyplus {
+		background-color: transparent;
+		border: none;
+	}
+
+	& .group-lines {
+		transition: all 0.5s;
+		padding: 0 20px;
+		width: 100%;
+		height: 0;
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		& .lines-box {
+			overflow-y: hidden;
+			overflow-x: auto;
+			border: none;
+			border-radius: 4px;
+			height: 100%;
+			display: flex;
+
+			& .ten-lines-box {
+				display: inline-flex;
+				flex-direction: column;
+				padding: 16px;
+
+				& ul {
+					display: flex;
+				}
+			}
+		}
+
+		&.active {
+			height: 400px;
+
+			& .lines-box {
+				border: 1px solid $color-white;
 			}
 		}
 	}

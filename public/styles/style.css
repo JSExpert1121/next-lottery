@@ -7093,6 +7093,7 @@ ul#main-nav clearall_btn:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 8px;
 }
 
 .shars_countre a:hover,
@@ -7582,7 +7583,7 @@ input[type="radio"].css-checkbox + label.css-label.chk {
     flex-wrap: wrap;
 }
 
-.result_ellipse_blue {
+ul li.result_ellipse_blue {
     margin-top: 4px;
     margin-right: 9px;
     background: #00c58a;
@@ -7599,7 +7600,12 @@ input[type="radio"].css-checkbox + label.css-label.chk {
     box-sizing: border-box;
 }
 
-.result_ellipse_green {
+ul li:last-child.result_ellipse_blue,
+ul li:last-child.result_ellipse_green {
+    margin-right: 0;
+}
+
+ul li.result_ellipse_green {
     margin-top: 4px;
     margin-right: 9px;
     background: #ffba02;
