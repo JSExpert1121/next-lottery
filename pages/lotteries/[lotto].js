@@ -94,10 +94,9 @@ const LottoGame = (props) => {
 									<div className="text">Click continue</div>
 								</div>
 							</div>
-							{/* <div className="desktop-ticket-buttons">
-								<a href="#single" className="person-ticket-button" id="person-ticket-button" style={{ display: 'none' }}>Person ticket</a>
-								<a href="#group" className="group-ticket-button" id="group-ticket-button">Group ticket</a>
-							</div> */}
+							<div className="desktop-ticket-buttons">
+								<a href={`/groups/${data.LotteryName.replace(/ /g, '').toLowerCase()}`} className="group-ticket-button" id="group-ticket-button">Group ticket</a>
+							</div>
 						</div>
 						<div className={`beton-header ${data.LotteryName}`}>
 							<div className="beton-header-mobile-section">
@@ -165,7 +164,6 @@ const LottoGame = (props) => {
 
 export async function getStaticPaths() {
 	const draws = await getAllDraws();
-	// const draws = await parseJsonFile('data/lotteries.json');
 	const paths = draws.map(draw => ({
 		params: { lotto: draw.LotteryName.replace(/ /g, '').toLowerCase() }
 	}));
@@ -179,12 +177,6 @@ export async function getStaticProps(context) {
 	const { params: { lotto } } = context;
 
 	try {
-		// const result = await Promise.all([
-		// 	parseJsonFile('data/lotteries.json'),
-		// 	parseJsonFile('data/rules.json'),
-		// 	parseJsonFile('data/prices.json'),
-		// 	parseJsonFile('data/posts.json')
-		// ]);
 		const result = await Promise.all([
 			getAllDraws(),
 			parseJsonFile('data/rules.json'),
@@ -208,15 +200,11 @@ export async function getStaticProps(context) {
 		const options = rule.ProductsDrawOptions.find(option => option.ProductId === 1 && !option.IsSubscription)
 		data.Options = options.MultiDrawOptions;
 
-		// const groups = result[2];
-		// const group = groups.find(item => item.LotteryTypeId == lottery.LotteryTypeId);
-		// const posts = result[3];
 		const posts = result[2];
 		const post = posts.find(item => item.name === lotto.replace(/ /g, '').toLowerCase());
 		return {
 			props: {
 				data, post: post ?? {}
-				// group
 			},
 			revalidate: 60
 		}

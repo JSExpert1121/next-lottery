@@ -57,8 +57,8 @@ const MyAccount = ({ countries }) => {
 										<span className='money'>€ {balance ? parseInt(balance.WinningAmount).toFixed(2) : '0.00'}</span>
 									</div>
 									<div className='buttons'>
-										<Link href='/user/deposit'><a className='button'>Deposit</a></Link>
 										<Link href='/user/withdraw'><a className='button'>Withdraw</a></Link>
+										<Link href='/user/deposit'><a className='button'>Deposit</a></Link>
 									</div>
 								</div>
 							</div>

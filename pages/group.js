@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Layout from 'components/layout';
 import { getAllDraws } from 'service/globalinfo';
 import { formatNumber } from 'helpers/number';
+import { parseJsonFile } from 'helpers/json';
 
 const GroupPage = ({ draws }) => {
   return (
@@ -62,7 +63,9 @@ export const getStaticProps = async (ctx) => {
   try {
     const res = await Promise.all([
       getAllDraws(),
+			parseJsonFile('data/grouplines.json')
     ]);
+    const groupLines = res[1];
     const draws = res[0].filter(draw => !(
       draw.LotteryName == 'BTC Power Play' || draw.LotteryName == 'MegaJackpot' || draw.LotteryName == 'BTC Raffle 50'
       || draw.LotteryName == 'BTC Raffle 100' || draw.LotteryName == 'BTC Raffle 200' || draw.LotteryName == 'BTC Raffle 500'
@@ -70,7 +73,8 @@ export const getStaticProps = async (ctx) => {
       || draw.LotteryName == 'BTC Raffle 10000' || draw.LotteryName == 'BTC Raffle 20000' || draw.LotteryName == 'BTC Raffle 25'
       || draw.LotteryName == 'BTC Raffle' || draw.Jackpot < 0
     )).filter(draw => (
-      draw.LotteryTypeId !== 45 && draw.LotteryTypeId !== 46
+      draw.LotteryTypeId !== 45 && draw.LotteryTypeId !== 46 &&
+      !!groupLines[draw.LotteryName.replace(/ /g, '').toLowerCase()]
     )).map(draw => ({
       id: draw.DrawId,
       type: draw.LotteryTypeId,

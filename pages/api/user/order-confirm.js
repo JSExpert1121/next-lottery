@@ -12,6 +12,7 @@ export default async function handler(req, res) {
         session,
         ticker,
         draws,
+        lines,
         lotteryTypeId,
         isVIP,
         isCash,
@@ -22,25 +23,32 @@ export default async function handler(req, res) {
 
     try {
         // construct orderData
-        const selNumbers = numbers.split(':');
-        const lines = selNumbers.length;
         let orderData = 'EmailCode={emailcode}&productCounter=1';
         orderData += `&numOfDraws=${draws}`;
         orderData += `&numOfLines=${lines}`;
-        selNumbers.forEach((number, index) => {
+        if (productId === 3) {  // group ticket
             orderData += `&MemberId=${memberId}`;
             orderData += `&LotteryTypeID=${lotteryTypeId}`;
-            orderData += `&SelectedNumbers=${number}`;
+            orderData += `&SelectedNumbers=${numbers}`;
             orderData += `&IsVIP=${isVIP ? 'true' : 'false'}`;
             orderData += `&IsCash=${isCash ? 'true' : 'false'}`;
             orderData += `&isOnline=${isOnline}`;
             orderData += `&ProductID=${productId}`;
-            if (index < (lines - 1)) {
-                orderData += '|';
-            }
-        })
-
-        console.log(orderData);
+        } else {
+            const selNumbers = numbers.split(':');
+            selNumbers.forEach((number, index) => {
+                orderData += `&MemberId=${memberId}`;
+                orderData += `&LotteryTypeID=${lotteryTypeId}`;
+                orderData += `&SelectedNumbers=${number}`;
+                orderData += `&IsVIP=${isVIP ? 'true' : 'false'}`;
+                orderData += `&IsCash=${isCash ? 'true' : 'false'}`;
+                orderData += `&isOnline=${isOnline}`;
+                orderData += `&ProductID=${productId}`;
+                if (index < (lines - 1)) {
+                    orderData += '|';
+                }
+            })
+        }
 
         // call api
         const result = await confirmProcessorOrder(

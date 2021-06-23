@@ -10,7 +10,7 @@ import { numberWithLength } from 'helpers/number';
 const GroupLotto = (props) => {
 	const router = useRouter();
 	const { lotto } = router.query;
-	const { data, post } = props;
+	const { data, post, groupLine } = props;
 
   let jackpot = 'PENDING';
 	if (data.Jackpot < 0) {
@@ -107,7 +107,7 @@ const GroupLotto = (props) => {
 								</div>
 							</div>
 						</div>
-            <GroupGame data={data} />
+            <GroupGame data={data} groupLine={groupLine} />
 						<div className="select_page_det left">
 							{post?.content && (
 								<div className="col8 left" dangerouslySetInnerHTML={{ __html: post?.content }} />
@@ -128,7 +128,11 @@ const GroupLotto = (props) => {
 
 export async function getStaticPaths() {
 	const draws = await getAllDraws();
-	// const draws = await parseJsonFile('data/lotteries.json');
+	const groupLines = await parseJsonFile('data/grouplines.json');
+	const real = draws.filter(draw => {
+		const name = draw.LotteryName.replace(/ /g, '').toLowerCase();
+		return !!groupLines[name];
+	})
 	const paths = draws.map(draw => ({
 		params: { lotto: draw.LotteryName.replace(/ /g, '').toLowerCase() }
 	}));
@@ -145,7 +149,8 @@ export async function getStaticProps(context) {
 		const result = await Promise.all([
 			getAllDraws(),
 			parseJsonFile('data/rules.json'),
-			parseJsonFile('data/posts.json')
+			parseJsonFile('data/posts.json'),
+			parseJsonFile('data/grouplines.json')
 		]);
 
 		const draws = result[0];
@@ -166,11 +171,14 @@ export async function getStaticProps(context) {
 		data.Options = options.MultiDrawOptions;
 
 		const posts = result[2];
-		const post = posts.find(item => item.name === lotto.replace(/ /g, '').toLowerCase());
+		const post = posts.find(item => item.name === lotto);
+
+		const groupLines = result[3];
+		const groupLine = groupLines[lotto];
 		return {
 			props: {
-				data, post: post ?? {}
-				// group
+				data, post: post ?? {},
+				groupLine
 			},
 			revalidate: 60
 		}
