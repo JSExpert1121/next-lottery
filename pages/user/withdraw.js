@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import Layout from 'components/layout';
 import { MinimumAmountForWithdraw } from 'helpers/constants';
 import { requestWithdraw } from 'service/client/user';
+import { ModalDialog } from 'components/dialog';
 
 const WithdrawPage = () => {
 
@@ -14,15 +15,19 @@ const WithdrawPage = () => {
 	const [amount, setAmount] = useState(10);
 	const [error, setError] = useState('');
 	const [busy, setBusy] = useState(false);
+	const [modal, setModal] = useState(false);
 
 	const addressChange = useCallback(e => {
 		setAddress(e.target.value);
+		setError('');
 	}, []);
 	const coinChange = useCallback(e => {
 		setCoin(e.target.value);
+		setError('');
 	}, []);
 	const amountChange = useCallback(e => {
 		setAmount(e.target.value);
+		setError('');
 	}, []);
 
 	const handleKeyPress = useCallback(evt => {
@@ -58,12 +63,13 @@ const WithdrawPage = () => {
 		}
 
 		try {
+			setError('');
 			setBusy(true);
-			const result = await requestWithdraw(amount, coin, address);
+			await requestWithdraw(profile.MemberId, amount, `${coin}:${address}`);
 			setBusy(false);
+			setModal(true);
 		} catch (error) {
-			console.log('error: ', error);
-			setError('unknown server error');
+			setError(error);
 			setBusy(false);
 		}
 	};
@@ -71,6 +77,14 @@ const WithdrawPage = () => {
 	return (
 		<Layout>
 			<main id="main" className="clearfix">
+				<ModalDialog
+					show={modal}
+					header={'Success'}
+					body={'Email sent. Please wait for a sec'}
+					footer={(
+							<button onClick={() => setModal(false)} className='btn btn-primary'> OK </button>
+					)}
+				/>
 				<div className="wrap">
 					{busy && <div className="simple-spinner"></div>}
 					<div className="hadding inner-hadding withdraw_title">
