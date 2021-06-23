@@ -13,8 +13,8 @@ export const prepareConfirmDeposit = (memberID, amount, ticker) => post('/api/us
   memberID, amount, ticker
 });
 
-export const requestWithdraw = (amount, ticker, address) => post('/api/user/withdraw', {
-  amount, ticker, address
+export const requestWithdraw = (memberId, amount, address) => post('/api/user/withdraw', {
+  memberId, amount, address
 });
 
 export const getProfile = (memberID) => get('/api/user/profile', { memberID });
