@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
+import { useDispatch } from 'react-redux';
+import { useRouter } from 'next/router';
 import { TTInput } from 'components/form/form-control';
 import TicketLine from 'components/ticket/line';
 import { generateArray } from 'helpers/array';
+import { setGameStatus } from 'store/actions/game';
 
 const GroupGame = (props) => {
 
@@ -11,16 +13,20 @@ const GroupGame = (props) => {
   const [shares, setShares] = useState(1);
   const [draws, setDraws] = useState(1);
   const [showLines, setShowLines] = useState(false);
+	const dispatch = useDispatch();
+  const router = useRouter();
 
   const handleLinesChange = e => {
     setShares(parseInt(e.target.value) === NaN ? 1 : parseInt(e.target.value));
   }
 
-  const linesPlus = () => {
+  const linesPlus = e => {
+    e.preventDefault();
     setShares(shares + 1);
   }
 
-  const linesMinus = () => {
+  const linesMinus = e => {
+    e.preventDefault();
     setShares((shares - 1) < 1 ? 1 : shares - 1)
   }
 
@@ -44,6 +50,23 @@ const GroupGame = (props) => {
   const discount = (shares * draws * data.PricePerShare / 8 * data.Options.find(opt => opt.NumberOfDraws === draws)?.Discount ?? 0).toFixed(2);
   const tens = generateArray(0, 9);
   const fours = generateArray(0, 4);
+
+  const storeGame = () => {
+    dispatch(setGameStatus({
+			name: data.LotteryName,
+			lines: shares,
+			typeId: data.LotteryTypeId,
+      price: total - discount,
+			draws,
+			productId: 3,
+			picks: ''
+		}));
+  }
+
+  const gotoCart = e => {
+    storeGame();
+    router.push('/user/cart');
+  }
 
   return (
     <form name='groupdata' id='groupdata'>
@@ -169,11 +192,9 @@ const GroupGame = (props) => {
               <span className='total-label'>Total</span>
               <span className='total-price'>{`€ ${(total - discount).toFixed(2)}`}</span>
             </div>
-            <Link href='/user/cart'>
-              <a className='oro-single-total_share_conti_btn'>
-                Continue
-              </a>
-            </Link>
+            <button className='oro-single-total_share_conti_btn' onClick={gotoCart}>
+              Continue
+            </button>
           </div>
         </section>
       </div>

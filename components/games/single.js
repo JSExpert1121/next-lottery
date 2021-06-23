@@ -36,6 +36,7 @@ const SingleGame = ({ data, selMs, selEs }) => {
 			typeId: data.LotteryTypeId,
 			price: lines * data.PricePerLine,
 			draws: 1,
+			productId: 1,
 			picks: selected_dump(selectedM, selectedE, data.AmountOfMainNumbersToMatch, data.AmountOfExtraNumbersToMatch)
 		}));
 
@@ -64,6 +65,7 @@ const SingleGame = ({ data, selMs, selEs }) => {
 			typeId: data.LotteryTypeId,
 			price: lines * data.PricePerLine,
 			draws: 1,
+			productId: 1,
 			picks: selected_dump(selMs, selEs, data.AmountOfMainNumbersToMatch, data.AmountOfExtraNumbersToMatch)
 		}));
 		setFlags([...flags]);
