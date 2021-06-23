@@ -133,7 +133,7 @@ export async function getStaticPaths() {
 		const name = draw.LotteryName.replace(/ /g, '').toLowerCase();
 		return !!groupLines[name];
 	})
-	const paths = draws.map(draw => ({
+	const paths = real.map(draw => ({
 		params: { lotto: draw.LotteryName.replace(/ /g, '').toLowerCase() }
 	}));
 	return {
