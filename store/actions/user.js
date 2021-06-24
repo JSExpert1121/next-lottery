@@ -74,7 +74,10 @@ export const resetPassword = (email, oldPwd, newPwd) => async dispatch => {
 
 export const getTransactions = (page, memberID) => async dispatch => {
   const result = await UserService.getTransactions(page, memberID);
-  dispatch(setTransactions(result));
+  dispatch(setTransactions(result.map(item => ({
+    ...item,
+    TransactionType: item.TransactionType === 'Bonus Used' ? 'Bonus' : item.TransactionType
+  }))));
   return result;
 }
 

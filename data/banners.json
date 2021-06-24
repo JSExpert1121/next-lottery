@@ -4,8 +4,8 @@
             "type": 2,
             "background": "url('images/Lotto-2.jpg') no-repeat",
             "position": "72% 30%",
-            "subject1": "Play the <span className=\"slogan_2 text-green\">Official</span>",
-            "subject2": "<span class='text-primary'>Bitcoin</span><span class='text-secondary'>Lotterys.com</span> <span class=\"slogan_2 text-green\">Lottery</span> Platform",
+            "subject1": "Play Official Lottos Today</span>",
+            "subject2": "with <span class='text-primary'>Bitcoin</span><span class='text-secondary'>Lotterys.com</span>",
             "descHtml": "Megamillion, Lotto649<br/> LaPrimitiva, and much more!",
             "link": "/lottery"
         },
@@ -13,8 +13,8 @@
             "type": 1,
             "background": "url('images/Carousel_PowerPlay.jpg') no-repeat",
             "position": "72% 30%",
-            "subject1": "Exclusive <span class=\"slogan_1 text-green\">Lottery:</span>",
-            "subject2": "<span class=\"slogan_1 text-green\"></span> Euro Millions",
+            "subject1": "<span class='text-primary'>Exclusive <span class='text-secondary'>Lottery</span>",
+            "subject2": "<span class='slogan_1 text-green'></span> Euro Millions",
             "descHtml": "Get a chance to win <b>$1,000,000</b><br/> in Euro Millions",
             "link": "/lottery"
         }
