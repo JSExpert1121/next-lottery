@@ -42,8 +42,8 @@ export const logout = () => dispatch => {
   dispatch(loggedOut());
 }
 
-export const signup = (firstName, lastName, email, phone, password, bchID, affID) => async dispatch => {
-  const user = await UserService.signup(firstName, lastName, email, phone, password, bchID, affID);
+export const signup = (firstName, lastName, email, phone, password, affID) => async dispatch => {
+  const user = await UserService.signup(firstName, lastName, email, phone, password, affID);
   const profile = await UserService.getProfile(user.MemberId)
   const balance = await UserService.getBalance(user.MemberId);
   dispatch(setProfile(profile));
