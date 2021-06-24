@@ -13,8 +13,8 @@ export default async function handler(req, res) {
     // check the api resultult
     if (typeof result === 'string') {
       res.status(409).json({ reason: result });
-    } else if (result.ErrorMessage) {
-      res.status(409).json({ reason: result.ErrorMessage });
+    } else if (Array.isArray(result) && result[0].ErrorMessage) {
+      res.status(409).json({ reason: result[0].ErrorMessage });
     }else {
       await sendWelcome(result.MemberId, result.Email, result.CountryCode);
       res.status(200).json(result);
