@@ -87,7 +87,7 @@ const SignupPage = () => {
 				email.value,
 				phone.value,
 				password.value,
-				affid ? affid : address.value
+				affid ? parseInt(affid) : address.value
 			));
 			router.push('/');
 		} catch (error) {
