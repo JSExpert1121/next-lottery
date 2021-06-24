@@ -26,6 +26,8 @@ const SignupPage = () => {
 	const dispatch = useDispatch();
 	const router = useRouter();
 
+	const { affid } = router.query;
+
 	const handleEmailChange = React.useCallback(e => {
 		setState({
 			email: {
@@ -79,7 +81,14 @@ const SignupPage = () => {
 
 		try {
 			setState({ busy: true });
-			await dispatch(UserActions.signup(firstName.value, lastName.value, email.value, phone.value, password.value, address.value))
+			await dispatch(UserActions.signup(
+				firstName.value,
+				lastName.value,
+				email.value,
+				phone.value,
+				password.value,
+				affid ? affid : address.value
+			));
 			router.push('/');
 		} catch (error) {
 			setState({ busy: false, error });
