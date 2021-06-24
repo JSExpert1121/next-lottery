@@ -2,9 +2,11 @@ import { post, get } from './base';
 
 // authentication
 export const login = (email, password) => post('/api/auth/login', { email, password });
-export const signup = (firstName, lastName, email, phone, password, affilliateID) => post('/api/auth/signup', {
-  firstName, lastName, email, phone, password, affilliateID
-});
+export const signup = (firstName, lastName, email, phone, password, bchID, affID) => {
+  const body = { firstName, lastName, email, phone, password }
+  if (affID) body.cxd = affID;
+  return post('/api/auth/signup', body);
+};
 
 
 export const getBalance = (memberID) => get('/api/user/balance', { memberID });
