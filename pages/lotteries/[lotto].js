@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Layout from 'components/layout';
 import SingleGame from 'components/games/single';
-import { getAllDraws, getLotteryRules, getPricesAndDiscounts } from 'service/globalinfo';
+import { getAllDraws } from 'service/globalinfo';
 import { parseJsonFile } from 'helpers/json';
 import { randomArray } from 'helpers/array';
 import { numberWithLength } from 'helpers/number';
@@ -12,7 +12,7 @@ const LottoGame = (props) => {
 	const router = useRouter();
 	const { lotto } = router.query;
 	const { data, post } = props;
-	const [sels, setSels] = useState({ selMs: [[], [], [], []], selEs: [[], [], [], []] });
+	const [sels, setSels] = useState({ selMs: [[], [], [], [], []], selEs: [[], [], [], [], []] });
 
 	const [curTime, setCurTime] = useState({
 		days: 0, hours: 0, minutes: 0, seconds: 0, tm: 0
@@ -56,9 +56,11 @@ const LottoGame = (props) => {
 					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch),
 					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch),
 					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch),
+					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch),
 					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch)
 				],
 				selEs: [
+					randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch),
 					randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch),
 					randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch),
 					randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch),

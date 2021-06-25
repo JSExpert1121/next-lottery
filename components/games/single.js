@@ -54,7 +54,7 @@ const SingleGame = ({ data, selMs, selEs }) => {
 		setSelectedM([...selMs]);
 		setSelectedE([...selEs]);
 
-		for (let i = 0; i < 4; i++) {
+		for (let i = 0; i < 5; i++) {
 			flags[i] = selMs[i].length === data.AmountOfMainNumbersToMatch &&
 				selEs[i].length === data.AmountOfExtraNumbersToMatch;
 		}
@@ -105,7 +105,7 @@ const SingleGame = ({ data, selMs, selEs }) => {
 				<div className="card_row addcardrow cardline" id="row_1">
 					<div className="tabin_main">
 						<div className="tabin_main_select">
-							{generateArray(1, 4).map(i => (
+							{generateArray(1, 5).map(i => (
 								<SelectNumbers data={data} numTickets={i} key={i} onSelected={selectChanged} selE={selectedE[i - 1]} selM={selectedM[i - 1]} />
 							))}
 						</div>

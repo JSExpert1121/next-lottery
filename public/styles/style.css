@@ -7782,6 +7782,12 @@ ul li.result_ellipse_green {
     padding: 0px 20px 0 0;
 }
 
+@media screen and (max-width: 1410px) {
+    .select_num_col:last-child {
+        padding: 0;
+    }
+}
+
 .select_num_col_partellipse_blue {
     width: 100%;
     /*height          : 610px;*/
@@ -10340,7 +10346,7 @@ input.css-checkbox[type="radio"] + label.css-label.clr {
     }
 }
 
-@media screen and (max-width: 1296px) {
+@media screen and (max-width: 1410px) {
     .lotterydetail .tabin_main {
         flex-direction: column;
     }
@@ -15015,6 +15021,9 @@ input:focus {
     box-shadow: 0px 2px 4px #000000, inset 0px 0.51px 0px rgba(255, 255, 255, 0.3);
     border-radius: 3px;
 }
+.news-section-new .news-column:last-child {
+    margin-right: 0;
+}
 
 .news-section-new h1 {
     font-size: 36px;
@@ -15036,6 +15045,8 @@ input:focus {
 
 .news-section-new #box-news {
     border: none !important;
+    display: flex;
+    justify-content: space-between;
 }
 
 .news-section-new .news-column .news-date {
@@ -15765,7 +15776,7 @@ span.bin.oro-bonus-money {
 body.home .wrap,
 body.page-template-default .wrap,
 body .wrap {
-    width: 1320px;
+    width: 1440px;
     max-width: 96%;
     clear: both;
 }
