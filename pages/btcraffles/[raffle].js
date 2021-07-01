@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Layout from 'components/layout';
 import RaffleTickets from 'components/games/raffle/game';
