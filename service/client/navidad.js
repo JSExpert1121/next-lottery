@@ -9,6 +9,6 @@ export const confirmRaffleOrder = (memberId,
   coin,
   type,
   numbers
-) => post('/api/navidad/confirm-oder', {
+) => post('/api/navidad/confirm-order', {
   memberId, type, coin, numbers
 })

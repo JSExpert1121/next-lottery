@@ -877,6 +877,7 @@ img {
 	color: red;
 	text-align: center;
 	width: 100%;
+	margin: 8px;
 }
 
 .success-msg {
@@ -1247,6 +1248,7 @@ img {
 		margin-bottom: 32px;
 
 		& .action-bar {
+			position: relative;
 			display: flex;
 			justify-content: flex-end;
 			flex-wrap: wrap;
@@ -1265,6 +1267,7 @@ img {
 				text-align: center;
 				min-width: 12rem;
 				margin-left: 32px;
+				border: none;
 			}
 		}
 	}

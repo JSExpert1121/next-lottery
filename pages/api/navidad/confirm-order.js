@@ -8,7 +8,7 @@ export default async function handler(req, res) {
 
   try {
     // call api
-    const result = await confirmProcessorRaffleGameOrder(memberId, coin, type, numbers);
+    const result = await confirmProcessorRaffleGameOrder(memberId, coin, `${type}`, numbers);
 
     // check the api resultult
     if (typeof result === 'string') {

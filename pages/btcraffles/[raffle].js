@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Layout from 'components/layout';
 import RaffleTickets from 'components/games/raffle/game';
-import Selections from 'components/common/selections';
 import RaffleBanner from 'components/games/raffle/banner';
 import { getAllDraws } from 'service/globalinfo';
 import { getNumbers as getNavNumbers, confirmRaffleOrder } from 'service/client/navidad';
@@ -15,7 +14,6 @@ const RaffleGame = ({ draw }) => {
 	const [error, setError] = useState('');
 	const [busy, setBusy] = useState(false);
 	const profile = useSelector(state => state.user.profile);
-	const router = useRouter()
 
 	useEffect(() => {
 		const getNumbers = async () => {
@@ -33,21 +31,6 @@ const RaffleGame = ({ draw }) => {
 		getNumbers();
 	}, []);
 
-	const submitOrder = useCallback(async (coin, numbers) => {
-		try {
-			setBusy(true);
-			const result = await confirmRaffleOrder(profile.MemberId, coin, draw.type, numbers);
-			if (result.PaymentUrl) {
-				popupwindow(result.PaymentUrl, 'Payment Information', 500, 700);
-				router.push('/thankyou');
-			}
-		} catch (e) {
-			setError(e.result ?? '');
-		} finally {
-			setBusy(false);
-		}
-	}, [profile.MemberId, draw.type]);
-
 	if (!profile) return null;
 
 	return (
@@ -56,15 +39,18 @@ const RaffleGame = ({ draw }) => {
 				<section className='raffle-banner'>
 					<RaffleBanner />
 				</section>
-				{error && <span className='error-msg'>{error}</span>}
 				<div className='wrap'>
 					<section className='raffle-main-section'>
-            {busy && <div className="simple-spinner"></div>}
+            {busy && (
+							<div style={{ position: 'relative', zIndex: 100 }}>
+								<div className="simple-spinner"></div>
+							</div>
+						)}
+						{error && <div className='error-msg'>{error}</div>}
 						{tickets.length > 0 && (
 							<RaffleTickets
 								tickets={tickets}
 								draw={draw}
-								submitOrder={submitOrder}
 							/>
 						)}
 						<p style={{ textAlign: 'center' }}>Tickets are limited in all <span className='text-primary'>Bitcoin</span><span className='text-secondary'>Lotterys.com</span> <span style={{ color: '#13D19C' }}>Sure-Win Games</span>, we guarantee a Jackpot winner in<br /> every single draw</p>
@@ -174,9 +160,3 @@ export async function getStaticProps(context) {
 		}
 	}
 }
-
-function popupwindow(url, title, w, h) {
-	var left = (screen.width/2)-(w/2);
-	var top = (screen.height/2)-(h/2);
-	return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
-} 

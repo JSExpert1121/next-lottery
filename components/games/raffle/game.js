@@ -1,14 +1,16 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useSelector } from 'react-redux';
-import Link from 'next/link';
 import { currencies } from 'helpers/constants';
+import { confirmRaffleOrder } from 'service/client/navidad';
 
-const RaffleTickets = ({ tickets, draw, submitOrder }) => {
+const RaffleTickets = ({ tickets, draw }) => {
 
 	const [selections, setSelections] = useState([]);
 	const [currency, setCurrency] = useState('');
 	const [error, setError] = useState('');
+	const [busy, setBusy] = useState(false);
 	const balance = useSelector(state => state.user.balance);
+	const profile = useSelector(state => state.user.profile);
 
 	useEffect(() => {
 		jQuery("#btcowl-demo").owlCarousel({
@@ -25,7 +27,7 @@ const RaffleTickets = ({ tickets, draw, submitOrder }) => {
 				1600: { items: 3, nav: true }
 			}
 		});
-	}, [])
+	}, []);
 
 	const toggleSelections = id => {
 		const idx = selections.indexOf(id);
@@ -44,7 +46,7 @@ const RaffleTickets = ({ tickets, draw, submitOrder }) => {
 	}, []);
 
 	const enoughBalance = balance?.AccountBalance >= selections.length * draw.price
-	const handleContinue = useCallback(e => {
+	const handleContinue = useCallback(async e => {
 		if (selections.length === 0) {
 			setError('Please select the numbers');
 			return;
@@ -54,7 +56,20 @@ const RaffleTickets = ({ tickets, draw, submitOrder }) => {
 			setError('Please select the coin');
 			return;
 		}
-		submitOrder(currency, selections);
+
+		try {
+			setBusy(true);
+			const result = await confirmRaffleOrder(profile.MemberId, currency, draw.type, selections);
+			if (result.PaymentUrl) {
+				popupwindow(result.PaymentUrl, 'Payment Information', 500, 700);
+			}
+			router.push('/thankyou');
+		} catch (e) {
+			setError(e);
+		} finally {
+			setBusy(false);
+		}
+
 	}, [selections, currency]);
 
 	const rowClass = draw.amount >= 1000 ? 'flexRow sm' : 'flexRow';
@@ -89,6 +104,7 @@ const RaffleTickets = ({ tickets, draw, submitOrder }) => {
 			</div>
 			<div className='action-bar'>
 				{error && <span className='error-msg'>{error}</span>}
+				{busy && <div className="simple-spinner"></div>}
 				{enoughBalance || (
 					<div className="ticker-select">
 						<select id="deposit_ticker-select" value={currency} onChange={handleCurrency}>
@@ -108,3 +124,9 @@ const RaffleTickets = ({ tickets, draw, submitOrder }) => {
 }
 
 export default RaffleTickets
+
+function popupwindow(url, title, w, h) {
+	var left = (screen.width/2)-(w/2);
+	var top = (screen.height/2)-(h/2);
+	return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+} 
