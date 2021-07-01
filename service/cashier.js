@@ -79,9 +79,20 @@ export const vouchersDeposit = async () => {
 	);
 }
 
-export const confirmProcessorRaffleGameOrder = async () => {
+export const confirmProcessorRaffleGameOrder = async (
+	memberId, coin, lottoType, numbers
+) => {
 	return await authPost(
 		`${BASE_URL}/processor-confirm-raffle-game-order`,
-		SEC_TOKEN
+		SEC_TOKEN,
+		{ 
+			PhoneOrEmail: "eyal@bravio.com",
+			ProcessorApi: '',
+			RaffleNumbersID: numbers,
+			LotteryType: lottoType,
+			MemberId: memberId,
+			Ticker: coin,
+			BrandID: BRAND_ID
+		}
 	);
 }

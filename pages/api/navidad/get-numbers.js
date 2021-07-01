@@ -1,22 +1,19 @@
-import { signUp } from 'service/userinfo';
-import { sendWelcome } from 'service/mailservice';
+import { getBtcNavidadNumbers } from 'service/playlottery';
 
 export default async function handler(req, res) {
+  const { LotteryType, MemberId, NumbersCount } = req.body;
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
   try {
     // call api
-    const result = await signUp(req.body);
+    const result = await getBtcNavidadNumbers(LotteryType, NumbersCount, MemberId);
 
     // check the api resultult
     if (typeof result === 'string') {
-      res.status(409).json({ reason: result });
-    } else if (Array.isArray(result) && result[0].ErrorMessage) {
-      res.status(409).json({ reason: result[0].ErrorMessage });
+      res.status(400).json({ reason: result });
     } else {
-      await sendWelcome(result.MemberId, result.Email, result.CountryCode);
       res.status(200).json(result);
     }
   } catch (error) {

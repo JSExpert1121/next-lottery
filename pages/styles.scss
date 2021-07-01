@@ -424,7 +424,7 @@ img {
 		font-family: "Gilroy-Bold";
 		font-size: 16px;
 		height: unset;
-    text-transform: uppercase;
+		text-transform: uppercase;
 
 		&:hover {
 			background: #13d19cc9;
@@ -791,6 +791,85 @@ img {
 	}
 }
 
+.raffle-list {
+	margin: 32px 0;
+	font-family: Gilroy-bold;
+
+	& .raffle-list-title {
+		text-align: center;
+		color: white;
+		margin: 16px;
+
+		& h1 {
+			font-size: 32px;
+		}
+	}
+
+	& a.playNowBtn {
+		font-family: Gilroy-Regular;
+		font-size: 16px;
+		white-space: nowrap;
+		color: #fff;
+		padding: 10px;
+		background: #13d19c;
+		border-radius: 5px;
+		transition: 0.3s;
+		margin-right: 10px;
+		text-align: center;
+		min-width: 11rem;
+		margin: 20px auto 10px auto;
+		display: block;
+	}
+}
+
+#owl-raffle {
+	& .slide {
+		border: 1px solid rgba(19, 209, 156);
+		box-sizing: border-box;
+		border-radius: 10px;
+		margin: 0 10px;
+		padding: 0;
+		overflow: hidden;
+		height: auto;
+		background-image: none;
+		cursor: default !important;
+
+		& .raffle-item {
+			display: flex;
+
+			& .lotteryImg img {
+				max-width: 11em;
+				margin: 16px;
+			}
+
+			& .jackpot {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				text-align: left;
+				margin: 0 10px 0 0;
+				border-left: 0 solid #1a202e;
+				padding-left: 15px;
+
+				& .jackpot-amount {
+					font-family: Gilroy-bold;
+					font-size: 2.7rem;
+					color: #13d19c;
+					line-height: 1;
+				}
+
+				.text-white {
+					color: $color-white;
+				}
+			}
+		}
+	}
+
+	& .owl-nav button {
+		top: -110px !important;
+	}
+}
+
 .error-msg {
 	padding: 0 16px;
 	font-weight: 400;
@@ -798,6 +877,7 @@ img {
 	color: red;
 	text-align: center;
 	width: 100%;
+	margin: 8px;
 }
 
 .success-msg {
@@ -1139,6 +1219,423 @@ img {
 				width: 100% !important;
 			}
 		}
+	}
+}
+
+.box-column {
+	width: 100%;
+	max-width: 500px;
+	margin: 50px auto 50px;
+
+	.image-title {
+		color: #fff;
+		font-size: 24px;
+		margin: 0 0 10px;
+		display: inline-block;
+		width: 100%;
+		font-family: Gilroy-Medium, sans-serif !important;
+		font-weight: 700;
+
+		& img {
+			float: left;
+			padding-right: 20px;
+		}
+	}
+}
+
+.raffle-main-section {
+	& .raffle-game {
+		margin-bottom: 32px;
+
+		& .action-bar {
+			position: relative;
+			display: flex;
+			justify-content: flex-end;
+			flex-wrap: wrap;
+			margin: 16px 0;
+
+			& .playNowBtn {
+				font-family: Gilroy-Bold;
+				font-size: 16px;
+				white-space: nowrap;
+				color: #ffffff;
+				padding: 10px;
+				background: #13d19c;
+				border-radius: 5px;
+				transition: 0.3s;
+				margin-right: 10px;
+				text-align: center;
+				min-width: 12rem;
+				margin-left: 32px;
+				border: none;
+			}
+		}
+	}
+
+	& .images-column {
+		position: relative;
+		text-align: center;
+		margin-top: 50px;
+
+		& .raffle-deposit-button {
+			position: absolute !important;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 9;
+			background: $color-primary;
+			left: 90px;
+			padding: 15px 25px;
+			font-size: 20px;
+			border-radius: 5px;
+			font-family: "Roboto", sans-serif;
+
+			&:hover {
+				background-color: $color-primary-hover;
+				color: $color-white;
+			}
+		}
+	}
+
+	& .lottery-container {
+		width: 100%;
+		max-width: 1140px;
+		margin: auto;
+		padding-right: 15px;
+		padding-left: 15px;
+
+		& .btcraffle-lottery {
+			.column {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+}
+
+#btcowl-demo .slide {
+	box-sizing: border-box;
+	background: url(/images/raffle-ticket.png) no-repeat center center / cover;
+	border-radius: 0;
+	position: relative;
+	background-size: 100% 100%;
+	height: 175px;
+	margin: 0 10px;
+	padding: 0;
+	overflow: hidden;
+	font-family: "Muller";
+
+	& .id span {
+		position: absolute;
+		right: -20px;
+		top: 75px;
+		padding: 5px 10px;
+		font-size: 22px;
+		color: #fff;
+		transform: rotate(90deg);
+		letter-spacing: 2px;
+	}
+
+	& .lotteryImg.left {
+		position: absolute;
+		top: 10px;
+		bottom: 10px;
+		left: 11px;
+		width: 70px;
+		display: flex;
+		align-items: center;
+		border-right: 2px solid #1a2233;
+		justify-content: center;
+
+		& .id span {
+			transform: rotate(-90deg);
+			right: -28px;
+		}
+	}
+	& .lotteryImg.right {
+		position: absolute;
+		top: 10px;
+		bottom: 10px;
+		right: 11px;
+		width: 70px;
+		display: flex;
+		align-items: center;
+		border-left: 2px solid #1a2233;
+		justify-content: center;
+	}
+
+	& .flexRow {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 15px 0 10px;
+
+		& + .flexRow {
+			max-width: 240px;
+			margin: 0 auto;
+			display: flex;
+			border-top: 1px solid #000;
+			margin-top: 15px;
+		}
+	}
+
+	& img {
+		max-width: 4em;
+		margin: 0px;
+	}
+
+	& .jackpot {
+		text-align: center;
+		margin: 0 auto;
+		padding: 0;
+
+		& .jackpotAmount {
+			font-family: Gilroy-bold;
+			font-size: 52px;
+			color: #212b41;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #fff;
+			line-height: 1;
+		}
+
+		& p {
+			padding: 15px 0 25px 0;
+			font-family: Gilroy-medium;
+			font-size: 18px;
+			line-height: 21px;
+			text-align: center;
+			color: #ffffff;
+			min-height: 60px;
+
+			& span {
+				color: #13d19c;
+			}
+		}
+
+		& span {
+			color: #13d19c;
+			font-size: 30px;
+			font-weight: bold;
+			padding-right: 20px;
+		}
+
+		&.flexRow.sm .jackpotAmount {
+			font-size: 44px;
+		}
+		&.flexRow.sm span {
+			font-size: 28px;
+		}
+	}
+
+	& .play-now {
+		text-align: center;
+		display: grid;
+		border-top: 2px solid #1a2233;
+		width: 100%;
+		max-width: 250px;
+		margin: auto;
+		padding: 10px 0;
+
+		& .ticket-price {
+			color: #13d19c;
+			font-size: 18px;
+			font-weight: bold;
+		}
+	}
+
+	.cb-container {
+		display: block;
+		position: relative;
+		margin-bottom: 12px;
+		cursor: pointer;
+		font-size: 22px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+
+		& input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0;
+		}
+
+		& .checkmark-b {
+			position: absolute;
+			top: -15px !important;
+			left: 35px !important;
+			height: 20px !important;
+			width: 20px !important;
+			background-color: transparent !important;
+			border-radius: 40px;
+			border: 1px solid #666;
+			z-index: 99;
+
+			&::after {
+				content: "";
+				position: absolute;
+				display: none;
+				left: 6px;
+				top: 2px;
+				width: 6px;
+				height: 11px;
+				border: solid #13d19c;
+				border-width: 0 3px 3px 0;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+		}
+
+		& input:checked ~ .checkmark-b:after {
+			display: block;
+		}
+	}
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 1023px) {
+	#btcowl-demo .slide .jackpot .jackpotAmount {
+		font-size: 24px !important;
+	}
+
+	#btcowl-demo .slide .jackpot span {
+		font-size: 20px !important;
+	}
+
+	#btcowl-demo .slide .play-now {
+		max-width: 150px;
+	}
+
+	.owl-carousel .owl-nav button {
+		top: -115px;
+	}
+
+	.owl-carousel .owl-nav .owl-prev {
+		left: -20px;
+	}
+
+	.owl-carousel .owl-nav .owl-next {
+		right: -20px;
+	}
+
+	.slide .id span {
+		top: 70px;
+	}
+
+	#btcowl-demo .slide .play-now p {
+		font-size: 12px;
+	}
+
+	#btcowl-demo .slide .flexRow .check-image {
+		top: 10px;
+	}
+
+	#btcowl-demo .slide a.playNowBtn {
+		min-width: 10rem;
+	}
+
+	#btcowl-demo .slide {
+		background-size: 100% 100%;
+	}
+
+	body .cb-container .checkmark-b {
+		top: -15px !important;
+		right: -25px !important;
+	}
+}
+@media only screen and (max-width: 1320px) {
+	#btcowl-demo .slide .jackpot .jackpotAmount {
+		font-size: 30px !important;
+	}
+
+	#btcowl-demo .slide .jackpot span {
+		font-size: 18px !important;
+	}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 767px) {
+	#btcowl-demo .slide .jackpot .jackpotAmount {
+		font-size: 30px !important;
+	}
+
+	#btcowl-demo .slide .jackpot span {
+		font-size: 18px !important;
+	}
+
+	#btcowl-demo .slide .play-now {
+		max-width: 180px;
+	}
+
+	body .cb-container .checkmark-b {
+		top: -15px !important;
+		right: -25px !important;
+	}
+
+	.owl-carousel .owl-nav button {
+		top: -115px;
+	}
+
+	.owl-carousel .owl-nav .owl-prev {
+		left: -20px;
+	}
+
+	.owl-carousel .owl-nav .owl-next {
+		right: -20px;
+	}
+
+	.slide .id span {
+		top: 70px;
+	}
+
+	#btcowl-demo .slide .play-now p {
+		font-size: 14px;
+	}
+
+	#btcowl-demo .slide .flexRow .check-image {
+		top: 10px;
+	}
+
+	.ticket_price {
+		font-size: 14px !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#btcowl-demo .slide {
+		height: 165px;
+	}
+
+	#btcowl-demo .slide .jackpot .jackpotAmount {
+		font-size: 30px !important;
+	}
+
+	#btcowl-demo .slide .jackpot span {
+		font-size: 18px !important;
+	}
+
+	#btcowl-demo .slide .play-now {
+		max-width: 180px;
+	}
+
+	.owl-carousel .owl-nav button {
+		top: -115px;
+	}
+
+	.owl-carousel .owl-nav .owl-prev {
+		left: -20px;
+	}
+
+	.owl-carousel .owl-nav .owl-next {
+		right: -20px;
+	}
+
+	.slide .id span {
+		top: 70px;
+	}
+
+	#btcowl-demo .slide .flexRow .check-image {
+		top: 10px;
 	}
 }
 

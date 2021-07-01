@@ -1,9 +1,9 @@
-import { useState, useCallback } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout from 'components/layout';
 import Banner from 'components/common/banner';
 import LotteryList from 'components/common/lottery-list';
+import RaffleList from 'components/common/raffle-list';
 import ExLotteryList from 'components/common/exlottery-list';
 import PlayGroup from 'components/home/play-group';
 import LottoResult from 'components/home/lotto-result';
@@ -15,7 +15,8 @@ import { getAllDraws, getResultsByBrand } from 'service/globalinfo';
 
 export default function Home(props) {
 
-	const { banners, lotteries, news, results } = props;
+	const { banners, lotteries, news, results, raffles } = props;
+	console.log('raffles: ', raffles);
 
 	return (
 		<Layout>
@@ -36,6 +37,10 @@ export default function Home(props) {
 				</Link>
 				<div className="clear" />
 
+				{/* sure win games */}
+				<section className='sliderwrap lotto-owl-slider'>
+					<RaffleList items={raffles} />
+				</section>
 				{/* exclusive lotteries */}
 				{/* <section className="wrap">
 					<div className="wrap">
@@ -105,12 +110,27 @@ export const getStaticProps = async (ctx) => {
 			draw.LotteryName === 'MegaJackpot' || draw.LotteryName === 'BTC Power Play'
 		)).map(draw => ({
 			id: draw.DrawId,
-			name: draw.LotteryName === 'MegaJackpot' ? "BTC Jackpot" : "BTC Power Play",
-			date: new Date(draw.DrawDate).getTime(),
-			image: `/images/${draw.LotteryName.replace(/ /g, '').toLowerCase()}1.png`,
-			amount: draw.LotteryName === 'MegaJackpot' ? "$1 Million Daily" : "$100",
-			desc: draw.LotteryName === 'MegaJackpot' ? "Daily Draw 9am CET" : "Draw every 5 Minutes",
-			link: `/lotteries/${draw.LotteryName.replace(/ /g, '').toLowerCase()}`
+			name: draw.LotteryName,
+			date: draw.DrawDate,
+			image: `/images/${draw.LotteryName.toLowerCase()}1.png`,
+			unit: draw.LotteryCurrency2,
+			link: `/lotteries/${draw.LotteryName.replace(/ /g, '').toLowerCase()}`,
+			country: draw.CountryName,
+			amount: draw.Jackpot,
+			flag: `/images/flag_${draw.CountryName.toLowerCase()}.png`
+		}));
+
+		const raffles = draws.filter(draw => (
+			draw.LotteryName.includes('Raffle') && draw.Jackpot > 0
+		)).map(draw => ({
+			id: draw.DrawId,
+			type: draw.LotteryTypeId,
+			name: draw.LotteryName,
+			image: `/images/441_Box${draw.LotteryTypeId - 35}.png`,
+			unit: draw.LotteryCurrency2,
+			amount: parseInt(draw.Jackpot) === 20000 ? 25000 : draw.Jackpot,
+			price: draw.PricePerLine,
+			link: `/btcraffles/${draw.LotteryTypeId}`
 		}));
 
 		const results = res[1].filter(item => (
@@ -159,7 +179,7 @@ export const getStaticProps = async (ctx) => {
 			props: {
 				banners: banners.items,
 				lotteries,
-				exlottos,
+				raffles,
 				results,
 				news
 			},
