@@ -130,7 +130,7 @@ export const getStaticProps = async (ctx) => {
 			unit: draw.LotteryCurrency2,
 			amount: parseInt(draw.Jackpot) === 20000 ? 25000 : draw.Jackpot,
 			price: draw.PricePerLine,
-			link: `/btcraffle`
+			link: `/btcraffles/${draw.LotteryTypeId}`
 		}));
 
 		const results = res[1].filter(item => (

@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps }) {
 	return !!store && (
 		<Provider store={store}>
 			<Transition>
-				<ProtectedRoute config={{ match: '/user/*', url: '/auth/login' }}>
+				<ProtectedRoute config={{ match: '/(user|btcraffles)/*', url: '/auth/login' }}>
 					<IdleLogout timeout={30 * 60 * 1000} />
 					<Head>
 						<title>BitcoinLotterys - Lottery with Bitcoins</title>
