@@ -131,7 +131,7 @@ export const getStaticProps = async (ctx) => {
 			amount: parseInt(draw.Jackpot) === 20000 ? 25000 : draw.Jackpot,
 			price: draw.PricePerLine,
 			link: `/btcraffles/${draw.LotteryTypeId}`
-		}));
+		})).sort((a, b) => a.amount - b.amount)
 
 		const results = res[1].filter(item => (
 			item.LotteryTypeId !== 13 && item.LotteryTypeId !== 24 &&

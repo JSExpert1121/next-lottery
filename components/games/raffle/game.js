@@ -1,16 +1,18 @@
-import React, { useEffect, useState, useCallback } from 'react';
-import { useSelector } from 'react-redux';
-import { currencies } from 'helpers/constants';
-import { confirmRaffleOrder } from 'service/client/navidad';
+import React, { useEffect, useState, useCallback } from 'react'
+import { useRouter } from 'next/router'
+import { useSelector } from 'react-redux'
+import { currencies } from 'helpers/constants'
+import { confirmRaffleOrder } from 'service/client/navidad'
 
 const RaffleTickets = ({ tickets, draw }) => {
 
-	const [selections, setSelections] = useState([]);
-	const [currency, setCurrency] = useState('');
-	const [error, setError] = useState('');
-	const [busy, setBusy] = useState(false);
-	const balance = useSelector(state => state.user.balance);
-	const profile = useSelector(state => state.user.profile);
+	const [selections, setSelections] = useState([])
+	const [currency, setCurrency] = useState('')
+	const [error, setError] = useState('')
+	const [busy, setBusy] = useState(false)
+	const balance = useSelector(state => state.user.balance)
+	const profile = useSelector(state => state.user.profile)
+	const router = useRouter()
 
 	useEffect(() => {
 		jQuery("#btcowl-demo").owlCarousel({
