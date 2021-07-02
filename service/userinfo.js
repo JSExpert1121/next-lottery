@@ -4,18 +4,21 @@ import { authPost } from './base';
 const BASE_URL = `${API_BASE_URL}/userinfo`;
 
 export const signUp = async ({ firstName, lastName, email, phone, password, affiliateID }) => {
+	const body = {
+		BrandID: BRAND_ID,
+		FirstName: firstName,
+		LastName: lastName,
+		Email: email,
+		PhoneNumber: phone,
+		Password: password
+	}
+	if (affiliateID) {
+		body.affiliateID = affiliateID;
+	}
 	return await authPost(
 		`${BASE_URL}/signup`,
 		SEC_TOKEN,
-		{
-			BrandID: BRAND_ID,
-			FirstName: firstName,
-			LastName: lastName,
-			Email: email,
-			PhoneNumber: phone,
-			Password: password,
-			affiliateID
-		}
+		body
 	);
 }
 
