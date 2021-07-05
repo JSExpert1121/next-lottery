@@ -15,8 +15,7 @@ import { getAllDraws, getResultsByBrand } from 'service/globalinfo';
 
 export default function Home(props) {
 
-	const { banners, lotteries, news, results, raffles } = props;
-	console.log('raffles: ', raffles);
+	const { banners, lotteries, news, results, raffles, exlottos } = props;
 
 	return (
 		<Layout>
@@ -42,12 +41,12 @@ export default function Home(props) {
 					<RaffleList items={raffles} />
 				</section>
 				{/* exclusive lotteries */}
-				{/* <section className="wrap">
+				<section className="wrap">
 					<div className="wrap">
 						<ExLotteryList items={exlottos} />
 					</div>
 				</section>
-				<div className="clear">&nbsp;</div> */}
+				<div className="clear">&nbsp;</div>
 
 				{/* middle home */}
 				<section id="middle_home">
@@ -106,19 +105,49 @@ export const getStaticProps = async (ctx) => {
 			flag: `/images/flag_${draw.CountryName.toLowerCase()}.png`
 		}));
 
-		const exlottos = draws.filter(draw => (
-			draw.LotteryName === 'MegaJackpot' || draw.LotteryName === 'BTC Power Play'
-		)).map(draw => ({
-			id: draw.DrawId,
-			name: draw.LotteryName,
-			date: draw.DrawDate,
-			image: `/images/${draw.LotteryName.toLowerCase()}1.png`,
-			unit: draw.LotteryCurrency2,
-			link: `/lotteries/${draw.LotteryName.replace(/ /g, '').toLowerCase()}`,
-			country: draw.CountryName,
-			amount: draw.Jackpot,
-			flag: `/images/flag_${draw.CountryName.toLowerCase()}.png`
-		}));
+		// const exlottos = draws.filter(draw => (
+		// 	draw.LotteryName === 'MegaJackpot' || draw.LotteryName === 'BTC Power Play'
+		// )).map(draw => ({
+		// 	id: draw.DrawId,
+		// 	name: draw.LotteryName === 'MegaJackpot' ? 'BTC Jackpot' : draw.LotteryName,
+		// 	desc: draw.LotteryName === 'MegaJackpot' ? 'Daily Draw 9am CET' : 'Draw every 5 Minutes',
+		// 	date: draw.DrawDate,
+		// 	image: `/images/${draw.LotteryName.toLowerCase()}1.png`,
+		// 	unit: draw.LotteryCurrency2,
+		// 	link: `/lotteries/${draw.LotteryName.replace(/ /g, '').toLowerCase()}`,
+		// 	country: draw.CountryName,
+		// 	amount: draw.Jackpot,
+		// 	flag: `/images/flag_${draw.CountryName.toLowerCase()}.png`
+		// }));
+
+		const megaJack = draws.find(draw => draw.LotteryName === 'MegaJackpot');
+		const powerPlay = draws.find(draw => draw.LotteryName === 'BTC Power Play');
+		const exlottos = [
+			{ 
+				id: megaJack?.id ?? -1,
+				name: 'BTC Jackpot',
+				desc: 'Daily Draw 9am CET',
+				date: megaJack?.DrawDate ?? '',
+				image: `/images/megajackpot1.png`,
+				unit: megaJack?.LotteryCurrency2 ?? '$',
+				link: '/lotteries/megajackpot',
+				country: megaJack?.CountryName ?? 'US',
+				amount: 1000000,
+				daily: 'Daily'
+			},
+			{ 
+				id: powerPlay?.id ?? -1,
+				name: 'BTC Power Play',
+				desc: 'Draw every 5 Minutes',
+				date: powerPlay?.DrawDate ?? '',
+				image: `/images/btcpowerplay1.png`,
+				unit: powerPlay?.LotteryCurrency2 ?? '$',
+				link: '/lotteries/btcpowerplay',
+				country: powerPlay?.CountryName ?? 'US',
+				amount: 100,
+				daily: ''
+			}
+		]
 
 		const raffles = draws.filter(draw => (
 			draw.LotteryName.includes('Raffle') && draw.Jackpot > 0
@@ -179,6 +208,7 @@ export const getStaticProps = async (ctx) => {
 			props: {
 				banners: banners.items,
 				lotteries,
+				exlottos,
 				raffles,
 				results,
 				news
@@ -193,6 +223,7 @@ export const getStaticProps = async (ctx) => {
 				lotteries: [],
 				exlottos: [],
 				results: [],
+				raffles: [],
 				news: []
 			},
 			revalidate: 10

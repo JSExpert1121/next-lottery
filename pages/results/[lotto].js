@@ -119,7 +119,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
 	const { params: { lotto } } = context;
-	console.log('param: ', lotto);
 
 	try {
 		const result = await Promise.all([

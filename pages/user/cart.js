@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import Layout from 'components/layout';
 import { ModalDialog } from 'components/dialog';
 import { currencies } from 'helpers/constants';
-import { confirmOrder } from 'service/client/order';
+import { confirmOrder, confirmOrderFireGame } from 'service/client/order';
 
 const CartPage = () => {
 
@@ -18,6 +18,7 @@ const CartPage = () => {
 	const router = useRouter();
 
 	const enoughBalance = balance?.AccountBalance > status.price
+	const isBTCPowerPlay = status.name === 'BTC Power Play'
 	const handleCurrency = useCallback((e) => {
 		setCurrency(e.target.value);
 		setError('');
@@ -56,14 +57,24 @@ const CartPage = () => {
 				`
 			)
 
-			if (window.focus) newWindow.focus();
+			if (window.focus) newWindow.focus()
 			return newWindow;
 		}
 
-		const orderWindow = enoughBalance ? null : popupCenter({ url: '', title: 'Submit order', w: 500, h: 700 });
+		let orderWindow = null
+		let confirmApi = isBTCPowerPlay ? confirmOrderFireGame : confirmOrder
+		if (isBTCPowerPlay) {
+			if ((balance.AccountBalance + balance.BonusAmount) < status.price) {
+				setError('Not Enough Balance');
+				router.push('/user/deposit');
+			}
+
+		} else if (!enoughBalance){
+			orderWindow = popupCenter({ url: '', title: 'Submit order', w: 500, h: 700 })
+		}
 
 		try {
-			const resp = await confirmOrder(
+			const resp = await confirmApi(
 				profile.MemberId,
 				profile.Email,
 				profile.UserSessionId,
