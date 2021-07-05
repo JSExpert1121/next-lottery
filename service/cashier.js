@@ -57,10 +57,27 @@ export const depositFunds = async () => {
 	);
 }
 
-export const confirmProcessorFireGameOrder = async () => {
+export const confirmProcessorFireGameOrder = async (
+	memberId,
+	email,
+	session,
+	ticker,
+	orderData
+) => {
 	return await authPost(
-		`${BASE_URL}/processor-confirm-fire-game-order`,
-		SEC_TOKEN
+		`${BASE_URL}/processor-confirm-order`,
+		SEC_TOKEN,
+		{ 
+			PhoneOrEmail: email,
+			ProcessorApi: '',
+			AffiliatedId: 0,
+			ReedemCode: '',
+			SessionId: session,
+			MemberId: memberId,
+			Ticker: ticker,
+			OrderData: orderData,
+			BrandID: BRAND_ID
+		}
 	);
 }
 

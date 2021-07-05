@@ -27,7 +27,6 @@ const LoginPage = () => {
 	const user = useSelector(state => state.user);
 	const { referer } = router.query;
 
-	console.log(referer);
 	useEffect(() => {
 		if (user.profile) {
 			router.replace(referer ? decodeURIComponent(referer) : '/');
