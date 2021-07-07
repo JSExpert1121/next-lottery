@@ -154,13 +154,13 @@
     }
 
     & .lottery-container {
+        justify-content: center;
         display: flex;
         margin: 40px 0;
     }
 
     & .track {
         display: flex;
-        flex: 1;
         border: 1px solid $color-border;
         box-sizing: border-box;
         border-radius: 10px;
@@ -250,6 +250,7 @@
         & .track {
             margin-bottom: 25px;
             margin-right: 0;
+            flex: 1;
         }
 
         & .lotteryImg {
@@ -272,6 +273,7 @@
             margin-bottom: 25px;
             margin-right: 0;
             padding: 20px;
+            flex: 1;
         }
 
         & .lotteryImg {

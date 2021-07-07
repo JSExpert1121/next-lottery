@@ -124,7 +124,7 @@ export const getStaticProps = async (ctx) => {
 		const powerPlay = draws.find(draw => draw.LotteryName === 'BTC Power Play');
 		const exlottos = [
 			{ 
-				id: megaJack?.id ?? -1,
+				id: megaJack?.DrawId ?? -1,
 				name: 'BTC Jackpot',
 				desc: 'Daily Draw 9am CET',
 				date: megaJack?.DrawDate ?? '',
@@ -136,7 +136,7 @@ export const getStaticProps = async (ctx) => {
 				daily: 'Daily'
 			},
 			{ 
-				id: powerPlay?.id ?? -1,
+				id: powerPlay?.DrawId ?? -1,
 				name: 'BTC Power Play',
 				desc: 'Draw every 5 Minutes',
 				date: powerPlay?.DrawDate ?? '',

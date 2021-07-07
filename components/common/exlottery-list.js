@@ -5,9 +5,9 @@ const ExLotteryList = ({ items }) => {
 		<div className="exclusive-lotteries">
 			<h1>Play Crypto Games</h1>
 			<div className="lottery-container">
-				{items && items.map(item => (
-					<ExLotteryItem {...item} key={item.id} />
-				))}
+				{items && items.map(item => {
+					return item.id > 0 ? <ExLotteryItem {...item} key={item.id} /> : null
+				})}
 			</div>
 		</div>
 	)
