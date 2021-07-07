@@ -96,9 +96,11 @@ const LottoGame = (props) => {
 									<div className="text">Click continue</div>
 								</div>
 							</div>
-							<div className="desktop-ticket-buttons">
-								<a href={`/groups/${data.LotteryName.replace(/ /g, '').toLowerCase()}`} className="group-ticket-button" id="group-ticket-button">Group ticket</a>
-							</div>
+							{lotto !== 'megajackpot' && lotto !== 'btcpowerplay' && (
+								<div className="desktop-ticket-buttons">
+									<a href={`/groups/${data.LotteryName.replace(/ /g, '').toLowerCase()}`} className="group-ticket-button" id="group-ticket-button">Group ticket</a>
+								</div>
+							)}
 						</div>
 						<div className={`beton-header ${data.LotteryName}`}>
 							<div className="beton-header-mobile-section">
