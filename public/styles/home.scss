@@ -153,6 +153,10 @@
         line-height: 40px;
     }
 
+    & > h1 {
+        text-align: center;
+    }
+
     & .lottery-container {
         justify-content: center;
         display: flex;
