@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Layout from 'components/layout';
 import Banner from 'components/common/banner';
 import LotteryList from 'components/common/lottery-list';
+import FreeLottoList from 'components/common/freelotto-list';
 import RaffleList from 'components/common/raffle-list';
 import ExLotteryList from 'components/common/exlottery-list';
 import PlayGroup from 'components/home/play-group';
@@ -11,7 +12,7 @@ import News from 'components/home/news';
 import { parseJsonFile } from 'helpers/json';
 import { parseStringPromise } from 'xml2js';
 import { getAllDraws, getResultsByBrand } from 'service/globalinfo';
-// import { parseXmlFile } from 'helpers/xml';
+import { parseXmlFile } from 'helpers/xml';
 
 export default function Home(props) {
 
@@ -35,6 +36,11 @@ export default function Home(props) {
 					<a href="/lottery" className="view-all-lotts right">View all lotteries &gt; </a>
 				</Link>
 				<div className="clear" />
+
+				{/* free lotto list */}
+				<section className="sliderwrap lotto-owl-slider">
+					<FreeLottoList items={lotteries} />
+				</section>
 
 				{/* sure win games */}
 				<section className='sliderwrap lotto-owl-slider'>
@@ -81,8 +87,8 @@ export const getStaticProps = async (ctx) => {
 		const res = await Promise.all([
 			getAllDraws(),
 			getResultsByBrand(),
-			// parseXmlFile('data/news.xml')
-			fetch('https://news.bitcoin.com/feed/')
+			parseXmlFile('data/news.xml')
+			// fetch('https://news.bitcoin.com/feed/')
 		]);
 		const draws = res[0];
 		const lotteries = draws.filter(draw => !(
@@ -174,8 +180,8 @@ export const getStaticProps = async (ctx) => {
 			}
 		});
 
-		// const newsData = res[2];
-		const newsData = await parseStringPromise(await res[2].text());
+		const newsData = res[2];
+		// const newsData = await parseStringPromise(await res[2].text());
 		const news = newsData.rss.channel[0].item.slice(0, 3).map(item => {
 			const text = item.description[0].replace(/<img[^>]+>/g, '');
 			const images = item.description[0].match(/<img[^>]+>/g);

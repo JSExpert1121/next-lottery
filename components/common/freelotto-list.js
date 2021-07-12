@@ -1,12 +1,13 @@
 import LotteryItem from './lottery-item';
 import { OwlCarousel } from './carousel';
+import { FreeLottoItem } from './freelotto-item';
 
-const LotteryList = ({ items }) => (
+const FreeLottoList = ({ items }) => (
 	<OwlCarousel
-		id='owl-lottery-list'
+		id='owl-free-lotto-list'
 		items={items}
 		count={5}
-		component={LotteryItem}
+		component={FreeLottoItem}
 		responsive={{
 			0: {
 				items: 1,
@@ -37,4 +38,4 @@ const LotteryList = ({ items }) => (
 	/>
 )
 
-export default LotteryList;
+export default FreeLottoList
