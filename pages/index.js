@@ -16,7 +16,7 @@ import { parseXmlFile } from 'helpers/xml';
 
 export default function Home(props) {
 
-	const { banners, lotteries, news, results, raffles, exlottos } = props;
+	const { banners, lotteries, news, results, raffles, exlottos, freelottos } = props;
 
 	return (
 		<Layout>
@@ -39,7 +39,7 @@ export default function Home(props) {
 
 				{/* free lotto list */}
 				<section className="sliderwrap lotto-owl-slider">
-					<FreeLottoList items={lotteries} />
+					<FreeLottoList items={freelottos} />
 				</section>
 
 				{/* sure win games */}
@@ -82,6 +82,7 @@ export default function Home(props) {
 export const getStaticProps = async (ctx) => {
 
 	const banners = await parseJsonFile('data/banners.json');
+	const freelottos = await parseJsonFile('data/freelotto.json');
 	try {
 
 		const res = await Promise.all([
@@ -199,6 +200,7 @@ export const getStaticProps = async (ctx) => {
 			props: {
 				banners: banners.items,
 				lotteries,
+				freelottos: freelottos.items,
 				exlottos,
 				raffles,
 				results,

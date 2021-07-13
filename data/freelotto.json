@@ -3,57 +3,50 @@
 		{
 			"id": "freelotto-1",
 			"name": "Win 10K",
-			"image": "/images/win-10k.png",
+			"image": "/images/powerball1.png",
 			"unit": "$",
 			"amount": 10000,
-			"price": 10,
 			"link": "/lotteries/freelotto?name=10k"
 		},
 		{
 			"id": "freelotto-2",
 			"name": "Win a Car",
-			"image": "/images/win-a-car.png",
+			"image": "/images/powerball1.png",
 			"unit": "$",
 			"amount": 10000,
-			"price": 10,
 			"link": "/lotteries/freelotto?name=a-car"
 		},
 		{
 			"id": "freelotto-3",
 			"name": "Win 100K",
-			"image": "/images/win-100k.png",
+			"image": "/images/powerball1.png",
 			"unit": "$",
 			"amount": 100000,
-			"price": 10,
 			"link": "/lotteries/freelotto?name=100k"
 		},
 		{
 			"id": "freelotto-4",
 			"name": "Win 250K",
-			"image": "/images/win-250k.png",
+			"image": "/images/powerball1.png",
 			"unit": "$",
 			"amount": 250000,
-			"price": 10,
 			"link": "/lotteries/freelotto?name=250k"
 		},
 		{
 			"id": "freelotto-5",
 			"name": "Win 10K All Life",
-			"image": "/images/win-10k-all-life.png",
+			"image": "/images/powerball1.png",
 			"unit": "$",
 			"amount": 10000,
-			"price": 10,
 			"link": "/lotteries/freelotto?name=10k-all-life"
 		},
 		{
 			"id": "freelotto-6",
 			"name": "Win 1M",
-			"image": "/images/win-1m.png",
+			"image": "/images/powerball1.png",
 			"unit": "$",
 			"amount": 10000,
-			"price": 10,
 			"link": "/lotteries/freelotto?name=1m"
 		}
 	]
-	
 }
