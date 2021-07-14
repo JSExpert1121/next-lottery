@@ -1,11 +1,12 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { useRouter } from 'next/router';
 import Layout from 'components/layout';
+import { GameHeader } from 'components/games/header';
 import SingleGame from 'components/games/single';
+import { HowtoPlay } from 'components/games/howto';
 import { getAllDraws } from 'service/globalinfo';
 import { parseJsonFile } from 'helpers/json';
-import { randomArray } from 'helpers/array';
-import { numberWithLength } from 'helpers/number';
+import { randomArrays } from 'helpers/array';
 
 
 const LottoGame = (props) => {
@@ -13,10 +14,6 @@ const LottoGame = (props) => {
 	const { lotto } = router.query;
 	const { data, post } = props;
 	const [sels, setSels] = useState({ selMs: [[], [], [], [], []], selEs: [[], [], [], [], []] });
-
-	const [curTime, setCurTime] = useState({
-		days: 0, hours: 0, minutes: 0, seconds: 0, tm: 0
-	});
 
 	if (!data) {
 		return <div>Not Found</div>
@@ -31,41 +28,12 @@ const LottoGame = (props) => {
 		jackpot = `${data.LotteryCurrency2}${data.Jackpot / 1000000}M`;
 	}
 
-	useEffect(() => {
-		const id = setInterval(() => {
-			const deadline = new Date(data.DrawDate).getTime();
-			const timezoneOffset = new Date().getTimezoneOffset();
-			const tm = deadline - 180 * 60 * 1000 - (new Date().getTime() + timezoneOffset * 60000);
-			setCurTime({
-				days: parseInt(tm / (86400000)),
-				hours: parseInt((tm % 86400000) / 3600000),
-				minutes: parseInt((tm % 3600000) / 60000),
-				seconds: parseInt((tm % (1000 * 60)) / 1000),
-				tm
-			});
-		}, 1000);
-
-		return () => clearInterval(id);
-	}, []);
-
 	const pickAll = useCallback(() => {
 		let count = 0;
 		const id = setInterval(() => {
 			setSels({
-				selMs: [
-					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch),
-					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch),
-					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch),
-					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch),
-					randomArray(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch)
-				],
-				selEs: [
-					randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch),
-					randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch),
-					randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch),
-					randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch),
-					randomArray(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch)
-				]
+				selMs: randomArrays(1, data.NumberOfMainNumbers, data.AmountOfMainNumbersToMatch, 5),
+				selEs: randomArrays(1, data.NumberOfExtraNumbers, data.AmountOfExtraNumbersToMatch, 5)
 			});
 
 			count++;
@@ -79,85 +47,33 @@ const LottoGame = (props) => {
 				<div className='wrap'>
 					<div id='middle' className='lotterydetail'>
 						<div className='flex-container'>
-							<div className="how-to-play">
-								<div className="label">Only 3 easy steps</div>
-								<div className="step">
-									<img className="icon" src="/images/step1-icon.png" />
-									<div className="text" id="how-to-play-label-step1">Choose your numbers or QuickPick</div>
-									<div className="step-arrow fa fa-angle-right"></div>
-								</div>
-								<div className="step">
-									<img className="icon" src="/images/step2-icon.png" />
-									<div className="text">Select your draws</div>
-									<div className="step-arrow fa fa-angle-right"></div>
-								</div>
-								<div className="step">
-									<img className="icon" src="/images/step3-icon.png" />
-									<div className="text">Click continue</div>
-								</div>
-							</div>
+							<HowtoPlay />
 							{lotto !== 'megajackpot' && lotto !== 'btcpowerplay' && (
 								<div className="desktop-ticket-buttons">
-									<a href={`/groups/${data.LotteryName.replace(/ /g, '').toLowerCase()}`} className="group-ticket-button" id="group-ticket-button">Group ticket</a>
+									<a
+										href={`/groups/${lotto}`}
+										className="group-ticket-button"
+										id="group-ticket-button"
+									>
+										Group ticket
+									</a>
 								</div>
 							)}
 						</div>
 						<div className={`beton-header ${data.LotteryName}`}>
-							<div className="beton-header-mobile-section">
-								<div className="lotto-name-container">
-									<img src={`/images/${lotto}1.png`} className="lotto-logo" />
-									<span className="lotto-name">{data.LotteryName}</span>
-								</div>
-								<div className="lotto-prize-container">
-									<h1 className='lotto-prize'>{jackpot}<br />Win BTC</h1>
-								</div>
-								<div className="lotto-timer">
-									<div className="timer-view">
-										{curTime.tm < 0 && <div className="item-expired">EXPIRED</div>}
-										{curTime.tm >= 0 && (
-											<table>
-												<tbody>
-													<tr>
-														<td><div className="timer-value timer-value-days value-days">{curTime.days}</div></td>
-														<td><div className="timer-delimiter">:</div></td>
-														<td><div className="timer-value timer-value-hours value-hours">{numberWithLength(curTime.hours, 2)}</div></td>
-														<td><div className="timer-delimiter">:</div></td>
-														<td><div className="timer-value timer-value-minutes value-minutes">{numberWithLength(curTime.minutes, 2)}</div></td>
-														<td><div className="timer-delimiter">:</div></td>
-														<td><div className="timer-value timer-value-seconds value-seconds">{numberWithLength(curTime.seconds, 2)}</div></td>
-													</tr>
-													<tr>
-														<td><div className="timer-unit unit-0">days</div></td><td></td>
-														<td><div className="timer-unit unit-1">hrs</div></td><td></td>
-														<td><div className="timer-unit unit-2">min</div></td><td></td>
-														<td><div className="timer-unit unit-3">sec</div></td>
-													</tr>
-												</tbody>
-											</table>
-										)}
-									</div>
-								</div>
-								<div className="lotto-action-container" id="pick-all-button">
-									<button type="button" id="magic-pickall" className="btn-magic-all" onClick={pickAll}>
-										<i className="fa fa-magic"></i> <span className="btn-magic-all-text">Pick All</span>
-									</button>
-								</div>
-							</div>
+							<GameHeader
+								name={data.LotteryName}
+								image={`/images/${lotto}1.png`}
+								jackpot={jackpot}
+								drawDate={data.DrawDate}
+								onPickAll={pickAll}
+							/>
 						</div>
 						<SingleGame data={data} {...sels} />
 						<div className="select_page_det left">
 							{post?.content && (
 								<div className="col8 left" dangerouslySetInnerHTML={{ __html: post?.content }} />
 							)}
-
-							<div className="col2 left">
-								<img src="/images/scanned_ticket.png" />
-							</div>
-							<div className="select_page_det2">
-								<div className="del_cup"><img src="/images/del_cup.png" /></div>
-								<div className="star"><img src="/images/star.png" /></div>
-								<div className="font13"></div>
-							</div>
 						</div>
 					</div>
 				</div>
