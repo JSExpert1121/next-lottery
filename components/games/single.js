@@ -76,8 +76,7 @@ const SingleGame = ({ data, selMs, selEs }) => {
 	}, [selEs, selMs]);
 
 	const lines = flags.filter(f => f).length;
-	const lmt = data.Options.find(option => option.NumberOfDraws === 1);
-	const enable = (selNo.totalprice ?? 0) > 0 && lines >= lmt.MinLines && lines <= lmt.MaxLines;
+	const enable = lines >= data.MinLines && lines <= data.MaxLines;
 	return (
 		<form name="singledata" id="singledata">
 			<div className="single active" id="single">
@@ -100,7 +99,7 @@ const SingleGame = ({ data, selMs, selEs }) => {
 				</ul>
 			</div >
 
-			<p>{`Please pick ${lmt.MinLines} ~ ${lmt.MaxLines} lines`}</p>
+			<p>{`Please pick ${data.MinLines} ~ ${data.MaxLines} lines`}</p>
 			<div className={`cardlist ${data.LotteryName}`}>
 				<div className="card_row addcardrow cardline" id="row_1">
 					<div className="tabin_main">

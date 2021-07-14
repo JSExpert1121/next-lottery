@@ -20,3 +20,7 @@ export const randomArray = (start, numbers, count) => {
 
 	return arr;
 }
+
+export const randomArrays = (start, numbers, count, total) => {
+	return generateArray(1,total).map(idx => randomArray(start, numbers, count))
+}
