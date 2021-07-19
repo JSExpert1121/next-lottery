@@ -1,5 +1,8 @@
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
+import { useDispatch } from 'react-redux';
 import Layout from 'components/layout';
 import Banner from 'components/common/banner';
 import LotteryList from 'components/common/lottery-list';
@@ -12,16 +15,58 @@ import News from 'components/home/news';
 import { parseJsonFile } from 'helpers/json';
 import { parseStringPromise } from 'xml2js';
 import { getAllDraws, getResultsByBrand } from 'service/globalinfo';
+import { getUserBySysSessionId } from 'service/client/user';
+import * as UserActions from 'store/actions/user';
+import Loading from 'components/common/loadding';
+import { ModalDialog } from 'components/dialog';
 // import { parseXmlFile } from 'helpers/xml';
 
 export default function Home(props) {
 
 	const { banners, lotteries, news, results, raffles, exlottos, freelottos } = props;
+	const dispatch = useDispatch();
+	const router = useRouter();
+	const { sysSessionID } = router.query;
+	const [busy, setBusy] = useState(false)
+	const [error, setError] = useState(false)
+
+	useEffect(() => {
+		async function autoLogin() {
+			if (!sysSessionID) return
+
+			try {
+				setBusy(true)
+				const user = await getUserBySysSessionId(sysSessionID)
+				await dispatch(UserActions.login(user.Email, user.Password));
+			} catch (e) {
+				setError(e)
+			} finally {
+				setBusy(false)
+			}
+		}
+
+		autoLogin()
+	}, [sysSessionID])
+
+	if (busy) {
+		return <Loading />
+	}
 
 	return (
 		<Layout>
 			<Head><title>Bitcoin Lottery - Lottery with Bitcoins</title></Head>
 			<main id="main" className="clearfix">
+				<ModalDialog
+					show={!!error}
+					header={'Error'}
+					body={<span className='error-msg'>{error}</span>}
+					footer={(
+						<>
+							<span />
+							<button onClick={() => setError('')} className='btn btn-primary'>OK</button>
+						</>
+					)}
+				/>
 				{/* banner */}
 				<Banner banners={banners} />
 				<div className="clear" />
@@ -115,7 +160,7 @@ export const getStaticProps = async (ctx) => {
 		const megaJack = draws.find(draw => draw.LotteryName === 'MegaJackpot');
 		const powerPlay = draws.find(draw => draw.LotteryName === 'BTC Power Play');
 		const exlottos = [
-			{ 
+			{
 				id: megaJack?.DrawId ?? -1,
 				name: 'BTC Jackpot',
 				desc: 'Daily Draw 9am CET',
@@ -127,7 +172,7 @@ export const getStaticProps = async (ctx) => {
 				amount: 1000000,
 				daily: 'Daily'
 			},
-			{ 
+			{
 				id: powerPlay?.DrawId ?? -1,
 				name: 'BTC Power Play',
 				desc: 'Draw every 5 Minutes',
