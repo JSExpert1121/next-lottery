@@ -212,3 +212,14 @@ export const resetPasswordCommit = async (email, oldPwd, newPwd) => {
 		}
 	);
 }
+
+export const getUserBySysSessionId = async (sysSessionId) => {
+	return await authPost(
+		`${BASE_URL}//get-personal-details-by-sessionid`,
+		SEC_TOKEN,
+		{
+			BrandID: BRAND_ID,
+			SessionId: sysSessionId
+		}
+	);
+}
