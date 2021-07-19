@@ -43,3 +43,7 @@ export const getTickets = (page, memberID) => post('/api/user/tickets', {
 export const getProducts = (page, memberID) => post('/api/user/products', {
   page, memberID
 });
+
+export const getUserBySysSessionId = (sessionId) => get('/api/user/by-syssession', {
+  sessionId
+});
