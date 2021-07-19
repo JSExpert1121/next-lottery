@@ -1277,9 +1277,7 @@ a.playNowBtn {
 		padding: 16px;
 
 		.flex-row {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
+			position: relative;
 			margin-bottom: 16px;
 
 			&:last-child {
@@ -1288,33 +1286,22 @@ a.playNowBtn {
 		}
 
 		.cover img {
-			width: 130px;
-			height: 150px;
+			width: 100%;
+			height: auto;
 		}
 
-		.title {
+		.title a.playNowBtn {
 			flex-grow: 1;
-			font-size: 3.5rem;
+			font-size: 2.5rem;
+			font-weight: 600;
 			text-align: center;
 			color: #ffc822;
-		}
+			text-decoration: none;
+			background-color: transparent;
+			padding-bottom: 0;
 
-		.countdown {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			padding: 8px;
-
-			.itemCt,
-			.itemBg {
-				font-family: Gilroy-Bold;
-				font-size: 28px;
-				text-align: center;
-				color: #fff;
-				text-align: center;
-				align-self: center;
-				-moz-box-align: center;
-				align-items: center;
+			&:hover {
+				color: $color-primary-hover;
 			}
 		}
 	}

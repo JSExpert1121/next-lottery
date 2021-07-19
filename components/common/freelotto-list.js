@@ -21,12 +21,12 @@ const FreeLottoList = ({ items }) => (
 					nav: false,
 					loop: true
 				},
-				1000: {
+				820: {
 					items: 3,
 					nav: true,
 					loop: true
 				},
-				1440: {
+				1000: {
 					items: 4,
 					nav: true,
 					loop: true
