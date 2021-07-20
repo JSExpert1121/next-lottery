@@ -83,9 +83,9 @@ export default function Home(props) {
 				<div className="clear" />
 
 				{/* free lotto list */}
-				{/* <section className="sliderwrap lotto-owl-slider">
+				<section className="sliderwrap lotto-owl-slider">
 					<FreeLottoList items={freelottos} />
-				</section> */}
+				</section>
 
 				{/* sure win games */}
 				<section className='sliderwrap lotto-owl-slider'>
