@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
+import Script from 'next/script'
 import { ProtectedRoute } from 'custom/guards';
 import Transition from 'custom/transition';
 import 'nprogress/nprogress.css'; //styles of nprogress
@@ -26,7 +27,20 @@ export default function MyApp({ Component, pageProps }) {
 					<IdleLogout timeout={30 * 60 * 1000} />
 					<Head>
 						<title>BitcoinLotterys - Lottery with Bitcoins</title>
+						<Script
+							src="https://www.googletagmanager.com/gtag/js?id=G-98FK6LBNXZ"
+							onLoad={() => {
+								window.dataLayer = window.dataLayer || [];
+								function gtag(){
+									dataLayer.push(arguments);
+								}
+
+								gtag('js', new Date());
+								gtag('config', 'G-98FK6LBNXZ');
+							}}
+						/>
 					</Head>
+					<Script async src="https://www.googletagmanager.com/gtag/js?id=G-98FK6LBNXZ" />
 					<Component {...pageProps} />
 				</ProtectedRoute>
 			</Transition>
